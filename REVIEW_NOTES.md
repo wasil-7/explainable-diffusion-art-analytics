@@ -1,3 +1,5 @@
+> **Superseded status statements:** the final audit instructions were supplied, FINAL_AUDIT.md now exists, and GitHub is public/populated at commit 6a6df880abbe8061cd145c41adfccdfe730e045e. Earlier missing-audit/empty-repository statements below describe the previous build. The current audited revision still requires a new push; use FINAL_AUDIT.md for the current verdict.
+
 # Fresh independent scientific/editorial review
 
 Reviewed 22 November 2026. Read-only review of the **current** `final_round/paper.pdf`, `latex/main.tex` and included tables/captions/appendix, `supplementary.pdf`, the actual M2/M3 extracted reports, the manual, selected underlying CSVs, and released implementation/documentation. No experiments, training, artifact edits, or fresh-environment replication were performed. This file is the only review output written.

@@ -1,0 +1,21 @@
+{
+  "status": 200,
+  "images": [
+    {
+      "src": "https://github.com/wasil-7/explainable-diffusion-art-analytics/raw/main/figures/fig07_baseline_probes_and_ari.png",
+      "loaded": true
+    },
+    {
+      "src": "https://github.com/wasil-7/explainable-diffusion-art-analytics/raw/main/figures/fig05_style_drift_heatmap.png",
+      "loaded": true
+    },
+    {
+      "src": "https://github.com/wasil-7/explainable-diffusion-art-analytics/raw/main/figures/dashboard_landing.png",
+      "loaded": true
+    },
+    {
+      "src": "https://github.com/wasil-7/explainable-diffusion-art-analytics/raw/main/figures/dashboard_atlas.png",
+      "loaded": true
+    }
+  ]
+}

@@ -1928,3 +1928,11 @@ Reasoned semantic edits above are supplemented by the complete before/after text
 
 ## Reproduction review follow-ups
 Before: per-style intervals attributed too broadly to supplementary-statistics script; point CSV export omitted; stale state/excluded-cache combination not prevented by instructions. After: per-style intervals attributed to ablations.py, publication_figures.py exports refreshed PCA/H-C/tSNE CSVs before final layout generation, and explicit isolated-workcopy state preparation archives existing derived folders with validated paths and no deletion. Reason: exact executable command mapping and safe cache provenance. Synthetic fixture test passed; no actual experiments executed. Fresh reviewer recheck reports no blocker within scope; missing separate audit remains open.
+
+## 22 November2026 — final forensic audit corrections
+- Fig.3C p5: crossing annotation leaders replaced by aligned silhouette/ARI row strips; first attempt had crowded labels, corrected with alternating row keys and short endpoint ticks. All10style rows retained; caption explicitly maps rows to B1. No numeric values changed.
+- VII-B p9: explicitly states no equal-encoding retraining was run; stress tests retain original fit.
+- Availability p11: public original release acknowledged; audited update explicitly requires next commit.
+- Git byte-integrity: added .gitattributes '* -text' after confirming remote CSVs were LF-normalized versions of local CRLF files. Exact byte manifests require the updated push.
+- GCR ZIP changed from flattened legacy layout to canonical root paper.pdf/paper.docx/supplementary.pdf/latex_source.zip plus release/. Source/Word rebuilt and all copies synchronized.
+- Supplied final audit request resolved earlier missing-audit input; FINAL_AUDIT.md and independent-review evidence added. Earlier empty-remote/missing-input statements are historical, superseded by this report.

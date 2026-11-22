@@ -1,3 +1,5 @@
+> **Superseded status statements:** the final audit instructions were supplied, FINAL_AUDIT.md now exists, and GitHub is public/populated at commit 6a6df880abbe8061cd145c41adfccdfe730e045e. Earlier missing-audit/empty-repository statements below describe the previous build. The current audited revision still requires a new push; use FINAL_AUDIT.md for the current verdict.
+
 # Milestone 4 compliance checklist
 
 Final local build: 22 November 2026. Twelve IEEE journal pages, 180-word abstract, six keywords, 38 references, thirteen main tables, eleven main figures and a one-page supplementary PDF. The recorded numerical/build checks pass. The separate newly mentioned audit file has not been supplied or located; that input instruction is not certified complete. Institutional checking and the authors' forthcoming push are not misrepresented as completed.

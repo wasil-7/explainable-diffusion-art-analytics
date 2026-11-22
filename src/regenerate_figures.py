@@ -23,7 +23,7 @@ READ={};AUDIT=[];CAPTIONS={}
 SHORT_CAPTIONS={
 1:'Implemented branch structure. Frozen splits and development calibration precede held-out evaluation; descriptive outputs remain available when the common-support gate blocks independent attribution.',
 2:'All 185,015 files are audited; annotations show native dimensions. Full-release/native-256 metadata ROC curves coincide and are drawn once. Size matching leaves perfect technical label ranking, without proving use of that association by pixel probes.',
-3:'Five probes share 6,000 test IDs; whiskers are frozen-fit group-bootstrap 95% intervals. Insets zoom ROC to FPR 0–0.02/TPR 0.98–1 and PR to [0.98,1]². Numbered style keys follow B1. Low ARI coexists with strong supervised ranking.',
+3:'Five probes share 6,000 test IDs; whiskers are frozen-fit group-bootstrap 95% intervals. Insets zoom ROC to FPR 0–0.02/TPR 0.98–1 and PR to [0.98,1]². C1/C2 rows follow B1 top-to-bottom (alternating style keys shown); leader lines are omitted. Low ARI coexists with strong supervised ranking.',
 4:'Shared-axis H–C atlas with LD-minus-Human arrows, Gaussian 95% centroid ellipses (500 group resamples) and within-cell KDE contours (15/40/70% of peak). Full movement names reveal heterogeneous descriptive displacements, without establishing attribution.',
 5:'Equal-aspect PCA retains all points (A1); A2 zooms PC1 to [−5,10] and PC2 to [−6,6]. Transparent t-SNE uses perplexity 30, seed 42. Fidelity axis 0.905–0.921 magnifies small differences; whiskers are seed ranges, not confidence intervals.',
 6:'FFT/Haar means with 1,000-group-bootstrap 95% intervals. Small open Haar markers expose whiskers; LL2 remains in normalization. SD resizing is descriptive. Broadly similar spectra do not eliminate style-specific differences.',
@@ -78,9 +78,11 @@ def baselines():
  ir.set(xlim=(0,.02),ylim=(.98,1.001),xticks=[],yticks=[]);ip.set(xlim=(.98,1),ylim=(.98,1.001),xticks=[],yticks=[]);
  for a in [ir,ip]:a.tick_params(labelsize=4.5,pad=.5,length=1);a.set_facecolor('#F8FAFC');a.text(.98,.05,'zoom',transform=a.transAxes,ha='right',fontsize=4.5)
  d=read('origin_silhouette_ari.csv');d=d[d.space.eq('full')]
- for i,r in enumerate(d.sort_values('silhouette').itertuples()):
-  ari.plot(r.silhouette,r.ari,'o',color='#334155',ms=2);ari.annotate(str(styles.index(r.style)+1),(r.silhouette,r.ari),xytext=(.028+(i//2)*.017,.0048 if i%2==0 else .0039),textcoords='data',fontsize=5.5,ha='center',arrowprops=dict(arrowstyle='-',lw=.3,color='#64748B'))
- ari.set(xlabel='Origin silhouette',ylabel='k=2 ARI',title='C  Full-space clusters',ylim=(-.0005,.0056));ari.xaxis.set_major_locator(MaxNLocator(3));ari.yaxis.set_major_locator(MaxNLocator(3))
+ ari.remove();sil=fig.add_subplot(gs[0,4]);ari=fig.add_subplot(gs[0,5]);v=d.set_index('style').loc[styles];yy=np.arange(10)
+ sil.plot(v.silhouette,yy,'o',color='#334155',ms=2);ari.plot(v.ari,yy,'o',color='#334155',ms=2)
+ for ax,key,label,lim in [(sil,'silhouette','Silhouette',(.02,.11)),(ari,'ari','ARI',(-.0002,.0038))]:
+  ax.set(yticks=yy[1::2],yticklabels=[str(i+1) for i in yy[1::2]] if ax==sil else ['']*5,xlabel=label,xlim=lim,ylim=(9.6,-.6),title='C1  Full-space' if ax==sil else 'C2  Clusters');ax.tick_params(axis='y',labelsize=5,length=0);ax.set_xticks([0,.0034] if ax==ari else [.03,.10]);ax.set_xticklabels(['0','.0034'] if ax==ari else ['.03','.10']);ax.tick_params(axis='x',labelsize=5)
+
  for a,head,key in [(auc,'B1  Per-style AUROC','AUROC'),(f1,'B2  Per-style F1','F1')]:a.set(yticks=range(10),yticklabels=[title(s) if a==auc else str(i+1) for i,s in enumerate(styles)],xlabel=key,title=head);a.invert_yaxis();a.set_xlim(.38 if a==f1 else .45,1.015);a.xaxis.set_major_locator(MaxNLocator(4));a.tick_params(axis='y',labelsize=6)
  fig.tight_layout(rect=[0,.15,1,1],pad=.35,h_pad=.9,w_pad=1.3);legend(fig,[Line2D([],[],color=c,marker=m,ls=ls,ms=3) for c,m,ls in zip(MC,MARK,DASH)],NAMES,3)
  finish(fig,3,'fig07_baseline_probes_and_ari.png','Five probes use identical 6,000 test IDs. Insets magnify FPR 0–0.02/TPR 0.98–1 and recall/precision 0.98–1; full curves remain visible. Per-style dots show 1,000-group-bootstrap 95% intervals conditional on frozen fits. Style keys 1–10 follow the full names in B1 (alphabetical order). C labels every style and includes the maximum ARI point; near-zero clustering agreement does not validate attribution.')

@@ -1,3 +1,5 @@
+> **Superseded status statements:** the final audit instructions were supplied, FINAL_AUDIT.md now exists, and GitHub is public/populated at commit 6a6df880abbe8061cd145c41adfccdfe730e045e. Earlier missing-audit/empty-repository statements below describe the previous build. The current audited revision still requires a new push; use FINAL_AUDIT.md for the current verdict.
+
 # Final summary
 
 ## Five headline findings

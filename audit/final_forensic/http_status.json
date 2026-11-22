@@ -1,0 +1,10 @@
+{
+  "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics": {
+    "status": 200,
+    "body": "{\"id\":1466453121,\"node_id\":\"R_kgDOV2hMgQ\",\"name\":\"explainable-diffusion-art-analytics\",\"full_name\":\"wasil-7/explainable-diffusion-art-analytics\",\"private\":false,\"owner\":{\"login\":\"wasil-7\",\"id\":264750788,\"node_id\":\"U_kgDOD8fGxA\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/264750788?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/wasil-7\",\"html_url\":\"https://github.com/wasil-7\",\"followers_url\":\"https://api.github.com/users/wasil-7/followers\",\"following_url\":\"https://api.github."
+  },
+  "https://raw.githubusercontent.com/wasil-7/explainable-diffusion-art-analytics/main/README.md": {
+    "status": 200,
+    "body": "# Explainable diffusion-art analytics\n\nThis repository contains the paper, implementation and lightweight evidence for a control-gated comparison of Human and diffusion artwork in AI-ArtBench. The primary test uses 6,000 native-256 Human/Latent Diffusion artworks drawn from a frozen 30,000-artwork cohort. The full audit covers 185,015 files.\n\nThe handcrafted probe predicts release origin well, but frozen learned features predict more strongly. JPEG encoding identifies origin perfectly in the met"
+  }
+}

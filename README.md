@@ -106,3 +106,19 @@ git push -u origin main
 If starting from a newly copied `release/`, initialize once with `git init -b main` and `git remote add origin https://github.com/wasil-7/explainable-diffusion-art-analytics.git` first. If a remote has acquired commits in the meantime, fetch and reconcile them; do not force-push.
 
 Exact ordered commands, cache prerequisites and table/figure mappings: [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+
+
+## Final forensic audit supersedes earlier publication-status notes
+
+The official public repository is populated at initial release commit `6a6df880abbe8061cd145c41adfccdfe730e045e`. Its live README rendered successfully with all four images loaded. `FINAL_AUDIT.md` is the supplied-request forensic audit, including the independent visual/manual review, numerical checks and packaging findings. This local audited revision fixes Fig.3 label collisions, explicitly discloses unrun equal-encoding retraining, and preserves exact artifact bytes using `.gitattributes`. It must be committed and pushed as an update; it is not falsely described as already online.
+
+Git had normalized research CSV line endings, invalidating byte-level checksum comparisons despite unchanged parsed values. The new `* -text` rule preserves the exact local scientific artifacts. From this prepared Git folder, execute:
+
+```powershell
+git add --renormalize .
+git add .
+git commit -m "Apply final forensic audit fixes and preserve artifact checksums"
+git push origin main
+```
+
+Do not force-push. A subsequent public-commit check must confirm the audited PDF, source, FINAL_AUDIT.md and checksums. Institutional Turnitin/iThenticate and department-name confirmation remain author actions, not fabricated passes. No new image/model/statistical pipeline was executed for this audit. The current GCR ZIP uses canonical root `paper.pdf`, `paper.docx`, `supplementary.pdf`, `latex_source.zip` and `release/`.

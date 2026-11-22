@@ -1,0 +1,72 @@
+{
+  "commit": "6a6df880abbe8061cd145c41adfccdfe730e045e",
+  "truncated": false,
+  "blob_count": 548,
+  "files": [
+    {
+      "path": "README.md",
+      "present": true,
+      "same_blob": false
+    },
+    {
+      "path": "src/dashboard.py",
+      "present": true,
+      "same_blob": false
+    },
+    {
+      "path": "results/changes.csv",
+      "present": true,
+      "same_blob": false
+    },
+    {
+      "path": "results/failure_trigger_associations.csv",
+      "present": true,
+      "same_blob": false
+    },
+    {
+      "path": "results/baseline_metrics.csv",
+      "present": true,
+      "same_blob": false
+    },
+    {
+      "path": "paper/paper.pdf",
+      "present": true,
+      "same_blob": true
+    },
+    {
+      "path": "paper/paper.docx",
+      "present": true,
+      "same_blob": true
+    },
+    {
+      "path": "paper/supplementary.pdf",
+      "present": true,
+      "same_blob": true
+    },
+    {
+      "path": "paper/latex_source/main.tex",
+      "present": true,
+      "same_blob": false
+    },
+    {
+      "path": "tests/test_features.py",
+      "present": true,
+      "same_blob": true
+    },
+    {
+      "path": "requirements.txt",
+      "present": true,
+      "same_blob": false
+    },
+    {
+      "path": "LICENSE",
+      "present": true,
+      "same_blob": false
+    },
+    {
+      "path": "CITATION.cff",
+      "present": true,
+      "same_blob": false
+    }
+  ]
+}

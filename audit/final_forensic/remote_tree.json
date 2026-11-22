@@ -1,0 +1,4503 @@
+{
+  "sha": "6a6df880abbe8061cd145c41adfccdfe730e045e",
+  "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/6a6df880abbe8061cd145c41adfccdfe730e045e",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cc950a00403e03f1282db071db54b28af38af0b",
+      "size": 161,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4cc950a00403e03f1282db071db54b28af38af0b"
+    },
+    {
+      "path": ".streamlit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82152d0bf37e073f44d52a89a36c6e70cb0abee7",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/82152d0bf37e073f44d52a89a36c6e70cb0abee7"
+    },
+    {
+      "path": ".streamlit/config.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b0d95d765fc280048715c7b18c107d9e5b31281",
+      "size": 191,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6b0d95d765fc280048715c7b18c107d9e5b31281"
+    },
+    {
+      "path": "BUILD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd9a6035084eb488f856896e56a20d2ae1b8e16a",
+      "size": 1277,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dd9a6035084eb488f856896e56a20d2ae1b8e16a"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cf5833d5c3baa2da2cabc6fbca0dd260497c7bd",
+      "size": 88367,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6cf5833d5c3baa2da2cabc6fbca0dd260497c7bd"
+    },
+    {
+      "path": "CHECKLIST.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78ffea510cbc11b308c0fcaa1cc176cd462d16e2",
+      "size": 7177,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/78ffea510cbc11b308c0fcaa1cc176cd462d16e2"
+    },
+    {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2121d85fec1beb8b038f8ac02f2f3eecaca7489d",
+      "size": 484,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2121d85fec1beb8b038f8ac02f2f3eecaca7489d"
+    },
+    {
+      "path": "COMPLIANCE_CHECKLIST.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78ffea510cbc11b308c0fcaa1cc176cd462d16e2",
+      "size": 7177,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/78ffea510cbc11b308c0fcaa1cc176cd462d16e2"
+    },
+    {
+      "path": "FINAL_SUMMARY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54991894a7926806adb27488913d2b5ba24d98ea",
+      "size": 3541,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/54991894a7926806adb27488913d2b5ba24d98ea"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "851ef2f718be3668b0d20e6c7ba637fa8ce1ab91",
+      "size": 1249,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/851ef2f718be3668b0d20e6c7ba637fa8ce1ab91"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0f383e5a1f643a46d898141550c2b14d578c5d9",
+      "size": 9196,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d0f383e5a1f643a46d898141550c2b14d578c5d9"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "158b6598c2549fa5c046a8e8a17041ef35d8c793",
+      "size": 9350,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/158b6598c2549fa5c046a8e8a17041ef35d8c793"
+    },
+    {
+      "path": "REVIEW_NOTES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9ba42de33acbd4a461320bf4859e3c113d52d8b",
+      "size": 14039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a9ba42de33acbd4a461320bf4859e3c113d52d8b"
+    },
+    {
+      "path": "SHA256SUMS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b10b19cc0876e565454f715ee71546c4ea528f6",
+      "size": 55384,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7b10b19cc0876e565454f715ee71546c4ea528f6"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9288e74dc1a32c9c0b3aedf964bf9ea73bd610dc",
+      "size": 6667,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9288e74dc1a32c9c0b3aedf964bf9ea73bd610dc"
+    },
+    {
+      "path": "analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce8f867f573b58277c9bf08b9a0b7eae293afad3",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/ce8f867f573b58277c9bf08b9a0b7eae293afad3"
+    },
+    {
+      "path": "analysis/compute_statistics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d3cfa7bc65f52f84f867cee213167e1758a3578",
+      "size": 8024,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1d3cfa7bc65f52f84f867cee213167e1758a3578"
+    },
+    {
+      "path": "analysis/prepare_clean_rerun.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19a9dca6a417f35d3ca16b11007d8c737a991ccf",
+      "size": 2039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/19a9dca6a417f35d3ca16b11007d8c737a991ccf"
+    },
+    {
+      "path": "analysis/results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e63f9e819e432cedd682ad746b3426b1b41f73e",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/2e63f9e819e432cedd682ad746b3426b1b41f73e"
+    },
+    {
+      "path": "analysis/results/baseline_bootstrap_draws.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63e5b9585b5b6ea56f7dffbd149817f774a93642",
+      "size": 60660,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/63e5b9585b5b6ea56f7dffbd149817f774a93642"
+    },
+    {
+      "path": "analysis/results/baseline_group_ci.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4437af0e8b82d71cc6d504eab1ecc6878516df6",
+      "size": 675,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e4437af0e8b82d71cc6d504eab1ecc6878516df6"
+    },
+    {
+      "path": "analysis/results/citation_crosswalk.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64c6f33a149371189b1a585fe1258212e8827072",
+      "size": 601,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/64c6f33a149371189b1a585fe1258212e8827072"
+    },
+    {
+      "path": "analysis/results/cross_protocol_differences.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ca6d2b89df9d2080ce63cca6eba913ce570a7dd",
+      "size": 460,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6ca6d2b89df9d2080ce63cca6eba913ce570a7dd"
+    },
+    {
+      "path": "analysis/results/multiseed_metrics.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "946a19da71b8914e973039865b16d3335cdff2cd",
+      "size": 5653,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/946a19da71b8914e973039865b16d3335cdff2cd"
+    },
+    {
+      "path": "analysis/results/multiseed_split_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04eadec4b7be7b1c6926e030b43aa865fbb378b6",
+      "size": 360,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/04eadec4b7be7b1c6926e030b43aa865fbb378b6"
+    },
+    {
+      "path": "analysis/results/multiseed_summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52d2cce12591ea8d4fad6b84836043405dec9544",
+      "size": 465,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/52d2cce12591ea8d4fad6b84836043405dec9544"
+    },
+    {
+      "path": "analysis/results/paired_probe_differences.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5a7558bb2de1458ca882f2e5e04b072b37a80c9",
+      "size": 360,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a5a7558bb2de1458ca882f2e5e04b072b37a80c9"
+    },
+    {
+      "path": "analysis/results/predictions_seed43_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41c1deb51a802f6334d80844fbea3e4620bca599",
+      "size": 493254,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/41c1deb51a802f6334d80844fbea3e4620bca599"
+    },
+    {
+      "path": "analysis/results/predictions_seed43_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0bae4c67b6da0a8ddc28f75c915cf849e9c2282",
+      "size": 538152,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f0bae4c67b6da0a8ddc28f75c915cf849e9c2282"
+    },
+    {
+      "path": "analysis/results/predictions_seed43_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23d00ab1d8f186981d10b6382e577f5ec6321269",
+      "size": 544021,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/23d00ab1d8f186981d10b6382e577f5ec6321269"
+    },
+    {
+      "path": "analysis/results/predictions_seed43_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5e10ac2d2f6499ac24290fde47b46119f9cf853",
+      "size": 540490,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e5e10ac2d2f6499ac24290fde47b46119f9cf853"
+    },
+    {
+      "path": "analysis/results/predictions_seed43_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b24f615524ee5dc540e571ff8609007bfb2dfcb9",
+      "size": 489406,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b24f615524ee5dc540e571ff8609007bfb2dfcb9"
+    },
+    {
+      "path": "analysis/results/predictions_seed44_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ac383f88e1202b2eb9c3c23af75f1591b23684f",
+      "size": 495552,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7ac383f88e1202b2eb9c3c23af75f1591b23684f"
+    },
+    {
+      "path": "analysis/results/predictions_seed44_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0703c2a79e99317ed514a168702776a5cd43e89",
+      "size": 538278,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b0703c2a79e99317ed514a168702776a5cd43e89"
+    },
+    {
+      "path": "analysis/results/predictions_seed44_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61abfa00f049490da3ebb9efbde5042064493e56",
+      "size": 543969,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/61abfa00f049490da3ebb9efbde5042064493e56"
+    },
+    {
+      "path": "analysis/results/predictions_seed44_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3bb97c75885b532682947a8997336b7ac9c0f4d",
+      "size": 540511,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a3bb97c75885b532682947a8997336b7ac9c0f4d"
+    },
+    {
+      "path": "analysis/results/predictions_seed44_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e60e650177099cf497861b5e580c2fd63b3985a",
+      "size": 488818,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8e60e650177099cf497861b5e580c2fd63b3985a"
+    },
+    {
+      "path": "analysis/results/predictions_seed45_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9b9b3d42a021e1b7adff023cec5928db839b3f2",
+      "size": 495435,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b9b9b3d42a021e1b7adff023cec5928db839b3f2"
+    },
+    {
+      "path": "analysis/results/predictions_seed45_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e450d213eefbdb4f4c4adff8eb977f933c717aed",
+      "size": 538162,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e450d213eefbdb4f4c4adff8eb977f933c717aed"
+    },
+    {
+      "path": "analysis/results/predictions_seed45_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a31ad65d35e27167d30af2dff85b92ffa1ed288",
+      "size": 543986,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8a31ad65d35e27167d30af2dff85b92ffa1ed288"
+    },
+    {
+      "path": "analysis/results/predictions_seed45_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19d9e76a14ea3f423be2f4bca0bdfaa75d9f6757",
+      "size": 540444,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/19d9e76a14ea3f423be2f4bca0bdfaa75d9f6757"
+    },
+    {
+      "path": "analysis/results/predictions_seed45_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a798b7958e620a5778bc6e47f3687c0a52a77388",
+      "size": 490370,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a798b7958e620a5778bc6e47f3687c0a52a77388"
+    },
+    {
+      "path": "analysis/results/predictions_seed46_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc0320e2c8277bdb58fe1a1c1c5431ee23e04a85",
+      "size": 481989,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dc0320e2c8277bdb58fe1a1c1c5431ee23e04a85"
+    },
+    {
+      "path": "analysis/results/predictions_seed46_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9aea8e3545f0635f8cab48a695bbb4ad66ce56c7",
+      "size": 538316,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9aea8e3545f0635f8cab48a695bbb4ad66ce56c7"
+    },
+    {
+      "path": "analysis/results/predictions_seed46_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a41d3b0048eca33834cfcb7a95d04a776f2a9450",
+      "size": 544136,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a41d3b0048eca33834cfcb7a95d04a776f2a9450"
+    },
+    {
+      "path": "analysis/results/predictions_seed46_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afb1fc3739fe9f5593152d75a0cdd5ebc2b7e547",
+      "size": 540523,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/afb1fc3739fe9f5593152d75a0cdd5ebc2b7e547"
+    },
+    {
+      "path": "analysis/results/predictions_seed46_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c1122b2bd084ee58bbb9eebbb11f7053265f124",
+      "size": 495389,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7c1122b2bd084ee58bbb9eebbb11f7053265f124"
+    },
+    {
+      "path": "analysis/results/predictions_seed47_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c4bf7c981312a88ce862036f8fdd5aaaa29b47d",
+      "size": 495420,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4c4bf7c981312a88ce862036f8fdd5aaaa29b47d"
+    },
+    {
+      "path": "analysis/results/predictions_seed47_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bda582cf5c4e7167bac04d974f275083593bdfd",
+      "size": 538066,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6bda582cf5c4e7167bac04d974f275083593bdfd"
+    },
+    {
+      "path": "analysis/results/predictions_seed47_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1c5f92cf8455a26cddffb2f40d3a5c1c20dd93",
+      "size": 544372,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2b1c5f92cf8455a26cddffb2f40d3a5c1c20dd93"
+    },
+    {
+      "path": "analysis/results/predictions_seed47_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acf822cac7012e88b74c120f3403b031fe93f3b6",
+      "size": 540502,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/acf822cac7012e88b74c120f3403b031fe93f3b6"
+    },
+    {
+      "path": "analysis/results/predictions_seed47_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ac3e8574d62b1657a4dec14bc78bcc1f084a59f",
+      "size": 488993,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3ac3e8574d62b1657a4dec14bc78bcc1f084a59f"
+    },
+    {
+      "path": "analysis/results/software_environment.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b219c419af91f0266fb23ad5e1c595a13ea3abe",
+      "size": 1168,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7b219c419af91f0266fb23ad5e1c595a13ea3abe"
+    },
+    {
+      "path": "analysis/results/split_seed_43.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a157ed3025e817d01fea8a081644c084f3633b7",
+      "size": 2061039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1a157ed3025e817d01fea8a081644c084f3633b7"
+    },
+    {
+      "path": "analysis/results/split_seed_44.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e78810f16abde7d43967ce8f256cc35735081eb2",
+      "size": 2061039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e78810f16abde7d43967ce8f256cc35735081eb2"
+    },
+    {
+      "path": "analysis/results/split_seed_45.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "513cfeddec778af4a097a970f3463accb535f463",
+      "size": 2061039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/513cfeddec778af4a097a970f3463accb535f463"
+    },
+    {
+      "path": "analysis/results/split_seed_46.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76161a4cfccebd3e9cda66b3ca23c13b47b9060e",
+      "size": 2061039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/76161a4cfccebd3e9cda66b3ca23c13b47b9060e"
+    },
+    {
+      "path": "analysis/results/split_seed_47.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc3113c775b4d6eba438dba2920ab108d87b7202",
+      "size": 2061039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cc3113c775b4d6eba438dba2920ab108d87b7202"
+    },
+    {
+      "path": "analysis/results/stage_runtimes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12b03bf3e63ebaa1a8900e665214a3d16a4019b5",
+      "size": 677,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/12b03bf3e63ebaa1a8900e665214a3d16a4019b5"
+    },
+    {
+      "path": "analysis/results/supplementary_statistics_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b4bee3097fff844e996b6621b75543aac7522a",
+      "size": 1102,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e7b4bee3097fff844e996b6621b75543aac7522a"
+    },
+    {
+      "path": "audit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4925be87137542bd0389be33a42bb25060803184",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/4925be87137542bd0389be33a42bb25060803184"
+    },
+    {
+      "path": "audit/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d950eb3847716ed2557d7f43c800e0d149a473a",
+      "size": 392,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4d950eb3847716ed2557d7f43c800e0d149a473a"
+    },
+    {
+      "path": "audit/dashboard_capture_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb8ee66caa2c3d560167e2db7fdab424d1e5c02d",
+      "size": 286,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/eb8ee66caa2c3d560167e2db7fdab424d1e5c02d"
+    },
+    {
+      "path": "audit/dav_figure_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc0a89e562a1a8c5ec7eb94189d4a67807e0fa2d",
+      "size": 2453,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bc0a89e562a1a8c5ec7eb94189d4a67807e0fa2d"
+    },
+    {
+      "path": "audit/delivery_checks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad5e35c2675a75780328e299fe23115311c4705e",
+      "size": 3315,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ad5e35c2675a75780328e299fe23115311c4705e"
+    },
+    {
+      "path": "audit/final_checks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0db764d1f5251bd0b800c2915b03a9ef322f105",
+      "size": 9677,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b0db764d1f5251bd0b800c2915b03a9ef322f105"
+    },
+    {
+      "path": "audit/final_round",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f58e62e023934b4c7ccf7a8f1b99891a19b11e06",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/f58e62e023934b4c7ccf7a8f1b99891a19b11e06"
+    },
+    {
+      "path": "audit/final_round/FRESH_INDEPENDENT_REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1d2982f0ea14ea71690774088b548db1ca0ebe9",
+      "size": 13779,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f1d2982f0ea14ea71690774088b548db1ca0ebe9"
+    },
+    {
+      "path": "audit/final_round/citation_crosscheck.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e508dbece70e6c9e116928515c83c5e1b75712e",
+      "size": 1733,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3e508dbece70e6c9e116928515c83c5e1b75712e"
+    },
+    {
+      "path": "audit/final_round/clean_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ade57cce41f18c2c258e62659ea4d84e7eab48fa",
+      "size": 52324,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ade57cce41f18c2c258e62659ea4d84e7eab48fa"
+    },
+    {
+      "path": "audit/final_round/clean_rerun_preparation_test.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39e89de2797885abd579c2d48f6ab6936a4d6a57",
+      "size": 649,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/39e89de2797885abd579c2d48f6ab6936a4d6a57"
+    },
+    {
+      "path": "audit/final_round/compact_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d975e147da455b854ddd0f45cd55c51c4c344d8e",
+      "size": 35046,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d975e147da455b854ddd0f45cd55c51c4c344d8e"
+    },
+    {
+      "path": "audit/final_round/complete_text_changes.diff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c121c6144fe1192e91933e512d03f0b49f1ad70",
+      "size": 171780,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9c121c6144fe1192e91933e512d03f0b49f1ad70"
+    },
+    {
+      "path": "audit/final_round/csv_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efa4e2ce0cf07a1234bfb4e7a13110cfad6bb2f0",
+      "size": 52324,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/efa4e2ce0cf07a1234bfb4e7a13110cfad6bb2f0"
+    },
+    {
+      "path": "audit/final_round/csv_rebuild_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f912eb2b4e6e2082d320177aa695b63207661846",
+      "size": 34863,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f912eb2b4e6e2082d320177aa695b63207661846"
+    },
+    {
+      "path": "audit/final_round/dashboard_server.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf9fac92ce2a31b2883139696131a8e9755ac77f",
+      "size": 235,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cf9fac92ce2a31b2883139696131a8e9755ac77f"
+    },
+    {
+      "path": "audit/final_round/dashboard_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "746cbfb244b37c0d105ae516d4f72b40201c794b",
+      "size": 532,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/746cbfb244b37c0d105ae516d4f72b40201c794b"
+    },
+    {
+      "path": "audit/final_round/delivery_checks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56b6391c207bbf450690e87feb3dc89f8bf0e65e",
+      "size": 1166,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/56b6391c207bbf450690e87feb3dc89f8bf0e65e"
+    },
+    {
+      "path": "audit/final_round/draft_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95c4ff0ef100530d5c3af91976758e3972131e7a",
+      "size": 36067,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/95c4ff0ef100530d5c3af91976758e3972131e7a"
+    },
+    {
+      "path": "audit/final_round/figure_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1739faaff8f465bc9aa5b1c49ba926e87c3efe9c",
+      "size": 27404,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1739faaff8f465bc9aa5b1c49ba926e87c3efe9c"
+    },
+    {
+      "path": "audit/final_round/figure_regeneration.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "774097bacf911c55c4a451b9bf8a9bc5798e5056",
+      "size": 578,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/774097bacf911c55c4a451b9bf8a9bc5798e5056"
+    },
+    {
+      "path": "audit/final_round/final_checks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e11b8f676a0e4874435487773133b0e3e525422c",
+      "size": 51254,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e11b8f676a0e4874435487773133b0e3e525422c"
+    },
+    {
+      "path": "audit/final_round/final_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e2f1e8577fb6650ecad7ccdd5c34e9d6a32b33d",
+      "size": 34862,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7e2f1e8577fb6650ecad7ccdd5c34e9d6a32b33d"
+    },
+    {
+      "path": "audit/final_round/final_space_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e247b45909a8459f90e2bf3db8b0d42f77258b83",
+      "size": 34712,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e247b45909a8459f90e2bf3db8b0d42f77258b83"
+    },
+    {
+      "path": "audit/final_round/git_remote_final.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59352753f7555287ada9dfa3bdde9a1484615cf7",
+      "size": 301,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/59352753f7555287ada9dfa3bdde9a1484615cf7"
+    },
+    {
+      "path": "audit/final_round/git_remote_initial.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6124764a6ecc81a06e82e9367db088c7565171a",
+      "size": 255,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b6124764a6ecc81a06e82e9367db088c7565171a"
+    },
+    {
+      "path": "audit/final_round/manuscript.diff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d412a40353ae247d5c2a17c411b32f5d94ad9d4c",
+      "size": 38777,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d412a40353ae247d5c2a17c411b32f5d94ad9d4c"
+    },
+    {
+      "path": "audit/final_round/merged_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7446593e96f4b41ff9ba76849612e28f0fd74ff",
+      "size": 34776,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e7446593e96f4b41ff9ba76849612e28f0fd74ff"
+    },
+    {
+      "path": "audit/final_round/numeric_literal_ledger.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e79b7f204369b8bbe50b4a4061ac01cf3ab590ad",
+      "size": 52301,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e79b7f204369b8bbe50b4a4061ac01cf3ab590ad"
+    },
+    {
+      "path": "audit/final_round/orientation_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "215f806629e000480bdfa4f7397c6cd317b23c46",
+      "size": 31475,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/215f806629e000480bdfa4f7397c6cd317b23c46"
+    },
+    {
+      "path": "audit/final_round/post_review_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3df960ba213dd984b7954ca8c06817e9e67ae6f4",
+      "size": 35447,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3df960ba213dd984b7954ca8c06817e9e67ae6f4"
+    },
+    {
+      "path": "audit/final_round/preparation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dde5e70971f28bf627f9c409f121797f8961c145",
+      "size": 180,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dde5e70971f28bf627f9c409f121797f8961c145"
+    },
+    {
+      "path": "audit/final_round/pytest.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39af7673c0703f5e5bafa9c0407fd4db0f19de55",
+      "size": 100,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/39af7673c0703f5e5bafa9c0407fd4db0f19de55"
+    },
+    {
+      "path": "audit/final_round/twelve_page_compile.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba3d41cbb58ccb62acbb084d98caa41f02fee120",
+      "size": 34863,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ba3d41cbb58ccb62acbb084d98caa41f02fee120"
+    },
+    {
+      "path": "audit/final_round/visual_review.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ede0c736acdc9322a48d9fa0a81fc432f6270f88",
+      "size": 874,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ede0c736acdc9322a48d9fa0a81fc432f6270f88"
+    },
+    {
+      "path": "audit/github_status.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eae9081512b4faf218c06c13b3ec247aba5699d6",
+      "size": 326,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/eae9081512b4faf218c06c13b3ec247aba5699d6"
+    },
+    {
+      "path": "audit/prior_FRESH_REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8c82fc450ffae64d85ab988b870654682ee39c1",
+      "size": 5745,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f8c82fc450ffae64d85ab988b870654682ee39c1"
+    },
+    {
+      "path": "audit/prior_final_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cbe80580a19daf85b6872956563f82ce1bf1ab4",
+      "size": 5080,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4cbe80580a19daf85b6872956563f82ce1bf1ab4"
+    },
+    {
+      "path": "audit/prior_numeric_ledger_output.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2e3e2b25648a4c98722fc88db7e39b7d56c9c86",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f2e3e2b25648a4c98722fc88db7e39b7d56c9c86"
+    },
+    {
+      "path": "audit/prior_numeric_literal_ledger.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4c311b24b730970819945faae3896e637ee1087",
+      "size": 60564,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b4c311b24b730970819945faae3896e637ee1087"
+    },
+    {
+      "path": "audit/prior_overlap_screen.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a704d8b4eb89026d3fcbff7882b6bea84a67e58",
+      "size": 1111,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9a704d8b4eb89026d3fcbff7882b6bea84a67e58"
+    },
+    {
+      "path": "audit/prior_revision_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "465351ebe1e29f4392d0a93adc541c5a9464a42c",
+      "size": 310,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/465351ebe1e29f4392d0a93adc541c5a9464a42c"
+    },
+    {
+      "path": "audit/prior_source_portability.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5751490d0d4b14476cba8a08b8799a8d79d11b2e",
+      "size": 272,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5751490d0d4b14476cba8a08b8799a8d79d11b2e"
+    },
+    {
+      "path": "audit/pytest.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "570a77fe5a1f7dc715b53b45e7b4dd406da4d4cd",
+      "size": 279,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/570a77fe5a1f7dc715b53b45e7b4dd406da4d4cd"
+    },
+    {
+      "path": "audit/visual_review.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a91790c65187169c2ce3225e58d3d22c5c534da",
+      "size": 1799,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7a91790c65187169c2ce3225e58d3d22c5c534da"
+    },
+    {
+      "path": "environment.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a57be2b06ab8281f4860806c1fec434ee71e89b8",
+      "size": 124,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a57be2b06ab8281f4860806c1fec434ee71e89b8"
+    },
+    {
+      "path": "figures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cfd347375e5754c210cc5332c2466456064b1b3f",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/cfd347375e5754c210cc5332c2466456064b1b3f"
+    },
+    {
+      "path": "figures/dashboard_atlas.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "526b4c270e806530c0a96623578444dbd91fc438",
+      "size": 2186102,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/526b4c270e806530c0a96623578444dbd91fc438"
+    },
+    {
+      "path": "figures/dashboard_landing.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c4f3917ff68d37d971fff99de4c840c045ab31a",
+      "size": 2267242,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1c4f3917ff68d37d971fff99de4c840c045ab31a"
+    },
+    {
+      "path": "figures/fig00_implemented_architecture.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e53f9b063b5ebfefaf4f095c5695a4fb80aecd28",
+      "size": 88273,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e53f9b063b5ebfefaf4f095c5695a4fb80aecd28"
+    },
+    {
+      "path": "figures/fig01_dataset_audit_and_confound.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bb56344b578b0f16c393a47f9e28d27bf3b418b",
+      "size": 147009,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3bb56344b578b0f16c393a47f9e28d27bf3b418b"
+    },
+    {
+      "path": "figures/fig02_hc_causality_atlas.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e95400751b0e5529f0f171168b2b8789df9f9712",
+      "size": 226961,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e95400751b0e5529f0f171168b2b8789df9f9712"
+    },
+    {
+      "path": "figures/fig03_pca_tsne_trustworthiness.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39bfabd6a33fdd490b87c3474ec8c794c9849f57",
+      "size": 471091,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/39bfabd6a33fdd490b87c3474ec8c794c9849f57"
+    },
+    {
+      "path": "figures/fig04_spectral_and_wavelet_profiles.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0479b60222024326e1042b3608e880af1c15c4ad",
+      "size": 155139,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0479b60222024326e1042b3608e880af1c15c4ad"
+    },
+    {
+      "path": "figures/fig05_style_drift_heatmap.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5e6c09d6e19dd8d30a3ecfe3b0ce033e70c616f",
+      "size": 283523,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c5e6c09d6e19dd8d30a3ecfe3b0ce033e70c616f"
+    },
+    {
+      "path": "figures/fig06_feature_ecdfs_and_rainclouds.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e72bbb8f3ede53cb5623120614540ee466815db",
+      "size": 411122,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6e72bbb8f3ede53cb5623120614540ee466815db"
+    },
+    {
+      "path": "figures/fig07_baseline_probes_and_ari.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "923e8cc289911bd8d4cd57e41216c256be8bc9bd",
+      "size": 279165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/923e8cc289911bd8d4cd57e41216c256be8bc9bd"
+    },
+    {
+      "path": "figures/fig08_ablation_forest_plot.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb276937b58ef33e2025969fde400598b6b991a0",
+      "size": 176690,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cb276937b58ef33e2025969fde400598b6b991a0"
+    },
+    {
+      "path": "figures/fig09_perturbation_robustness.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb8a28d69eea9a43be62eac80cc3d8ee5736fc43",
+      "size": 139250,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bb8a28d69eea9a43be62eac80cc3d8ee5736fc43"
+    },
+    {
+      "path": "figures/fig10_forensic_error_gallery.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6e96aa4009bb165c5cb08c1f83d46bd9e090020",
+      "size": 2013598,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a6e96aa4009bb165c5cb08c1f83d46bd9e090020"
+    },
+    {
+      "path": "figures/fig11_dashboard_ui.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8de2bf5d9f15cfe9d6f8c19f42c7320f0facd367",
+      "size": 619160,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8de2bf5d9f15cfe9d6f8c19f42c7320f0facd367"
+    },
+    {
+      "path": "literature_facts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c1759ae008b907946c60a3a72818c3432cfbe94",
+      "size": 132110,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2c1759ae008b907946c60a3a72818c3432cfbe94"
+    },
+    {
+      "path": "milestones",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7932c6962a666857ecbc220a1cd7095af8bdc1de",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/7932c6962a666857ecbc220a1cd7095af8bdc1de"
+    },
+    {
+      "path": "milestones/Milestone_1_Revamped_24i-2551_24i-2532.docx.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b76e3837aa14fb9d20b9507cfd7eaea955ff8709",
+      "size": 139802,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b76e3837aa14fb9d20b9507cfd7eaea955ff8709"
+    },
+    {
+      "path": "milestones/i242551_i242532_Milestone02_DSB.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e48520c1962ca2863704d5cf94df6babc53f216",
+      "size": 631107,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8e48520c1962ca2863704d5cf94df6babc53f216"
+    },
+    {
+      "path": "milestones/i242551_i242532_Milestone03_DSB.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0801fe74c366e759aa3428c18d497df53f84deb6",
+      "size": 2840580,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0801fe74c366e759aa3428c18d497df53f84deb6"
+    },
+    {
+      "path": "paper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46f0fa951cc9868d6bbab41f9f960483a48c77f4",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/46f0fa951cc9868d6bbab41f9f960483a48c77f4"
+    },
+    {
+      "path": "paper/latex_source.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aff3d0b1100c140a1f682f454533e029702bfec5",
+      "size": 4940413,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/aff3d0b1100c140a1f682f454533e029702bfec5"
+    },
+    {
+      "path": "paper/latex_source",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0cb86e77f581d1847173246a792ab983a69b6e2",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/c0cb86e77f581d1847173246a792ab983a69b6e2"
+    },
+    {
+      "path": "paper/latex_source/BUILD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd9a6035084eb488f856896e56a20d2ae1b8e16a",
+      "size": 1277,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dd9a6035084eb488f856896e56a20d2ae1b8e16a"
+    },
+    {
+      "path": "paper/latex_source/IEEEtran.bst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9c03d79f4fb8df4cd260e69258dbba3bb4dfd04",
+      "size": 57748,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f9c03d79f4fb8df4cd260e69258dbba3bb4dfd04"
+    },
+    {
+      "path": "paper/latex_source/IEEEtran.cls",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d2b1c6478f81e0e2f65cb62debabbf236fb0304",
+      "size": 281957,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8d2b1c6478f81e0e2f65cb62debabbf236fb0304"
+    },
+    {
+      "path": "paper/latex_source/appendix_evidence.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c721515ad3ab51d7a118092506bbb9e1528dbeaa",
+      "size": 968,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c721515ad3ab51d7a118092506bbb9e1528dbeaa"
+    },
+    {
+      "path": "paper/latex_source/derived_improvements.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28074938721b3aff07c57275ef1aef48fceb9378",
+      "size": 430,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/28074938721b3aff07c57275ef1aef48fceb9378"
+    },
+    {
+      "path": "paper/latex_source/figures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ae53c8273ff5f38cac02a3f9b05e2a1c2166974",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/7ae53c8273ff5f38cac02a3f9b05e2a1c2166974"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_01.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e53f9b063b5ebfefaf4f095c5695a4fb80aecd28",
+      "size": 88273,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e53f9b063b5ebfefaf4f095c5695a4fb80aecd28"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_01.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1f24c785a1ba52facfbffbbc7687c74ec7e1b54",
+      "size": 354,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c1f24c785a1ba52facfbffbbc7687c74ec7e1b54"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_02.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bb56344b578b0f16c393a47f9e28d27bf3b418b",
+      "size": 147009,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3bb56344b578b0f16c393a47f9e28d27bf3b418b"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_02.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a71113b748daf3c63ca64feb24cf912e9e9816a",
+      "size": 406,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8a71113b748daf3c63ca64feb24cf912e9e9816a"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_03.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "923e8cc289911bd8d4cd57e41216c256be8bc9bd",
+      "size": 279165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/923e8cc289911bd8d4cd57e41216c256be8bc9bd"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_03.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33e2fadfa6dba54c3484fe638fcd7d1c88aee037",
+      "size": 389,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/33e2fadfa6dba54c3484fe638fcd7d1c88aee037"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_04.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e95400751b0e5529f0f171168b2b8789df9f9712",
+      "size": 226961,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e95400751b0e5529f0f171168b2b8789df9f9712"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_04.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97d6d3bb7118a02d043fe1430cdb8ce33e2c0d15",
+      "size": 413,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/97d6d3bb7118a02d043fe1430cdb8ce33e2c0d15"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_05.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39bfabd6a33fdd490b87c3474ec8c794c9849f57",
+      "size": 471091,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/39bfabd6a33fdd490b87c3474ec8c794c9849f57"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_05.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1b5b83e3b74a450a9484a90a2de72d48dc9b97a",
+      "size": 398,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b1b5b83e3b74a450a9484a90a2de72d48dc9b97a"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_06.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0479b60222024326e1042b3608e880af1c15c4ad",
+      "size": 155139,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0479b60222024326e1042b3608e880af1c15c4ad"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_06.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b99e2925b680fc59b0662251dcfcd861757c205f",
+      "size": 381,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b99e2925b680fc59b0662251dcfcd861757c205f"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_07.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5e6c09d6e19dd8d30a3ecfe3b0ce033e70c616f",
+      "size": 283523,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c5e6c09d6e19dd8d30a3ecfe3b0ce033e70c616f"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_07.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "889658f1400e5ecd3fe2308b4eaf3ec9c2fc7579",
+      "size": 396,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/889658f1400e5ecd3fe2308b4eaf3ec9c2fc7579"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_08.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e72bbb8f3ede53cb5623120614540ee466815db",
+      "size": 411122,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6e72bbb8f3ede53cb5623120614540ee466815db"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_08.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf46cc955af988a62e3821f6a8747fc9557ab593",
+      "size": 511,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bf46cc955af988a62e3821f6a8747fc9557ab593"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_09.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8de2bf5d9f15cfe9d6f8c19f42c7320f0facd367",
+      "size": 619160,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8de2bf5d9f15cfe9d6f8c19f42c7320f0facd367"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_09.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ee38beba01d7e0da5e672ea5fcdce9dd683e215",
+      "size": 335,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9ee38beba01d7e0da5e672ea5fcdce9dd683e215"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_10.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb276937b58ef33e2025969fde400598b6b991a0",
+      "size": 176690,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cb276937b58ef33e2025969fde400598b6b991a0"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_10.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e19c7552ec7c7d69e95faf0400e5ac2a30788de7",
+      "size": 425,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e19c7552ec7c7d69e95faf0400e5ac2a30788de7"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_11.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb8a28d69eea9a43be62eac80cc3d8ee5736fc43",
+      "size": 139250,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bb8a28d69eea9a43be62eac80cc3d8ee5736fc43"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_11.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dc1c88e337cd35c8d91ae65d084e71ec92ffe49",
+      "size": 426,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5dc1c88e337cd35c8d91ae65d084e71ec92ffe49"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_12.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6e96aa4009bb165c5cb08c1f83d46bd9e090020",
+      "size": 2013598,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a6e96aa4009bb165c5cb08c1f83d46bd9e090020"
+    },
+    {
+      "path": "paper/latex_source/figures/figure_12.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4340a897eda54f2b2524a945edf03abac95ecee",
+      "size": 409,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a4340a897eda54f2b2524a945edf03abac95ecee"
+    },
+    {
+      "path": "paper/latex_source/ieee.csl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7612c1512be1c1a5fa7c553b8a47a2170c0e52bd",
+      "size": 17587,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7612c1512be1c1a5fa7c553b8a47a2170c0e52bd"
+    },
+    {
+      "path": "paper/latex_source/main.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01e006d198c668a5801838299cb75b853905cf2a",
+      "size": 34437,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/01e006d198c668a5801838299cb75b853905cf2a"
+    },
+    {
+      "path": "paper/latex_source/rebuild_tables.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8d9cc0e43492c585743fa03b72802b13303ae4f",
+      "size": 1441,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c8d9cc0e43492c585743fa03b72802b13303ae4f"
+    },
+    {
+      "path": "paper/latex_source/reference_numbers.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00820a8cf47da0d191d9ce615768b216e7652680",
+      "size": 627,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/00820a8cf47da0d191d9ce615768b216e7652680"
+    },
+    {
+      "path": "paper/latex_source/references.bib",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1286c39a19e83528f1e3826d726e59a51fea4c74",
+      "size": 16873,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1286c39a19e83528f1e3826d726e59a51fea4c74"
+    },
+    {
+      "path": "paper/latex_source/tables",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a65f1b84c872b1b91b1c21831e562a92ee959e7",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/3a65f1b84c872b1b91b1c21831e562a92ee959e7"
+    },
+    {
+      "path": "paper/latex_source/tables/paired.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9acf9606e710e6ec49454a9ecc46b0d29f14e72f",
+      "size": 167,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9acf9606e710e6ec49454a9ecc46b0d29f14e72f"
+    },
+    {
+      "path": "paper/latex_source/tables/paired.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed30cf70cfee67a4d41a0af577b1db5515676d05",
+      "size": 352,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ed30cf70cfee67a4d41a0af577b1db5515676d05"
+    },
+    {
+      "path": "paper/latex_source/tables/paired.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39100f3d1efaae4b2adc5fc31a12cada2ba66cba",
+      "size": 477,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/39100f3d1efaae4b2adc5fc31a12cada2ba66cba"
+    },
+    {
+      "path": "paper/latex_source/tables/seeds.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f609c60b4518c1b7717e3454810535b8091c10c6",
+      "size": 290,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f609c60b4518c1b7717e3454810535b8091c10c6"
+    },
+    {
+      "path": "paper/latex_source/tables/seeds.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2780a424e66d2e2a279ee5bb453ea41aa6c83bbe",
+      "size": 373,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2780a424e66d2e2a279ee5bb453ea41aa6c83bbe"
+    },
+    {
+      "path": "paper/latex_source/tables/seeds.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd2e9d747fe252849f4d1db155d89db4e9f3293b",
+      "size": 623,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bd2e9d747fe252849f4d1db155d89db4e9f3293b"
+    },
+    {
+      "path": "paper/latex_source/tables/table_01.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcbb8eb600eb3543ef1b79fe87b67421df178847",
+      "size": 2856,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bcbb8eb600eb3543ef1b79fe87b67421df178847"
+    },
+    {
+      "path": "paper/latex_source/tables/table_01.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "563218aa5c0544b0aca7c94c6daeff5799148009",
+      "size": 1038,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/563218aa5c0544b0aca7c94c6daeff5799148009"
+    },
+    {
+      "path": "paper/latex_source/tables/table_01.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0701880f05487d48fe18f563ce9b2d46e3ef8d65",
+      "size": 4007,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0701880f05487d48fe18f563ce9b2d46e3ef8d65"
+    },
+    {
+      "path": "paper/latex_source/tables/table_02.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5cb0100ca2cc94513ee3246480589701af3eea7",
+      "size": 120,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a5cb0100ca2cc94513ee3246480589701af3eea7"
+    },
+    {
+      "path": "paper/latex_source/tables/table_02.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3026c4ae95cb87cbf8bb50c665244449c829bd34",
+      "size": 844,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3026c4ae95cb87cbf8bb50c665244449c829bd34"
+    },
+    {
+      "path": "paper/latex_source/tables/table_02.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03a7d757e50f5b30701c656c187c724782a5eb8e",
+      "size": 931,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/03a7d757e50f5b30701c656c187c724782a5eb8e"
+    },
+    {
+      "path": "paper/latex_source/tables/table_03.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c87983edbac59671cfa695674792cbce06799f9",
+      "size": 326,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2c87983edbac59671cfa695674792cbce06799f9"
+    },
+    {
+      "path": "paper/latex_source/tables/table_03.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e099ec74d4c266447263f481b28619e23f6278a",
+      "size": 755,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2e099ec74d4c266447263f481b28619e23f6278a"
+    },
+    {
+      "path": "paper/latex_source/tables/table_03.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9359cadef2379c576e4fe34647da6276425b214a",
+      "size": 1026,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9359cadef2379c576e4fe34647da6276425b214a"
+    },
+    {
+      "path": "paper/latex_source/tables/table_04.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51bc757d421de2d4491bc820cad66ba673487509",
+      "size": 852,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/51bc757d421de2d4491bc820cad66ba673487509"
+    },
+    {
+      "path": "paper/latex_source/tables/table_04.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce17a5c6569b86ad8c311fb53c7f28b837f30b7c",
+      "size": 1240,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ce17a5c6569b86ad8c311fb53c7f28b837f30b7c"
+    },
+    {
+      "path": "paper/latex_source/tables/table_04.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95d61794da7d9c3e5dccadbc0c6333360b2a8b2a",
+      "size": 1883,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/95d61794da7d9c3e5dccadbc0c6333360b2a8b2a"
+    },
+    {
+      "path": "paper/latex_source/tables/table_05.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c22d32fe14a8a48d44f8636c2f129ffa23ce05c",
+      "size": 338,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5c22d32fe14a8a48d44f8636c2f129ffa23ce05c"
+    },
+    {
+      "path": "paper/latex_source/tables/table_05.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dd847a8e52e3e6f684d1651f28873370c6a8800",
+      "size": 822,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5dd847a8e52e3e6f684d1651f28873370c6a8800"
+    },
+    {
+      "path": "paper/latex_source/tables/table_05.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "221153257eeddcfd0261d676bc0c6a1d24971895",
+      "size": 1039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/221153257eeddcfd0261d676bc0c6a1d24971895"
+    },
+    {
+      "path": "paper/latex_source/tables/table_06.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a052e6077f50b2627942b1755519d92d1c66dd0",
+      "size": 788,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1a052e6077f50b2627942b1755519d92d1c66dd0"
+    },
+    {
+      "path": "paper/latex_source/tables/table_06.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffce0b9e785ce0073a83acfac074d0ea22cd020f",
+      "size": 945,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ffce0b9e785ce0073a83acfac074d0ea22cd020f"
+    },
+    {
+      "path": "paper/latex_source/tables/table_06.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a6ee143f14e8dc10b0236c895826d3d4fce1668",
+      "size": 1728,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8a6ee143f14e8dc10b0236c895826d3d4fce1668"
+    },
+    {
+      "path": "paper/latex_source/tables/table_07.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27255255b0d5536f7bed07b26e7d72cc0900f439",
+      "size": 2558,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/27255255b0d5536f7bed07b26e7d72cc0900f439"
+    },
+    {
+      "path": "paper/latex_source/tables/table_07.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3edd6a84ffc5bf6e9cdcaa94e188c266ccd8a959",
+      "size": 1070,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3edd6a84ffc5bf6e9cdcaa94e188c266ccd8a959"
+    },
+    {
+      "path": "paper/latex_source/tables/table_07.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f58e12104aef528463b4867b887aa482826add9",
+      "size": 3685,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1f58e12104aef528463b4867b887aa482826add9"
+    },
+    {
+      "path": "paper/latex_source/tables/table_08.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3be5dc98089b5cb9dc916367c36f44e373b3fbb0",
+      "size": 867,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3be5dc98089b5cb9dc916367c36f44e373b3fbb0"
+    },
+    {
+      "path": "paper/latex_source/tables/table_08.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06da152f86393994eee6f32253d4aa270e71dfff",
+      "size": 910,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/06da152f86393994eee6f32253d4aa270e71dfff"
+    },
+    {
+      "path": "paper/latex_source/tables/table_08.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "194b8994aa7bf47fbfa95a734ca68bc3b1c760d2",
+      "size": 1614,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/194b8994aa7bf47fbfa95a734ca68bc3b1c760d2"
+    },
+    {
+      "path": "paper/latex_source/tables/table_09.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1406ce343440b25621959f22377f581130f8734",
+      "size": 1565,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f1406ce343440b25621959f22377f581130f8734"
+    },
+    {
+      "path": "paper/latex_source/tables/table_09.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8512600046bd46948b0c4a9ec25963a169f08570",
+      "size": 1122,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8512600046bd46948b0c4a9ec25963a169f08570"
+    },
+    {
+      "path": "paper/latex_source/tables/table_09.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f116845b028afd453659a2d90dec89e45e292c6f",
+      "size": 2053,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f116845b028afd453659a2d90dec89e45e292c6f"
+    },
+    {
+      "path": "paper/latex_source/tables/table_10.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c017df4876b123187be762281b0b79c7bb9eaf4",
+      "size": 574,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5c017df4876b123187be762281b0b79c7bb9eaf4"
+    },
+    {
+      "path": "paper/latex_source/tables/table_10.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "488eb66416ffb85be9ab7c15795d686376d00263",
+      "size": 903,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/488eb66416ffb85be9ab7c15795d686376d00263"
+    },
+    {
+      "path": "paper/latex_source/tables/table_10.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb305352527127721549464bbb846241ff0d874d",
+      "size": 1210,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cb305352527127721549464bbb846241ff0d874d"
+    },
+    {
+      "path": "paper/latex_source/tables/table_11.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d05da0c2a34ef58e0c9d36b57d808aec2e04cad5",
+      "size": 759,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d05da0c2a34ef58e0c9d36b57d808aec2e04cad5"
+    },
+    {
+      "path": "paper/latex_source/tables/table_11.template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e48236bae08a5ce543b8cbde0a3636002a4d4a91",
+      "size": 983,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e48236bae08a5ce543b8cbde0a3636002a4d4a91"
+    },
+    {
+      "path": "paper/latex_source/tables/table_11.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a66b58e5fb1228fe66b38e15d88a4dd956e48873",
+      "size": 1455,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a66b58e5fb1228fe66b38e15d88a4dd956e48873"
+    },
+    {
+      "path": "paper/paper.docx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81627ae3e9c3c2447024ea948162ab5d5d3fd17d",
+      "size": 4464517,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/81627ae3e9c3c2447024ea948162ab5d5d3fd17d"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cdbcef3d758a2c31a05fef1fdc7e09c85baae2a",
+      "size": 4563775,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8cdbcef3d758a2c31a05fef1fdc7e09c85baae2a"
+    },
+    {
+      "path": "paper/supplementary.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb2a7f2f6681fdd1495637545e46093f029fa403",
+      "size": 468715,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fb2a7f2f6681fdd1495637545e46093f029fa403"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53bc2c55faa7bbce653b0115e27d39abf221c054",
+      "size": 2438,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/53bc2c55faa7bbce653b0115e27d39abf221c054"
+    },
+    {
+      "path": "results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6a970db45541d621441c1fcc775fcbe8e415b6f",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/a6a970db45541d621441c1fcc775fcbe8e415b6f"
+    },
+    {
+      "path": "results/ablation_results.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e493b98a556bbe71df39b77fd56ff4b226851712",
+      "size": 3908,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e493b98a556bbe71df39b77fd56ff4b226851712"
+    },
+    {
+      "path": "results/audit_claims.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a6599a67eb734d5ca424a578e10ed240d164841",
+      "size": 1790,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5a6599a67eb734d5ca424a578e10ed240d164841"
+    },
+    {
+      "path": "results/audit_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1e5d512000a92a375a9f2080a05d9cebaa62838",
+      "size": 1178,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f1e5d512000a92a375a9f2080a05d9cebaa62838"
+    },
+    {
+      "path": "results/audit_encoding_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3170345a9f62953410e4386442ee4f6aa6507fe5",
+      "size": 1613,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3170345a9f62953410e4386442ee4f6aa6507fe5"
+    },
+    {
+      "path": "results/audit_io_benchmark.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1608e8c88b423ddfffc4fc01454b85ea9664211e",
+      "size": 280,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1608e8c88b423ddfffc4fc01454b85ea9664211e"
+    },
+    {
+      "path": "results/audit_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b033e5a0ad5b2eb7c84a2563568c2bdfcd41a416",
+      "size": 99,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b033e5a0ad5b2eb7c84a2563568c2bdfcd41a416"
+    },
+    {
+      "path": "results/baseline_group_ci.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4437af0e8b82d71cc6d504eab1ecc6878516df6",
+      "size": 675,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e4437af0e8b82d71cc6d504eab1ecc6878516df6"
+    },
+    {
+      "path": "results/baseline_metrics.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f027a0b971d8d9c66c891b42f4ec04e0d68a3a72",
+      "size": 2273,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f027a0b971d8d9c66c891b42f4ec04e0d68a3a72"
+    },
+    {
+      "path": "results/baseline_per_style_ci.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccaa4c8f959fd7fb3c186b2f3ec1d0d93b3a456a",
+      "size": 5050,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ccaa4c8f959fd7fb3c186b2f3ec1d0d93b3a456a"
+    },
+    {
+      "path": "results/border_exclusion_drift.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04314bb8f3053b552b7bc4864ded7a030a43e2c2",
+      "size": 369379,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/04314bb8f3053b552b7bc4864ded7a030a43e2c2"
+    },
+    {
+      "path": "results/border_paired_statistical_tests.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eb3016ffa412f92932f812044aa451a961bca8b",
+      "size": 409921,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9eb3016ffa412f92932f812044aa451a961bca8b"
+    },
+    {
+      "path": "results/border_sensitivity_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ffbaa1008a0323b7309ecd8cee4f7fae7350054",
+      "size": 520,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3ffbaa1008a0323b7309ecd8cee4f7fae7350054"
+    },
+    {
+      "path": "results/brief_component_mapping.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bbeff5c914862509731e7b34bae93fecf85e05c",
+      "size": 301,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9bbeff5c914862509731e7b34bae93fecf85e05c"
+    },
+    {
+      "path": "results/changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e38537a2ce2481a06c97efe097665ca76ec30bb4",
+      "size": 7305,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e38537a2ce2481a06c97efe097665ca76ec30bb4"
+    },
+    {
+      "path": "results/checkpoint_integrity_checks.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45546ad6b27d4a57330be55ec6a9b29efe4bbfec",
+      "size": 1324,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/45546ad6b27d4a57330be55ec6a9b29efe4bbfec"
+    },
+    {
+      "path": "results/checkpoint_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "040a32eb69c9eb6e909114d73ad0eea34de8f4fc",
+      "size": 184,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/040a32eb69c9eb6e909114d73ad0eea34de8f4fc"
+    },
+    {
+      "path": "results/citation_crosswalk.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64c6f33a149371189b1a585fe1258212e8827072",
+      "size": 601,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/64c6f33a149371189b1a585fe1258212e8827072"
+    },
+    {
+      "path": "results/cohort_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88873b5d694aefde1a642aefc1feca19f9c1f08e",
+      "size": 3140,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/88873b5d694aefde1a642aefc1feca19f9c1f08e"
+    },
+    {
+      "path": "results/cohort_group_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae28967692083fc4c224a860cb0913fdd6c8184b",
+      "size": 3879,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ae28967692083fc4c224a860cb0913fdd6c8184b"
+    },
+    {
+      "path": "results/cohort_manifest.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "898f2525361dae9707186b2ead7959c6ea89fc9f",
+      "size": 18766173,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/898f2525361dae9707186b2ead7959c6ea89fc9f"
+    },
+    {
+      "path": "results/color_map.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77f05ee8c43fcf6d1e214ea469379ba62d639fbe",
+      "size": 351,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/77f05ee8c43fcf6d1e214ea469379ba62d639fbe"
+    },
+    {
+      "path": "results/color_saturation_ablation.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4dd6d443b48c618642f81384b54080325be9ef1",
+      "size": 859,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f4dd6d443b48c618642f81384b54080325be9ef1"
+    },
+    {
+      "path": "results/confusion_ab_HSV.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a36b58b5e4f4084ffc0bd890fcb4ea3225e63c05",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a36b58b5e4f4084ffc0bd890fcb4ea3225e63c05"
+    },
+    {
+      "path": "results/confusion_ab_Lab.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6782e16902c023ab3966da99f45362d36679580",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c6782e16902c023ab3966da99f45362d36679580"
+    },
+    {
+      "path": "results/confusion_ab_five_crop.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84efb48a6817b587f72596be246c279cfbf98b3a",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/84efb48a6817b587f72596be246c279cfbf98b3a"
+    },
+    {
+      "path": "results/confusion_ab_full_canvas.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca2c0ae37a0ba28667b32a40998379267798a41f",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ca2c0ae37a0ba28667b32a40998379267798a41f"
+    },
+    {
+      "path": "results/confusion_ab_only_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7252b3aa33311b827eacb93bc46f80ac29645532",
+      "size": 48,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7252b3aa33311b827eacb93bc46f80ac29645532"
+    },
+    {
+      "path": "results/confusion_ab_only_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b62c4cc26fbbc9ccac4c08b3950b759cf23e575b",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b62c4cc26fbbc9ccac4c08b3950b759cf23e575b"
+    },
+    {
+      "path": "results/confusion_ab_only_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8ebf81b859d6fa5f22b075327e2d2f8624416de",
+      "size": 48,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f8ebf81b859d6fa5f22b075327e2d2f8624416de"
+    },
+    {
+      "path": "results/confusion_ab_only_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8135fb1533891494f3102c1a5cda5411bd6ac1f7",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8135fb1533891494f3102c1a5cda5411bd6ac1f7"
+    },
+    {
+      "path": "results/confusion_ab_tie_excluded.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e9a0481dd431840ecbb9039de130238c9a38540",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3e9a0481dd431840ecbb9039de130238c9a38540"
+    },
+    {
+      "path": "results/confusion_ab_unmatched_mixed.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "195f44a16bc80f1a9d8d12b89588abc28d2e709c",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/195f44a16bc80f1a9d8d12b89588abc28d2e709c"
+    },
+    {
+      "path": "results/confusion_ab_without_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4aa2a7ea1a8bc14ab57168ee09945d8df296e5e",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a4aa2a7ea1a8bc14ab57168ee09945d8df296e5e"
+    },
+    {
+      "path": "results/confusion_ab_without_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c00cb019695bd479925e57030ce4f2374908dab",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5c00cb019695bd479925e57030ce4f2374908dab"
+    },
+    {
+      "path": "results/confusion_ab_without_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310f7537ef48fc6646273f81119f2608525b684c",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/310f7537ef48fc6646273f81119f2608525b684c"
+    },
+    {
+      "path": "results/confusion_ab_without_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ebc1b61a1a09639c73a0aaf95a86081a6331c7a",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4ebc1b61a1a09639c73a0aaf95a86081a6331c7a"
+    },
+    {
+      "path": "results/confusion_dimensions_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fc54601b9c46bc721845551c6ce39b955ce262b",
+      "size": 45,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9fc54601b9c46bc721845551c6ce39b955ce262b"
+    },
+    {
+      "path": "results/confusion_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eef3740ba188a8764f39ad0682092a8d0d07dedf",
+      "size": 45,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/eef3740ba188a8764f39ad0682092a8d0d07dedf"
+    },
+    {
+      "path": "results/confusion_filesize_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fc54601b9c46bc721845551c6ce39b955ce262b",
+      "size": 45,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9fc54601b9c46bc721845551c6ce39b955ce262b"
+    },
+    {
+      "path": "results/confusion_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b62c4cc26fbbc9ccac4c08b3950b759cf23e575b",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b62c4cc26fbbc9ccac4c08b3950b759cf23e575b"
+    },
+    {
+      "path": "results/confusion_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fa3db936505d91a216052dc14df906293b981a1",
+      "size": 47,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8fa3db936505d91a216052dc14df906293b981a1"
+    },
+    {
+      "path": "results/confusion_jpeg_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c52df152aa8b8291fde78a292ae84c60839d33f8",
+      "size": 45,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c52df152aa8b8291fde78a292ae84c60839d33f8"
+    },
+    {
+      "path": "results/confusion_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41b86f7b14e9ec24398ed076cf5b717dc0728829",
+      "size": 43,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/41b86f7b14e9ec24398ed076cf5b717dc0728829"
+    },
+    {
+      "path": "results/confusion_metadata_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c52df152aa8b8291fde78a292ae84c60839d33f8",
+      "size": 45,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c52df152aa8b8291fde78a292ae84c60839d33f8"
+    },
+    {
+      "path": "results/confusion_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1f5becedb973f2efffa80fabacee9937b8f9690",
+      "size": 43,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a1f5becedb973f2efffa80fabacee9937b8f9690"
+    },
+    {
+      "path": "results/control_gate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ba916828752862c70c537449e42c2488a062b0b",
+      "size": 2233,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3ba916828752862c70c537449e42c2488a062b0b"
+    },
+    {
+      "path": "results/control_gate_ablation.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b93b7e739993f0d55dc6fe5a2f5d4f02ad97c8eb",
+      "size": 1550,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b93b7e739993f0d55dc6fe5a2f5d4f02ad97c8eb"
+    },
+    {
+      "path": "results/cross_protocol_differences.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ca6d2b89df9d2080ce63cca6eba913ce570a7dd",
+      "size": 460,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6ca6d2b89df9d2080ce63cca6eba913ce570a7dd"
+    },
+    {
+      "path": "results/current_relative_differences.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88351c8676542e408869cf2a540f9ec9eca70a76",
+      "size": 616,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/88351c8676542e408869cf2a540f9ec9eca70a76"
+    },
+    {
+      "path": "results/dashboard_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15dc7e8784d23852b7341be5605e6d55f9c50bfc",
+      "size": 313,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/15dc7e8784d23852b7341be5605e6d55f9c50bfc"
+    },
+    {
+      "path": "results/dataset_inventory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f515c5ff16149b4d82485c8530ccb4222f7c1669",
+      "size": 63,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f515c5ff16149b4d82485c8530ccb4222f7c1669"
+    },
+    {
+      "path": "results/deep_extraction_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2198a903f0fb04c1c973683c8f89aef3d1f1f3a5",
+      "size": 468,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2198a903f0fb04c1c973683c8f89aef3d1f1f3a5"
+    },
+    {
+      "path": "results/dinov2_embedding_state.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b940530a3a2552a6403e7a6d88d8a704b2b84f59",
+      "size": 208,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b940530a3a2552a6403e7a6d88d8a704b2b84f59"
+    },
+    {
+      "path": "results/display_feature_selection.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f5d533aa29977a1ca1733a62153b88f19c8546f",
+      "size": 221,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9f5d533aa29977a1ca1733a62153b88f19c8546f"
+    },
+    {
+      "path": "results/drift_test_ids.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfcead0eef8840fc5baa41c89053cb3893463ecb",
+      "size": 126011,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dfcead0eef8840fc5baa41c89053cb3893463ecb"
+    },
+    {
+      "path": "results/drift_unit_test_results.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "334b582a958bf620d6bb2e925734f108b198a7b9",
+      "size": 159,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/334b582a958bf620d6bb2e925734f108b198a7b9"
+    },
+    {
+      "path": "results/duplicate_group_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e994ddbd3d7409932bd367a25cab61ee24939f9c",
+      "size": 362,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e994ddbd3d7409932bd367a25cab61ee24939f9c"
+    },
+    {
+      "path": "results/editorial_edits.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f50212fdbaeace1ede77b6521e1eeea3b78d295c",
+      "size": 58289,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f50212fdbaeace1ede77b6521e1eeea3b78d295c"
+    },
+    {
+      "path": "results/embedding_ids.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60267628a7f383eb6a21ed11c726ced30b7b7491",
+      "size": 945011,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/60267628a7f383eb6a21ed11c726ced30b7b7491"
+    },
+    {
+      "path": "results/environment.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa19690383e7c548b151157d82b2b56c54abf3e6",
+      "size": 2966,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/aa19690383e7c548b151157d82b2b56c54abf3e6"
+    },
+    {
+      "path": "results/error_gallery_cases.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "901585701399d3b2892523d0579818c653c1ab1b",
+      "size": 28842,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/901585701399d3b2892523d0579818c653c1ab1b"
+    },
+    {
+      "path": "results/failure_trigger_associations.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95efe6590d6084968bbdf44fc9ce1e086197e4a6",
+      "size": 799,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/95efe6590d6084968bbdf44fc9ce1e086197e4a6"
+    },
+    {
+      "path": "results/failure_trigger_flags.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80f56026a3cb61b766f47e94f4037425d88f7b45",
+      "size": 280011,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/80f56026a3cb61b766f47e94f4037425d88f7b45"
+    },
+    {
+      "path": "results/failure_trigger_rates.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f646b9992a7e92ea9773850a85bc66fb578ccf57",
+      "size": 850,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f646b9992a7e92ea9773850a85bc66fb578ccf57"
+    },
+    {
+      "path": "results/feature_calibration.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31b2b38f2b2c0854a7e8293637ac79770ab3c64a",
+      "size": 6393,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/31b2b38f2b2c0854a7e8293637ac79770ab3c64a"
+    },
+    {
+      "path": "results/feature_distribution_values.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc040b508f855c7c6348270a8c67ac209147a9c9",
+      "size": 2502655,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bc040b508f855c7c6348270a8c67ac209147a9c9"
+    },
+    {
+      "path": "results/feature_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a971c34ac5841f2b04efeaad7e21cccc8497b302",
+      "size": 67,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a971c34ac5841f2b04efeaad7e21cccc8497b302"
+    },
+    {
+      "path": "results/figure_captions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "349d19564cbd9b61b91c94d67d4e77ded1e5b223",
+      "size": 2968,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/349d19564cbd9b61b91c94d67d4e77ded1e5b223"
+    },
+    {
+      "path": "results/figure_manifest.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebef1946834024e5f8452e1b519ad3bf21eec915",
+      "size": 5203,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ebef1946834024e5f8452e1b519ad3bf21eec915"
+    },
+    {
+      "path": "results/figure_source_hashes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05a4e31d629386c156dacfe9eabc1162009d9ff0",
+      "size": 2977,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/05a4e31d629386c156dacfe9eabc1162009d9ff0"
+    },
+    {
+      "path": "results/final_space_edits.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "207c27347e0f0227d619e780b08a5a1c8a8d96aa",
+      "size": 9564,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/207c27347e0f0227d619e780b08a5a1c8a8d96aa"
+    },
+    {
+      "path": "results/forensic_visual_observations.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65c7996622847b25fc812439d23aedc26bd824dd",
+      "size": 1660,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/65c7996622847b25fc812439d23aedc26bd824dd"
+    },
+    {
+      "path": "results/full_split_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2195938aa9ec9b15a93436e6b20a66eeba9e3105",
+      "size": 2733,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2195938aa9ec9b15a93436e6b20a66eeba9e3105"
+    },
+    {
+      "path": "results/full_split_group_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be83925a18c93d16f3fc547347e43c5350951b70",
+      "size": 3093,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/be83925a18c93d16f3fc547347e43c5350951b70"
+    },
+    {
+      "path": "results/gallery",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c8114bf8d5ffca4b130b9f7c656572ee6d29455",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/9c8114bf8d5ffca4b130b9f7c656572ee6d29455"
+    },
+    {
+      "path": "results/gallery/2f0c78f46f838cb12767.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa5505d3b8efd582225516970ac8f55ca8acf139",
+      "size": 163676,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/aa5505d3b8efd582225516970ac8f55ca8acf139"
+    },
+    {
+      "path": "results/gallery/2f0c78f46f838cb12767_crops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b64d9b29a99668fcf0b38494ffb7717fff01eaa",
+      "size": 163998,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9b64d9b29a99668fcf0b38494ffb7717fff01eaa"
+    },
+    {
+      "path": "results/gallery/305d3cd479c457dbf225.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b281515258acaf1dcdb26288afef4b56a9a36af",
+      "size": 92343,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2b281515258acaf1dcdb26288afef4b56a9a36af"
+    },
+    {
+      "path": "results/gallery/305d3cd479c457dbf225_crops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bf4b8da8b65add198def40f60862c0dea83abe5",
+      "size": 93498,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2bf4b8da8b65add198def40f60862c0dea83abe5"
+    },
+    {
+      "path": "results/gallery/6c9f13932106dacd1dd3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba1d1e3f6916772856e657c7d2385b93267bdee9",
+      "size": 136050,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ba1d1e3f6916772856e657c7d2385b93267bdee9"
+    },
+    {
+      "path": "results/gallery/6c9f13932106dacd1dd3_crops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91177a136118ee6f15fec8f368049ea1428eb726",
+      "size": 136719,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/91177a136118ee6f15fec8f368049ea1428eb726"
+    },
+    {
+      "path": "results/gallery/89f0f4d605728ba8c906.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b216cb1d320a7cb9789fff16bbe7c64350f9cb3d",
+      "size": 140940,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b216cb1d320a7cb9789fff16bbe7c64350f9cb3d"
+    },
+    {
+      "path": "results/gallery/89f0f4d605728ba8c906_crops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30d8bc9be847d09c4f436df16e15bc8ab5c32007",
+      "size": 141775,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/30d8bc9be847d09c4f436df16e15bc8ab5c32007"
+    },
+    {
+      "path": "results/gallery/a1dce1b0364bbfecf333.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "445effaca82375743e3f8b7a7cfdc70b8bbf2ee3",
+      "size": 104676,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/445effaca82375743e3f8b7a7cfdc70b8bbf2ee3"
+    },
+    {
+      "path": "results/gallery/a1dce1b0364bbfecf333_crops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13188919467a373348d7b8045d31ffe8bc9a1872",
+      "size": 105853,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/13188919467a373348d7b8045d31ffe8bc9a1872"
+    },
+    {
+      "path": "results/gallery/e679eb4f822495ac7950.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ab052c64f48ec03be1be6218edc7866579799df",
+      "size": 100207,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9ab052c64f48ec03be1be6218edc7866579799df"
+    },
+    {
+      "path": "results/gallery/e679eb4f822495ac7950_crops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52b9ed127262cf9186f2d7b0a3966998c447ce4c",
+      "size": 100818,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/52b9ed127262cf9186f2d7b0a3966998c447ce4c"
+    },
+    {
+      "path": "results/gallery/f3fa732e66faac5deb05.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33fe01769b7ad45b65b25b2b801d3013627b0be4",
+      "size": 110122,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/33fe01769b7ad45b65b25b2b801d3013627b0be4"
+    },
+    {
+      "path": "results/gallery/f3fa732e66faac5deb05_crops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57591300482e2db7786d7f25f641dec0fd3eb71e",
+      "size": 111258,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/57591300482e2db7786d7f25f641dec0fd3eb71e"
+    },
+    {
+      "path": "results/gallery/f4af268f19ef5d76001a.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bce468851639477ba9cac43ce5ccc1f460ae68d",
+      "size": 40789,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6bce468851639477ba9cac43ce5ccc1f460ae68d"
+    },
+    {
+      "path": "results/gallery/f4af268f19ef5d76001a_crops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c13a46378c2d6b121576252f59ea81e51da320f7",
+      "size": 40792,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c13a46378c2d6b121576252f59ea81e51da320f7"
+    },
+    {
+      "path": "results/hardware_windows.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0dd4b444e5b173cb12f6a19c85af022037a38c9d",
+      "size": 395,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0dd4b444e5b173cb12f6a19c85af022037a38c9d"
+    },
+    {
+      "path": "results/hc_centroid_ellipses.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73faf1f0cb250f94750987225f0712bdd7ee44bc",
+      "size": 2462,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/73faf1f0cb250f94750987225f0712bdd7ee44bc"
+    },
+    {
+      "path": "results/hc_centroids.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99ef9e4955dcf7bfa9c24504a815dc7bb6e8b1cd",
+      "size": 1278,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/99ef9e4955dcf7bfa9c24504a815dc7bb6e8b1cd"
+    },
+    {
+      "path": "results/hc_density_grid.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e0fecc8dce4b7e1e76eeb044f53dd0a61670cb1",
+      "size": 15158,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9e0fecc8dce4b7e1e76eeb044f53dd0a61670cb1"
+    },
+    {
+      "path": "results/hc_descriptive_displacements.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef4302bac0c40f09894e03a1ccc0608b4ff34fdd",
+      "size": 559,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ef4302bac0c40f09894e03a1ccc0608b4ff34fdd"
+    },
+    {
+      "path": "results/hc_plot_points.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e548402f2aad93a26f16970806f8f26e348dc4e3",
+      "size": 456963,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e548402f2aad93a26f16970806f8f26e348dc4e3"
+    },
+    {
+      "path": "results/hc_theoretical_bounds.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef329c1665c1be74a1ccaa300b9aa17082dafb7a",
+      "size": 84129,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ef329c1665c1be74a1ccaa300b9aa17082dafb7a"
+    },
+    {
+      "path": "results/header_presence_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c05a3313648ec421715fa633697031ddc112fe1c",
+      "size": 80,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c05a3313648ec421715fa633697031ddc112fe1c"
+    },
+    {
+      "path": "results/interstyle_centroid_distances.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e106e3f8c7da68a57aa08fcf1ca899b193864e3d",
+      "size": 40052,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e106e3f8c7da68a57aa08fcf1ca899b193864e3d"
+    },
+    {
+      "path": "results/jpeg_bias_source_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f13fe55dbcd488a47185f0e05b8a18cf0d58b7d4",
+      "size": 695,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f13fe55dbcd488a47185f0e05b8a18cf0d58b7d4"
+    },
+    {
+      "path": "results/jpeg_metadata_header_sample.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4163b3e539f30fd8d123e69eb6c8cd2e530497e1",
+      "size": 15895,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4163b3e539f30fd8d123e69eb6c8cd2e530497e1"
+    },
+    {
+      "path": "results/jpeg_origin_profiles.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75746a8c1877a75db1fe19d20c5c6dce81bf1d65",
+      "size": 176,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/75746a8c1877a75db1fe19d20c5c6dce81bf1d65"
+    },
+    {
+      "path": "results/literature_comparison.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8eeb93716f5fd49efcebbb0ff259b40f1fdbbe0",
+      "size": 14654,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c8eeb93716f5fd49efcebbb0ff259b40f1fdbbe0"
+    },
+    {
+      "path": "results/literature_crosswalk.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58a227301d21e102b7042fbe8c5538f0e2f26b46",
+      "size": 22602,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/58a227301d21e102b7042fbe8c5538f0e2f26b46"
+    },
+    {
+      "path": "results/literature_facts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c1759ae008b907946c60a3a72818c3432cfbe94",
+      "size": 132110,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2c1759ae008b907946c60a3a72818c3432cfbe94"
+    },
+    {
+      "path": "results/literature_numeric_candidates.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7601c4fe87dc7d405c6ab0edd75da074891556f",
+      "size": 1135294,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e7601c4fe87dc7d405c6ab0edd75da074891556f"
+    },
+    {
+      "path": "results/metadata_field_audit.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a60c148831c9f0dd13ae933f5a999a25a0e23de",
+      "size": 1349,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2a60c148831c9f0dd13ae933f5a999a25a0e23de"
+    },
+    {
+      "path": "results/metadata_probe_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce6d3f8c9c683ffff994db796625271c36a9f034",
+      "size": 2711,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ce6d3f8c9c683ffff994db796625271c36a9f034"
+    },
+    {
+      "path": "results/methodology_changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5995d7bd41d7c991e4497244c97ce386e7b6f7e0",
+      "size": 3002,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5995d7bd41d7c991e4497244c97ce386e7b6f7e0"
+    },
+    {
+      "path": "results/methodology_plan_crosswalk.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1688597fc6ec3dc476da3b1058738dabf3932ea7",
+      "size": 3513,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1688597fc6ec3dc476da3b1058738dabf3932ea7"
+    },
+    {
+      "path": "results/metrics_ab_HSV.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93d64e4f3167696893dd9e652fbc4edddcf53881",
+      "size": 530,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/93d64e4f3167696893dd9e652fbc4edddcf53881"
+    },
+    {
+      "path": "results/metrics_ab_Lab.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1921e6e84d0c6d5072f93d154e5ec02a6124f20",
+      "size": 568,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c1921e6e84d0c6d5072f93d154e5ec02a6124f20"
+    },
+    {
+      "path": "results/metrics_ab_five_crop.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9902223bbd5aaf8a5afb789df4f451119502b50f",
+      "size": 561,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9902223bbd5aaf8a5afb789df4f451119502b50f"
+    },
+    {
+      "path": "results/metrics_ab_full_canvas.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88876282e08de0e470bdb627c8d488f18e345a2a",
+      "size": 577,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/88876282e08de0e470bdb627c8d488f18e345a2a"
+    },
+    {
+      "path": "results/metrics_ab_only_Color.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7abde25ac224cf7fc19b4a3853d9d8c1ca6913df",
+      "size": 575,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7abde25ac224cf7fc19b4a3853d9d8c1ca6913df"
+    },
+    {
+      "path": "results/metrics_ab_only_FFT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39bce969aa7b3861dfaedccf357871b3ad469a20",
+      "size": 545,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/39bce969aa7b3861dfaedccf357871b3ad469a20"
+    },
+    {
+      "path": "results/metrics_ab_only_Haar.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e22f90cc75f3adf9cf72ab0e37093126c334451",
+      "size": 560,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9e22f90cc75f3adf9cf72ab0e37093126c334451"
+    },
+    {
+      "path": "results/metrics_ab_only_Ordinal.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef7204a49f19e1a5a9c7b32b37889721a743d592",
+      "size": 577,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ef7204a49f19e1a5a9c7b32b37889721a743d592"
+    },
+    {
+      "path": "results/metrics_ab_tie_excluded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d4d132290f2ed6e42901335281720895180bd95",
+      "size": 576,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6d4d132290f2ed6e42901335281720895180bd95"
+    },
+    {
+      "path": "results/metrics_ab_unmatched_mixed.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51e5d4bd92b49e202546b3f926bcfaf45c17e789",
+      "size": 528,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/51e5d4bd92b49e202546b3f926bcfaf45c17e789"
+    },
+    {
+      "path": "results/metrics_ab_without_Color.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3ef94fa950ace6332689ef98d7e61e39d41e045",
+      "size": 575,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e3ef94fa950ace6332689ef98d7e61e39d41e045"
+    },
+    {
+      "path": "results/metrics_ab_without_FFT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7026a60086cede269af0633ff8f685c83421971",
+      "size": 552,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b7026a60086cede269af0633ff8f685c83421971"
+    },
+    {
+      "path": "results/metrics_ab_without_Haar.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f89c63d833c89b59abc3afa8c85437ec25209d79",
+      "size": 550,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f89c63d833c89b59abc3afa8c85437ec25209d79"
+    },
+    {
+      "path": "results/metrics_ab_without_Ordinal.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ccddbdad50d1baea67989f559ef7d1c77297a0c",
+      "size": 579,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8ccddbdad50d1baea67989f559ef7d1c77297a0c"
+    },
+    {
+      "path": "results/metrics_dimensions_ungated_full.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a10d738210ac1ec19460097d219ed4e7637c3152",
+      "size": 560,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a10d738210ac1ec19460097d219ed4e7637c3152"
+    },
+    {
+      "path": "results/metrics_dinov2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4da90ae1cb5e7ab5d97f4dba6d481f4c46ad8bab",
+      "size": 542,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4da90ae1cb5e7ab5d97f4dba6d481f4c46ad8bab"
+    },
+    {
+      "path": "results/metrics_filesize_ungated_full.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06e5865ecb8069442fe49c79e4fddd935eb7a67d",
+      "size": 555,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/06e5865ecb8069442fe49c79e4fddd935eb7a67d"
+    },
+    {
+      "path": "results/metrics_frequency.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3a1af8c9805209dbc689a97430dcac6ca6a0a3c",
+      "size": 544,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c3a1af8c9805209dbc689a97430dcac6ca6a0a3c"
+    },
+    {
+      "path": "results/metrics_handcrafted.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa52b3cf8c6ca777672f9f01e6894192cdc596c5",
+      "size": 571,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fa52b3cf8c6ca777672f9f01e6894192cdc596c5"
+    },
+    {
+      "path": "results/metrics_jpeg_ungated_full.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c7edc956071cdeb34715decf65b55c14a094aa8",
+      "size": 433,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4c7edc956071cdeb34715decf65b55c14a094aa8"
+    },
+    {
+      "path": "results/metrics_metadata_gated.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffc1f57add5872a1ede1180b516af89dfb2bc481",
+      "size": 516,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ffc1f57add5872a1ede1180b516af89dfb2bc481"
+    },
+    {
+      "path": "results/metrics_metadata_ungated_full.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e84216ad71f3cf2403514c707673ab9c0eb2cd4",
+      "size": 435,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7e84216ad71f3cf2403514c707673ab9c0eb2cd4"
+    },
+    {
+      "path": "results/metrics_resnet50.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd031293b259fddfae9cbbc2cc0e422c65033336",
+      "size": 557,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cd031293b259fddfae9cbbc2cc0e422c65033336"
+    },
+    {
+      "path": "results/multiseed_metrics.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "946a19da71b8914e973039865b16d3335cdff2cd",
+      "size": 5653,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/946a19da71b8914e973039865b16d3335cdff2cd"
+    },
+    {
+      "path": "results/multiseed_split_counts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04eadec4b7be7b1c6926e030b43aa865fbb378b6",
+      "size": 360,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/04eadec4b7be7b1c6926e030b43aa865fbb378b6"
+    },
+    {
+      "path": "results/multiseed_summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52d2cce12591ea8d4fad6b84836043405dec9544",
+      "size": 465,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/52d2cce12591ea8d4fad6b84836043405dec9544"
+    },
+    {
+      "path": "results/origin_silhouette_ari.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a1dd434044fed1f9e5f53a6c174d43188b966ef",
+      "size": 2458,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7a1dd434044fed1f9e5f53a6c174d43188b966ef"
+    },
+    {
+      "path": "results/paired_probe_differences.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5a7558bb2de1458ca882f2e5e04b072b37a80c9",
+      "size": 360,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a5a7558bb2de1458ca882f2e5e04b072b37a80c9"
+    },
+    {
+      "path": "results/pca_loadings.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bb403b030f81c049dd49f45da87ce4089cf57e0",
+      "size": 8158,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2bb403b030f81c049dd49f45da87ce4089cf57e0"
+    },
+    {
+      "path": "results/pca_plot_points.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dbc8c19ac0800c05ce23892dab5b80c53eb22b0",
+      "size": 953360,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6dbc8c19ac0800c05ce23892dab5b80c53eb22b0"
+    },
+    {
+      "path": "results/pca_projection_fidelity.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5259e5e9d3232019238f6392f0335b688cd7149",
+      "size": 205,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e5259e5e9d3232019238f6392f0335b688cd7149"
+    },
+    {
+      "path": "results/pca_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6555dc731943d9fc2084010b28c24a92025162c",
+      "size": 2358,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a6555dc731943d9fc2084010b28c24a92025162c"
+    },
+    {
+      "path": "results/per_style_ab_HSV.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81f480830532b3a24a7c70f952d4153de46e9787",
+      "size": 2039,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/81f480830532b3a24a7c70f952d4153de46e9787"
+    },
+    {
+      "path": "results/per_style_ab_Lab.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9715e345290a8b0254c358b195c9bba9b26a5868",
+      "size": 2085,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9715e345290a8b0254c358b195c9bba9b26a5868"
+    },
+    {
+      "path": "results/per_style_ab_five_crop.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d0d12397d0a89ae02987c7e4eaaec7c8f5741eb",
+      "size": 2188,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9d0d12397d0a89ae02987c7e4eaaec7c8f5741eb"
+    },
+    {
+      "path": "results/per_style_ab_full_canvas.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a742eb0417badf542f236b842a16b8511b64c67",
+      "size": 2206,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2a742eb0417badf542f236b842a16b8511b64c67"
+    },
+    {
+      "path": "results/per_style_ab_only_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b503cc5fd655ddd1bebc029a150863c4ba4c090",
+      "size": 2130,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7b503cc5fd655ddd1bebc029a150863c4ba4c090"
+    },
+    {
+      "path": "results/per_style_ab_only_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f93107f92e1d8b9ec0bbb38a9326397d44db51ac",
+      "size": 2133,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f93107f92e1d8b9ec0bbb38a9326397d44db51ac"
+    },
+    {
+      "path": "results/per_style_ab_only_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64ecfe79362f18877e81df9fbdf757eb2ad55a6f",
+      "size": 2121,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/64ecfe79362f18877e81df9fbdf757eb2ad55a6f"
+    },
+    {
+      "path": "results/per_style_ab_only_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fd11e425a73c0cd0e4686c8e66483f9e80df5be",
+      "size": 2218,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0fd11e425a73c0cd0e4686c8e66483f9e80df5be"
+    },
+    {
+      "path": "results/per_style_ab_tie_excluded.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e26663320bfe328a98b0f9ee64a69f94142b399b",
+      "size": 2249,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e26663320bfe328a98b0f9ee64a69f94142b399b"
+    },
+    {
+      "path": "results/per_style_ab_unmatched_mixed.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c9997dff0ef4dcce7235356da603a5dc5a51432",
+      "size": 2325,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7c9997dff0ef4dcce7235356da603a5dc5a51432"
+    },
+    {
+      "path": "results/per_style_ab_without_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e406d465eeed0bd72c8de90f05c1ff79bb654b7",
+      "size": 2137,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3e406d465eeed0bd72c8de90f05c1ff79bb654b7"
+    },
+    {
+      "path": "results/per_style_ab_without_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "449730171fe33014882dd4487fb1a61fc79d9859",
+      "size": 2194,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/449730171fe33014882dd4487fb1a61fc79d9859"
+    },
+    {
+      "path": "results/per_style_ab_without_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d15b0a96eaa1c8dbb8a765f3826e6d648a472ba",
+      "size": 2163,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2d15b0a96eaa1c8dbb8a765f3826e6d648a472ba"
+    },
+    {
+      "path": "results/per_style_ab_without_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c4e150342b646a99fd6953a71763db919b2e977",
+      "size": 2266,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0c4e150342b646a99fd6953a71763db919b2e977"
+    },
+    {
+      "path": "results/per_style_dimensions_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0969da0a35e15d2ee6b0322086baef9c4529b412",
+      "size": 2115,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0969da0a35e15d2ee6b0322086baef9c4529b412"
+    },
+    {
+      "path": "results/per_style_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6283f6b8dd125179b1a8dcb948adeef3109cdcd6",
+      "size": 1916,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6283f6b8dd125179b1a8dcb948adeef3109cdcd6"
+    },
+    {
+      "path": "results/per_style_filesize_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21997ea06cb693122f11eaaa519bb64b341d66f5",
+      "size": 2094,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/21997ea06cb693122f11eaaa519bb64b341d66f5"
+    },
+    {
+      "path": "results/per_style_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874ee2a32a8e310527813515532955d303ef3ff3",
+      "size": 2113,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/874ee2a32a8e310527813515532955d303ef3ff3"
+    },
+    {
+      "path": "results/per_style_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89ec98e9c381290a88580cb2599e4e314656a022",
+      "size": 2142,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/89ec98e9c381290a88580cb2599e4e314656a022"
+    },
+    {
+      "path": "results/per_style_jpeg_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5286003fa704ffffd812e74680f97d62816a075c",
+      "size": 1175,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5286003fa704ffffd812e74680f97d62816a075c"
+    },
+    {
+      "path": "results/per_style_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc4e312b8153f4689ab47f6ec3050443bd97c907",
+      "size": 1286,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fc4e312b8153f4689ab47f6ec3050443bd97c907"
+    },
+    {
+      "path": "results/per_style_metadata_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ef15b944ba8dde422b5d64d276f6774c64cbfcc",
+      "size": 1258,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0ef15b944ba8dde422b5d64d276f6774c64cbfcc"
+    },
+    {
+      "path": "results/per_style_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92e41b74029534526918c030beb9ecab64e74c0a",
+      "size": 1746,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/92e41b74029534526918c030beb9ecab64e74c0a"
+    },
+    {
+      "path": "results/perturbation_auc_intervals.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e793249fe67a12a4eb7ef017d4896515fdd61bec",
+      "size": 428,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e793249fe67a12a4eb7ef017d4896515fdd61bec"
+    },
+    {
+      "path": "results/perturbation_results.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f3224d8bccd771da06434967b38e1fa80a5502b",
+      "size": 2143,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2f3224d8bccd771da06434967b38e1fa80a5502b"
+    },
+    {
+      "path": "results/perturbed_style_w1.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4855ff8d6bebe4ebf0c91260b6d6862377ca6ea",
+      "size": 1989,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b4855ff8d6bebe4ebf0c91260b6d6862377ca6ea"
+    },
+    {
+      "path": "results/pr_ab_HSV.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d759971fbb25b686ea08069224c9d50b0c89cdc",
+      "size": 317312,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5d759971fbb25b686ea08069224c9d50b0c89cdc"
+    },
+    {
+      "path": "results/pr_ab_Lab.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec5a8f2b969ec50acec9cd2cfe6de212e0147d05",
+      "size": 315073,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ec5a8f2b969ec50acec9cd2cfe6de212e0147d05"
+    },
+    {
+      "path": "results/pr_ab_five_crop.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df84f0dc8c89489a33d2bffe1e8b97d4336b0bbb",
+      "size": 318605,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/df84f0dc8c89489a33d2bffe1e8b97d4336b0bbb"
+    },
+    {
+      "path": "results/pr_ab_full_canvas.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40edc248b76342a1c2f846fd3f28862dd7574bf8",
+      "size": 318047,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/40edc248b76342a1c2f846fd3f28862dd7574bf8"
+    },
+    {
+      "path": "results/pr_ab_only_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c705808090771b7b7600deb5afebcb7a8481492",
+      "size": 318222,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6c705808090771b7b7600deb5afebcb7a8481492"
+    },
+    {
+      "path": "results/pr_ab_only_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf698910d07b0c8298f0f67d4b158d75bd49e413",
+      "size": 316434,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bf698910d07b0c8298f0f67d4b158d75bd49e413"
+    },
+    {
+      "path": "results/pr_ab_only_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a4c3d4f928da822a70e0ccb0b6d2342461b5ae0",
+      "size": 315719,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0a4c3d4f928da822a70e0ccb0b6d2342461b5ae0"
+    },
+    {
+      "path": "results/pr_ab_only_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "075a3787ebc948d64e80caf6ec708b1ce2b0cf39",
+      "size": 314814,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/075a3787ebc948d64e80caf6ec708b1ce2b0cf39"
+    },
+    {
+      "path": "results/pr_ab_tie_excluded.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca65b503d5df304d014739e5e33925045448e1a2",
+      "size": 314080,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ca65b503d5df304d014739e5e33925045448e1a2"
+    },
+    {
+      "path": "results/pr_ab_unmatched_mixed.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95ccc86984c91a6cde397dea732a6f5a70a261d9",
+      "size": 476246,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/95ccc86984c91a6cde397dea732a6f5a70a261d9"
+    },
+    {
+      "path": "results/pr_ab_without_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c2814be7a9b40ba4f8abce78a8e050cb2d53813",
+      "size": 319770,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4c2814be7a9b40ba4f8abce78a8e050cb2d53813"
+    },
+    {
+      "path": "results/pr_ab_without_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "942444391baebef6fdea55c5c38ee22c99296761",
+      "size": 325282,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/942444391baebef6fdea55c5c38ee22c99296761"
+    },
+    {
+      "path": "results/pr_ab_without_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d30b61bea06803434ae693c35003369b00ac7549",
+      "size": 324218,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d30b61bea06803434ae693c35003369b00ac7549"
+    },
+    {
+      "path": "results/pr_ab_without_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f47624847530ce749892eab6ad0fa2749139f2c5",
+      "size": 318780,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f47624847530ce749892eab6ad0fa2749139f2c5"
+    },
+    {
+      "path": "results/pr_dimensions_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cf626e2b3195e9bcad5b5c68ab2f0787aacd0e3",
+      "size": 120,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6cf626e2b3195e9bcad5b5c68ab2f0787aacd0e3"
+    },
+    {
+      "path": "results/pr_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "772bd036f47af830ce49cd20e7cee07308d93ff5",
+      "size": 159502,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/772bd036f47af830ce49cd20e7cee07308d93ff5"
+    },
+    {
+      "path": "results/pr_filesize_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dd34df74dc7d2d821a3c1eb3c9349d82ecebe4b",
+      "size": 1477056,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3dd34df74dc7d2d821a3c1eb3c9349d82ecebe4b"
+    },
+    {
+      "path": "results/pr_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf698910d07b0c8298f0f67d4b158d75bd49e413",
+      "size": 316434,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bf698910d07b0c8298f0f67d4b158d75bd49e413"
+    },
+    {
+      "path": "results/pr_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e631535b181ca28f4ef7e2709a3f49705b81d6a",
+      "size": 316644,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5e631535b181ca28f4ef7e2709a3f49705b81d6a"
+    },
+    {
+      "path": "results/pr_jpeg_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "617b2f2d5e4e832947b45dd2ad7c7a4740be1e80",
+      "size": 106,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/617b2f2d5e4e832947b45dd2ad7c7a4740be1e80"
+    },
+    {
+      "path": "results/pr_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c031d4f4659b40ae29352a264dbb6ba5fe0bf5ed",
+      "size": 220277,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c031d4f4659b40ae29352a264dbb6ba5fe0bf5ed"
+    },
+    {
+      "path": "results/pr_metadata_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61786f0f3f1fffe0ec949e9c588934f620576555",
+      "size": 1247273,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/61786f0f3f1fffe0ec949e9c588934f620576555"
+    },
+    {
+      "path": "results/pr_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd9ba3fa0170ec48961667913d6b6a5fe9057fe8",
+      "size": 132167,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fd9ba3fa0170ec48961667913d6b6a5fe9057fe8"
+    },
+    {
+      "path": "results/predictions_ab_HSV.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64e4fa87d861651ff5f6988e50f6e4ed2a5dd3f4",
+      "size": 513517,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/64e4fa87d861651ff5f6988e50f6e4ed2a5dd3f4"
+    },
+    {
+      "path": "results/predictions_ab_Lab.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bafdfd3cb67570fc648be103ae671d4fd85d2a1",
+      "size": 513424,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3bafdfd3cb67570fc648be103ae671d4fd85d2a1"
+    },
+    {
+      "path": "results/predictions_ab_five_crop.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "752a93c56dde0ec5f7de9fa29f16ab23eba2029d",
+      "size": 513749,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/752a93c56dde0ec5f7de9fa29f16ab23eba2029d"
+    },
+    {
+      "path": "results/predictions_ab_full_canvas.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c16491547af9cb87ffe16ff6e0e111d51966efc",
+      "size": 513438,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1c16491547af9cb87ffe16ff6e0e111d51966efc"
+    },
+    {
+      "path": "results/predictions_ab_only_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1abbbab7c1b8e012f3e635fcc2c31fe55dfddb34",
+      "size": 509995,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1abbbab7c1b8e012f3e635fcc2c31fe55dfddb34"
+    },
+    {
+      "path": "results/predictions_ab_only_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b93f8e77c6537d2042f1e037cf7dee771fe9fab",
+      "size": 507949,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0b93f8e77c6537d2042f1e037cf7dee771fe9fab"
+    },
+    {
+      "path": "results/predictions_ab_only_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c994fa316f7956c2680275b4420717923262623",
+      "size": 509294,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3c994fa316f7956c2680275b4420717923262623"
+    },
+    {
+      "path": "results/predictions_ab_only_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c72e424b4301860d4b1db6e2f189357f56d5d6c1",
+      "size": 511071,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c72e424b4301860d4b1db6e2f189357f56d5d6c1"
+    },
+    {
+      "path": "results/predictions_ab_tie_excluded.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "584140bda801821ebb9c3f52ebfcba0e1a356d66",
+      "size": 513397,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/584140bda801821ebb9c3f52ebfcba0e1a356d66"
+    },
+    {
+      "path": "results/predictions_ab_unmatched_mixed.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa7e3891ad562de39a5c5854a18c3ee14dc01c4c",
+      "size": 758549,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fa7e3891ad562de39a5c5854a18c3ee14dc01c4c"
+    },
+    {
+      "path": "results/predictions_ab_without_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dded10be589094b48f9e1d542c05cd426dd34331",
+      "size": 512247,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dded10be589094b48f9e1d542c05cd426dd34331"
+    },
+    {
+      "path": "results/predictions_ab_without_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfc1dec141ae30dd9085c7c46dc18ee6d1dc35aa",
+      "size": 512975,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bfc1dec141ae30dd9085c7c46dc18ee6d1dc35aa"
+    },
+    {
+      "path": "results/predictions_ab_without_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d81a5717d0881cf5f9f9da1a68eae04460de0a6b",
+      "size": 513486,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d81a5717d0881cf5f9f9da1a68eae04460de0a6b"
+    },
+    {
+      "path": "results/predictions_ab_without_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e48c36d6f7ddc373af41f258a99520724b65efb",
+      "size": 510837,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3e48c36d6f7ddc373af41f258a99520724b65efb"
+    },
+    {
+      "path": "results/predictions_dimensions_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0a106fe8726206335d3bd9b6ebe69510126210c",
+      "size": 3099351,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b0a106fe8726206335d3bd9b6ebe69510126210c"
+    },
+    {
+      "path": "results/predictions_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93b472fd49f4e6e5da3ecb2f1d8a53396747a9a8",
+      "size": 463576,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/93b472fd49f4e6e5da3ecb2f1d8a53396747a9a8"
+    },
+    {
+      "path": "results/predictions_filesize_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "827a0c9290ac38581f2fd25fae2e7c3ac10086d3",
+      "size": 3094867,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/827a0c9290ac38581f2fd25fae2e7c3ac10086d3"
+    },
+    {
+      "path": "results/predictions_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b93f8e77c6537d2042f1e037cf7dee771fe9fab",
+      "size": 507949,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0b93f8e77c6537d2042f1e037cf7dee771fe9fab"
+    },
+    {
+      "path": "results/predictions_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb38aa12d8b5b9464e4be60b813914c78199acd9",
+      "size": 513787,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bb38aa12d8b5b9464e4be60b813914c78199acd9"
+    },
+    {
+      "path": "results/predictions_jpeg50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "185c01d82b93cd0e3d3ce99c3b11a517335d8935",
+      "size": 506306,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/185c01d82b93cd0e3d3ce99c3b11a517335d8935"
+    },
+    {
+      "path": "results/predictions_jpeg75.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2930e858b1b61957ed2e9bc9c77cb4ac59b992d2",
+      "size": 508016,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2930e858b1b61957ed2e9bc9c77cb4ac59b992d2"
+    },
+    {
+      "path": "results/predictions_jpeg95.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37340ca3e1c469afbdebc0237b150cfcccba52b9",
+      "size": 513801,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/37340ca3e1c469afbdebc0237b150cfcccba52b9"
+    },
+    {
+      "path": "results/predictions_jpeg_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe0fd8b246ea9368dcb5c8db502b628f57602b9",
+      "size": 3123353,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dfe0fd8b246ea9368dcb5c8db502b628f57602b9"
+    },
+    {
+      "path": "results/predictions_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e82645038e75bbea13368fc21ce22d24b37dc98",
+      "size": 510416,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8e82645038e75bbea13368fc21ce22d24b37dc98"
+    },
+    {
+      "path": "results/predictions_metadata_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5875e2dcc95878356cdbc0b7eb597c6dca0726c",
+      "size": 3118529,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e5875e2dcc95878356cdbc0b7eb597c6dca0726c"
+    },
+    {
+      "path": "results/predictions_resize0.5.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80c2dbb71162befdad769cbaeb806008dcb719e6",
+      "size": 505667,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/80c2dbb71162befdad769cbaeb806008dcb719e6"
+    },
+    {
+      "path": "results/predictions_resize0.75.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1889ba93f62644798f3e201cfbf44f873871297",
+      "size": 506250,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e1889ba93f62644798f3e201cfbf44f873871297"
+    },
+    {
+      "path": "results/predictions_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "292661bb76087df6f0c22ddab10382b7d2657165",
+      "size": 459033,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/292661bb76087df6f0c22ddab10382b7d2657165"
+    },
+    {
+      "path": "results/pretrained_weight_provenance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7bcdbb4bdb52c81fa3c7d4adba90a0274b020d3",
+      "size": 546,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c7bcdbb4bdb52c81fa3c7d4adba90a0274b020d3"
+    },
+    {
+      "path": "results/projection_fidelity.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa1ecfc80b1e28721f4a81b4476bf25dab1af558",
+      "size": 2831,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fa1ecfc80b1e28721f4a81b4476bf25dab1af558"
+    },
+    {
+      "path": "results/projection_runtime.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "854b9e5872310e89bd57f69276ed7ada4b4b7fec",
+      "size": 34,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/854b9e5872310e89bd57f69276ed7ada4b4b7fec"
+    },
+    {
+      "path": "results/report_methodology_changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "485e3708de34839191a09c3162985e879e7da4df",
+      "size": 3489,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/485e3708de34839191a09c3162985e879e7da4df"
+    },
+    {
+      "path": "results/resnet50_embedding_state.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab47cb6895ca151665a84932a3374aecad9b49ef",
+      "size": 210,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ab47cb6895ca151665a84932a3374aecad9b49ef"
+    },
+    {
+      "path": "results/reviewed_source_crosswalk.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11b0ed054d0f9c8b2640a379099bae41b11cb3d6",
+      "size": 205,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/11b0ed054d0f9c8b2640a379099bae41b11cb3d6"
+    },
+    {
+      "path": "results/roc_ab_HSV.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c0c3f1df40d6718ca24dcedb101bf2bd40a8f6b",
+      "size": 28083,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4c0c3f1df40d6718ca24dcedb101bf2bd40a8f6b"
+    },
+    {
+      "path": "results/roc_ab_Lab.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f650d944e00467e331b1e42ae60c4c85b5bc766",
+      "size": 29049,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1f650d944e00467e331b1e42ae60c4c85b5bc766"
+    },
+    {
+      "path": "results/roc_ab_five_crop.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d824b202f59fb145030461775ac7400774d7bd",
+      "size": 28236,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/15d824b202f59fb145030461775ac7400774d7bd"
+    },
+    {
+      "path": "results/roc_ab_full_canvas.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd142677787f80c62487de685ca1ad74362ee10d",
+      "size": 30415,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bd142677787f80c62487de685ca1ad74362ee10d"
+    },
+    {
+      "path": "results/roc_ab_only_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "194724f373ac1f59cd988f2d081202e592d4af23",
+      "size": 84619,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/194724f373ac1f59cd988f2d081202e592d4af23"
+    },
+    {
+      "path": "results/roc_ab_only_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f58c5cdfaf4e4c4f0b35b34f553444cc3a65d03a",
+      "size": 131721,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f58c5cdfaf4e4c4f0b35b34f553444cc3a65d03a"
+    },
+    {
+      "path": "results/roc_ab_only_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab87844721551e38fdd4188d1e14374805279dcb",
+      "size": 114713,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ab87844721551e38fdd4188d1e14374805279dcb"
+    },
+    {
+      "path": "results/roc_ab_only_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a2b4adbd0d179d17f0cd4d5cda7a84299ddbc19",
+      "size": 78243,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1a2b4adbd0d179d17f0cd4d5cda7a84299ddbc19"
+    },
+    {
+      "path": "results/roc_ab_tie_excluded.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4e8a255215c8c431f17531d8e74279f727762bf",
+      "size": 32920,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c4e8a255215c8c431f17531d8e74279f727762bf"
+    },
+    {
+      "path": "results/roc_ab_unmatched_mixed.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f9e93d1cb196f205ca68a6e5332cce806d98273",
+      "size": 88818,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1f9e93d1cb196f205ca68a6e5332cce806d98273"
+    },
+    {
+      "path": "results/roc_ab_without_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77f3905d37d0d3fefc8656eab9dc8136b325bb66",
+      "size": 44667,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/77f3905d37d0d3fefc8656eab9dc8136b325bb66"
+    },
+    {
+      "path": "results/roc_ab_without_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08613c12853cb3289c4ea59037f8052a3fcbccbf",
+      "size": 36233,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/08613c12853cb3289c4ea59037f8052a3fcbccbf"
+    },
+    {
+      "path": "results/roc_ab_without_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3bfd4d4633d699a7ec5da2b132cc8741a1e00f3",
+      "size": 29793,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e3bfd4d4633d699a7ec5da2b132cc8741a1e00f3"
+    },
+    {
+      "path": "results/roc_ab_without_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "089ecc928210f676501d39c9f1c5da006268d139",
+      "size": 69355,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/089ecc928210f676501d39c9f1c5da006268d139"
+    },
+    {
+      "path": "results/roc_dimensions_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e947b31094f4ef135d4697d736d3a73ee1bdad03",
+      "size": 99,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e947b31094f4ef135d4697d736d3a73ee1bdad03"
+    },
+    {
+      "path": "results/roc_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddc7c6a33f2bc43c1ca4490ce9f442300927452c",
+      "size": 12763,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ddc7c6a33f2bc43c1ca4490ce9f442300927452c"
+    },
+    {
+      "path": "results/roc_filesize_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68739cad9cf33b2c937f25d76ce12f91392bdbbc",
+      "size": 538009,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/68739cad9cf33b2c937f25d76ce12f91392bdbbc"
+    },
+    {
+      "path": "results/roc_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f58c5cdfaf4e4c4f0b35b34f553444cc3a65d03a",
+      "size": 131721,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f58c5cdfaf4e4c4f0b35b34f553444cc3a65d03a"
+    },
+    {
+      "path": "results/roc_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48d6dcbe1eca0e9b68c4590dc9862366c27e1dcf",
+      "size": 26776,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/48d6dcbe1eca0e9b68c4590dc9862366c27e1dcf"
+    },
+    {
+      "path": "results/roc_jpeg_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d53a79ebc3ffca748d6409f84d790e41683ba0dc",
+      "size": 85,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d53a79ebc3ffca748d6409f84d790e41683ba0dc"
+    },
+    {
+      "path": "results/roc_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ff236ffce79754e001f6bb848a4a8e46ad9dc47",
+      "size": 33780,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9ff236ffce79754e001f6bb848a4a8e46ad9dc47"
+    },
+    {
+      "path": "results/roc_metadata_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b77c09de5c1edba0640b30980f93ef935a2823c",
+      "size": 363374,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5b77c09de5c1edba0640b30980f93ef935a2823c"
+    },
+    {
+      "path": "results/roc_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "252fb8b97780c9cd509055bc50a0a7001dee4aca",
+      "size": 8106,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/252fb8b97780c9cd509055bc50a0a7001dee4aca"
+    },
+    {
+      "path": "results/saturation_pilot.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdc372fdaa604b1d3805f27e27ad75aea57bc09c",
+      "size": 418,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cdc372fdaa604b1d3805f27e27ad75aea57bc09c"
+    },
+    {
+      "path": "results/saturation_selection.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1291949434a90bf76cfc82fe7f309969573f6e9d",
+      "size": 1306,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1291949434a90bf76cfc82fe7f309969573f6e9d"
+    },
+    {
+      "path": "results/saturation_tertiles.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "870ed1370dd8ee3704be0c85ff7cebbde50b6863",
+      "size": 195,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/870ed1370dd8ee3704be0c85ff7cebbde50b6863"
+    },
+    {
+      "path": "results/sensitivity_pixel_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f6dc36383b0b1b8d2d2e329d36cce1244d0d316",
+      "size": 728,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1f6dc36383b0b1b8d2d2e329d36cce1244d0d316"
+    },
+    {
+      "path": "results/sliced_wasserstein.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54c4f70a18e51f01bf3221e0db0a5967366810ae",
+      "size": 370,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/54c4f70a18e51f01bf3221e0db0a5967366810ae"
+    },
+    {
+      "path": "results/software_environment.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b219c419af91f0266fb23ad5e1c595a13ea3abe",
+      "size": 1168,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7b219c419af91f0266fb23ad5e1c595a13ea3abe"
+    },
+    {
+      "path": "results/space_edits.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dfc5e71f6ef0f98b8b263234c0949aafcc53a7f",
+      "size": 13158,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8dfc5e71f6ef0f98b8b263234c0949aafcc53a7f"
+    },
+    {
+      "path": "results/spectral_wavelet_profiles.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8a4edb12b55220aaed6d563ac007164c09d3e58",
+      "size": 6535,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/a8a4edb12b55220aaed6d563ac007164c09d3e58"
+    },
+    {
+      "path": "results/stage10_integrity_checks.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04d0210ae31a9886c68f15d9a9ec1230859ca8a3",
+      "size": 11056,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/04d0210ae31a9886c68f15d9a9ec1230859ca8a3"
+    },
+    {
+      "path": "results/stage10_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc7e15318a8cd99ca534f59f5a2cdd31cca801a5",
+      "size": 495,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bc7e15318a8cd99ca534f59f5a2cdd31cca801a5"
+    },
+    {
+      "path": "results/stage6_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ad03d665e11e8ede277cebfefd8981728c10e2c",
+      "size": 3051,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3ad03d665e11e8ede277cebfefd8981728c10e2c"
+    },
+    {
+      "path": "results/stage7_8_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b25f5f8ec6a968c4ca4b9edf6b96be69d467802e",
+      "size": 1267,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b25f5f8ec6a968c4ca4b9edf6b96be69d467802e"
+    },
+    {
+      "path": "results/stage9_10_tables.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15b3274d34e40ca430ed40b1a56f87a36a8dfab7",
+      "size": 489,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/15b3274d34e40ca430ed40b1a56f87a36a8dfab7"
+    },
+    {
+      "path": "results/stage_runtimes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12b03bf3e63ebaa1a8900e665214a3d16a4019b5",
+      "size": 677,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/12b03bf3e63ebaa1a8900e665214a3d16a4019b5"
+    },
+    {
+      "path": "results/style_family_drift.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d654e25f508b4ee84e3acc5419015217ed02077",
+      "size": 3214,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/5d654e25f508b4ee84e3acc5419015217ed02077"
+    },
+    {
+      "path": "results/style_feature_drift.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92b9e8d302207de7802a8d1144bec6b67adabacb",
+      "size": 343470,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/92b9e8d302207de7802a8d1144bec6b67adabacb"
+    },
+    {
+      "path": "results/style_scores_jpeg50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "defeeee18f6dfef64cd609f67bff6a4f99ea445c",
+      "size": 640,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/defeeee18f6dfef64cd609f67bff6a4f99ea445c"
+    },
+    {
+      "path": "results/style_scores_jpeg75.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e56a0a614a0965fd4040b7e2d2a199553801e81",
+      "size": 642,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2e56a0a614a0965fd4040b7e2d2a199553801e81"
+    },
+    {
+      "path": "results/style_scores_jpeg95.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b713f0dc48b326d69899c89d9f01e41bfc80c79e",
+      "size": 644,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b713f0dc48b326d69899c89d9f01e41bfc80c79e"
+    },
+    {
+      "path": "results/style_scores_resize0.5.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbcb07f1d0447c51c8f815a235f68aed3df9d85b",
+      "size": 644,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bbcb07f1d0447c51c8f815a235f68aed3df9d85b"
+    },
+    {
+      "path": "results/style_scores_resize0.75.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32fbf6f43b40a61647cfe346855cb1080f2449d2",
+      "size": 646,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/32fbf6f43b40a61647cfe346855cb1080f2449d2"
+    },
+    {
+      "path": "results/supplementary_statistics_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b4bee3097fff844e996b6621b75543aac7522a",
+      "size": 1102,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e7b4bee3097fff844e996b6621b75543aac7522a"
+    },
+    {
+      "path": "results/tsne_plot_points.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1502de5b3493d94052ebe8921729c9b5d37d6c",
+      "size": 188184,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2b1502de5b3493d94052ebe8921729c9b5d37d6c"
+    },
+    {
+      "path": "results/tsne_sample_manifest.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13dac5386175dc29d655c9f833039e785e3ccb79",
+      "size": 126930,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/13dac5386175dc29d655c9f833039e785e3ccb79"
+    },
+    {
+      "path": "results/unit_test_results.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00aab6bc4ba758b28b1395ff75372bdbf511b0dd",
+      "size": 500,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/00aab6bc4ba758b28b1395ff75372bdbf511b0dd"
+    },
+    {
+      "path": "results/validation_tuning_ab_HSV.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6dfb99da723339c00cfbc199821b7b7635b2d7f",
+      "size": 154,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e6dfb99da723339c00cfbc199821b7b7635b2d7f"
+    },
+    {
+      "path": "results/validation_tuning_ab_Lab.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "783e28830a418df38fc389a319838c95a279443e",
+      "size": 145,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/783e28830a418df38fc389a319838c95a279443e"
+    },
+    {
+      "path": "results/validation_tuning_ab_five_crop.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f7358c85ec3367c1298adbffdeae74b61573987",
+      "size": 155,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1f7358c85ec3367c1298adbffdeae74b61573987"
+    },
+    {
+      "path": "results/validation_tuning_ab_full_canvas.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c4311d9d38e2b7ba66ab87156fd6306ee31c9c0",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3c4311d9d38e2b7ba66ab87156fd6306ee31c9c0"
+    },
+    {
+      "path": "results/validation_tuning_ab_only_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f84145d90a890f4a7691305f98eed2248ff2a2d",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/1f84145d90a890f4a7691305f98eed2248ff2a2d"
+    },
+    {
+      "path": "results/validation_tuning_ab_only_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dee9cc4cc56ebd9df3e7e4819c31a62db4bac308",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dee9cc4cc56ebd9df3e7e4819c31a62db4bac308"
+    },
+    {
+      "path": "results/validation_tuning_ab_only_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb9beb73d324cdd252ecd081005cb32006b1aa36",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cb9beb73d324cdd252ecd081005cb32006b1aa36"
+    },
+    {
+      "path": "results/validation_tuning_ab_only_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2cb860c7d4a719ce9ab621f4b5064a8b974aad0",
+      "size": 164,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e2cb860c7d4a719ce9ab621f4b5064a8b974aad0"
+    },
+    {
+      "path": "results/validation_tuning_ab_tie_excluded.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbf2db74484016566a263656f142d599fe76b48d",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cbf2db74484016566a263656f142d599fe76b48d"
+    },
+    {
+      "path": "results/validation_tuning_ab_unmatched_mixed.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de47fad323e4ffaafcfd79662d343cb45014b6c3",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/de47fad323e4ffaafcfd79662d343cb45014b6c3"
+    },
+    {
+      "path": "results/validation_tuning_ab_without_Color.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c82a50430ea9187323d2e8a2a3acb9e017447eb2",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c82a50430ea9187323d2e8a2a3acb9e017447eb2"
+    },
+    {
+      "path": "results/validation_tuning_ab_without_FFT.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71ee01d576f2ed17974c9aecc3cfe3e939d6392d",
+      "size": 153,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/71ee01d576f2ed17974c9aecc3cfe3e939d6392d"
+    },
+    {
+      "path": "results/validation_tuning_ab_without_Haar.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57d3f9627650c07d4d9c2e0a5d0768c88f6ce3b6",
+      "size": 145,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/57d3f9627650c07d4d9c2e0a5d0768c88f6ce3b6"
+    },
+    {
+      "path": "results/validation_tuning_ab_without_Ordinal.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b9febae62da037845c65d97cd723e62416f7e95",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7b9febae62da037845c65d97cd723e62416f7e95"
+    },
+    {
+      "path": "results/validation_tuning_dimensions_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "597c84b064704b160eef90d89dd91f7f20c78793",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/597c84b064704b160eef90d89dd91f7f20c78793"
+    },
+    {
+      "path": "results/validation_tuning_dinov2.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d6890ddc40f49093287c8cf9279ec4e717394cf",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/3d6890ddc40f49093287c8cf9279ec4e717394cf"
+    },
+    {
+      "path": "results/validation_tuning_filesize_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01d5522b8fbde743db29dd9b78aa7f40b553fee1",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/01d5522b8fbde743db29dd9b78aa7f40b553fee1"
+    },
+    {
+      "path": "results/validation_tuning_frequency.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dee9cc4cc56ebd9df3e7e4819c31a62db4bac308",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/dee9cc4cc56ebd9df3e7e4819c31a62db4bac308"
+    },
+    {
+      "path": "results/validation_tuning_handcrafted.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58b2dcc477216245f41c7e14d2f8287903762bf1",
+      "size": 164,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/58b2dcc477216245f41c7e14d2f8287903762bf1"
+    },
+    {
+      "path": "results/validation_tuning_jpeg_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6418678e097c8bdd8bae7f2c3feab26b7f48b3f2",
+      "size": 75,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6418678e097c8bdd8bae7f2c3feab26b7f48b3f2"
+    },
+    {
+      "path": "results/validation_tuning_metadata_gated.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2edc6f7fab69915319e1fc1423cb9ffa7aa9b961",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2edc6f7fab69915319e1fc1423cb9ffa7aa9b961"
+    },
+    {
+      "path": "results/validation_tuning_metadata_ungated_full.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6418678e097c8bdd8bae7f2c3feab26b7f48b3f2",
+      "size": 75,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/6418678e097c8bdd8bae7f2c3feab26b7f48b3f2"
+    },
+    {
+      "path": "results/validation_tuning_resnet50.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3240f11049999590a8ffddd65f0fa378fada77b",
+      "size": 165,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d3240f11049999590a8ffddd65f0fa378fada77b"
+    },
+    {
+      "path": "splits",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "861461a0bb03fcc01b8d41dee7de99d19631b90b",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/861461a0bb03fcc01b8d41dee7de99d19631b90b"
+    },
+    {
+      "path": "splits/SHA256SUMS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9d89462d26010feff56ac26a5db232404afe46d",
+      "size": 86,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e9d89462d26010feff56ac26a5db232404afe46d"
+    },
+    {
+      "path": "splits/cohort_manifest.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "898f2525361dae9707186b2ead7959c6ea89fc9f",
+      "size": 18766173,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/898f2525361dae9707186b2ead7959c6ea89fc9f"
+    },
+    {
+      "path": "splits/development_ids.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "269157d5f4d69640fa761e957050cfd99d77c937",
+      "size": 1704650,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/269157d5f4d69640fa761e957050cfd99d77c937"
+    },
+    {
+      "path": "splits/full_release_ids.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a4757ea415cdb4b889be931eeaeadfddde481af",
+      "size": 12611554,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9a4757ea415cdb4b889be931eeaeadfddde481af"
+    },
+    {
+      "path": "splits/test_ids.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55acebbe2d6c9a976e28b7157f10a77418254d70",
+      "size": 568250,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/55acebbe2d6c9a976e28b7157f10a77418254d70"
+    },
+    {
+      "path": "splits/validation_ids.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4512c20cb9973891570e5875e52613518912247c",
+      "size": 568250,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4512c20cb9973891570e5875e52613518912247c"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3436393339bd2dd7956dabff12b4c635adafdcb",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/d3436393339bd2dd7956dabff12b4c635adafdcb"
+    },
+    {
+      "path": "src/ablations.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18890732fef8deeff2060ea912cbb5ce40df70ee",
+      "size": 13341,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/18890732fef8deeff2060ea912cbb5ce40df70ee"
+    },
+    {
+      "path": "src/annotate_gate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd3c60381190c2af32120934ca2f87ae16ff6548",
+      "size": 2674,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fd3c60381190c2af32120934ca2f87ae16ff6548"
+    },
+    {
+      "path": "src/audit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e10d6d76cba3dd8c4042e32c69ae4c6465aca00e",
+      "size": 4105,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e10d6d76cba3dd8c4042e32c69ae4c6465aca00e"
+    },
+    {
+      "path": "src/baselines.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5bdf8ae8ae6cfde2eabef3ce65bb43d0bf49f19",
+      "size": 9658,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e5bdf8ae8ae6cfde2eabef3ce65bb43d0bf49f19"
+    },
+    {
+      "path": "src/benchmark_audit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfff264de0168c78a76195c7c4eba0eb5a50a9a7",
+      "size": 696,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bfff264de0168c78a76195c7c4eba0eb5a50a9a7"
+    },
+    {
+      "path": "src/border_analysis.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ed4e692272e1509a9c7fe1bb42db0bf9375bb3d",
+      "size": 3632,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2ed4e692272e1509a9c7fe1bb42db0bf9375bb3d"
+    },
+    {
+      "path": "src/build_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "568a46700203f3b0e76c4a37f60e083b138ec4c1",
+      "size": 47664,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/568a46700203f3b0e76c4a37f60e083b138ec4c1"
+    },
+    {
+      "path": "src/build_submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76a477b43e3602b111ee27651af29a254c67da49",
+      "size": 52131,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/76a477b43e3602b111ee27651af29a254c67da49"
+    },
+    {
+      "path": "src/capture_dashboard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "789ed664906ed6b0de4dad211ea72a494b2b714b",
+      "size": 6704,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/789ed664906ed6b0de4dad211ea72a494b2b714b"
+    },
+    {
+      "path": "src/common.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e31abc91d391a4b2af234e9c59fdd72f7b950610",
+      "size": 1744,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e31abc91d391a4b2af234e9c59fdd72f7b950610"
+    },
+    {
+      "path": "src/dashboard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fd390a1497fb7a0f31cf44222f143c45ceac089",
+      "size": 3556,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/7fd390a1497fb7a0f31cf44222f143c45ceac089"
+    },
+    {
+      "path": "src/dashboard_theme.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd791cafc8f1a234b5cac578910965323fb84b65",
+      "size": 8581,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/bd791cafc8f1a234b5cac578910965323fb84b65"
+    },
+    {
+      "path": "src/dashboard_views.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93375e8d8f0099efb8f982a2f0c0870cf85d9777",
+      "size": 15380,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/93375e8d8f0099efb8f982a2f0c0870cf85d9777"
+    },
+    {
+      "path": "src/deep.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93034bf75b01d99d765a95b1a7f520b96c93d130",
+      "size": 4637,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/93034bf75b01d99d765a95b1a7f520b96c93d130"
+    },
+    {
+      "path": "src/diagnose_torch_import.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "026e29a267856f6335cbf79fdeafc845effdc947",
+      "size": 812,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/026e29a267856f6335cbf79fdeafc845effdc947"
+    },
+    {
+      "path": "src/drift.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "842b8c69c97f9cf8168d397ef133c1a6938e6b67",
+      "size": 9488,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/842b8c69c97f9cf8168d397ef133c1a6938e6b67"
+    },
+    {
+      "path": "src/export_report.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b874e471ead51ff34061c06e64058c9d2d03abf2",
+      "size": 717,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b874e471ead51ff34061c06e64058c9d2d03abf2"
+    },
+    {
+      "path": "src/extract_features.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "379f0a740ecff4fe33691a9c1bebbac6f8d9d4ec",
+      "size": 4974,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/379f0a740ecff4fe33691a9c1bebbac6f8d9d4ec"
+    },
+    {
+      "path": "src/features.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6acbdf308df9c6db2a924f171cc05f10d8f6793",
+      "size": 5674,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b6acbdf308df9c6db2a924f171cc05f10d8f6793"
+    },
+    {
+      "path": "src/finalize_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d0a3767ac935018a07c359b4297c17acf5eff91",
+      "size": 16912,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9d0a3767ac935018a07c359b4297c17acf5eff91"
+    },
+    {
+      "path": "src/finalize_stage10.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8da1416a3de7df2b13a1682f81ff767b352e86fd",
+      "size": 13328,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/8da1416a3de7df2b13a1682f81ff767b352e86fd"
+    },
+    {
+      "path": "src/inspect_metadata_headers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abcad266fd13a2ff4c42f55062340fafae499646",
+      "size": 1580,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/abcad266fd13a2ff4c42f55062340fafae499646"
+    },
+    {
+      "path": "src/literature_curated.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e46b6a66fb3e9adbac9319c2b9aab7e9b3aa79b9",
+      "size": 8841,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/e46b6a66fb3e9adbac9319c2b9aab7e9b3aa79b9"
+    },
+    {
+      "path": "src/orientation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32a51a1fd0fc73f3453bc2bb28e25cc79df123e5",
+      "size": 3834,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/32a51a1fd0fc73f3453bc2bb28e25cc79df123e5"
+    },
+    {
+      "path": "src/package_submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa4429ffdd7f537de93bc89d22cf4c48d36e304f",
+      "size": 14204,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fa4429ffdd7f537de93bc89d22cf4c48d36e304f"
+    },
+    {
+      "path": "src/projections.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "003de1ef5a27264301da4b89b4756c2c38bc4ce3",
+      "size": 9523,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/003de1ef5a27264301da4b89b4756c2c38bc4ce3"
+    },
+    {
+      "path": "src/publication_figures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa89b131a495625b77befc0eb30140c754390bb7",
+      "size": 22408,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/fa89b131a495625b77befc0eb30140c754390bb7"
+    },
+    {
+      "path": "src/redraw_audited_figures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48112aec8b7e1602d91bedd697ad9bfb18f24bb0",
+      "size": 11193,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/48112aec8b7e1602d91bedd697ad9bfb18f24bb0"
+    },
+    {
+      "path": "src/regenerate_figures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c837be2eb2be3855d1e0ae3fec432d76ff52831",
+      "size": 28533,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/4c837be2eb2be3855d1e0ae3fec432d76ff52831"
+    },
+    {
+      "path": "src/render_density.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b29df1c141584e0979508269e501d20ad846be57",
+      "size": 2141,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/b29df1c141584e0979508269e501d20ad846be57"
+    },
+    {
+      "path": "src/render_hc_atlas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77fc2b834a3162dbe0573a07227ec7097b0c7942",
+      "size": 2243,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/77fc2b834a3162dbe0573a07227ec7097b0c7942"
+    },
+    {
+      "path": "src/render_projection_audit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57871a6e9eb22bf65e1d2692d6fed65b30d9071d",
+      "size": 2984,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/57871a6e9eb22bf65e1d2692d6fed65b30d9071d"
+    },
+    {
+      "path": "src/run_checkpoint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eedea180f8e369b50d696967acec50979d9db451",
+      "size": 1462,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/eedea180f8e369b50d696967acec50979d9db451"
+    },
+    {
+      "path": "src/run_stage10.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85ed75e5a8b56cfd7b1a19b4bcab2afe6425aa8f",
+      "size": 1052,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/85ed75e5a8b56cfd7b1a19b4bcab2afe6425aa8f"
+    },
+    {
+      "path": "src/sensitivity_pixels.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d1f47ccef828a40c22d86ff342c5a5f7cd815a2",
+      "size": 4217,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/0d1f47ccef828a40c22d86ff342c5a5f7cd815a2"
+    },
+    {
+      "path": "src/splits.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb77a06569d0659fe1de47e1e3d8ab833a07eca2",
+      "size": 9654,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/cb77a06569d0659fe1de47e1e3d8ab833a07eca2"
+    },
+    {
+      "path": "src/submission_assets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9571134682baaf2d8aba61cb57439b0531ecf8b2",
+      "size": 7892,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/9571134682baaf2d8aba61cb57439b0531ecf8b2"
+    },
+    {
+      "path": "src/tabular_probes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d0dd858baa9569992542950bd7cb4e0fc839dc4",
+      "size": 711,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2d0dd858baa9569992542950bd7cb4e0fc839dc4"
+    },
+    {
+      "path": "src/uncertainty_tables.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce1b7a84406a65e868f62c34532727f8a3c1f097",
+      "size": 1698,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ce1b7a84406a65e868f62c34532727f8a3c1f097"
+    },
+    {
+      "path": "src/verify_checkpoint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8e88652edeaf0f0aa1882bebd7f7cdc4d4a2fc9",
+      "size": 9169,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/f8e88652edeaf0f0aa1882bebd7f7cdc4d4a2fc9"
+    },
+    {
+      "path": "src/verify_dashboard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b09259c1cc730a5994750e8faf923ec23d99e9b",
+      "size": 4332,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2b09259c1cc730a5994750e8faf923ec23d99e9b"
+    },
+    {
+      "path": "src/verify_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2349e87a8b98a51bb9b8688ff52292f64c8df1a8",
+      "size": 6643,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/2349e87a8b98a51bb9b8688ff52292f64c8df1a8"
+    },
+    {
+      "path": "src/verify_stage10.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6db61acfc0e6e203d966ea5f0f73c4ef20e11e7",
+      "size": 9243,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/c6db61acfc0e6e203d966ea5f0f73c4ef20e11e7"
+    },
+    {
+      "path": "src/verify_submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f7d8163a6d7ca4a541e35a377a5d17c858f0b7",
+      "size": 12061,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/79f7d8163a6d7ca4a541e35a377a5d17c858f0b7"
+    },
+    {
+      "path": "src/verify_submission_runtime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47a4b123d0127827f7c90a4582efeaa0f9ac9ab4",
+      "size": 407,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/47a4b123d0127827f7c90a4582efeaa0f9ac9ab4"
+    },
+    {
+      "path": "src/visual_tables.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "632719a9cc8ab590761cda2a8a5c00e179dd2196",
+      "size": 6416,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/632719a9cc8ab590761cda2a8a5c00e179dd2196"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c7e80b131f4277f4e1deccea7173287b1d881bb",
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/trees/7c7e80b131f4277f4e1deccea7173287b1d881bb"
+    },
+    {
+      "path": "tests/test_drift.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d045228c98d7e3cc2ba85f5f94f5ce4cc688ab37",
+      "size": 1029,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/d045228c98d7e3cc2ba85f5f94f5ce4cc688ab37"
+    },
+    {
+      "path": "tests/test_features.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab80f32f3b9425cd4014d68389197f5590e76b50",
+      "size": 3419,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/ab80f32f3b9425cd4014d68389197f5590e76b50"
+    },
+    {
+      "path": "tests/test_numerical_properties.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22a2895ca282f8252d97bea6686708ccd7167c4a",
+      "size": 946,
+      "url": "https://api.github.com/repos/wasil-7/explainable-diffusion-art-analytics/git/blobs/22a2895ca282f8252d97bea6686708ccd7167c4a"
+    }
+  ],
+  "truncated": false
+}
