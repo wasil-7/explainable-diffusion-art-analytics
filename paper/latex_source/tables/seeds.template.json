@@ -1,0 +1,11 @@
+{
+  "prefix": "\\begin{table}[t]\\caption{Five grouped repartitions of the same frozen cohort, seeds 43--47. Mean $\\pm$ sample SD; not independent data collections.}\\label{tab:seeds}\\centering\\footnotesize\\begin{tabular}{lcc}\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabular}\\end{table}",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

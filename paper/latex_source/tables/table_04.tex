@@ -1,0 +1,13 @@
+\begin{table*}[t]
+\caption{Primary-test metrics (6,000 artworks). Accuracy equals balanced accuracy (BA); precision/recall/F1 use diffusion-positive labels. Macro scores average ten styles. Percentile 95\% intervals use 1,000 origin-stratified source-group draws with fits/thresholds fixed. Selected settings appear in Appendix A.}\label{tab:t4}\label{tab:essential}
+\centering\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\textwidth}{>{\hsize=1.471\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=2.059\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.353\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.553\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.553\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.553\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.494\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.965\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+\toprule
+\textbf{Probe} & \textbf{AUROC [95\% CI]} & \textbf{F1 [95\% CI]} & \textbf{Acc./BA} & \textbf{Prec.} & \textbf{Recall} & \textbf{ECE} & \textbf{Macro AUC/F1}\\\midrule
+{}Handcrafted (104-D) & 0.982415 [0.978332, 0.986003] & 0.9420 [0.9347, 0.9487] & 0.9407 & 0.9213 & 0.9637 & 0.0154 & 0.9817/0.9422\\
+{}FFT-only (36-D) & 0.683901 [0.664844, 0.701442] & 0.6830 [0.6605, 0.7027] & 0.5960 & 0.5620 & 0.8703 & 0.0500 & 0.6909/0.6826\\
+{}Metadata-only & 1.000000 [1.000000, 1.000000] & 0.9997 [0.9992, 1.0000] & 0.9997 & 1.0000 & 0.9993 & 0.1940 & 1.0000/0.9997\\
+{}ResNet-50 (frozen) & 0.999945 [0.999868, 0.999988] & 0.9972 [0.9957, 0.9985] & 0.9972 & 0.9973 & 0.9970 & 0.0022 & 0.9999/0.9972\\
+{}DINOv2 (frozen) & 0.999688 [0.999296, 0.999939] & 0.9955 [0.9936, 0.9973] & 0.9955 & 0.9947 & 0.9963 & 0.0021 & 0.9997/0.9955\\
+\bottomrule\end{tabularx}
+\end{table*}

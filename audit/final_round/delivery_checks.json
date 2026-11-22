@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "checks": 11,
+  "paper_pages": 12,
+  "items": [
+    {
+      "check": "scientificBuildChecksPassed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "officialGitOrigin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "root_entryexit0",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "root_entry12pagesIdenticalTextAndPixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gcr_entryexit0",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "gcr_entry12pagesIdenticalTextAndPixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sameDeliveredPDF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sameDeliveredWord",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "threeEarlierMilestonePDFsInGit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noEarlierMilestonesOrTeachingInSubmission",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "remoteCheckExecuted",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

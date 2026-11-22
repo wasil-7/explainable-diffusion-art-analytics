@@ -1,0 +1,10 @@
+{
+  "weights_sha256": {
+    "dinov2_vits14_pretrain.pth": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+    "resnet50-11ad3fa6.pth": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca"
+  },
+  "resnet": "torchvision ResNet50_Weights.IMAGENET1K_V2",
+  "dinov2": "facebookresearch/dinov2 dinov2_vits14 pretrained official hub",
+  "crop_transform": "EXIF/ICC to sRGB; native256 quadrants 128; each resized224 bilinear antialias; ImageNet mean/std; mean across4; SD separately resized256 first",
+  "frozen": true
+}

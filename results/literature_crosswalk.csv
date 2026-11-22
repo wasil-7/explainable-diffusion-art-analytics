@@ -1,0 +1,297 @@
+paper_id,crosswalk_id,title,pdf_version_type,sha256,doi,pages,source_text,pdf
+7174ac285c4f,Phase1/1,Any-Resolution AI-Generated Image Detection by Spectral Learning,CVF conference paper,7174ac285c4f5d8db1e5b37c5361caae4f48f02a6ca0d01a19257f8ce91b904c,https://doi.org/10.1109/CVPR52734.2025.01743,12,"Phase 1 reference number: [1]
+Title from DOI metadata: Any-Resolution AI-Generated Image Detection by Spectral Learning
+Reference extracted from the supplied PDF:
+D. Karageorgiou et al., ""Any-resolution AI-generated image detection by spectral learning,"" in Proc. IEEE/CVF CVPR, 2025. https://doi.org/10.1109/CVPR52734.2025.01743
+
+Original DOI: https://doi.org/10.1109/CVPR52734.2025.01743
+DOI destination: https://ieeexplore.ieee.org/document/11094582/
+DOI retrieval status: 202
+PDF file: SPAI.pdf
+PDF download URL: https://openaccess.thecvf.com/content/CVPR2025/papers/Karageorgiou_Any-Resolution_AI-Generated_Image_Detection_by_Spectral_Learning_CVPR_2025_paper.pdf
+PDF version: CVF conference paper
+Pages: 12
+SHA-256: 7174ac285c4f5d8db1e5b37c5361caae4f48f02a6ca0d01a19257f8ce91b904c
+Downloaded on: 2026-11-13
+
+
+",Phase1\1\SPAI.pdf
+23ae70d55065,Phase1/2,Context-aware multimodal AI navigates hidden pathways in five centuries of art evolution,Author preprint,23ae70d550658e059bd41d1a146089320d1b7d0ee63716d62377405d85c37ba7,https://doi.org/10.1073/pnas.2517969123,30,"Phase 1 reference number: [2]
+Title from DOI metadata: Context-aware multimodal AI navigates hidden pathways in five centuries of art evolution
+Reference extracted from the supplied PDF:
+J. Kim et al., ""Context-aware multimodal AI navigates hidden pathways in five centuries of art evolution,"" PNAS, vol. 123, no. 30, 2026. https://doi.org/10.1073/pnas.2517969123
+
+Original DOI: https://doi.org/10.1073/pnas.2517969123
+DOI destination: 
+DOI retrieval status: HTTP Error 403: Forbidden
+PDF file: Context_Aware_Art_Evolution_Author_Preprint.pdf
+PDF download URL: https://arxiv.org/pdf/2503.13531
+PDF version: Author preprint
+Pages: 30
+SHA-256: 23ae70d550658e059bd41d1a146089320d1b7d0ee63716d62377405d85c37ba7
+Downloaded on: 2026-11-13
+
+The downloaded arXiv preprint has the title ""Context-aware Multimodal AI Reveals Hidden Pathways in Five Centuries of Art Evolution"". The later PNAS title uses ""navigates"" instead of ""reveals"". Authors and subject match; this is the earlier author version.
+A public author preprint is supplied because the publisher PDF could not be retrieved. Text and pagination may differ from the final journal version.
+",Phase1\2\Context_Aware_Art_Evolution_Author_Preprint.pdf
+5cbf64c5f2f5,Phase1/3,FakeBench: Probing Explainable Fake Image Detection via Large Multimodal Models,Author preprint,5cbf64c5f2f5d5c639f39375cc792e7094a1ef3ed34a9cfda792b895f6b2074e,https://doi.org/10.1109/TIFS.2025.3597211,13,"Phase 1 reference number: [3]
+Title from DOI metadata: FakeBench: Probing Explainable Fake Image Detection via Large Multimodal Models
+Reference extracted from the supplied PDF:
+Y. Li et al., ""FakeBench: Probing explainable fake image detection via large multimodal models,"" IEEE TIFS, vol. 20, 2025. https://doi.org/10.1109/TIFS.2025.3597211
+
+Original DOI: https://doi.org/10.1109/TIFS.2025.3597211
+DOI destination: https://ieeexplore.ieee.org/document/11124461/
+DOI retrieval status: 202
+PDF file: FakeBench_Author_Preprint.pdf
+PDF download URL: https://arxiv.org/pdf/2404.13306
+PDF version: Author preprint
+Pages: 13
+SHA-256: 5cbf64c5f2f5d5c639f39375cc792e7094a1ef3ed34a9cfda792b895f6b2074e
+Downloaded on: 2026-11-13
+
+A public author preprint is supplied because the publisher PDF could not be retrieved. Text and pagination may differ from the final journal version.
+",Phase1\3\FakeBench_Author_Preprint.pdf
+7a92da907ad0,Phase1/4,Pixel-Inconsistency Modeling for Image Manipulation Localization,Author preprint,7a92da907ad06d25afaaa260d60875fed511de8223e22e1122318a5f0ea68657,https://doi.org/10.1109/TPAMI.2025.3541028,23,"Phase 1 reference number: [4]
+Title from DOI metadata: Pixel-Inconsistency Modeling for Image Manipulation Localization
+Reference extracted from the supplied PDF:
+C. Wu et al., ""Pixel-inconsistency modeling for image manipulation localization,"" IEEE TPAMI, vol. 47, no. 2, 2025. https://doi.org/10.1109/TPAMI.2025.3541028
+
+Original DOI: https://doi.org/10.1109/TPAMI.2025.3541028
+DOI destination: https://ieeexplore.ieee.org/document/10883001/
+DOI retrieval status: 202
+PDF file: Pixel_Inconsistency_Modeling_Author_Preprint.pdf
+PDF download URL: https://arxiv.org/pdf/2310.00234
+PDF version: Author preprint
+Pages: 23
+SHA-256: 7a92da907ad06d25afaaa260d60875fed511de8223e22e1122318a5f0ea68657
+Downloaded on: 2026-11-13
+
+A public author preprint is supplied because the publisher PDF could not be retrieved. Text and pagination may differ from the final journal version.
+The supplied document lists C. Wu et al. The cited DOI and downloaded paper identify Chenqi Kong et al. The download follows the supplied DOI.
+",Phase1\4\Pixel_Inconsistency_Modeling_Author_Preprint.pdf
+6c04d0eeab5e,Phase1/5,SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis,Publisher version,6c04d0eeab5e75f44b360e6a7dab9418a4d5c3d339c14a2d537ae9517a318cbc,https://doi.org/10.1371/journal.pone.0336328,29,"Phase 1 reference number: [5]
+Title from DOI metadata: SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis
+Reference extracted from the supplied PDF:
+X. Zhang et al., ""SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis,"" PLOS ONE, vol. 20, no. 11, 2025. https://doi.org/10.1371/journal.pone.0336328
+
+Original DOI: https://doi.org/10.1371/journal.pone.0336328
+DOI destination: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0336328
+DOI retrieval status: 200
+PDF file: SCADET.pdf
+PDF download URL: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0336328&type=printable
+PDF version: Publisher version
+Pages: 29
+SHA-256: 6c04d0eeab5e75f44b360e6a7dab9418a4d5c3d339c14a2d537ae9517a318cbc
+Downloaded on: 2026-11-13
+
+
+",Phase1\5\SCADET.pdf
+c6446b5d4119,Phase1/6,SIDWA: Synthetic Image Detection Based on Discrete Wavelet Transform Stem and Deformable Sliding Window Cross-Attention,Publisher version,c6446b5d4119e5f9d6ebd3fcd2535f02515c9586a6269eb0af227be1647c19b7,https://doi.org/10.3390/electronics15040891,25,"Phase 1 reference number: [6]
+Title from DOI metadata: SIDWA: Synthetic Image Detection Based on Discrete Wavelet Transform Stem and Deformable Sliding Window Cross-Attention
+Reference extracted from the supplied PDF:
+Y. Zhang et al., ""SIDWA: Synthetic image detection based on discrete wavelet transform stem and deformable sliding window cross-attention,"" Electronics, vol. 15, no. 4, 2026. https://doi.org/10.3390/electronics15040891
+
+Original DOI: https://doi.org/10.3390/electronics15040891
+DOI destination: 
+DOI retrieval status: HTTP Error 403: Forbidden
+PDF file: SIDWA.pdf
+PDF download URL: https://mdpi-res.com/d_attachment/electronics/electronics-15-00891/article_deploy/electronics-15-00891.pdf
+PDF version: Publisher version
+Pages: 25
+SHA-256: c6446b5d4119e5f9d6ebd3fcd2535f02515c9586a6269eb0af227be1647c19b7
+Downloaded on: 2026-11-13
+
+The supplied document lists Y. Zhang et al. The cited DOI and downloaded paper identify Luo Li, Tianyi Lu, Jiaxin Song and Ke Cheng. The download follows the supplied DOI.
+",Phase1\6\SIDWA.pdf
+b8504307f55a,Phase1/7,Locate-Then-Examine: Grounded Region Reasoning Improves Detection of AI-Generated Images,arXiv version identified by the cited DOI,b8504307f55a7bd95b220566ab1ef65b3884129ebcc3c7b77abc8df6c938939f,https://doi.org/10.48550/arXiv.2510.04225,18,"Phase 1 reference number: [7]
+Title from DOI metadata: Locate-Then-Examine: Grounded Region Reasoning Improves Detection of AI-Generated Images
+Reference extracted from the supplied PDF:
+Y. Ji et al., ""Locate-then-examine: Grounded region reasoning improves detection of AI-generated images,"" in Proc. IEEE/CVF CVPR, 2026. https://doi.org/10.48550/arXiv.2510.04225
+
+Original DOI: https://doi.org/10.48550/arXiv.2510.04225
+DOI destination: https://arxiv.org/abs/2510.04225
+DOI retrieval status: 200
+PDF file: Locate_Then_Examine.pdf
+PDF download URL: https://arxiv.org/pdf/2510.04225
+PDF version: arXiv version identified by the cited DOI
+Pages: 18
+SHA-256: b8504307f55a7bd95b220566ab1ef65b3884129ebcc3c7b77abc8df6c938939f
+Downloaded on: 2026-11-13
+
+The supplied DOI identifies the arXiv paper. The download is the latest public arXiv version at retrieval, rather than a separately sourced conference PDF.
+",Phase1\7\Locate_Then_Examine.pdf
+39084024fc88,Phase1/8,AI-generated artwork detection using self-distilled transformers with global–local feature learning and Grad-CAM interpretability,Publisher version,39084024fc889c7b65d965b24cdef985d35c60e4980379ee454662cab1c61fbe,https://doi.org/10.1038/s41598-025-29229-2,13,"Phase 1 reference number: [8]
+Title from DOI metadata: AI-generated artwork detection using self-distilled transformers with global–local feature learning and Grad-CAM interpretability
+Reference extracted from the supplied PDF:
+Y. Wang et al., ""AI-generated artwork detection using self-distilled transformers with global–local feature learning and Grad-CAM interpretability,"" Scientific Reports, vol. 16, 2026. https://doi.org/10.1038/s41598-025-29229-2
+
+Original DOI: https://doi.org/10.1038/s41598-025-29229-2
+DOI destination: https://www.nature.com/articles/s41598-025-29229-2?error=cookies_not_supported&code=07550e69-9e47-45c6-bfb2-4cfe2b067134
+DOI retrieval status: 200
+PDF file: Self_Distilled_Artwork_Detection.pdf
+PDF download URL: https://www.nature.com/articles/s41598-025-29229-2.pdf
+PDF version: Publisher version
+Pages: 13
+SHA-256: 39084024fc889c7b65d965b24cdef985d35c60e4980379ee454662cab1c61fbe
+Downloaded on: 2026-11-13
+
+
+",Phase1\8\Self_Distilled_Artwork_Detection.pdf
+268221a5e3f9,Phase2/1,A Bias-Free Training Paradigm for More General AI-generated Image Detection,CVF conference paper,268221a5e3f92bced7bca180a680bc781127eda2697f54bc52ced7bf1fe43ed3,https://doi.org/10.1109/CVPR52734.2025.01741,10,"Reference number: [1]
+Title: A Bias-Free Training Paradigm for More General AI-generated Image Detection
+Reference extracted from the supplied milestone PDF:
+Guillaro, F., Zingarini, G., Usman, B., Sud, A., Cozzolino, D., & Verdoliva, L. (2025). A bias-free training paradigm for more general AI -generated image detection. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 18685 –18694). IEEE.
+
+Original DOI: https://doi.org/10.1109/CVPR52734.2025.01741
+DOI resolved to: https://ieeexplore.ieee.org/document/11095256/
+DOI landing-page HTTP status: 202
+Downloaded PDF: B-Free.pdf
+PDF source: https://openaccess.thecvf.com/content/CVPR2025/papers/Guillaro_A_Bias-Free_Training_Paradigm_for_More_General_AI-generated_Image_Detection_CVPR_2025_paper.pdf
+PDF version: CVF conference paper
+Pages: 10
+SHA-256: 268221a5e3f92bced7bca180a680bc781127eda2697f54bc52ced7bf1fe43ed3
+Downloaded on: 2026-11-13
+",Phase2\1\B-Free.pdf
+8c3f3f2351ec,Phase2/10,"MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models",Author manuscript,8c3f3f2351ec4b1ed81d64d72dae71cba4ea8fdd5dcb09770d7c1cfc1dd0f2ab,https://doi.org/10.1109/TVCG.2025.3633884,11,"Reference number: [10]
+Title: MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models
+Reference extracted from the supplied milestone PDF:
+Das, A. K., & Mueller, K. (2026). MisVisFix: An interactive dashboard for detecting, explaining, and correcting misleading visualizations using large language models. IEEE Transactions on Visualization and Computer Graphics, 32(1), 134–144.
+
+Original DOI: https://doi.org/10.1109/TVCG.2025.3633884
+DOI resolved to: https://ieeexplore.ieee.org/document/11269882/
+DOI landing-page HTTP status: 202
+Downloaded PDF: MisVisFix_Author_Manuscript.pdf
+PDF source: https://www3.cs.stonybrook.edu/~mueller/papers/MisVisFix%20TVCG.pdf
+PDF version: Author manuscript
+Pages: 11
+SHA-256: 8c3f3f2351ec4b1ed81d64d72dae71cba4ea8fdd5dcb09770d7c1cfc1dd0f2ab
+Downloaded on: 2026-11-13
+
+The public author copy is included because the DOI publisher endpoint did not supply a downloadable PDF. Its content, pagination and publication details can differ from the published journal version.
+",Phase2\10\MisVisFix_Author_Manuscript.pdf
+601afa6e41bc,Phase2/2,Investigating the diversity and stylization of contemporary user generated visual arts in the complexity entropy plane,Publisher version,601afa6e41bc4ef64bde4402808f9c410ae4aded9a6c14a32165898a4c995821,https://doi.org/10.1038/s41598-025-04448-9,13,"Reference number: [2]
+Title: Investigating the diversity and stylization of contemporary user generated visual arts in the complexity entropy plane
+Reference extracted from the supplied milestone PDF:
+Kim, S., Lee, B., & Lee, W. (2025). Investigating the diversity and stylization of contemporary user generated visual arts in the complexity entropy plane. Scientific Reports, 15 , Article 22075.
+
+Original DOI: https://doi.org/10.1038/s41598-025-04448-9
+DOI resolved to: https://www.nature.com/articles/s41598-025-04448-9?error=cookies_not_supported&code=c8feaa44-483b-41ac-9f99-ff6a55104f54
+DOI landing-page HTTP status: 200
+Downloaded PDF: Complexity_Entropy_Visual_Arts.pdf
+PDF source: https://www.nature.com/articles/s41598-025-04448-9.pdf
+PDF version: Publisher version
+Pages: 13
+SHA-256: 601afa6e41bc4ef64bde4402808f9c410ae4aded9a6c14a32165898a4c995821
+Downloaded on: 2026-11-13
+",Phase2\2\Complexity_Entropy_Visual_Arts.pdf
+1c5b90c3f4ee,Phase2/3,ArtBrain: An Explainable End-to-End Toolkit for Classification and Attribution of AI-Generated Art and Style,Author preprint,1c5b90c3f4ee353cc351fd998432168b729d4f2d7896896b01d3ec377f968f73,https://doi.org/10.1109/TMM.2026.3743638,20,"Reference number: [3]
+Title: ArtBrain: An Explainable End-to-End Toolkit for Classification and Attribution of AI-Generated Art and Style
+Reference extracted from the supplied milestone PDF:
+Silva, R. S. R., Lotfi, A., Ihianle, I. K., Shahtahmassebi, G., & Bird, J. J. (2026). ArtBrain: An explainable end-to-end toolkit for classification and attribution of AI -generated art and style. IEEE Transactions on Multimedia . Advance online publication.
+
+Original DOI: https://doi.org/10.1109/TMM.2026.3743638
+DOI resolved to: https://ieeexplore.ieee.org/document/11737566/
+DOI landing-page HTTP status: 202
+Downloaded PDF: ArtBrain_Author_Preprint.pdf
+PDF source: https://arxiv.org/pdf/2412.01512
+PDF version: Author preprint
+Pages: 20
+SHA-256: 1c5b90c3f4ee353cc351fd998432168b729d4f2d7896896b01d3ec377f968f73
+Downloaded on: 2026-11-13
+
+The public author copy is included because the DOI publisher endpoint did not supply a downloadable PDF. Its content, pagination and publication details can differ from the published journal version.
+",Phase2\3\ArtBrain_Author_Preprint.pdf
+5a21e33267e5,Phase2/4,CoDA: Color Distribution Probing for Efficient and Generalizable AI-Generated Image Detection,Author preprint,5a21e33267e5162711fa5b4f1f42d7b05354b2bbdb430e51a05844ce502ae332,https://doi.org/10.1109/TPAMI.2026.3696399,17,"Reference number: [4]
+Title: CoDA: Color Distribution Probing for Efficient and Generalizable AI-Generated Image Detection
+Reference extracted from the supplied milestone PDF:
+Jia, Z., Yuan, Z., Duan, X., Zhang, J., Zhou, J., & Jain, A. K. (2026). CoDA: Color distribution probing for efficient and generalizable AI-generated image detection. IEEE Transactions on Pattern Analysis and Machine Intelligence , 48(10), 12100 –12115.
+
+Original DOI: https://doi.org/10.1109/TPAMI.2026.3696399
+DOI resolved to: https://ieeexplore.ieee.org/document/11535584/
+DOI landing-page HTTP status: 202
+Downloaded PDF: CoDA_Author_Preprint.pdf
+PDF source: https://arxiv.org/pdf/2605.24306
+PDF version: Author preprint
+Pages: 17
+SHA-256: 5a21e33267e5162711fa5b4f1f42d7b05354b2bbdb430e51a05844ce502ae332
+Downloaded on: 2026-11-13
+
+The public author copy is included because the DOI publisher endpoint did not supply a downloadable PDF. Its content, pagination and publication details can differ from the published journal version.
+",Phase2\4\CoDA_Author_Preprint.pdf
+db8080fbeb05,Phase2/5,FIRE: Robust Detection of Diffusion-Generated Images via Frequency-Guided Reconstruction Error,CVF conference paper,db8080fbeb05485db132336caf99b9735fcb35109d6435937866576a9863c550,https://doi.org/10.1109/CVPR52734.2025.01197,10,"Reference number: [5]
+Title: FIRE: Robust Detection of Diffusion-Generated Images via Frequency-Guided Reconstruction Error
+Reference extracted from the supplied milestone PDF:
+Chu, B., Xu, X., Wang, X., Zhang, Y., You, W., & Zhou, L. (2025). FIRE: Robust detection of diffusion-generated images via frequency -guided reconstruction error. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 12830–12839). IEEE.
+
+Original DOI: https://doi.org/10.1109/CVPR52734.2025.01197
+DOI resolved to: https://ieeexplore.ieee.org/document/11093048/
+DOI landing-page HTTP status: 202
+Downloaded PDF: FIRE.pdf
+PDF source: https://openaccess.thecvf.com/content/CVPR2025/papers/Chu_FIRE_Robust_Detection_of_Diffusion-Generated_Images_via_Frequency-Guided_Reconstruction_Error_CVPR_2025_paper.pdf
+PDF version: CVF conference paper
+Pages: 10
+SHA-256: db8080fbeb05485db132336caf99b9735fcb35109d6435937866576a9863c550
+Downloaded on: 2026-11-13
+",Phase2\5\FIRE.pdf
+013f01af5670,Phase2/6,Towards Universal AI-Generated Image Detection by Variational Information Bottleneck Network,CVF conference paper,013f01af567020df9ae8c43ce36f90263442e707024a0b239a92b03e1326ef95,https://doi.org/10.1109/CVPR52734.2025.02219,10,"Reference number: [6]
+Title: Towards Universal AI-Generated Image Detection by Variational Information Bottleneck Network
+Reference extracted from the supplied milestone PDF:
+Zhang, H., He, Q., Bi, X., Li, W., Liu, B., & Xiao, B. (2025). Towards universal AI -generated image detection by variational information bottleneck network. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 23828 –23837). IEEE.
+
+Original DOI: https://doi.org/10.1109/CVPR52734.2025.02219
+DOI resolved to: https://ieeexplore.ieee.org/document/11092328/
+DOI landing-page HTTP status: 202
+Downloaded PDF: VIB-Net.pdf
+PDF source: https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Towards_Universal_AI-Generated_Image_Detection_by_Variational_Information_Bottleneck_Network_CVPR_2025_paper.pdf
+PDF version: CVF conference paper
+Pages: 10
+SHA-256: 013f01af567020df9ae8c43ce36f90263442e707024a0b239a92b03e1326ef95
+Downloaded on: 2026-11-13
+",Phase2\6\VIB-Net.pdf
+7174ac285c4f,Phase2/7,Any-Resolution AI-Generated Image Detection by Spectral Learning,CVF conference paper,7174ac285c4f5d8db1e5b37c5361caae4f48f02a6ca0d01a19257f8ce91b904c,https://doi.org/10.1109/CVPR52734.2025.01743,12,"Reference number: [7]
+Title: Any-Resolution AI-Generated Image Detection by Spectral Learning
+Reference extracted from the supplied milestone PDF:
+Karageorgiou, D., Papadopoulos, S., Kompatsiaris, I., & Gavves, E. (2025). Any -resolution AI- generated image detection by spectral learning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 18706 –18717). IEEE.
+
+Original DOI: https://doi.org/10.1109/CVPR52734.2025.01743
+DOI resolved to: https://ieeexplore.ieee.org/document/11094582/
+DOI landing-page HTTP status: 202
+Downloaded PDF: SPAI.pdf
+PDF source: https://openaccess.thecvf.com/content/CVPR2025/papers/Karageorgiou_Any-Resolution_AI-Generated_Image_Detection_by_Spectral_Learning_CVPR_2025_paper.pdf
+PDF version: CVF conference paper
+Pages: 12
+SHA-256: 7174ac285c4f5d8db1e5b37c5361caae4f48f02a6ca0d01a19257f8ce91b904c
+Downloaded on: 2026-11-13
+",Phase2\7\SPAI.pdf
+6c04d0eeab5e,Phase2/8,SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis,Publisher version,6c04d0eeab5e75f44b360e6a7dab9418a4d5c3d339c14a2d537ae9517a318cbc,https://doi.org/10.1371/journal.pone.0336328,29,"Reference number: [8]
+Title: SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis
+Reference extracted from the supplied milestone PDF:
+Zhang, X., Yu, Z., & Zhao, J. (2025). SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis. PLOS One, 20(11), Article e0336328.
+
+Original DOI: https://doi.org/10.1371/journal.pone.0336328
+DOI resolved to: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0336328
+DOI landing-page HTTP status: 200
+Downloaded PDF: SCADET.pdf
+PDF source: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0336328&type=printable
+PDF version: Publisher version
+Pages: 29
+SHA-256: 6c04d0eeab5e75f44b360e6a7dab9418a4d5c3d339c14a2d537ae9517a318cbc
+Downloaded on: 2026-11-13
+",Phase2\8\SCADET.pdf
+b11a212074da,Phase2/9,PixelatedScatter: Arbitrary-Level Visual Abstraction for Large-Scale Multiclass Scatterplots,Author manuscript,b11a212074daa174e21bbc13c8e9b7d846df92544bc19655cacb18561db50ab0,https://doi.org/10.1109/TVCG.2025.3633908,11,"Reference number: [9]
+Title: PixelatedScatter: Arbitrary-Level Visual Abstraction for Large-Scale Multiclass Scatterplots
+Reference extracted from the supplied milestone PDF:
+Guo, Z., Wei, T., Li, Z., Zhang, L., Li, S., & Zhang, J. (2026). PixelatedScatter: Arbitrary -level visual abstraction for large -scale multiclass scatterplots. IEEE Transactions on Visualization and Computer Graphics, 32(1), 123–133.
+
+Original DOI: https://doi.org/10.1109/TVCG.2025.3633908
+DOI resolved to: https://ieeexplore.ieee.org/document/11264485/
+DOI landing-page HTTP status: 202
+Downloaded PDF: PixelatedScatter_Author_Manuscript.pdf
+PDF source: https://cic.tju.edu.cn/faculty/zhangjiawan/Jiawan_Zhang_files/paper/guoziheng2025.pdf
+PDF version: Author manuscript
+Pages: 11
+SHA-256: b11a212074daa174e21bbc13c8e9b7d846df92544bc19655cacb18561db50ab0
+Downloaded on: 2026-11-13
+
+The public author copy is included because the DOI publisher endpoint did not supply a downloadable PDF. Its content, pagination and publication details can differ from the published journal version.
+",Phase2\9\PixelatedScatter_Author_Manuscript.pdf

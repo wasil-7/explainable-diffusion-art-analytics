@@ -1,0 +1,345 @@
+literal,source,matched,context
+185,results\hc_density_grid.csv,True,"ry control-variable gate. An exhaustive AI-ArtBench audit covers 185,015 files; a balanced cohort contains 45,000 artworks, with a na"
+015,results\drift_test_ids.csv,True,"ontrol-variable gate. An exhaustive AI-ArtBench audit covers 185,015 files; a balanced cohort contains 45,000 artworks, with a native"
+45,results\checkpoint_integrity_checks.csv,True,"-ArtBench audit covers 185,015 files; a balanced cohort contains 45,000 artworks, with a native-$256^2$ Human to Latent Diffusion pr"
+000,results\figure_manifest.csv,True,"tBench audit covers 185,015 files; a balanced cohort contains 45,000 artworks, with a native-$256^2$ Human to Latent Diffusion primar"
+256,results\ablation_results.csv,True,"iles; a balanced cohort contains 45,000 artworks, with a native-$256^2$ Human to Latent Diffusion primary cohort of 30,000 and 6,000 "
+2,results\audit_encoding_counts.csv,True,"; a balanced cohort contains 45,000 artworks, with a native-$256^2$ Human to Latent Diffusion primary cohort of 30,000 and 6,000 he"
+30,results\drift_test_ids.csv,True,"ith a native-$256^2$ Human to Latent Diffusion primary cohort of 30,000 and 6,000 held-out test images. A 104-feature logistic probe"
+000,results\figure_manifest.csv,True," a native-$256^2$ Human to Latent Diffusion primary cohort of 30,000 and 6,000 held-out test images. A 104-feature logistic probe att"
+6,results\brief_component_mapping.csv,True,"e-$256^2$ Human to Latent Diffusion primary cohort of 30,000 and 6,000 held-out test images. A 104-feature logistic probe attains A"
+000,results\figure_manifest.csv,True,"$256^2$ Human to Latent Diffusion primary cohort of 30,000 and 6,000 held-out test images. A 104-feature logistic probe attains AUROC"
+104,results\ablation_results.csv,True,"usion primary cohort of 30,000 and 6,000 held-out test images. A 104-feature logistic probe attains AUROC 0.9824 and F1 0.9420, outpe"
+0.9824,src\build_submission.py,True,"held-out test images. A 104-feature logistic probe attains AUROC 0.9824 and F1 0.9420, outperforming FFT-only features (AUROC 0.6839) bu"
+0.9420,results\baseline_metrics.csv,True,"images. A 104-feature logistic probe attains AUROC 0.9824 and F1 0.9420, outperforming FFT-only features (AUROC 0.6839) but trailing fro"
+0.6839,results\ablation_results.csv,True,"ROC 0.9824 and F1 0.9420, outperforming FFT-only features (AUROC 0.6839) but trailing frozen ResNet-50 (0.9999) and DINOv2 (0.9997). The"
+50,results\drift_test_ids.csv,True,ming FFT-only features (AUROC 0.6839) but trailing frozen ResNet-50 (0.9999) and DINOv2 (0.9997). The handcrafted AUROC gain over FF
+0.9999,results\baseline_per_style_ci.csv,True, FFT-only features (AUROC 0.6839) but trailing frozen ResNet-50 (0.9999) and DINOv2 (0.9997). The handcrafted AUROC gain over FFT-only i
+0.9997,results\baseline_per_style_ci.csv,True,"AUROC 0.6839) but trailing frozen ResNet-50 (0.9999) and DINOv2 (0.9997). The handcrafted AUROC gain over FFT-only is 0.2985. Across 1,0"
+0.2985,results\border_exclusion_drift.csv,True,"and DINOv2 (0.9997). The handcrafted AUROC gain over FFT-only is 0.2985. Across 1,040 within-style feature comparisons, 542 satisfy an e"
+1,results\brief_component_mapping.csv,True,"997). The handcrafted AUROC gain over FFT-only is 0.2985. Across 1,040 within-style feature comparisons, 542 satisfy an exploratory"
+040,results\literature_facts.csv,True,"7). The handcrafted AUROC gain over FFT-only is 0.2985. Across 1,040 within-style feature comparisons, 542 satisfy an exploratory sta"
+542,results\failure_trigger_rates.csv,True,"T-only is 0.2985. Across 1,040 within-style feature comparisons, 542 satisfy an exploratory statistical rule. However, metadata AUROC"
+1.0000,results\figure_manifest.csv,True,"satisfy an exploratory statistical rule. However, metadata AUROC 1.0000 exposes origin-aligned JPEG quantization, and verified subject m"
+0.9080,results\ablation_results.csv,True,"n-origin attribution. Removing ordinal features reduces AUROC to 0.9080, a decrease of 0.0744, while JPEG-quality-50 recompression reduc"
+0.0744,src\build_submission.py,True,"Removing ordinal features reduces AUROC to 0.9080, a decrease of 0.0744, while JPEG-quality-50 recompression reduces it to 0.6819. Linke"
+50,results\drift_test_ids.csv,True,"educes AUROC to 0.9080, a decrease of 0.0744, while JPEG-quality-50 recompression reduces it to 0.6819. Linked artwork views, uncert"
+0.6819,src\build_submission.py,True,"ase of 0.0744, while JPEG-quality-50 recompression reduces it to 0.6819. Linked artwork views, uncertainty summaries and explicit projec"
+185,results\hc_density_grid.csv,True,"ons.  The contributions are: \begin{itemize} \item An exhaustive 185,015-file audit and frozen grouped splits, separating a 45,000-ar"
+015,results\drift_test_ids.csv,True,"  The contributions are: \begin{itemize} \item An exhaustive 185,015-file audit and frozen grouped splits, separating a 45,000-artwor"
+45,results\checkpoint_integrity_checks.csv,True,"stive 185,015-file audit and frozen grouped splits, separating a 45,000-artwork balanced tier from the 30,000-artwork native-resolut"
+000,results\figure_manifest.csv,True,"ve 185,015-file audit and frozen grouped splits, separating a 45,000-artwork balanced tier from the 30,000-artwork native-resolution "
+30,results\drift_test_ids.csv,True,"ouped splits, separating a 45,000-artwork balanced tier from the 30,000-artwork native-resolution primary comparison. \item A four-f"
+000,results\figure_manifest.csv,True,"ed splits, separating a 45,000-artwork balanced tier from the 30,000-artwork native-resolution primary comparison. \item A four-famil"
+104,results\ablation_results.csv,True,"twork native-resolution primary comparison. \item A four-family, 104-predictor representation with linked visual diagnostics; AUROC 0"
+0.9824,src\build_submission.py,True,4-predictor representation with linked visual diagnostics; AUROC 0.9824 exceeds the identically evaluated FFT-only probe by 0.2985. \ite
+0.2985,results\border_exclusion_drift.csv,True,"AUROC 0.9824 exceeds the identically evaluated FFT-only probe by 0.2985. \item A control-gated analysis of 1,040 style-feature contrasts"
+1,results\brief_component_mapping.csv,True,"ated FFT-only probe by 0.2985. \item A control-gated analysis of 1,040 style-feature contrasts: 542 exploratory passes, but zero el"
+040,results\literature_facts.csv,True,"ed FFT-only probe by 0.2985. \item A control-gated analysis of 1,040 style-feature contrasts: 542 exploratory passes, but zero eligib"
+542,results\failure_trigger_rates.csv,True,"\item A control-gated analysis of 1,040 style-feature contrasts: 542 exploratory passes, but zero eligible confirmations because JPEG"
+0.6928,src\build_submission.py,True,"absent. \item Audited projections, including PCA trustworthiness 0.6928, and paired sensitivity evidence: ordinal removal loses 0.0744 A"
+0.0744,src\build_submission.py,True,"s 0.6928, and paired sensitivity evidence: ordinal removal loses 0.0744 AUROC and JPEG 50 yields AUROC 0.6819. \item An artwork-linked d"
+50,results\drift_test_ids.csv,True,ensitivity evidence: ordinal removal loses 0.0744 AUROC and JPEG 50 yields AUROC 0.6819. \item An artwork-linked dashboard and eight
+0.6819,src\build_submission.py,True,nce: ordinal removal loses 0.0744 AUROC and JPEG 50 yields AUROC 0.6819. \item An artwork-linked dashboard and eight-case forensic galle
+0,results\audit_encoding_counts.csv,True,",y_i,s_i,g_i,m_i)$: RGB image $I_i$, origin label $y_i$ (Human $=0$, LD $=1$ for the primary task), style $s_i$, recorded source-fa"
+1,results\brief_component_mapping.csv,True,"g_i,m_i)$: RGB image $I_i$, origin label $y_i$ (Human $=0$, LD $=1$ for the primary task), style $s_i$, recorded source-family grou"
+128,results\ablation_results.csv,True,"ly group $g_i$, and technical metadata $m_i$. The four disjoint $128\times128$ quadrants $\mathcal Q(I_i)=\{q_1,q_2,q_3,q_4\}$ tile e"
+256,results\ablation_results.csv,True,"uadrants $\mathcal Q(I_i)=\{q_1,q_2,q_3,q_4\}$ tile each native-$256^2$ canvas once. Groups define the dependence structure. The arch"
+2,results\audit_encoding_counts.csv,True,"ants $\mathcal Q(I_i)=\{q_1,q_2,q_3,q_4\}$ tile each native-$256^2$ canvas once. Groups define the dependence structure. The archit"
+2,results\audit_encoding_counts.csv,True,"tion entropy , stable row-major ranking within each overlapping $2\times2$ neighborhood yields $4!=24$ ordinal states. Their pooled"
+4,results\brief_component_mapping.csv,True," ranking within each overlapping $2\times2$ neighborhood yields $4!=24$ ordinal states. Their pooled probability vector is $p=(p_1,"
+24,results\cohort_group_counts.csv,True,"nking within each overlapping $2\times2$ neighborhood yields $4!=24$ ordinal states. Their pooled probability vector is $p=(p_1,\ldo"
+24,results\cohort_group_counts.csv,True,"nal states. Their pooled probability vector is $p=(p_1,\ldots,p_{24})$. With uniform distribution $u$ and point mass $\delta$, \begi"
+1,results\brief_component_mapping.csv,True,"ution $u$ and point mass $\delta$, \begin{align}  S(p)&=-\sum_{j=1}^{24}p_j\ln p_j,\quad H=\frac{S(p)}{\ln24},\\  J(p,u)&=S((p+u)/2"
+24,results\cohort_group_counts.csv,True,"n $u$ and point mass $\delta$, \begin{align}  S(p)&=-\sum_{j=1}^{24}p_j\ln p_j,\quad H=\frac{S(p)}{\ln24},\\  J(p,u)&=S((p+u)/2)-\tf"
+2,results\audit_encoding_counts.csv,True,"1}^{24}p_j\ln p_j,\quad H=\frac{S(p)}{\ln24},\\  J(p,u)&=S((p+u)/2)-\tfrac12 S(p)-\tfrac12 S(u),\\  C_{\!H}&=H\frac{J(p,u)}{J(\delt"
+2,results\audit_encoding_counts.csv,True,"fined.  For the frequency family, $P=|\mathcal F\{(Y-\bar Y)h\}|^2$, where $\mathcal F$ is the two-dimensional FFT and $h$ a separa"
+0,results\audit_encoding_counts.csv,True,"ional FFT and $h$ a separable Hann window. Sixteen annuli cover $0<f\leq0.5$ cycles/pixel, excluding DC. Each band sum is normalize"
+5,results\brief_component_mapping.csv,True," and $h$ a separable Hann window. Sixteen annuli cover $0<f\leq0.5$ cycles/pixel, excluding DC. Each band sum is normalized by reta"
+0.25,results\hc_density_grid.csv,True,um is normalized by retained power; high-frequency share sums $f>0.25$. The slope $\beta$ regresses log mean band power on log radial 
+0.01,results\literature_facts.csv,True,"or hue angle $\theta$, saturation-gated pixels satisfy $S>\tau_S=0.01$. The circular summary is $(\bar c,\bar s,R)$, with $\bar c=\lan"
+2,results\audit_encoding_counts.csv,True,"\theta\rangle$, $\bar s=\langle\sin\theta\rangle$ and $R=(\bar c^2+\bar s^2)^{1/2}$. Valid-hue fraction, saturation/value medians a"
+2,results\audit_encoding_counts.csv,True,"ngle$, $\bar s=\langle\sin\theta\rangle$ and $R=(\bar c^2+\bar s^2)^{1/2}$. Valid-hue fraction, saturation/value medians and interq"
+1,results\brief_component_mapping.csv,True,"$, $\bar s=\langle\sin\theta\rangle$ and $R=(\bar c^2+\bar s^2)^{1/2}$. Valid-hue fraction, saturation/value medians and interquart"
+2,results\audit_encoding_counts.csv,True," $\bar s=\langle\sin\theta\rangle$ and $R=(\bar c^2+\bar s^2)^{1/2}$. Valid-hue fraction, saturation/value medians and interquartil"
+0.048316767248,results\feature_calibration.json,True,exceeding the development-frozen threshold $\tau_{\mathrm{edge}}=0.048316767248$. Undefined correlations are flagged and imputed only through de
+104,results\ablation_results.csv,True,"nge crop aggregation, plus pooled ordinal probabilities, produce 104 primary predictors: 8 ordinal, 36 FFT, 14 Haar and 46 color/edge"
+8,results\ablation_results.csv,True,"us pooled ordinal probabilities, produce 104 primary predictors: 8 ordinal, 36 FFT, 14 Haar and 46 color/edge features. The cache c"
+36,results\ablation_results.csv,True,"rdinal probabilities, produce 104 primary predictors: 8 ordinal, 36 FFT, 14 Haar and 46 color/edge features. The cache contains 169 "
+14,results\ablation_results.csv,True,"robabilities, produce 104 primary predictors: 8 ordinal, 36 FFT, 14 Haar and 46 color/edge features. The cache contains 169 measurem"
+46,results\ablation_results.csv,True,", produce 104 primary predictors: 8 ordinal, 36 FFT, 14 Haar and 46 color/edge features. The cache contains 169 measurements includi"
+169,results\confusion_ab_without_FFT.csv,True,", 36 FFT, 14 Haar and 46 color/edge features. The cache contains 169 measurements including full-canvas, tie-excluded and diagnostic "
+1,results\brief_component_mapping.csv,True,"fficients $w$, unpenalized intercept $b$ and sigmoid $\sigma(z)=(1+e^{-z})^{-1}$, the nominal averaged binary cross-entropy objecti"
+-1,src\audit.py,True,"w$, unpenalized intercept $b$ and sigmoid $\sigma(z)=(1+e^{-z})^{-1}$, the nominal averaged binary cross-entropy objective is \begin"
+1,results\brief_component_mapping.csv,True,"ross-entropy objective is \begin{align} \mathcal{L}(w,b)&=-\frac{1}{N_d}\sum_{i=1}^{N_d}\{y_i\log\sigma_i+(1-y_i)\log(1-\sigma_i)\}"
+1,results\brief_component_mapping.csv,True,"jective is \begin{align} \mathcal{L}(w,b)&=-\frac{1}{N_d}\sum_{i=1}^{N_d}\{y_i\log\sigma_i+(1-y_i)\log(1-\sigma_i)\}\nonumber\\ &\q"
+1,results\brief_component_mapping.csv,True,"athcal{L}(w,b)&=-\frac{1}{N_d}\sum_{i=1}^{N_d}\{y_i\log\sigma_i+(1-y_i)\log(1-\sigma_i)\}\nonumber\\ &\quad+\frac{\|w\|_2^2}{2C_{\m"
+1,results\brief_component_mapping.csv,True,",b)&=-\frac{1}{N_d}\sum_{i=1}^{N_d}\{y_i\log\sigma_i+(1-y_i)\log(1-\sigma_i)\}\nonumber\\ &\quad+\frac{\|w\|_2^2}{2C_{\mathrm{avg}}"
+2,results\audit_encoding_counts.csv,True,"igma_i+(1-y_i)\log(1-\sigma_i)\}\nonumber\\ &\quad+\frac{\|w\|_2^2}{2C_{\mathrm{avg}}},\quad \sigma_i=\sigma(w^\top\tilde x_i+b). \"
+2,results\audit_encoding_counts.csv,True,"a_i+(1-y_i)\log(1-\sigma_i)\}\nonumber\\ &\quad+\frac{\|w\|_2^2}{2C_{\mathrm{avg}}},\quad \sigma_i=\sigma(w^\top\tilde x_i+b). \end"
+2,results\audit_encoding_counts.csv,True,d C_{\mathrm{solver}}$. Thus the averaged-loss penalty is $\|w\|^2/(2N_d C_{\mathrm{solver}})$; tabulated $C$ values are solver val
+2,results\audit_encoding_counts.csv,True,_{\mathrm{solver}}$. Thus the averaged-loss penalty is $\|w\|^2/(2N_d C_{\mathrm{solver}})$; tabulated $C$ values are solver values
+128,results\ablation_results.csv,True,"shifts are median(LD) minus median(Human). Sliced distance $SW_1=128^{-1}\sum_{r=1}^{128}W_1(\langle v_r,X_H\rangle,\langle v_r,X_L\r"
+-1,src\audit.py,True,"s are median(LD) minus median(Human). Sliced distance $SW_1=128^{-1}\sum_{r=1}^{128}W_1(\langle v_r,X_H\rangle,\langle v_r,X_L\rangl"
+1,results\brief_component_mapping.csv,True,"n(LD) minus median(Human). Sliced distance $SW_1=128^{-1}\sum_{r=1}^{128}W_1(\langle v_r,X_H\rangle,\langle v_r,X_L\rangle)$ averag"
+128,results\ablation_results.csv,True,") minus median(Human). Sliced distance $SW_1=128^{-1}\sum_{r=1}^{128}W_1(\langle v_r,X_H\rangle,\langle v_r,X_L\rangle)$ averages fix"
+0.05,results\literature_comparison.csv,True,ligibility requires \begin{equation}  G\ \wedge\ p_{\mathrm{BH}}<0.05\ \wedge\ W_1>P_{95}^{\mathrm{split\text{-}half}}. \end{equation}
+95,results\drift_test_ids.csv,True,begin{equation}  G\ \wedge\ p_{\mathrm{BH}}<0.05\ \wedge\ W_1>P_{95}^{\mathrm{split\text{-}half}}. \end{equation} The Benjamini to H
+1,results\brief_component_mapping.csv,True,". \end{equation} The Benjamini to Hochberg adjustment  spans all 1,040 prespecified feature/style tests. Each style uses 10,000 who"
+040,results\literature_facts.csv,True,"\end{equation} The Benjamini to Hochberg adjustment  spans all 1,040 prespecified feature/style tests. Each style uses 10,000 whole-s"
+10,results\brief_component_mapping.csv,True,"pans all 1,040 prespecified feature/style tests. Each style uses 10,000 whole-source-group label randomizations; the number of AI gr"
+000,results\figure_manifest.csv,True,"s all 1,040 prespecified feature/style tests. Each style uses 10,000 whole-source-group label randomizations; the number of AI groups"
+1,results\brief_component_mapping.csv,True,"rtwork counts can vary. Intervals adapt bootstrap resampling  to 1,000 whole-source-group draws; within-origin disjoint group halve"
+000,results\figure_manifest.csv,True,"work counts can vary. Intervals adapt bootstrap resampling  to 1,000 whole-source-group draws; within-origin disjoint group halves yi"
+2,results\audit_encoding_counts.csv,True,"le-source-group draws; within-origin disjoint group halves yield 2,000 pooled null distances. Subject and encoding exchangeability "
+000,results\figure_manifest.csv,True,"-source-group draws; within-origin disjoint group halves yield 2,000 pooled null distances. Subject and encoding exchangeability is u"
+1,results\brief_component_mapping.csv,True," explainable visual analytics}  \footnotesize\begin{algorithmic}[1] \Require Images, origin/style metadata, source-family rules, se"
+42,results\drift_test_ids.csv,True,"Require Images, origin/style metadata, source-family rules, seed 42 \State Decode all files; audit dimensions, encoding and duplicat"
+60,results\cohort_group_counts.csv,True,ate links \State Form transitive source/duplicate groups; freeze 60:20:20 IDs \State Select balanced and native-$256^2$ primary coho
+20,results\drift_test_ids.csv,True, links \State Form transitive source/duplicate groups; freeze 60:20:20 IDs \State Select balanced and native-$256^2$ primary cohorts
+20,results\drift_test_ids.csv,True,nks \State Form transitive source/duplicate groups; freeze 60:20:20 IDs \State Select balanced and native-$256^2$ primary cohorts \S
+256,results\ablation_results.csv,True,e groups; freeze 60:20:20 IDs \State Select balanced and native-$256^2$ primary cohorts \State Calibrate hue/Sobel thresholds on deve
+2,results\audit_encoding_counts.csv,True,oups; freeze 60:20:20 IDs \State Select balanced and native-$256^2$ primary cohorts \State Calibrate hue/Sobel thresholds on develo
+5,results\brief_component_mapping.csv,True,"che ordinal/FFT/Haar/color features \EndFor \State Evaluate Step 5 technical, subject and JPEG common-support gates \State Fit scal"
+10,results\brief_component_mapping.csv,True,"ed Splits} AI-ArtBench combines generated artworks with ArtBench-10 human images . All 185,015 release files decode as RGB JPEG (Tab"
+185,results\hc_density_grid.csv,True," combines generated artworks with ArtBench-10 human images . All 185,015 release files decode as RGB JPEG (Table~); no EXIF or embedd"
+015,results\drift_test_ids.csv,True,"bines generated artworks with ArtBench-10 human images . All 185,015 release files decode as RGB JPEG (Table~); no EXIF or embedded I"
+256,results\ablation_results.csv,True,edded ICC profiles are supplied. Human and LD images are native $256^2$; SD is native $768^2$ and remains a separate resized descript
+2,results\audit_encoding_counts.csv,True,d ICC profiles are supplied. Human and LD images are native $256^2$; SD is native $768^2$ and remains a separate resized descriptiv
+768,results\audit_counts.csv,True, supplied. Human and LD images are native $256^2$; SD is native $768^2$ and remains a separate resized descriptive sensitivity. Table
+2,results\audit_encoding_counts.csv,True,plied. Human and LD images are native $256^2$; SD is native $768^2$ and remains a separate resized descriptive sensitivity. Table~ 
+64,results\cohort_group_counts.csv,True,"s are joined before splitting; the perceptual rule requires both 64-bit pHash and dHash distances at most four, using ImageHash . Tr"
+1,results\brief_component_mapping.csv,True,"source links remain split-disjoint.   The balanced tier contains 1,500 artworks per style/origin, split 900/300/300. The primary co"
+500,results\drift_test_ids.csv,True,"urce links remain split-disjoint.   The balanced tier contains 1,500 artworks per style/origin, split 900/300/300. The primary compar"
+900,results\cohort_counts.csv,True,"he balanced tier contains 1,500 artworks per style/origin, split 900/300/300. The primary comparison therefore has 300 test artworks "
+300,results\cohort_counts.csv,True,"alanced tier contains 1,500 artworks per style/origin, split 900/300/300. The primary comparison therefore has 300 test artworks per "
+300,results\cohort_counts.csv,True,"ced tier contains 1,500 artworks per style/origin, split 900/300/300. The primary comparison therefore has 300 test artworks per styl"
+300,results\cohort_counts.csv,True,"/origin, split 900/300/300. The primary comparison therefore has 300 test artworks per style/origin, exceeding the planned minimum of"
+50,results\drift_test_ids.csv,True,"test artworks per style/origin, exceeding the planned minimum of 50. No verified subject text or prompt pairing is available. Human "
+7.2421875,results\audit_encoding_counts.csv,True,ntization hashes have zero common support; their table means are 7.2421875 and 36.234375. Figure~ shows why native-size matching alone cann
+36.234375,results\audit_encoding_counts.csv,True,es have zero common support; their table means are 7.2421875 and 36.234375. Figure~ shows why native-size matching alone cannot remove meta
+6,results\brief_component_mapping.csv,True,"cs and Computing Environment} Five logistic probes use identical 6,000 test IDs: handcrafted 104-D, FFT-only 36-D, metadata, frozen"
+000,results\figure_manifest.csv,True," and Computing Environment} Five logistic probes use identical 6,000 test IDs: handcrafted 104-D, FFT-only 36-D, metadata, frozen Res"
+104,results\ablation_results.csv,True,"} Five logistic probes use identical 6,000 test IDs: handcrafted 104-D, FFT-only 36-D, metadata, frozen ResNet-50  2,048-D and frozen"
+36,results\ablation_results.csv,True,"probes use identical 6,000 test IDs: handcrafted 104-D, FFT-only 36-D, metadata, frozen ResNet-50  2,048-D and frozen DINOv2  ViT-S/"
+50,results\drift_test_ids.csv,True,"t IDs: handcrafted 104-D, FFT-only 36-D, metadata, frozen ResNet-50  2,048-D and frozen DINOv2  ViT-S/14 384-D. ResNet-50 uses Image"
+2,results\audit_encoding_counts.csv,True,"s: handcrafted 104-D, FFT-only 36-D, metadata, frozen ResNet-50  2,048-D and frozen DINOv2  ViT-S/14 384-D. ResNet-50 uses ImageNet"
+048,results\pca_plot_points.csv,True," handcrafted 104-D, FFT-only 36-D, metadata, frozen ResNet-50  2,048-D and frozen DINOv2  ViT-S/14 384-D. ResNet-50 uses ImageNet  we"
+14,results\ablation_results.csv,True,"-D, metadata, frozen ResNet-50  2,048-D and frozen DINOv2  ViT-S/14 384-D. ResNet-50 uses ImageNet  weights IMAGENET1K\_V2 from torc"
+384,results\deep_extraction_summary.json,True," metadata, frozen ResNet-50  2,048-D and frozen DINOv2  ViT-S/14 384-D. ResNet-50 uses ImageNet  weights IMAGENET1K\_V2 from torchvis"
+50,results\drift_test_ids.csv,True,"zen ResNet-50  2,048-D and frozen DINOv2  ViT-S/14 384-D. ResNet-50 uses ImageNet  weights IMAGENET1K\_V2 from torchvision . Encoder"
+224,results\confusion_ab_Lab.csv,True,s IMAGENET1K\_V2 from torchvision . Encoder views are resized to 224 pixels and ImageNet normalized; four float32 embeddings are aver
+32,results\cohort_group_counts.csv,True," four float32 embeddings are averaged after CUDA FP16 inference (32-quadrant batches, four loaders). The encoders are not fine-tuned"
+0.001,results\baseline_metrics.csv,True,"ly; deep embeddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positiv"
+0.01,results\literature_facts.csv,True,"ep embeddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive thr"
+0.1,results\control_gate_ablation.csv,True,"beddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive thresho"
+1,results\brief_component_mapping.csv,True,"ings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold"
+10,results\brief_component_mapping.csv,True,"gs use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold ma"
+100,results\figure_manifest.csv,True,"use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold maximi"
+2,results\audit_encoding_counts.csv,True,mean distance $a$ and other-origin distance $b$. Unsupervised $k=2$ ARI compares clusters with origin only after fitting. Neighborh
+15,results\drift_test_ids.csv,True, with origin only after fitting. Neighborhood trustworthiness $T(15)$  penalizes false neighbors and continuity $C(15)$ penalizes lo
+15,results\drift_test_ids.csv,True,"tworthiness $T(15)$  penalizes false neighbors and continuity $C(15)$ penalizes lost neighbors on a fixed 3,000-artwork subset. The "
+3,results\brief_component_mapping.csv,True,"hbors and continuity $C(15)$ penalizes lost neighbors on a fixed 3,000-artwork subset. The latter is unrelated to complexity or reg"
+000,results\figure_manifest.csv,True,"ors and continuity $C(15)$ penalizes lost neighbors on a fixed 3,000-artwork subset. The latter is unrelated to complexity or regular"
+3.12.16,results\environment.json,True,"onventional shared letter.  The recorded environment uses Python 3.12.16, NumPy 2.5.4 , SciPy 1.18.1 , scikit-learn 1.9.1, pandas 3.1.1, "
+2.5.4,results\environment.json,True,"red letter.  The recorded environment uses Python 3.12.16, NumPy 2.5.4 , SciPy 1.18.1 , scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0"
+1.18.1,results\environment.json,True,"he recorded environment uses Python 3.12.16, NumPy 2.5.4 , SciPy 1.18.1 , scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 , torchv"
+1.9.1,results\environment.json,True,"t uses Python 3.12.16, NumPy 2.5.4 , SciPy 1.18.1 , scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 , torchvision 0.21.0+cu124, S"
+3.1.1,results\environment.json,True,"3.12.16, NumPy 2.5.4 , SciPy 1.18.1 , scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 , torchvision 0.21.0+cu124, Streamlit 1.67."
+2.6.0,results\environment.json,True,"2.5.4 , SciPy 1.18.1 , scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 , torchvision 0.21.0+cu124, Streamlit 1.67.0 and Plotly 7."
+0.21.0,results\environment.json,True,"kit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 , torchvision 0.21.0+cu124, Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650"
+1.67.0,results\environment.json,True,"3.1.1, PyTorch 2.6.0+cu124 , torchvision 0.21.0+cu124, Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM"
+7.1.0,results\environment.json,True,".0+cu124 , torchvision 0.21.0+cu124, Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical C"
+1650,results\environment.json,True,"21.0+cu124, Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical CPUs. Appendix A records "
+4,results\brief_component_mapping.csv,True,"Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical CPUs. Appendix A records driver/cu"
+16,results\confusion_dinov2.csv,True,"it 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical CPUs. Appendix A records driver/cuDNN, sol"
+12,results\brief_component_mapping.csv,True,"Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical CPUs. Appendix A records driver/cuDNN, solver/projection"
+1,results\brief_component_mapping.csv,True,"ed settings; Fig.~ combines ROC/PR curves, per-style scores with 1,000-group-bootstrap 95\% intervals and the clustering cross-chec"
+000,results\figure_manifest.csv,True," settings; Fig.~ combines ROC/PR curves, per-style scores with 1,000-group-bootstrap 95\% intervals and the clustering cross-check. H"
+95,results\drift_test_ids.csv,True,"bines ROC/PR curves, per-style scores with 1,000-group-bootstrap 95\% intervals and the clustering cross-check. Handcrafted AUROC is"
+0.9824,src\build_submission.py,True,"% intervals and the clustering cross-check. Handcrafted AUROC is 0.9824, and is outperformed by ResNet-50 (0.9999) and DINOv2 (0.9997). "
+50,results\drift_test_ids.csv,True,"heck. Handcrafted AUROC is 0.9824, and is outperformed by ResNet-50 (0.9999) and DINOv2 (0.9997). Metadata AUROC 1.0000 exposes an a"
+0.9999,results\baseline_per_style_ci.csv,True,". Handcrafted AUROC is 0.9824, and is outperformed by ResNet-50 (0.9999) and DINOv2 (0.9997). Metadata AUROC 1.0000 exposes an available"
+0.9997,results\baseline_per_style_ci.csv,True,"is 0.9824, and is outperformed by ResNet-50 (0.9999) and DINOv2 (0.9997). Metadata AUROC 1.0000 exposes an available shortcut. Its ECE 0"
+1.0000,results\figure_manifest.csv,True,formed by ResNet-50 (0.9999) and DINOv2 (0.9997). Metadata AUROC 1.0000 exposes an available shortcut. Its ECE 0.1940 also shows that pe
+0.1940,results\baseline_metrics.csv,True,7). Metadata AUROC 1.0000 exposes an available shortcut. Its ECE 0.1940 also shows that perfect ranking need not imply well-calibrated p
+0.0034,results\border_exclusion_drift.csv,True,Near-zero unlabeled ARI in full standardized/PCA spaces (maximum 0.0034 after rounding) coexists with supervised separation: a fitted de
+1,results\brief_component_mapping.csv,True,".  Table~ gives paired AUROC-difference intervals using the same 1,000 origin-stratified source-group draws for every probe. These "
+000,results\figure_manifest.csv,True," Table~ gives paired AUROC-difference intervals using the same 1,000 origin-stratified source-group draws for every probe. These perc"
+43,results\drift_test_ids.csv,True,"ts five new grouped repartitions of the same fixed cohort (seeds 43 to 47), retuning all five probes within each development/validat"
+47,results\drift_test_ids.csv,True,"e new grouped repartitions of the same fixed cohort (seeds 43 to 47), retuning all five probes within each development/validation pa"
+42,results\drift_test_ids.csv,True,eature-extraction thresholds remain fixed from the original seed-42 development set; only preprocessing and probes are refitted. Thu
+500,results\drift_test_ids.csv,True,"in Fig.~ displays shared axes, signed centroid displacements and 500-group-bootstrap Gaussian 95\% ellipses. Most LD clouds occupy lo"
+95,results\drift_test_ids.csv,True,", signed centroid displacements and 500-group-bootstrap Gaussian 95\% ellipses. Most LD clouds occupy lower entropy and higher compl"
+93.57,results/pca_projection_fidelity.csv: explained variance multiplied by100,True, do not measure aesthetic quality.  Two-dimensional PCA explains 93.57\% of development variance yet attains $T(15)=0.6928$ and continu
+15,results\drift_test_ids.csv,True,onal PCA explains 93.57\% of development variance yet attains $T(15)=0.6928$ and continuity 0.7571 (Table~). Three dimensions raise 
+0.6928,src\build_submission.py,True, PCA explains 93.57\% of development variance yet attains $T(15)=0.6928$ and continuity 0.7571 (Table~). Three dimensions raise these to
+0.7571,src\build_submission.py,True,f development variance yet attains $T(15)=0.6928$ and continuity 0.7571 (Table~). Three dimensions raise these to 0.7800 and 0.8869. Fif
+0.7800,src\build_submission.py,True, and continuity 0.7571 (Table~). Three dimensions raise these to 0.7800 and 0.8869. Fifteen t-SNE  runs span seeds 42 to 46 and perplexi
+0.8869,src\build_submission.py,True,"uity 0.7571 (Table~). Three dimensions raise these to 0.7800 and 0.8869. Fifteen t-SNE  runs span seeds 42 to 46 and perplexities 15, 30"
+42,results\drift_test_ids.csv,True,"raise these to 0.7800 and 0.8869. Fifteen t-SNE  runs span seeds 42 to 46 and perplexities 15, 30 and 50; trustworthiness ranges 0.9"
+46,results\ablation_results.csv,True,"these to 0.7800 and 0.8869. Fifteen t-SNE  runs span seeds 42 to 46 and perplexities 15, 30 and 50; trustworthiness ranges 0.9101 to"
+15,results\drift_test_ids.csv,True,"0.8869. Fifteen t-SNE  runs span seeds 42 to 46 and perplexities 15, 30 and 50; trustworthiness ranges 0.9101 to 0.9185. Figure~ fix"
+30,results\drift_test_ids.csv,True,"69. Fifteen t-SNE  runs span seeds 42 to 46 and perplexities 15, 30 and 50; trustworthiness ranges 0.9101 to 0.9185. Figure~ fixes t"
+50,results\drift_test_ids.csv,True,"teen t-SNE  runs span seeds 42 to 46 and perplexities 15, 30 and 50; trustworthiness ranges 0.9101 to 0.9185. Figure~ fixes the disp"
+0.9101,results\hc_plot_points.csv,True," 42 to 46 and perplexities 15, 30 and 50; trustworthiness ranges 0.9101 to 0.9185. Figure~ fixes the display at perplexity 30, seed 42, "
+0.9185,results\metrics_ab_without_FFT.json,True,"and perplexities 15, 30 and 50; trustworthiness ranges 0.9101 to 0.9185. Figure~ fixes the display at perplexity 30, seed 42, random ini"
+30,results\drift_test_ids.csv,True,"ranges 0.9101 to 0.9185. Figure~ fixes the display at perplexity 30, seed 42, random initialization and 1,000 iterations, without se"
+42,results\drift_test_ids.csv,True,"9101 to 0.9185. Figure~ fixes the display at perplexity 30, seed 42, random initialization and 1,000 iterations, without selecting t"
+1,results\brief_component_mapping.csv,True,"the display at perplexity 30, seed 42, random initialization and 1,000 iterations, without selecting the strongest test-separated e"
+000,results\figure_manifest.csv,True,"e display at perplexity 30, seed 42, random initialization and 1,000 iterations, without selecting the strongest test-separated embed"
+542,results\failure_trigger_rates.csv,True,"atory constituent pass, not a confirmed family discovery.    The 542 raw-rule passes among 1,040 tests fail confirmatory eligibility "
+1,results\brief_component_mapping.csv,True,"t a confirmed family discovery.    The 542 raw-rule passes among 1,040 tests fail confirmatory eligibility because Step 5 lacks sub"
+040,results\literature_facts.csv,True,"a confirmed family discovery.    The 542 raw-rule passes among 1,040 tests fail confirmatory eligibility because Step 5 lacks subject"
+5,results\brief_component_mapping.csv,True,"ses among 1,040 tests fail confirmatory eligibility because Step 5 lacks subjects and encoding overlap. Adjusted probabilities cann"
+45,results\checkpoint_integrity_checks.csv,True,"lit; none is a reproduction of SCADET, SPAI or B-Free. The mixed 45,000-image experiment has a 9,000-image Human-versus-LD+SD test a"
+000,results\figure_manifest.csv,True,"; none is a reproduction of SCADET, SPAI or B-Free. The mixed 45,000-image experiment has a 9,000-image Human-versus-LD+SD test and A"
+9,results\brief_component_mapping.csv,True," SCADET, SPAI or B-Free. The mixed 45,000-image experiment has a 9,000-image Human-versus-LD+SD test and AUROC 0.9220; its differen"
+000,results\figure_manifest.csv,True,"CADET, SPAI or B-Free. The mixed 45,000-image experiment has a 9,000-image Human-versus-LD+SD test and AUROC 0.9220; its different cl"
+0.9220,results\control_gate_ablation.csv,True,"e experiment has a 9,000-image Human-versus-LD+SD test and AUROC 0.9220; its different class/source composition prevents a paired resolu"
++0.1814,results\border_exclusion_drift.csv,True,l allocation. Cross-protocol AUROC differences are SCADET local: +0.1814 (+22.65\%); SCADET full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (
++22.65,m4_final\results\cross_protocol_differences.csv,True,ion. Cross-protocol AUROC differences are SCADET local: +0.1814 (+22.65\%); SCADET full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%)
++0.0204,results\border_exclusion_drift.csv,True,C differences are SCADET local: +0.1814 (+22.65\%); SCADET full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%); B-Free: -0.0076 (-0.77\
++2.12,results\interstyle_centroid_distances.csv,True,nces are SCADET local: +0.1814 (+22.65\%); SCADET full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%); B-Free: -0.0076 (-0.77\%). Eac
++0.0724,results\border_exclusion_drift.csv,True,: +0.1814 (+22.65\%); SCADET full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%); B-Free: -0.0076 (-0.77\%). Each percentage divides th
++7.96,results\pca_plot_points.csv,True, (+22.65\%); SCADET full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%); B-Free: -0.0076 (-0.77\%). Each percentage divides the absol
+-0.0076,results\border_exclusion_drift.csv,True,T full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%); B-Free: -0.0076 (-0.77\%). Each percentage divides the absolute difference by th
+-0.77,results\border_exclusion_drift.csv,True,0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%); B-Free: -0.0076 (-0.77\%). Each percentage divides the absolute difference by the corre
+7,results\brief_component_mapping.csv,True, differ.  \subsection{Fairness and Limitations} SCADET reports a 7:1:2 split rather than the present grouped 60:20:20 split; its re
+1,results\brief_component_mapping.csv,True,iffer.  \subsection{Fairness and Limitations} SCADET reports a 7:1:2 split rather than the present grouped 60:20:20 split; its rele
+2,results\audit_encoding_counts.csv,True,fer.  \subsection{Fairness and Limitations} SCADET reports a 7:1:2 split rather than the present grouped 60:20:20 split; its releas
+60,results\cohort_group_counts.csv,True,ns} SCADET reports a 7:1:2 split rather than the present grouped 60:20:20 split; its release-level processing includes native-$768^2
+20,results\drift_test_ids.csv,True, SCADET reports a 7:1:2 split rather than the present grouped 60:20:20 split; its release-level processing includes native-$768^2$ S
+20,results\drift_test_ids.csv,True,ADET reports a 7:1:2 split rather than the present grouped 60:20:20 split; its release-level processing includes native-$768^2$ SD i
+768,results\audit_counts.csv,True,ed 60:20:20 split; its release-level processing includes native-$768^2$ SD images resized to $256^2$. The available evidence does not
+2,results\audit_encoding_counts.csv,True,0:20:20 split; its release-level processing includes native-$768^2$ SD images resized to $256^2$. The available evidence does not e
+256,results\ablation_results.csv,True,e-level processing includes native-$768^2$ SD images resized to $256^2$. The available evidence does not establish equivalent source-
+2,results\audit_encoding_counts.csv,True,vel processing includes native-$768^2$ SD images resized to $256^2$. The available evidence does not establish equivalent source-gr
+0.869,results\literature_comparison.csv,True," source-group protection. ArtBrain reports joint source/style F1 0.869* and attribution accuracy 0.999*, and its training description r"
+0.999,results\literature_comparison.csv,True,"in reports joint source/style F1 0.869* and attribution accuracy 0.999*, and its training description reuses test as validation. B-Free"
+99.0,results\literature_comparison.csv,True,and its training description reuses test as validation. B-Free's 99.0\%* AUC comes from end-to-end content-aligned photographic traini
+-0.0744,results\ablation_results.csv,True," IDs. Removing ordinal features causes the largest family loss, $-0.0744$ AUROC with 95\% interval $[-0.0842,-0.0654]$, followed by color"
+95,results\drift_test_ids.csv,True,"al features causes the largest family loss, $-0.0744$ AUROC with 95\% interval $[-0.0842,-0.0654]$, followed by color/edges ($-0.024"
+-0.0842,results\ablation_results.csv,True,"es the largest family loss, $-0.0744$ AUROC with 95\% interval $[-0.0842,-0.0654]$, followed by color/edges ($-0.0248$), FFT ($-0.0111$) "
+-0.0654,results\ablation_results.csv,True,"argest family loss, $-0.0744$ AUROC with 95\% interval $[-0.0842,-0.0654]$, followed by color/edges ($-0.0248$), FFT ($-0.0111$) and Haar"
+-0.0248,results\ablation_results.csv,True,"ith 95\% interval $[-0.0842,-0.0654]$, followed by color/edges ($-0.0248$), FFT ($-0.0111$) and Haar ($-0.0035$). Ordinal-only attains AU"
+-0.0111,results\ablation_results.csv,True," $[-0.0842,-0.0654]$, followed by color/edges ($-0.0248$), FFT ($-0.0111$) and Haar ($-0.0035$). Ordinal-only attains AUROC 0.8888 and th"
+-0.0035,results\ablation_results.csv,True," followed by color/edges ($-0.0248$), FFT ($-0.0111$) and Haar ($-0.0035$). Ordinal-only attains AUROC 0.8888 and the largest origin-silh"
+0.8888,results\ablation_results.csv,True,"FFT ($-0.0111$) and Haar ($-0.0035$). Ordinal-only attains AUROC 0.8888 and the largest origin-silhouette increase, $+0.0955$. Increased"
++0.0955,results\ablation_results.csv,True,"ttains AUROC 0.8888 and the largest origin-silhouette increase, $+0.0955$. Increased silhouette does not compensate for lower predictive "
+0.9753,results\ablation_results.csv,True,tiles. Strata remain descriptive. Tie exclusion reduces AUROC to 0.9753. Full-$256^2$ and five-overlapping-$128^2$-crop variants reach 0
+256,results\ablation_results.csv,True,remain descriptive. Tie exclusion reduces AUROC to 0.9753. Full-$256^2$ and five-overlapping-$128^2$-crop variants reach 0.9790 and 0
+2,results\audit_encoding_counts.csv,True,in descriptive. Tie exclusion reduces AUROC to 0.9753. Full-$256^2$ and five-overlapping-$128^2$-crop variants reach 0.9790 and 0.9
+128,results\ablation_results.csv,True,"sion reduces AUROC to 0.9753. Full-$256^2$ and five-overlapping-$128^2$-crop variants reach 0.9790 and 0.9810, respectively. The full"
+2,results\audit_encoding_counts.csv,True," reduces AUROC to 0.9753. Full-$256^2$ and five-overlapping-$128^2$-crop variants reach 0.9790 and 0.9810, respectively. The full-i"
+0.9790,results\ablation_results.csv,True,"3. Full-$256^2$ and five-overlapping-$128^2$-crop variants reach 0.9790 and 0.9810, respectively. The full-image variant also changes pr"
+0.9810,results\ablation_results.csv,True,"6^2$ and five-overlapping-$128^2$-crop variants reach 0.9790 and 0.9810, respectively. The full-image variant also changes predictor dim"
+0.9822,src\build_submission.py,True,"the primary probe and scaler frozen. Table~ and Fig.~ show AUROC 0.9822 at JPEG 95, 0.8354 at JPEG 75 and 0.6819 at JPEG 50. The latter "
+95,results\drift_test_ids.csv,True,"be and scaler frozen. Table~ and Fig.~ show AUROC 0.9822 at JPEG 95, 0.8354 at JPEG 75 and 0.6819 at JPEG 50. The latter retains onl"
+0.8354,results\border_exclusion_drift.csv,True,"nd scaler frozen. Table~ and Fig.~ show AUROC 0.9822 at JPEG 95, 0.8354 at JPEG 75 and 0.6819 at JPEG 50. The latter retains only style-"
+75,results\drift_test_ids.csv,True,"n. Table~ and Fig.~ show AUROC 0.9822 at JPEG 95, 0.8354 at JPEG 75 and 0.6819 at JPEG 50. The latter retains only style-rank Spearm"
+0.6819,src\build_submission.py,True,"e~ and Fig.~ show AUROC 0.9822 at JPEG 95, 0.8354 at JPEG 75 and 0.6819 at JPEG 50. The latter retains only style-rank Spearman $\rho=0."
+50,results\drift_test_ids.csv,True,"ow AUROC 0.9822 at JPEG 95, 0.8354 at JPEG 75 and 0.6819 at JPEG 50. The latter retains only style-rank Spearman $\rho=0.3697$, whil"
+0.3697,src\build_submission.py,True,"19 at JPEG 50. The latter retains only style-rank Spearman $\rho=0.3697$, while full-space origin-silhouette retention increases to 1.37"
+1.3749,results\perturbation_results.csv,True,"3697$, while full-space origin-silhouette retention increases to 1.3749. Half-size reduction followed by standardization yields AUROC 0."
+0.7744,results\perturbation_auc_intervals.csv,True,"49. Half-size reduction followed by standardization yields AUROC 0.7744. Predictive ranking, geometric separability and movement ranking"
+100,results\figure_manifest.csv,True,"erently. Original inputs are release JPEGs, not pristine quality-100 images. Equal recompression cannot restore absent subject corres"
+50,results\drift_test_ids.csv,True,\subsection{Control-Gate Failure as a Forensic Discovery} ResNet-50 and DINOv2 outperform the handcrafted probe in ranking. High AUR
+5,results\brief_component_mapping.csv,True,rasts persist independently of subjects and processing. The Step 5 gate succeeds as an audit by detecting why that stronger inferen
+542,results\failure_trigger_rates.csv,True,quantization and unverified subjects invalidate interpreting the 542 raw passes as confirmed diffusion-origin effects. They do not er
+1,results\brief_component_mapping.csv,True,"ional uncertainty but cannot manufacture common support. Zero of 1,040 comparisons is confirmed because none is eligible, not becau"
+040,results\literature_facts.csv,True,"nal uncertainty but cannot manufacture common support. Zero of 1,040 comparisons is confirmed because none is eligible, not because e"
+0.025,results\failure_trigger_rates.csv,True, outer eight-pixel luminance strip with standard deviation below 0.025 and adjacent-strip mean jump above 0.08. It flags 369 artworks; 
+0.08,results\failure_trigger_rates.csv,True,tandard deviation below 0.025 and adjacent-strip mean jump above 0.08. It flags 369 artworks; 76 lose every quadrant. Comparing both c
+369,results\failure_trigger_rates.csv,True,on below 0.025 and adjacent-strip mean jump above 0.08. It flags 369 artworks; 76 lose every quadrant. Comparing both conditions on t
+76,results\drift_test_ids.csv,True, and adjacent-strip mean jump above 0.08. It flags 369 artworks; 76 lose every quadrant. Comparing both conditions on the identical 
+5,results\brief_component_mapping.csv,True," lose every quadrant. Comparing both conditions on the identical 5,924 supported artworks yields 12 signed-shift reversals and 23 e"
+924,results\drift_test_ids.csv,True,"ose every quadrant. Comparing both conditions on the identical 5,924 supported artworks yields 12 signed-shift reversals and 23 explo"
+12,results\brief_component_mapping.csv,True,"both conditions on the identical 5,924 supported artworks yields 12 signed-shift reversals and 23 exploratory-rule reversals, with z"
+23,results\cohort_group_counts.csv,True,"al 5,924 supported artworks yields 12 signed-shift reversals and 23 exploratory-rule reversals, with zero confirmed reversals. This "
+1,results\brief_component_mapping.csv,True,"human explanation quality. G2 is achieved descriptively over the 1,040 feature/style cells, not as temporal art-history inference. "
+040,results\literature_facts.csv,True,"man explanation quality. G2 is achieved descriptively over the 1,040 feature/style cells, not as temporal art-history inference.  \te"
+50,results\drift_test_ids.csv,True,"s, so style-conditioned shifts remain descriptive. Frozen ResNet-50 and DINOv2 outperform the handcrafted probe, but none establishe"
+10,results\brief_component_mapping.csv,True,"://www.kaggle.com/datasets/ravidussilva/real-ai-art}} ; ArtBench-10 supplies its human-art source . The release includes code/tests,"
+319,results\full_split_group_counts.csv,True,ademic guidance.  The frozen cohort SHA256 is \allowbreak\texttt{319d5b18b136ffb20d5765073472936}. Split-ID files and all new resampl
+42,results\drift_test_ids.csv,True, accompany \url{REPO_URL_TO_BE_ADDED}. Original analysis seed is 42; t-SNE uses 42 to 46; supplementary grouped repartitions use 43 
+42,results\drift_test_ids.csv,True,{REPO_URL_TO_BE_ADDED}. Original analysis seed is 42; t-SNE uses 42 to 46; supplementary grouped repartitions use 43 to 47.  L-BFGS 
+46,results\ablation_results.csv,True,URL_TO_BE_ADDED}. Original analysis seed is 42; t-SNE uses 42 to 46; supplementary grouped repartitions use 43 to 47.  L-BFGS uses L
+43,results\drift_test_ids.csv,True," 42; t-SNE uses 42 to 46; supplementary grouped repartitions use 43 to 47.  L-BFGS uses L2, unweighted classes, max\_iter 2000 and t"
+47,results\drift_test_ids.csv,True,"-SNE uses 42 to 46; supplementary grouped repartitions use 43 to 47.  L-BFGS uses L2, unweighted classes, max\_iter 2000 and tol $10"
+2000,results\literature_facts.csv,True,"ons use 43 to 47.  L-BFGS uses L2, unweighted classes, max\_iter 2000 and tol $10^{-4}$; preprocessing is development-only. PCA uses t"
+10,results\brief_component_mapping.csv,True,"47.  L-BFGS uses L2, unweighted classes, max\_iter 2000 and tol $10^{-4}$; preprocessing is development-only. PCA uses three compone"
+-4,src\build_report.py,True," L-BFGS uses L2, unweighted classes, max\_iter 2000 and tol $10^{-4}$; preprocessing is development-only. PCA uses three components/"
+1,results\brief_component_mapping.csv,True," SVD. t-SNE uses random initialization, automatic learning rate, 1,000 iterations and perplexity 15/30/50. NumPy Lloyd clustering u"
+000,results\figure_manifest.csv,True,"VD. t-SNE uses random initialization, automatic learning rate, 1,000 iterations and perplexity 15/30/50. NumPy Lloyd clustering uses "
+15,results\drift_test_ids.csv,True,"zation, automatic learning rate, 1,000 iterations and perplexity 15/30/50. NumPy Lloyd clustering uses k=2, k-means++ initialization"
+30,results\drift_test_ids.csv,True,"ion, automatic learning rate, 1,000 iterations and perplexity 15/30/50. NumPy Lloyd clustering uses k=2, k-means++ initialization, 2"
+50,results\drift_test_ids.csv,True,", automatic learning rate, 1,000 iterations and perplexity 15/30/50. NumPy Lloyd clustering uses k=2, k-means++ initialization, 20 s"
+2,results\audit_encoding_counts.csv,True,"terations and perplexity 15/30/50. NumPy Lloyd clustering uses k=2, k-means++ initialization, 20 starts and at most 300 iterations."
+20,results\drift_test_ids.csv,True,"0/50. NumPy Lloyd clustering uses k=2, k-means++ initialization, 20 starts and at most 300 iterations. Encoder extraction averages f"
+300,results\cohort_counts.csv,True,"tering uses k=2, k-means++ initialization, 20 starts and at most 300 iterations. Encoder extraction averages four 224-pixel quadrant "
+224,results\confusion_ab_Lab.csv,True,"rts and at most 300 iterations. Encoder extraction averages four 224-pixel quadrant views with ImageNet normalization, CUDA FP16, 32-"
+32,results\cohort_group_counts.csv,True,"224-pixel quadrant views with ImageNet normalization, CUDA FP16, 32-quadrant batches and four workers.  Environment captured at revi"
+11,results\confusion_dinov2.csv,True,"hes and four workers.  Environment captured at revision: Windows-11-10.0.26300-SP0; CUDA 12.4 (original execution record), cuDNN not"
+10.0.26300,m4_final\results\software_environment.json,True," and four workers.  Environment captured at revision: Windows-11-10.0.26300-SP0; CUDA 12.4 (original execution record), cuDNN not recorded i"
+12.4,m4_final\results\software_environment.json,True,"nvironment captured at revision: Windows-11-10.0.26300-SP0; CUDA 12.4 (original execution record), cuDNN not recorded in original outp"
+621.14,m4_final\results\software_environment.json,True,"ecorded in original outputs; revision import unavailable, driver 621.14. Primary recorded package versions appear in Section IV; the pin"
+50,results\drift_test_ids.csv,True,"probe fitting/tuning seconds (handcrafted, FFT, metadata, ResNet-50, DINOv2): 7.00, 0.47, 0.11, 12.49, 1.70. Encoder cache-state sec"
+7.00,results\baseline_metrics.csv,True,"/tuning seconds (handcrafted, FFT, metadata, ResNet-50, DINOv2): 7.00, 0.47, 0.11, 12.49, 1.70. Encoder cache-state seconds: ResNet-50"
+0.47,results\style_feature_drift.csv,True,"g seconds (handcrafted, FFT, metadata, ResNet-50, DINOv2): 7.00, 0.47, 0.11, 12.49, 1.70. Encoder cache-state seconds: ResNet-50 2916."
+0.11,results\literature_facts.csv,True,"nds (handcrafted, FFT, metadata, ResNet-50, DINOv2): 7.00, 0.47, 0.11, 12.49, 1.70. Encoder cache-state seconds: ResNet-50 2916.85; DI"
+12.49,results\baseline_metrics.csv,True,"andcrafted, FFT, metadata, ResNet-50, DINOv2): 7.00, 0.47, 0.11, 12.49, 1.70. Encoder cache-state seconds: ResNet-50 2916.85; DINOv2 50"
+1.70,results\baseline_metrics.csv,True,"ted, FFT, metadata, ResNet-50, DINOv2): 7.00, 0.47, 0.11, 12.49, 1.70. Encoder cache-state seconds: ResNet-50 2916.85; DINOv2 5020.19."
+50,results\drift_test_ids.csv,True,"00, 0.47, 0.11, 12.49, 1.70. Encoder cache-state seconds: ResNet-50 2916.85; DINOv2 5020.19. These exclude cold imports and interrup"
+2916.85,results\deep_extraction_summary.json,True," 0.47, 0.11, 12.49, 1.70. Encoder cache-state seconds: ResNet-50 2916.85; DINOv2 5020.19. These exclude cold imports and interrupted earl"
+5020.19,results\deep_extraction_summary.json,True,"49, 1.70. Encoder cache-state seconds: ResNet-50 2916.85; DINOv2 5020.19. These exclude cold imports and interrupted earlier work. Projec"
+385.32,results\projection_runtime.json,True,"old imports and interrupted earlier work. Projection invocation: 385.32 s, with completed caches reused; no total end-to-end runtime is "
+3407.08,results\audit_summary.json,True,e supplied with the release. Available invocation seconds: audit 3407.08; split 43.79; features 2985.67; projections 385.32; pixel sensit
+43.79,results\control_gate.json,True, the release. Available invocation seconds: audit 3407.08; split 43.79; features 2985.67; projections 385.32; pixel sensitivity 1180.84
+2985.67,results\feature_summary.json,True,ailable invocation seconds: audit 3407.08; split 43.79; features 2985.67; projections 385.32; pixel sensitivity 1180.84; drift resume 2.4
+385.32,results\projection_runtime.json,True,conds: audit 3407.08; split 43.79; features 2985.67; projections 385.32; pixel sensitivity 1180.84; drift resume 2.46; ablation resume 1
+1180.84,results\sensitivity_pixel_protocol.json,True,t 43.79; features 2985.67; projections 385.32; pixel sensitivity 1180.84; drift resume 2.46; ablation resume 153.26. Resume timings inclu
+2.46,results\interstyle_centroid_distances.csv,True,.67; projections 385.32; pixel sensitivity 1180.84; drift resume 2.46; ablation resume 153.26. Resume timings include cache reuse and 
+153.26,results\stage7_8_protocol.json,True,2; pixel sensitivity 1180.84; drift resume 2.46; ablation resume 153.26. Resume timings include cache reuse and are not full-stage total
+1,results\brief_component_mapping.csv,True,age totals.  Reviewed-source crosswalk (reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [
+3,results\brief_component_mapping.csv,True,tals.  Reviewed-source crosswalk (reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/
+2,results\audit_encoding_counts.csv,True,.  Reviewed-source crosswalk (reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P
+1,results\brief_component_mapping.csv,True,iewed-source crosswalk (reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [
+3,results\brief_component_mapping.csv,True,d-source crosswalk (reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P
+2,results\audit_encoding_counts.csv,True,ce crosswalk (reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [
+4,results\brief_component_mapping.csv,True,rosswalk (reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P
+2,results\audit_encoding_counts.csv,True,lk (reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [
+5,results\brief_component_mapping.csv,True,reference: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] 
+8,results\ablation_results.csv,True,nce: collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; 
+6,results\brief_component_mapping.csv,True, collection): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11]
+5,results\brief_component_mapping.csv,True,ction): [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6;
+8,results\ablation_results.csv,True,: [1] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] 
+7,results\brief_component_mapping.csv,True,] P2/3; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3
+1,results\brief_component_mapping.csv,True,; [2] P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13]
+7,results\brief_component_mapping.csv,True,P2/1; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4;
+8,results\ablation_results.csv,True,; [3] P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14
+5,results\brief_component_mapping.csv,True,P2/2; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7
+9,results\brief_component_mapping.csv,True,; [4] P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [1
+6,results\brief_component_mapping.csv,True,P1/2; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/
+10,results\brief_component_mapping.csv,True,; [5] P1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [1
+4,results\brief_component_mapping.csv,True,1/8; [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/
+11,results\confusion_dinov2.csv,True, [6] P1/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.Th
+6,results\brief_component_mapping.csv,True,/5; P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matc
+12,results\brief_component_mapping.csv,True,P2/8; [7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched h
+3,results\brief_component_mapping.csv,True,7] P1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcra
+13,results\brief_component_mapping.csv,True,1/1; P2/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcrafted-
+4,results\brief_component_mapping.csv,True,/7; [8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcrafted-minus-
+14,results\ablation_results.csv,True,[8] P2/5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcrafted-minus-FFT d
+7,results\brief_component_mapping.csv,True,5; [9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcrafted-minus-FFT differe
+15,results\drift_test_ids.csv,True,"9] P1/6; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcrafted-minus-FFT differences,"
+9,results\brief_component_mapping.csv,True,"; [10] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcrafted-minus-FFT differences, compu"
+16,results\confusion_dinov2.csv,True,"0] P2/4; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcrafted-minus-FFT differences, computed b"
+10,results\brief_component_mapping.csv,True,"; [11] P2/6; [12] P1/3; [13] P1/4; [14] P1/7; [15] P2/9; [16] P2/10.The matched handcrafted-minus-FFT differences, computed before r"
+0.298514,m4_final\results\paired_probe_differences.csv,True,"handcrafted-minus-FFT differences, computed before rounding, are 0.298514 AUROC (43.6487\% relative to FFT-only) and 0.259029 F1 (37.9268\"
+43.6487,phase4_paper\audit\derived_deltas.json,True,"s-FFT differences, computed before rounding, are 0.298514 AUROC (43.6487\% relative to FFT-only) and 0.259029 F1 (37.9268\% relative). Th"
+0.259029,results\border_exclusion_drift.csv,True,"ounding, are 0.298514 AUROC (43.6487\% relative to FFT-only) and 0.259029 F1 (37.9268\% relative). Thus the displayed gains are +0.2985 AU"
+37.9268,phase4_paper\audit\derived_deltas.json,True,0.298514 AUROC (43.6487\% relative to FFT-only) and 0.259029 F1 (37.9268\% relative). Thus the displayed gains are +0.2985 AUROC (+43.65\
++0.2985,results\border_exclusion_drift.csv,True,d 0.259029 F1 (37.9268\% relative). Thus the displayed gains are +0.2985 AUROC (+43.65\%) and +0.2590 F1 (+37.93\%). The denominator for 
++43.65,phase4_paper\audit\derived_deltas.json,True,37.9268\% relative). Thus the displayed gains are +0.2985 AUROC (+43.65\%) and +0.2590 F1 (+37.93\%). The denominator for each relative 
++0.2590,results\border_exclusion_drift.csv,True,tive). Thus the displayed gains are +0.2985 AUROC (+43.65\%) and +0.2590 F1 (+37.93\%). The denominator for each relative gain is the cor
++37.93,phase4_paper\audit\derived_deltas.json,True,the displayed gains are +0.2985 AUROC (+43.65\%) and +0.2590 F1 (+37.93\%). The denominator for each relative gain is the corresponding 

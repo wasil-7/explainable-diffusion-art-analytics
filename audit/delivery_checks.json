@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "checks": 21,
+  "items": [
+    {
+      "check": "Git executable present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "initialize standalone main branch",
+      "passed": true,
+      "detail": "Initialized empty Git repository in D:/Vault/Documents/Uni Work/Sem5/DAV/DAV_Phase3/explainable-diffusion-art-analytics/.git/\n"
+    },
+    {
+      "check": "official origin configured",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "root_entry compile exit zero",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "root_entry twelve pages and identical text",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "check": "gcr_entry compile exit zero",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "gcr_entry twelve pages and identical text",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "check": "explainable-diffusion-art-analytics README four images resolve",
+      "passed": true,
+      "detail": [
+        "figures/fig07_baseline_probes_and_ari.png",
+        "figures/fig05_style_drift_heatmap.png",
+        "figures/dashboard_landing.png",
+        "figures/dashboard_atlas.png"
+      ]
+    },
+    {
+      "check": "i242551_i242532_Milestone04_DSB README four images resolve",
+      "passed": true,
+      "detail": [
+        "figures/fig07_baseline_probes_and_ari.png",
+        "figures/fig05_style_drift_heatmap.png",
+        "figures/dashboard_landing.png",
+        "figures/dashboard_atlas.png"
+      ]
+    },
+    {
+      "check": "pdf root/repo/GCR byte equality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "docx root/repo/GCR byte equality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "GCR excludes earlier milestones and teaching materials",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "repo includes all three earlier reports",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "requirements guide and companion outside both packages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "repository excludes raw archive/weights/caches",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "all repository payload files below100MB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final PPTX fifty animated slides and speaker notes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final master slide PDF fifty pages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "external walkthrough51pages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZIP integrity and exact folder inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all preserved empirical working files unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "repo": "D:\\Vault\\Documents\\Uni Work\\Sem5\\DAV\\DAV_Phase3\\explainable-diffusion-art-analytics",
+  "submission": "D:\\Vault\\Documents\\Uni Work\\Sem5\\DAV\\DAV_Phase3\\GCR_Submission\\i242551_i242532_Milestone04_DSB",
+  "zip": "D:\\Vault\\Documents\\Uni Work\\Sem5\\DAV\\DAV_Phase3\\GCR_Submission\\i242551_i242532_Milestone04_DSB.zip",
+  "zip_bytes": 66757902
+}

@@ -1,0 +1,11 @@
+{
+  "prefix": "\\begin{table*}[t]\n\\caption{Primary-test metrics (6,000 artworks). Accuracy equals balanced accuracy (BA); precision/recall/F1 use diffusion-positive labels. Macro scores average ten styles. Percentile 95\\% intervals use 1,000 origin-stratified source-group draws with fits/thresholds fixed. Selected settings appear in Appendix A.}\\label{tab:t4}\\label{tab:essential}\n\\centering\\footnotesize\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=1.471\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=2.059\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.353\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.553\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.553\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.553\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.494\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.965\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}\n",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

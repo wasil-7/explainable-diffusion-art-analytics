@@ -1,0 +1,17 @@
+{
+  "seconds": 1180.8405554294586,
+  "five_crop_n": 30000,
+  "perturbation_n_per_view": 6000,
+  "views": [
+    "geometry",
+    "jpeg95",
+    "jpeg75",
+    "jpeg50",
+    "resize0.5",
+    "resize0.75"
+  ],
+  "border_rule": "Flag a quadrant if any outer 8-pixel strip has luminance SD <0.025 and its mean differs by >0.08 from the adjacent 8-pixel strip. Aggregate unflagged quadrants; flag all-excluded cases unsupported.",
+  "jpeg": "Pillow JPEG, subsampling 2; baseline is original release JPEG, NOT Q=100 re-encoding.",
+  "resize": "Pillow bilinear down/up on the standardized RGB256 canvas",
+  "five_crop": "Four 128x128 quadrants plus central [64:192,64:192], pooled ordinal counts and median/IQR of five crop measurements"
+}

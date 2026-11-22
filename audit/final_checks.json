@@ -1,0 +1,451 @@
+{
+  "passed": true,
+  "checks": 87,
+  "paper_pages": 12,
+  "references": 37,
+  "tables": 13,
+  "figures": 11,
+  "items": [
+    {
+      "check": "exactly twelve IEEE pages",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "check": "original abstract and headline results unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "abstract150to250words",
+      "passed": true,
+      "detail": 181
+    },
+    {
+      "check": "thirty-seven compiled references",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "check": "every reference cited and every citation resolved",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "all bibliography metadata preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "eleven main figures including horizontal dashboard",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "check": "thirteen native-table source inputs",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "check": "figures/figure_01.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_02.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_03.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_04.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_05.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_06.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_07.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_09.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_10.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_11.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_12.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_01.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_02.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_03.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_04.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/paired.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/seeds.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_05.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_06.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_07.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_08.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_09.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_10.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_11.tex cited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged changes.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged paired.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged seeds.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_01.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_02.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_03.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_04.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_05.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_06.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_07.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_08.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_09.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_10.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV unchanged table_11.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_01.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_02.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_03.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_04.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/paired.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/seeds.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_05.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_06.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_07.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_08.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_09.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_10.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rendered table unchanged tables/table_11.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "official URL in Introduction/declaration/Appendix",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no repository placeholder or process grading language in final source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "stronger encoders and confound remain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "five-repartition numbers unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "prior numerical/source verification is present and passing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ten regenerated composites pass legend/log/zero audits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all embedded scientific figures at least300dpi",
+      "passed": true,
+      "detail": 358.04268639663144
+    },
+    {
+      "check": "Word has thirteen native tables and eleven embedded images",
+      "passed": true,
+      "detail": [
+        13,
+        11
+      ]
+    },
+    {
+      "check": "Word URL included and no placeholder",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "clean_compile exit zero",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "clean_compile twelve pages",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "check": "clean_compile resolved and no overfull boxes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "clean-copy page text identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "clean-copy pixels identical100dpi",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV table rebuild exit zero",
+      "passed": true,
+      "detail": "All numbered table bodies regenerated from CSV; original layout/captions preserved.\n"
+    },
+    {
+      "check": "csv_compile exit zero",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "csv_compile twelve pages",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "check": "csv_compile resolved and no overfull boxes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV rebuilt page text identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "paper text within page bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "paper no unresolved placeholder",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "word text within page bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "word no unresolved placeholder",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "study text within page bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "study no unresolved placeholder",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all fifty slides have native click fades",
+      "passed": true,
+      "detail": 183
+    },
+    {
+      "check": "fifty actual slide timing trees and fifty notes",
+      "passed": true,
+      "detail": [
+        50,
+        50
+      ]
+    },
+    {
+      "check": "original src/results/figures/m4_final working files intact",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

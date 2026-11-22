@@ -1,0 +1,55 @@
+{
+  "review_type": "Agent visual inspection; not institutional or independent human certification",
+  "paper_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "word_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "supplement_pages": [
+    1
+  ],
+  "main_figures": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "resolution": "108DPI page renders; figure-source assets450DPI; minimum final effective449.26DPI",
+  "findings": "No clipping, placeholder or missing glyph observed; TableIV fits across both columns; wide figures stay within portrait pages; tiny probabilities bounded/decimal; shared gallery axes and paired stress intervals verified.",
+  "scientific_pipeline_rerun": false
+}

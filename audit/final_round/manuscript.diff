@@ -1,0 +1,211 @@
+--- before/main.tex
++++ after/main.tex
+@@ -7,6 +7,7 @@
+ \floatstyle{boxed}\restylefloat{algorithm}
+ \usepackage{placeins,dblfloatfix}
+ \usepackage[hidelinks]{hyperref}
++\hypersetup{pdfauthor={Wasil Kayani and Umar Asghar},pdftitle={Explainable Visual Analytics and Forensic Shortcut Auditing of Human and Diffusion Artwork Across Art-Historical Movements}}
+ \graphicspath{{figures/}}
+ \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+ \setlength{\textfloatsep}{9pt plus 2pt minus 2pt}
+@@ -23,13 +24,18 @@
+ \renewcommand{\floatpagefraction}{0.8}
+ \renewcommand{\dblfloatpagefraction}{0.8}
+ \title{Explainable Visual Analytics and Forensic Shortcut Auditing of Human and Diffusion Artwork Across Art-Historical Movements}
+-\author{Muhammad Wasil Kayani and Umar Asghar\thanks{The authors are with the Department of Computer Science (BS Data Science, Section DSB), National University of Computer and Emerging Sciences (FAST-NUCES), Islamabad, Pakistan. E-mail: i242551@nu.edu.pk; i242532@nu.edu.pk. }}
++\author{\begin{tabular}{@{}c@{\hspace{0.45in}}c@{}}
++Wasil Kayani & Umar Asghar\\[3pt]
++\normalsize Department of AI \& Data Science & \normalsize Department of AI \& Data Science\\
++\normalsize FAST-NUCES, Islamabad, Pakistan & \normalsize FAST-NUCES, Islamabad, Pakistan\\
++\normalsize i242551@nu.edu.pk & \normalsize i242532@nu.edu.pk
++\end{tabular}}
+ \linespread{0.97}
+ \begin{document}
+ \raggedbottom
+ \maketitle
+ \begin{abstract}
+-Diffusion artwork detection can achieve high predictive accuracy without identifying which visual differences survive benchmark confounds. This study develops a twelve-step explainable visual analytics framework combining mathematical features, grouped evaluation, neighborhood diagnostics and a mandatory control-variable gate. An exhaustive AI-ArtBench audit covers 185,015 files; a balanced cohort contains 45,000 artworks, with a native-$256^2$ Human--Latent Diffusion primary cohort of 30,000 and 6,000 held-out test images. A 104-feature logistic probe attains AUROC 0.9824 and F1 0.9420, outperforming FFT-only features (AUROC 0.6839) but trailing frozen ResNet-50 (0.9999) and DINOv2 (0.9997). The handcrafted AUROC gain over FFT-only is 0.2985. Across 1,040 within-style feature comparisons, 542 satisfy an exploratory statistical rule. However, metadata AUROC 1.0000 exposes origin-aligned JPEG quantization, and verified subject matches are unavailable; consequently no comparison is eligible for confirmatory diffusion-origin attribution. Removing ordinal features reduces AUROC to 0.9080, a decrease of 0.0744, while JPEG-quality-50 recompression reduces it to 0.6819. Linked artwork views, uncertainty summaries and explicit projection fidelity make these associations inspectable. The contribution is a reproducible descriptive atlas and forensic diagnosis of shortcut availability, rather than confirmation of an encoding-independent origin effect.
++Diffusion-artwork detection can rank benchmark origins accurately without isolating which differences survive source confounds. This study combines named image measurements, grouped evaluation, projection diagnostics and a common-support gate. An exhaustive AI-ArtBench audit covers 185,015 files; a balanced tier contains 45,000 artworks, including a native-$256^2$ Human--Latent Diffusion primary cohort of 30,000 with 6,000 held-out test images. A 104-feature logistic probe attains area under the receiver operating characteristic curve (AUROC) 0.9824 and F1, the harmonic mean of precision and recall, 0.9420. It trails frozen ResNet-50 (0.9999) and DINOv2 (0.9997), while exceeding the internal fast Fourier transform (FFT)-only comparator by 0.2985 AUROC. Of 1,040 within-style feature comparisons, 542 meet an exploratory statistical rule. Metadata AUROC 1.0000 reveals origin-aligned technical information, but JPEG common support and verified subject matches are absent; no comparison is eligible for confirmatory diffusion-origin attribution. Removing ordinal features reduces AUROC by 0.0744 to 0.9080; JPEG-quality-50 recompression reduces it to 0.6819. Linked artwork views and measured projection fidelity make these associations inspectable. The contribution is a descriptive atlas and a negative validity audit, not confirmation of an encoding-independent origin effect.
+ \end{abstract}
+ \begin{IEEEkeywords}
+ Computational Aesthetics, Explainable Visual Analytics, Diffusion Artwork Detection, Complexity--Entropy Plane, Shortcut Learning Audit, Wasserstein Style Drift.
+@@ -43,12 +49,12 @@
+ 
+ ArtBrain supplies the artwork benchmark \cite{p1}, and complexity--entropy analysis supplies inspectable formal coordinates \cite{p2}. The proposed contribution joins measurement, prediction and validity auditing, rather than claiming a stronger detector than frozen learned representations.
+ 
+-Code and reproducibility artifacts are released through the official repository\footnote{\url{https://github.com/wasil-7/explainable-diffusion-art-analytics}}.
++Code and reproducibility artifacts are prepared for the official repository\footnote{\url{https://github.com/wasil-7/explainable-diffusion-art-analytics}}.
+ 
+ The contributions are:
+ \begin{itemize}
+ \item An exhaustive 185,015-file audit and frozen grouped splits, separating a 45,000-artwork balanced tier from the 30,000-artwork native-resolution primary comparison.
+-\item A four-family, 104-predictor representation with linked visual diagnostics; AUROC 0.9824 exceeds the identically evaluated FFT-only probe by 0.2985.
++\item A transparent 104-predictor probe (AUROC 0.9824), trailing ResNet-50 by 0.0175 (95\% interval $[-0.0216,-0.0140]$) and DINOv2 by 0.0173, while exceeding FFT-only, a matched internal ablation comparator, by 0.2985.
+ \item A control-gated analysis of 1,040 style-feature contrasts: 542 exploratory passes, but zero eligible confirmations because JPEG support and verified subjects are absent.
+ \item Audited projections, including PCA trustworthiness 0.6928, and paired sensitivity evidence: ordinal removal loses 0.0744 AUROC and JPEG 50 yields AUROC 0.6819.
+ \item An artwork-linked dashboard and eight-case forensic gallery connecting aggregate results to actual quadrant pixels and cached measurements.
+@@ -57,16 +63,16 @@
+ 
+ \section{Related Work}
+ \subsection{Artwork Benchmarks and Complexity--Entropy Aesthetics}
+-ArtBrain \cite{p1} provides joint artwork/source tasks, whereas entropy--complexity coordinates \cite{p2} describe platform art. Historical latent representations \cite{p11} and artwork self-distillation \cite{p16} add context and saliency. Their tasks differ from matched binary ranking; formal coordinates do not establish semantic or chronological interpretation.
++ArtBrain \cite{p1} establishes artwork/source prediction, while complexity--entropy coordinates \cite{p2}, historical latent representations \cite{p11} and self-distilled saliency \cite{p16} support formal or contextual description. Their joint-label, observational or context-prediction tasks do not establish matched binary origin effects. This study instead compares named within-style measurements on frozen grouped Human--LD identities. It treats entropy and complexity as descriptors, not aesthetic merit or chronology.
+ 
+ \subsection{Spectral, Wavelet and Color Forensics}
+-SCADET \cite{p4}, SPAI \cite{p5} and FIRE \cite{p6} learn spectral/reconstruction evidence; SIDWA \cite{p14} learns wavelet attention and CoDA \cite{p8} probes color. The present fixed descriptors expose named measurements and conditional family contributions rather than reproducing those trained architectures or assuming compression invariance.
++SCADET \cite{p4}, SPAI \cite{p5} and FIRE \cite{p6} establish learned frequency or reconstruction evidence; SIDWA \cite{p14} learns wavelet attention and CoDA \cite{p8} probes color. Different training, crop contexts and domains prevent direct attribution of those scores to our fixed measurements. The present FFT/Haar/color families expose conditional contributions without reproducing these networks. Grommelt et al. \cite{jpeg_bias} demonstrate JPEG/size bias on GenImage; that prior finding motivates encoding checks but does not prove that our pixel probes use the available JPEG association.
+ 
+ \subsection{Alignment, Generalization and Grounding}
+-B-Free \cite{p3} motivates content controls and VIB-Net \cite{p7} targets generalization. FakeBench \cite{p12}, pixel-inconsistency localization \cite{p13} and region reasoning \cite{p15} provide richer supervised grounding than the unverified semantic labels available here. Their AP, localization and explanation endpoints cannot be ranked as artwork AUROC.
++B-Free \cite{p3} establishes content-aligned training and VIB-Net \cite{p7} tests detector generalization. FakeBench \cite{p12}, pixel-inconsistency localization \cite{p13} and region reasoning \cite{p15} provide supervised explanations or localization beyond the semantic labels available here. Their photographic, AP, localization and explanation endpoints do not form a matched artwork-AUROC comparison. This study exposes missing subject support explicitly and links release-labeled errors to pixels; it claims neither equivalent content alignment nor unseen-generator performance.
+ 
+ \subsection{Scalable and Diagnostic Visual Analytics}
+-PixelatedScatter \cite{p9} informs count-aware display abstraction; MisVisFix \cite{p10} motivates visible diagnostics. Neither validates this artwork embedding or interface. Neighborhood fidelity is measured separately. Table~\ref{tab:t1} summarizes the sixteen studies; claims follow the collected manuscript versions, with verified publication metadata in References.
++PixelatedScatter \cite{p9} establishes count-aware display abstraction, while MisVisFix \cite{p10} supports visible chart diagnostics. Their display/user-task evaluations do not establish the fidelity or usefulness of this artwork interface. The present workflow measures neighborhood preservation separately and links fixed-axis views to actual quadrant evidence, without claiming a user-study benefit. Table~\ref{tab:t1} summarizes the sixteen reviewed studies with published years and marked manuscript-version evidence.
+ 
+ \input{tables/table_01.tex}
+ 
+@@ -75,7 +81,7 @@
+ An artwork record is $(I_i,y_i,s_i,g_i,m_i)$: RGB image $I_i$, origin label $y_i$ (Human $=0$, LD $=1$ for the primary task), style $s_i$, recorded source-family group $g_i$, and technical metadata $m_i$. The four disjoint $128\times128$ quadrants $\mathcal Q(I_i)=\{q_1,q_2,q_3,q_4\}$ tile each native-$256^2$ canvas once. Groups define the dependence structure. The architecture in Fig.~\ref{fig:f1} freezes IDs and development calibration before descriptive projections and probe evaluation. It explicitly separates origin ranking from eligibility for independent origin attribution.
+ \input{figures/figure_01.tex}
+ 
+-Algorithm~\ref{alg:pipeline} preserves the twelve-step planned workflow, including a descriptive restriction whenever subject matching is uncertain.
++Algorithm~\ref{alg:pipeline} implements the planned twelve-step workflow. Planned steps 1--3 map to the input and lines 1--3/6; step 4 to lines 4--7; step 5 to line 8; steps 6--7 to lines 9--10/16; steps 8--9 to lines 11--15; and steps 10--12 to line 16 and the output.
+ 
+ \subsection{Mathematical Features}
+ Let $Y$ denote normalized crop luminance. For permutation entropy \cite{bandt}, stable row-major ranking within each overlapping $2\times2$ neighborhood yields $4!=24$ ordinal states. Their pooled probability vector is $p=(p_1,\ldots,p_{24})$. With uniform distribution $u$ and point mass $\delta$,
+@@ -102,11 +108,11 @@
+ 
+ For feature CDFs $F_H,F_L$, Wasserstein distance \cite{ot} is $W_1=\int_{-\infty}^{\infty}|F_H(x)-F_L(x)|\,dx$ and the two-sample Kolmogorov--Smirnov statistic \cite{ks} is $D=\sup_x|F_H(x)-F_L(x)|$. Signed shifts are median(LD) minus median(Human). Sliced distance $SW_1=128^{-1}\sum_{r=1}^{128}W_1(\langle v_r,X_H\rangle,\langle v_r,X_L\rangle)$ averages fixed unit directions $v_r$ in development-standardized space. Source dispersion uses AI/Human interquartile-range ratios with zero denominators flagged.
+ 
+-Let $G$ indicate satisfied subject, native-size, style, encoding and support controls. Confirmatory eligibility requires
++Let $G$ indicate satisfied subject, native-size, style, encoding and support controls. A comparison is gate-eligible only when these controls hold; an exploratory pass meets the statistical rule without verified controls. Confirmatory eligibility requires
+ \begin{equation}
+  G\ \wedge\ p_{\mathrm{BH}}<0.05\ \wedge\ W_1>P_{95}^{\mathrm{split\text{-}half}}.
+ \end{equation}
+-The Benjamini--Hochberg adjustment \cite{bh} spans all 1,040 prespecified feature/style tests. Each style uses 10,000 whole-source-group label randomizations; the number of AI groups is fixed, while artwork counts can vary. Intervals adapt bootstrap resampling \cite{bootstrap} to 1,000 whole-source-group draws; within-origin disjoint group halves yield 2,000 pooled null distances. Subject and encoding exchangeability is unsupported, so adjusted probabilities and raw passes remain exploratory regardless of numerical threshold satisfaction.
++The Benjamini--Hochberg adjustment \cite{bh} spans all 1,040 prespecified feature/style tests. Each style uses 10,000 whole-source-group label randomizations; the number of AI groups is fixed, while artwork counts can vary. Intervals adapt bootstrap resampling \cite{bootstrap} to 1,000 whole-source-group draws; conditional on frozen fits means that fitted preprocessing, model parameters and thresholds are held fixed during resampling. within-origin disjoint group halves yield 2,000 pooled null distances. Subject and encoding exchangeability is unsupported, so adjusted probabilities and raw passes remain exploratory regardless of numerical threshold satisfaction.
+ \begin{algorithm}[t]
+ \caption{Control-gated explainable visual analytics}
+ \label{alg:pipeline}
+@@ -119,7 +125,7 @@
+ \For{each frozen artwork}
+ \State Tile four disjoint quadrants; cache ordinal/FFT/Haar/color features
+ \EndFor
+-\State Evaluate Step 5 technical, subject and JPEG common-support gates
++\State Evaluate technical, subject and JPEG common-support gates
+ \State Fit scalers, PCA and probes using development/validation only
+ \State Freeze fits/thresholds; evaluate identical held-out IDs
+ \For{each prespecified style-feature comparison}
+@@ -133,8 +139,9 @@
+ \end{algorithm}
+ 
+ \subsection{Refinements to the Planned Methodology}
+-Refinements comprise NumPy Lloyd clustering, a combined HSV+Lab family with isolated ablations, whole-source-group randomization and paired fixed-geometry silhouette bootstraps. The released \texttt{manuscript/tables/changes.csv} records their validity costs; none repairs absent controls.
+-Separate leave-artist, leave-style and unseen-generator experiments were promised but not run. Known artist families are split-disjoint, which does not substitute for those protocols. AI numeric filename prefixes are conservative groups, not verified prompt IDs. No GAN cohort, independently annotated material labels or dashboard user study was implemented. These departures limit the scope of the implemented evaluation.
++The plan's four disjoint quadrants remain primary; five overlapping crops add a sensitivity, while the full-canvas comparison also changes dimensionality. The planned development calibration selects $\tau_S=0.01$ from a 0.05 starting cutoff; this is not a fixed-cutoff violation. Combining HSV+Lab changes the primary family definition, so isolated color ablations bound that choice. NumPy Lloyd clustering substitutes for a blocked library implementation; paired silhouette intervals reuse cached geometry rather than recomputing distances.
++
++Separate artist/style/generator holdouts and the GAN arm were not run; source groups and AI-prefix proxies do not establish those generalizations or verified prompts. Missing subjects and JPEG overlap restrict all contrasts to description; whole-group randomization lacks verified exchangeability. The planned movement-by-generator output is a Human--LD style-family heatmap, with resized SD only descriptive. Eight primary cases replace a generator-spanning gallery; semantic/material labels and a user study are unavailable. Dispersion ratios and inter-style centroid distances are cached but omitted from the main results to prioritize control evidence. The released \texttt{results/changes.csv} checks all twelve steps and records these limits and completed stretch analyses.
+ 
+ \section{Experimental Setup}
+ \subsection{Release, Preprocessing and Grouped Splits}
+@@ -145,17 +152,20 @@
+ \input{figures/figure_02.tex}
+ 
+ \subsection{Baselines, Metrics and Computing Environment}
+-Five logistic probes use identical 6,000 test IDs: handcrafted 104-D, FFT-only 36-D, metadata, frozen ResNet-50 \cite{resnet} 2,048-D and frozen DINOv2 \cite{dinov2} ViT-S/14 384-D. ResNet-50 uses ImageNet \cite{imagenet} weights IMAGENET1K\_V2 from torchvision \cite{torchvision}. Encoder views are resized to 224 pixels and ImageNet normalized; four float32 embeddings are averaged after CUDA FP16 inference (32-quadrant batches, four loaders). The encoders are not fine-tuned. Metadata inputs are width, height, bytes, aspect ratio, subsampling, progressive flag and quantization-table mean. Median imputation and robust scaling use development only; deep embeddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold maximizes validation F1. Final fitting uses development only.
++Five logistic probes use identical 6,000 test IDs: Handcrafted (104-D), FFT-only (36-D), Metadata-only (the implementation's \texttt{metadata\_gated} probe), frozen ResNet-50 \cite{resnet} 2,048-D and frozen DINOv2 \cite{dinov2} ViT-S/14 384-D. ResNet-50 uses ImageNet \cite{imagenet} weights IMAGENET1K\_V2 from torchvision \cite{torchvision}. Encoder views are resized to 224 pixels and ImageNet normalized; four float32 embeddings are averaged after CUDA FP16 inference (32-quadrant batches, four loaders). The encoders are not fine-tuned. Metadata inputs are width, height, bytes, aspect ratio, subsampling, progressive flag and quantization-table mean. Median imputation and robust scaling use development only; deep embeddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold maximizes validation F1. Final fitting uses development only.
+ 
+ AUROC evaluates ranking; precision, recall and F1 use AI-positive labels. Accuracy equals balanced accuracy on the balanced primary test. Fifteen-bin expected calibration error (ECE) measures probability calibration. Macro-style AUROC/F1 average the ten styles. Label-based origin silhouette \cite{silhouette} is $(b-a)/\max(a,b)$, with within-origin mean distance $a$ and other-origin distance $b$. Unsupervised $k=2$ ARI compares clusters with origin only after fitting. Neighborhood trustworthiness $T(15)$ \cite{venna} penalizes false neighbors and continuity $C(15)$ penalizes lost neighbors on a fixed 3,000-artwork subset. The latter is unrelated to complexity or regularization despite the conventional shared letter.
+ 
+ The recorded environment uses Python 3.12.16, NumPy 2.5.4 \cite{numpy}, SciPy 1.18.1 \cite{scipy}, scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 \cite{pytorch}, torchvision 0.21.0+cu124, Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical CPUs. Appendix A records driver/cuDNN, solver/projection settings and stage timings. Seven synthetic feature tests and three numerical tests check bounds, tiling, spectra, distances, randomization and clustering; they do not establish attribution validity.
++
++Relative to the preceding report, aggregate probe intervals, paired differences, five grouped repartitions, mixed-cohort F1 and JPEG quantization means are additional manuscript summaries from the same cached features, predictions and metadata; no new data were collected. Released scripts and CSVs identify their provenance.
+ 
+ \section{Results and Analysis}
+ \subsection{Held-Out Probe Evaluation}
+-Table~\ref{tab:t4} reports all primary metrics and validation-selected settings; Fig.~\ref{fig:f3} combines ROC/PR curves, per-style scores with 1,000-group-bootstrap 95\% intervals and the clustering cross-check. Handcrafted AUROC is 0.9824, and is outperformed by ResNet-50 (0.9999) and DINOv2 (0.9997). Metadata AUROC 1.0000 exposes an available shortcut. Its ECE 0.1940 also shows that perfect ranking need not imply well-calibrated probabilities. Near-zero unlabeled ARI in full standardized/PCA spaces (maximum 0.0034 after rounding) coexists with supervised separation: a fitted decision rule need not reveal two natural clusters. Neither establishes attribution.
++Tables~\ref{tab:t4} and \ref{tab:essential} report primary metrics and validation-selected settings; Fig.~\ref{fig:f3} combines ROC/PR curves, per-style scores with 1,000-group-bootstrap 95\% intervals and the clustering cross-check. Handcrafted AUROC is 0.9824, and is outperformed by ResNet-50 (0.9999) and DINOv2 (0.9997). Metadata-only AUROC 1.0000 shows perfect ranking from technical attributes. Its ECE 0.1940 also shows that perfect ranking need not imply well-calibrated probabilities. Near-zero unlabeled ARI in full standardized/PCA spaces (maximum 0.0034 after rounding) coexists with supervised separation: a fitted decision rule need not reveal two natural clusters. Neither establishes attribution.
+ \input{tables/table_04.tex}
+-Table~\ref{tab:paired} gives paired AUROC-difference intervals using the same 1,000 origin-stratified source-group draws for every probe. These percentile intervals condition on frozen fits and thresholds; exclusion of zero concerns predictive ranking on this release, not origin attribution. Table~\ref{tab:seeds} reports five new grouped repartitions of the same fixed cohort (seeds 43--47), retuning all five probes within each development/validation partition. Cached embeddings are reused. Feature-extraction thresholds remain fixed from the original seed-42 development set; only preprocessing and probes are refitted. Thus these are conditional split-sensitivity runs, not full pipeline replications.
++\input{tables/essential_metrics.tex}
++Table~\ref{tab:paired} gives paired AUROC-difference intervals using the same 1,000 origin-stratified source-group draws for every probe. These intervals retain the fitted models and thresholds; exclusion of zero concerns predictive ranking on this release, not origin attribution. Table~\ref{tab:seeds} reports five new grouped repartitions of the same fixed cohort (seeds 43--47), retuning all five probes within each development/validation partition. Cached embeddings are reused. Feature-extraction thresholds remain fixed from the original seed-42 development set; only preprocessing and probes are refitted. Thus these are conditional split-sensitivity runs, not full pipeline replications.
+ \input{tables/paired.tex}
+ \input{tables/seeds.tex}
+ \input{figures/figure_03.tex}
+@@ -168,11 +178,11 @@
+ \input{figures/figure_05.tex}
+ 
+ \subsection{Spectral, Wavelet and Within-Style Contrasts}
+-Figure~\ref{fig:f6} contrasts radial power shares and raw-luminance Haar energy. Human and LD spectra are broadly similar, while wavelet bands and style-specific features differ. SD remains a resized sensitivity. Figure~\ref{fig:f7} and Table~\ref{tab:t6} summarize mean standardized $W_1$ and mean signed shifts by family. Averaging signed constituents can cancel opposing directions; family means are not independent tests. Asterisks indicate at least one exploratory constituent pass, not a confirmed family discovery.
++Figure~\ref{fig:f6} contrasts radial power shares and raw-luminance Haar energy. Human and LD spectra are broadly similar, while wavelet bands and style-specific features differ. SD remains a resized sensitivity. Figure~\ref{fig:f7} and Table~\ref{tab:t6} summarize mean standardized $W_1$ and mean signed shifts by family. Averaging signed constituents can cancel opposing directions; family means are not independent tests. Every family contains an exploratory constituent pass; redundant asterisks are omitted, and no family-level test or confirmation is implied.
+ \input{figures/figure_06.tex}
+ \input{figures/figure_07.tex}
+ \input{tables/table_06.tex}
+-The 542 raw-rule passes among 1,040 tests fail confirmatory eligibility because Step 5 lacks subjects and encoding overlap. Adjusted probabilities cannot remove systematic bias. Supplementary Fig. S1 supplies the six development-selected feature rainclouds/ECDFs; selection does not use held-out effect strength.
++The 542 exploratory passes among 1,040 tests cannot be confirmed because the common-support gate (Algorithm~\ref{alg:pipeline}, line 8) lacks verified subjects and encoding overlap. Adjusted probabilities cannot remove systematic bias. Supplementary Fig. S1, file \texttt{supplementary.pdf}, supplies the six development-selected feature rainclouds/ECDFs; selection does not use held-out effect strength.
+ 
+ 
+ \subsection{Interactive Visual Analytics}
+@@ -182,18 +192,18 @@
+ 
+ \section{Comparison with Base Papers and State-of-the-Art}
+ \subsection{Base-Paper Summary}
+-Base papers are studies supplying the benchmark, features, bias controls or detection/explanation objectives used here. Table~\ref{tab:t7} includes FIRE, VIB-Net and FakeBench; PixelatedScatter and MisVisFix instead inform interface design (Table~\ref{tab:t1}). The internal matched comparator is FFT-only.
++The base papers are ArtBrain \cite{p1}, Kim et al. \cite{p2}, B-Free \cite{p3}, SCADET \cite{p4}, SPAI \cite{p5}, FIRE \cite{p6}, VIB-Net \cite{p7}, CoDA \cite{p8}, FakeBench \cite{p12} and SIDWA \cite{p14} (Table~\ref{tab:t7}). The remaining Table~\ref{tab:t1} studies are related work rather than base methods. No base-paper method was reimplemented; FFT-only is the matched internal ablation comparator, limiting external comparisons to source-reported protocols.
+ 
+ \input{tables/table_07.tex}
+ \subsection{Quantitative Side-by-Side Evaluation}
+-Table~\ref{tab:t8} marks original-paper quantities with an asterisk. Unstarred primary probes are implemented logistic evaluations on the same frozen split; none is a reproduction of SCADET, SPAI or B-Free. The mixed 45,000-image experiment has a 9,000-image Human-versus-LD+SD test and AUROC 0.9220; its different class/source composition prevents a paired resolution-only interpretation. Original paper endpoints that are not AUROC/F1 remain labeled separately rather than substituted into those columns.
++Table~\ref{tab:t8} marks original-paper quantities with an asterisk. Unstarred primary probes are implemented logistic evaluations on the same frozen split; none is a reproduction of SCADET, SPAI or B-Free. The mixed 45,000-image experiment has a 9,000-image Human-versus-LD+SD test and AUROC 0.9220/F1 0.8977; its different class/source composition prevents a paired resolution-only interpretation. Original paper endpoints that are not AUROC/F1 remain labeled separately rather than substituted into those columns.
+ \input{tables/table_08.tex}
+ \subsection{Methodological Differences}
+ ArtBrain supplies the release and learned joint tasks, whereas the present binary probe isolates native-resolution Human--LD ranking and explicitly audits encoding. Kim et al.'s observational entropy--complexity analysis motivates named coordinates; neither its art-platform study nor the present atlas establishes an origin intervention.
+ 
+ SCADET and SPAI train spectral representations; FIRE learns reconstruction evidence. The present fixed FFT/Haar descriptors and family ablations expose measured contributions without reproducing those networks. B-Free controls photographic content during training, while the present subject audit cannot establish such alignment. Its value is identifying this missing support rather than claiming equivalent robustness.
+ 
+-VIB-Net targets generalization with a learned bottleneck, CoDA probes color-domain shifts, and SIDWA learns wavelet attention. The proposed frozen/linear evaluation measures conditional prediction and transparent shifts, without unseen-generator evidence. FakeBench evaluates multimodal explanations; the artwork-linked gallery provides pixel/feature traces but no verified semantic grounding or user-study equivalence. No additional trained frequency architecture is presented as a faithful reproduction: the existing FFT-only logistic probe remains the matched frequency comparator.
++VIB-Net targets generalization with a learned bottleneck, CoDA probes color-domain shifts, and SIDWA learns wavelet attention. The proposed frozen/linear evaluation measures conditional prediction and transparent shifts, without unseen-generator evidence. FakeBench evaluates multimodal explanations; the artwork-linked gallery provides pixel/feature traces but no verified semantic grounding or user-study equivalence. 
+ 
+ \subsection{Absolute and Relative Differences}
+ \input{derived_improvements.tex}
+@@ -214,10 +224,10 @@
+ \input{figures/figure_11.tex}
+ 
+ \section{Discussion}
+-\subsection{Control-Gate Failure as a Forensic Discovery}
+-ResNet-50 and DINOv2 outperform the handcrafted probe in ranking. High AUROC and zero confirmed effects answer different questions. The probe ranks observed release labels; attribution asks whether contrasts persist independently of subjects and processing. The Step 5 gate succeeds as an audit by detecting why that stronger inference is unavailable. Origin-aligned JPEG quantization and unverified subjects invalidate interpreting the 542 raw passes as confirmed diffusion-origin effects. They do not erase those reproducible associations.
+-
+-Whole-group permutations preserve recorded families, not the unobserved balance needed for exchangeability. Benjamini--Hochberg controls multiplicity under an appropriate testing model; it cannot remove confounding. Bootstrap intervals quantify conditional uncertainty but cannot manufacture common support. Zero of 1,040 comparisons is confirmed because none is eligible, not because each null has been accepted. Neither a zero true origin effect nor complete causal mediation by JPEG follows from this evidence.
++\subsection{Common-Support Failure and Technical Source Association}
++ResNet-50 and DINOv2 outperform the handcrafted probe in ranking. High AUROC and zero confirmed effects answer different questions. The probe ranks observed release labels; attribution asks whether contrasts persist independently of subjects and processing. The common-support gate (Algorithm~\ref{alg:pipeline}, line 8) identifies why that stronger inference is unavailable. Origin-aligned JPEG quantization and unverified subjects invalidate interpreting the 542 raw passes as confirmed diffusion-origin effects. They do not erase those reproducible associations.
++
++Whole-group permutations preserve recorded families, not the unobserved balance needed for exchangeability. Benjamini--Hochberg controls multiplicity under an appropriate testing model; it cannot remove confounding. Bootstrap intervals quantify conditional uncertainty but cannot manufacture common support. Zero of 1,040 comparisons is confirmed because none is eligible, not because each null has been accepted. Neither a zero true origin effect nor complete causal mediation by JPEG follows from this evidence. One untested hypothesis is that local ordinal patterns respond to JPEG block artifacts, which could contribute to the largest ablation effect; the JPEG-50 result motivates, but does not establish, that mechanism.
+ 
+ \subsection{Forensic Cases and Boundary Sensitivity}
+ Table~\ref{tab:t11} indexes two FP, two FN, two TP and two H--C/PCA outliers. Figure~\ref{fig:f12} connects actual canvases and quadrants to their measurements. Typographic cards, ornate frames, isolated objects and monochrome examples illustrate unusual inputs, without verified semantic/material annotation. The cases are purposive and restricted to the primary Human--LD test; no SD-specific error-gallery arm was run.
+@@ -230,17 +240,17 @@
+ 
+ \textit{External validity:} only ten release movements and two primary origins are evaluated. Separate artist/style/generator holdouts, raw museum captures and new generator versions remain untested. SD resizing and mixed-source composition limit transportability. Near-perfect frozen encoders therefore do not establish universal detection.
+ 
+-\textit{Construct validity:} entropy, complexity and color are formal descriptors, not aesthetic merit or intentional style. Quantile triggers are proxies, and an inspectable dashboard has no user-study validation. G1 is achieved as implemented auditability and measured fidelity, not proof of human explanation quality. G2 is achieved descriptively over the 1,040 feature/style cells, not as temporal art-history inference.
+-
+-\textit{Statistical conclusion validity:} source dependence reduces effective sample size; conditional bootstraps and unsupported randomization exchangeability restrict interpretation. Resampling precision cannot substitute for matched subjects. G3 yields a negative forensic audit identifying benchmark leakage; the original requirement that separation survive verified controls remains unestablished. The distinction between implemented auditability, descriptive contrasts and unsupported attribution remains essential.
++\textit{Construct validity:} entropy, complexity and color are formal descriptors, not aesthetic merit or intentional style. Quantile triggers are proxies, and an inspectable dashboard has no user-study validation. G1 is addressed through implemented diagnostics (auditability and measured fidelity); explanation faithfulness and human usefulness were not tested, and display PCA trustworthiness is 0.6928. G2 is achieved descriptively over the 1,040 feature/style cells, not as temporal art-history inference.
++
++\textit{Statistical conclusion validity:} source dependence reduces effective sample size; conditional bootstraps and unsupported randomization exchangeability restrict interpretation. Resampling precision cannot substitute for matched subjects. G3 yields a negative validity audit consistent with encoding leakage; the original requirement that separation survive verified controls remains unestablished. The distinction between implemented auditability, descriptive contrasts and unsupported attribution remains essential.
+ 
+ \section{Conclusion and Future Work}
+-The study combines transparent feature measurements, grouped held-out probes, neighborhood diagnostics and artwork-linked evidence within a mandatory control-gate workflow. Strong release discrimination coexists with encoding leakage and absent verified subjects, so style-conditioned shifts remain descriptive. Frozen ResNet-50 and DINOv2 outperform the handcrafted probe, but none establishes encoding-independent attribution. The contribution is an inspectable atlas and an explicit account of the inference the benchmark cannot support. Future work should capture lossless museum and diffusion originals with common encoding support, verified subject/prompt links and prespecified processing, then evaluate leave-artist, leave-style and unseen-generator holdouts. Dashboard usefulness and material-specific analyses require independent annotations and human evaluation.
++The study combines transparent feature measurements, grouped held-out probes, neighborhood diagnostics and artwork-linked evidence within a mandatory control-gate workflow. Strong release discrimination coexists with origin-aligned encoding and absent verified subjects, so style-conditioned shifts remain descriptive. Frozen ResNet-50 and DINOv2 outperform the handcrafted probe, but none establishes encoding-independent attribution. The contribution is an inspectable atlas and an explicit account of the inference the benchmark cannot support. Future work should capture lossless museum and diffusion originals with common encoding support, verified subject/prompt links and prespecified processing, then evaluate leave-artist, leave-style and unseen-generator holdouts. Dashboard usefulness and material-specific analyses require independent annotations and human evaluation.
+ 
+ \section{Declarations and Acknowledgements}
+-\textit{Data and code availability:} AI-ArtBench is available from its authors\footnote{\url{https://www.kaggle.com/datasets/ravidussilva/real-ai-art}} \cite{p1}; ArtBench-10 supplies its human-art source \cite{artbench}. The release includes code/tests, pinned dependencies, frozen split IDs/cohort hash, CSVs, figure generators and exact build commands. Raw images, model weights and large caches are excluded. The official code and artifact repository is \url{https://github.com/wasil-7/explainable-diffusion-art-analytics}. No fresh-environment experimental replication is claimed.
+-
+-\textit{Competing interests and funding:} The authors declare no competing interests. This research received no external funding. \textit{AI-assisted tools:} Codex, Antigravity, Claude and SciSpace were used for coding assistance, literature exploration, drafting and formatting. The authors are responsible for verifying all sources, numerical results and interpretations and for the final manuscript. \textit{Acknowledgements:} The authors thank Ms. Azka Atiq and FAST-NUCES Islamabad for academic guidance.
++\textit{Data and code availability:} AI-ArtBench is available from its authors\footnote{\url{https://www.kaggle.com/datasets/ravidussilva/real-ai-art}} \cite{p1}; ArtBench-10 supplies its human-art source \cite{artbench}. The prepared local release contains code/tests, pinned dependencies, frozen split IDs/cohort hash, CSVs, figure generators and build commands; publication awaits the authors' push. Raw images, model weights and large caches are excluded. The official code and artifact repository is \url{https://github.com/wasil-7/explainable-diffusion-art-analytics}. No fresh-environment experimental replication is claimed.
++
++\textit{Competing interests and funding:} The authors declare no competing interests. This research received no external funding. \textit{AI-assisted tools:} Codex, Antigravity, Claude and SciSpace were used for coding assistance, literature exploration, drafting and formatting. Wasil Kayani and Umar Asghar are responsible for verifying the sources, numerical results, interpretations and final manuscript. \textit{Acknowledgements:} The authors thank Ms. Azka Atiq and FAST National University of Computer and Emerging Sciences (FAST-NUCES), Islamabad, for academic guidance.
+ 
+ \bibliographystyle{IEEEtran}
+ \bibliography{references}

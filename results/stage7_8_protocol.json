@@ -1,0 +1,12 @@
+{
+  "seconds": 153.2586386203766,
+  "bootstrap_resamples": 1000,
+  "paired_bootstrap": "Whole source groups resampled within origin, identical draws for baseline/variant; fits/thresholds fixed. Silhouette CI resamples cached per-artwork scores conditional on fixed geometry, without recomputing pairwise distances.",
+  "control_ablation": "Full185015 native metadata contrasts retained. Pixel mixed-origin experiment uses pre-frozen balanced45000 tier2 cohort, not all185015; SD resized256 and source composition differs, so differences cannot isolate resolution alone.",
+  "full_canvas": "Single full256 feature vector (no across-crop IQR duplicates), versus four/five crop aggregation; dimension differs and is reported.",
+  "border": "No refit or new hypothesis decisions after inspection; directional sensitivity only, zero confirmatory conclusions in either condition.",
+  "kmeans": "NumPy Lloyd k2, 20 seeded k-means++ starts, max300 iterations; sklearn native KMeans DLL blocked by Windows Application Control.",
+  "border_flagged_artworks": 369,
+  "border_all_excluded": 76,
+  "runtime_scope": "Successful invocation including cache loading; completed batches may come from earlier invocation(s). This is not a reconstruction of total experiment wall time."
+}

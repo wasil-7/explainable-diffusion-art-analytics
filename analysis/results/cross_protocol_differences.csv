@@ -1,0 +1,5 @@
+comparator,auroc,absolute,relative_percent,interpretation
+SCADET local,0.801,0.1814147777777778,22.648536551532807,"cross-protocol, not a verified improvement"
+SCADET full,0.962,0.020414777777777893,2.1221182721182843,"cross-protocol, not a verified improvement"
+SPAI mean,0.91,0.07241477777777783,7.957667887667894,"cross-protocol, not a verified improvement"
+B-Free,0.99,-0.007585222222222132,-0.7661840628507204,"cross-protocol, not a verified improvement"

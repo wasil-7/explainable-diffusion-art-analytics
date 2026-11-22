@@ -1,0 +1,11 @@
+Method,Protocol / test,AUROC,F1,Scope
+Handcrafted (104-D),"Primary / 6,000",0.9824147777777779,0.942000651678071,Implemented logistic probe
+FFT-only (36-D),"Primary / 6,000",0.6839008888888889,0.6829714883599267,Implemented logistic probe
+Metadata-only,"Primary / 6,000",1.0,0.9996665555185061,Implemented logistic probe
+ResNet-50 (frozen),"Primary / 6,000",0.9999447777777777,0.9971661943657276,Implemented logistic probe
+DINOv2 (frozen),"Primary / 6,000",0.9996876666666668,0.995503746877602,Implemented logistic probe
+Unmatched mixed,"Human vs. LD+SD / 9,000",0.9219999444444444,0.8976608187134503,Different source mixture
+SCADET full*,AI-ArtBench / 7:1:2,0.962,—,Different model/split
+SCADET local*,AI-ArtBench / 7:1:2,0.801,—,Different crop protocol
+B-Free*,Aligned photographs,0.990,—,BA 0.952*; end-to-end
+SPAI*,13 generators,0.910,—,Reported mean AUC

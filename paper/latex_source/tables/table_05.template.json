@@ -1,0 +1,11 @@
+{
+  "prefix": "\\begin{table}[tb]\n\\caption{Neighborhood fidelity on the fixed audit subset. t-SNE entries give min--max over five seeds, not confidence intervals.}\\label{tab:t5}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\columnwidth}{>{\\hsize=1.100\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.600\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.100\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.100\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.100\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table}",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

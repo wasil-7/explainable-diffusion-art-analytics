@@ -1,0 +1,11 @@
+{
+  "completed": 45000,
+  "total": 45000,
+  "dimension": 2048,
+  "seconds": 2916.8503205776215,
+  "device": "cuda:0",
+  "fp16": true,
+  "crop_batch_size": 32,
+  "num_workers": 4,
+  "peak_gpu_bytes": 296392192
+}

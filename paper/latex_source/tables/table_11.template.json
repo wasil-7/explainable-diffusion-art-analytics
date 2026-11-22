@@ -1,0 +1,14 @@
+{
+  "prefix": "\\begin{table*}[tb]\n\\caption{Purposively selected held-out cases. IDs are prefixes; complete IDs and measurements accompany the paper.}\\label{tab:t11}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=1.202\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.919\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.636\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.414\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.990\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.919\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.919\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

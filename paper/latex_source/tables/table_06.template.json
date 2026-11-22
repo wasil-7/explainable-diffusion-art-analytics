@@ -1,0 +1,16 @@
+{
+  "prefix": "\\begin{table*}[tb]\n\\caption{Ten-style family summaries: mean standardized W1 / mean signed shift; last column counts constituent exploratory passes.}\\label{tab:t6}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=1.320\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.020\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.020\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.020\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.020\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.600\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

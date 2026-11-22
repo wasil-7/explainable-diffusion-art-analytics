@@ -1,0 +1,19 @@
+{
+  "prefix": "\\begin{table*}[t]\n\\caption{Thirteen paired ablations. Dim. is predictor dimensionality; $\\Delta$ silhouette is variant minus baseline. Intervals refer to AUROC differences; silhouette uncertainty conditions on cached geometry.}\\label{tab:t9}\n\\centering\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=1.842\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.368\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.737\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.737\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.737\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.842\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.737\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

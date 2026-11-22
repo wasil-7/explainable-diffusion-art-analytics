@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\caption{Comparable metric columns with protocol limits. Unstarred rows are executed probes; starred rows are original-paper AUROCs, not reproduced or matched evaluations.}\label{tab:t8}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\textwidth}{>{\hsize=0.964\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.446\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.542\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.542\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.506\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+\toprule
+\textbf{Method} & \textbf{Protocol / test} & \textbf{AUROC} & \textbf{F1} & \textbf{Scope}\\\midrule
+{}Handcrafted (104-D) & Primary / 6,000 & 0.9824 & 0.9420 & Implemented logistic probe\\
+{}FFT-only (36-D) & Primary / 6,000 & 0.6839 & 0.6830 & Implemented logistic probe\\
+{}Metadata-only & Primary / 6,000 & 1.0000 & 0.9997 & Implemented logistic probe\\
+{}ResNet-50 (frozen) & Primary / 6,000 & 0.9999 & 0.9972 & Implemented logistic probe\\
+{}DINOv2 (frozen) & Primary / 6,000 & 0.9997 & 0.9955 & Implemented logistic probe\\
+{}Unmatched mixed & Human vs. LD+SD / 9,000 & 0.9220 & 0.8977 & Different source mixture\\
+{}SCADET full* & AI-ArtBench / 7:1:2 & 0.9620 & --- & Different model/split\\
+{}SCADET local* & AI-ArtBench / 7:1:2 & 0.8010 & --- & Different crop protocol\\
+{}B-Free* & Aligned photographs & 0.9900 & --- & BA 0.952*; end-to-end\\
+{}SPAI* & 13 generators & 0.9100 & --- & Reported mean AUC\\
+\bottomrule\end{tabularx}
+\end{table*}

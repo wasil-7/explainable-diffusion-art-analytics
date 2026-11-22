@@ -1,0 +1,8 @@
+{
+  "checked": "2026-11-22",
+  "command": "git ls-remote origin",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "interpretation": "No remote publication claimed; authors push after this local build. Empty refs mean reachable but unpopulated. Post-push content/commit verification is a sequel."
+}

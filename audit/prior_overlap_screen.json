@@ -1,0 +1,23 @@
+{
+  "source_pdfs": [
+    "Phase1\\1\\SPAI.pdf",
+    "Phase1\\2\\Context_Aware_Art_Evolution_Author_Preprint.pdf",
+    "Phase1\\3\\FakeBench_Author_Preprint.pdf",
+    "Phase1\\4\\Pixel_Inconsistency_Modeling_Author_Preprint.pdf",
+    "Phase1\\5\\SCADET.pdf",
+    "Phase1\\6\\SIDWA.pdf",
+    "Phase1\\7\\Locate_Then_Examine.pdf",
+    "Phase1\\8\\Self_Distilled_Artwork_Detection.pdf",
+    "Phase2\\1\\B-Free.pdf",
+    "Phase2\\10\\MisVisFix_Author_Manuscript.pdf",
+    "Phase2\\2\\Complexity_Entropy_Visual_Arts.pdf",
+    "Phase2\\3\\ArtBrain_Author_Preprint.pdf",
+    "Phase2\\4\\CoDA_Author_Preprint.pdf",
+    "Phase2\\5\\FIRE.pdf",
+    "Phase2\\6\\VIB-Net.pdf",
+    "Phase2\\9\\PixelatedScatter_Author_Manuscript.pdf"
+  ],
+  "unique_sources": 16,
+  "matching_fourteen_word_sequences": [],
+  "scope": "Exact normalized contiguous 14-word screening of manuscript prose against the 16 unique collected PDFs. References/LaTeX commands excluded; not a plagiarism score or institutional similarity certification. New foundational/tool sources were bibliographically verified but are outside this local PDF corpus."
+}

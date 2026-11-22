@@ -1,0 +1,11 @@
+{
+  "edge_counts": {
+    "filename family": 151634,
+    "sha256": 5,
+    "phash<=4 AND dhash<=4": 5
+  },
+  "thresholds": "pHash<=4 AND dHash<=4; prespecified before split; no labels used",
+  "exact_duplicate_files": 10,
+  "near_edges": 5,
+  "source_links": "only detected image-equivalence and conservative filename families; verified source links unavailable"
+}

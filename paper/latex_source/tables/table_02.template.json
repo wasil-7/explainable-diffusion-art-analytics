@@ -1,0 +1,9 @@
+{
+  "prefix": "\\begin{table}[tb]\n\\caption{Full-release image audit. All files are readable RGB JPEG; native sizes differ by origin.}\\label{tab:t2}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\columnwidth}{>{\\hsize=0.897\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.897\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.897\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.103\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.897\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.310\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table}",
+  "citation_keys": [
+    null,
+    null,
+    null
+  ]
+}

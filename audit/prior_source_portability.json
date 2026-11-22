@@ -1,0 +1,16 @@
+[
+  {
+    "check": "clean_compile",
+    "passed": true,
+    "pages": 12,
+    "exit_code": 0,
+    "all_page_text_identical": true,
+    "all_page_pixels_identical100dpi": true
+  },
+  {
+    "check": "csv_compile",
+    "passed": true,
+    "pages": 12,
+    "exit_code": 0
+  }
+]

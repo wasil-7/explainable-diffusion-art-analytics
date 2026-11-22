@@ -1,0 +1,4 @@
+Comparator,Difference,95% CI
+FFT-only (36-D),+0.2985,"[+0.2812, +0.3176]"
+ResNet-50 (frozen),-0.0175,"[-0.0216, -0.0140]"
+DINOv2 (frozen),-0.0173,"[-0.0213, -0.0138]"

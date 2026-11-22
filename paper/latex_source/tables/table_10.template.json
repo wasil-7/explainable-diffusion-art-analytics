@@ -1,0 +1,11 @@
+{
+  "prefix": "\\begin{table*}[t]\n\\caption{Frozen-probe stress tests. AUROC-difference intervals are paired group-bootstrap 95\\% intervals; original inputs are release JPEGs.}\\label{tab:t10}\n\\centering\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=0.960\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.720\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.720\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.800\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.900\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.900\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

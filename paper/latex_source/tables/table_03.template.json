@@ -1,0 +1,15 @@
+{
+  "prefix": "\\begin{table}[tb]\n\\caption{Frozen grouped development/validation/test counts. Source groups are split-disjoint.}\\label{tab:t3}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\columnwidth}{>{\\hsize=1.000\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.000\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.000\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.000\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table}",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

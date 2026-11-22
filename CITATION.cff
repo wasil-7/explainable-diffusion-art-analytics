@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper and the underlying dataset/method references."
+title: "Explainable Visual Analytics and Forensic Shortcut Auditing of Human and Diffusion Artwork Across Art-Historical Movements"
+authors:
+  - family-names: Kayani
+    given-names: Wasil
+  - family-names: Asghar
+    given-names: Umar
+version: 1.1.0
+date-released: 2026-11-22
+license: MIT
+
+repository-code: "https://github.com/wasil-7/explainable-diffusion-art-analytics"

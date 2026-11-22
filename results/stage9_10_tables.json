@@ -1,0 +1,9 @@
+{
+  "seconds": 3.7768940925598145,
+  "literature_claim_rows": 18,
+  "unique_papers": 16,
+  "all_external_numbers_from": "literature_facts.csv",
+  "gallery_n": 8,
+  "gallery_selection": "Two confident FP, FN and TP with distinct styles where possible, plus HC/PCA extreme outliers; qualitative selection on test, not model selection.",
+  "profiles_ci": "1000 source-group bootstraps; pooled styles and conditional on frozen test source composition. SD is separate resized256 sensitivity."
+}

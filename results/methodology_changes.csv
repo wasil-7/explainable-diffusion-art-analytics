@@ -1,0 +1,15 @@
+Methodology step,Original design,Implementation / adjustment,Validity impact / reason
+Control gate,Confirmed human/diffusion attribution,All comparisons descriptive; JPEG tables perfectly origin-aligned and subjects unavailable,No valid exchangeability or isolated origin effect can be established
+Permutation unit,Within-style artwork permutations,"10000 whole-source-group label randomizations, preserving group counts; exploratory only",Avoids splitting known families; group sizes can differ and exchangeability still unsupported
+Null/uncertainty,Artwork-independent resampling,1000 whole-group bootstrap draws; within-origin disjoint group split halves (1000 each origin),Correlated artist/source families preserved; confidence conditional on observed sources
+Unsupervised clustering,scikit-learn KMeans,"NumPy Lloyd k2, 20 seeded k-means++ starts, max300 iterations",Host Application Control blocked sklearn native DLL; no policy changes made
+Fourth feature family,HSV/Edges,Color/edges includes both HSV and cached Lab measurements; explicit HSV/Lab/combined ablations,Additional color representation is not silently merged into the requested four-family labels
+Full-canvas geometry,Same crop feature dimension,Single full256 measurement vector without across-crop IQR duplicates,Geometry comparison also changes dimension; four vs five crops retains104 dimensions
+Silhouette uncertainty,Refit/recompute geometry in each bootstrap,Paired bootstrap of cached per-artwork silhouette scores in fixed variant geometry,Intervals omit uncertainty from re-estimating pairwise geometry
+Unmatched control ablation,All185015 pixels mixed native256/768,"Full 185,015 native metadata probes plus frozen 45,000 mixed-origin pixel cohort, SD resized256","Tier2 pixel budget retained; source mixture differs, so not a causal isolation of resolution"
+Boundary sensitivity,Remove boundary dominated crops,"Fixed luminance-strip heuristic; compare both arms on identical 5,924 supported test artworks",76 all-flagged artworks unsupported; heuristic is not a verified frame annotation
+Failure labels,Named artwork subjects/materials,Development-quantile saturation/edge/high-frequency proxies and fixed border heuristic,"No semantic subject, genre or paint-material labels inferred"
+JPEG original reference,Q100 pristine image,Original release JPEG; recompress95/75/50,"Original is already lossy; Q100 label is a plotting reference, not pristine ground truth"
+Discriminative display features,Top test effects,Six largest absolute coefficients of the frozen development-trained primary probe,No feature ranking on test outcomes
+Unsupported example movements,Cubism/Pointillism examples,Use only the actual ten release styles; representative Renaissance/Impressionism/Ukiyo-e,No invented style labels
+Dashboard table rendering,Arrow-backed interactive tables,"Streamlit+Plotly charts, HTML read-only tables, CSV download, fastparquet",Avoids the host-blocked optional Arrow DLL; filters/drilldown remain interactive

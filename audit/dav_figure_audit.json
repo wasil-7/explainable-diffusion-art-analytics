@@ -1,0 +1,110 @@
+[
+  {
+    "file": "fig01_dataset_audit_and_confound.png",
+    "axes": 2,
+    "legend_count": 1,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [
+      true
+    ],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig02_hc_causality_atlas.png",
+    "axes": 10,
+    "legend_count": 1,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig03_pca_tsne_trustworthiness.png",
+    "axes": 3,
+    "legend_count": 1,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig04_spectral_and_wavelet_profiles.png",
+    "axes": 2,
+    "legend_count": 1,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig05_style_drift_heatmap.png",
+    "axes": 4,
+    "legend_count": 0,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig06_feature_ecdfs_and_rainclouds.png",
+    "axes": 12,
+    "legend_count": 1,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig07_baseline_probes_and_ari.png",
+    "axes": 5,
+    "legend_count": 1,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [
+      true,
+      true
+    ],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig08_ablation_forest_plot.png",
+    "axes": 4,
+    "legend_count": 1,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [
+      true
+    ],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig09_perturbation_robustness.png",
+    "axes": 3,
+    "legend_count": 1,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [
+      true
+    ],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  },
+  {
+    "file": "fig10_forensic_error_gallery.png",
+    "axes": 40,
+    "legend_count": 0,
+    "legend_data_axes_overlaps": [],
+    "bar_axes_zero": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "log_axes_labeled": true,
+    "median_shift_zero_centered": true
+  }
+]

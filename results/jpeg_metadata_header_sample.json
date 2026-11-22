@@ -1,0 +1,726 @@
+{
+  "n": 60,
+  "scope": "One header per each release split/style/origin directory; not an exhaustive comment-tag absence claim",
+  "records": [
+    {
+      "path": "test/AI_LD_art_nouveau/0-100157086-262863.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_baroque/1-100202515-209882.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_expressionism/2-101206227-535370.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_impressionism/3-100796783-212498.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_post_impressionism/4-10001434-116037.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_realism/5-100586791-108130.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_renaissance/6-100536097-128693.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_romanticism/7-10190942-357224.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_surrealism/8-100165899-414365.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_LD_ukiyo-e/9-101822750-464675.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_art_nouveau/0-100086213-128066.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_baroque/1-100786533-118208.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_expressionism/2-100145525-402268.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_impressionism/3-100007555-32903.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_post_impressionism/4-100108829-556548.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_realism/5-100046252-592645.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_renaissance/6-100068995-312751.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_romanticism/7-101055791-283092.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_surrealism/8-10017874-536667.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/AI_SD_ukiyo-e/9-100707173-270254.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/art_nouveau/a-y-jackson_a-copse-evening-1918.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/baroque/abraham-storck_die-niederlandische-flotte-auf-der-reede-vor-amsterdam-0.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/expressionism/abidin-dino_madenci.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/impressionism/adalbert-erdeli_self-portrait.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/post_impressionism/abraham-manievich_bronx-river-park.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/realism/abbott-handerson-thayer_a-bride-1895.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/renaissance/adam-van-noort_allegory-of-the-five-senses.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/romanticism/achille-pinelli_peasant-family-and-monks-with-animals-near-a-church.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/surrealism/Abercrombie_1938_Tree_at_Aledo.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "test/ukiyo_e/adachi-ginko_156.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_art_nouveau/0-239013729-197363.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_baroque/1-260963584-291088.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_expressionism/2-25094189-142963.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_impressionism/3-234272158-2843.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_post_impressionism/4-258901273-290621.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_realism/5-227528948-581264.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_renaissance/6-234077831-252046.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_romanticism/7-23246508-140529.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_surrealism/8-249748629-123558.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_LD_ukiyo-e/9-236534123-417178.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_art_nouveau/0-252405267-179411.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_baroque/1-24686277-337920.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_expressionism/2-238587695-224157.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_impressionism/3-228730107-283153.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_post_impressionism/4-229546997-231208.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_realism/5-242154020-149042.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_renaissance/6-253466068-11885.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_romanticism/7-241971850-226246.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_surrealism/8-2375733-333588.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/AI_SD_ukiyo-e/9-250992346-230466.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/art_nouveau/a-y-jackson_algoma-in-november-1935.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/baroque/abraham-storck_a-dutch-harbour-scene-with-ships-and-bathers-0.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/expressionism/abidin-dino_drawing-pain-1968.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/impressionism/adam-baltatu_arge-valley.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/post_impressionism/a-y-jackson_early-spring-quebec-1923.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/realism/abbott-handerson-thayer_a-study-of-an-old-woman-1890.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/renaissance/adam-van-noort_a-scene-of-exodus-with-women-and-children-resting.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/romanticism/achille-pinelli_church-of-san-vitale.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/surrealism/Abercrombie_.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    },
+    {
+      "path": "train/ukiyo_e/adachi-ginko_114.jpg",
+      "info_keys": [
+        "jfif",
+        "jfif_version",
+        "jfif_unit",
+        "jfif_density"
+      ],
+      "exif_tags": [],
+      "text_tags": {},
+      "text_info": {}
+    }
+  ]
+}

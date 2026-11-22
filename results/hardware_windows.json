@@ -1,0 +1,19 @@
+{
+  "CPU": {
+    "Name": "Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz",
+    "NumberOfCores": 6,
+    "NumberOfLogicalProcessors": 12
+  },
+  "Disks": [
+    {
+      "Model": "WDC WD5000AAKS-00A7B2",
+      "MediaType": "Fixed hard disk media",
+      "Size": 500105249280
+    },
+    {
+      "Model": "Lexar 128GB SSD",
+      "MediaType": "Fixed hard disk media",
+      "Size": 128034708480
+    }
+  ]
+}

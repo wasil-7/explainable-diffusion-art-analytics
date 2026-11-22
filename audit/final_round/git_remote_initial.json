@@ -1,0 +1,8 @@
+{
+  "command": "git ls-remote https://github.com/wasil-7/explainable-diffusion-art-analytics.git",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "checked": "2026-11-22",
+  "phase": "before final polish; post-push check is a separate author sequel"
+}

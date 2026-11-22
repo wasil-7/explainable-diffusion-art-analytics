@@ -1,0 +1,20 @@
+{
+  "accuracy": 0.6756486486486486,
+  "balanced_accuracy": 0.5,
+  "precision": 0.6756486486486486,
+  "recall": 1.0,
+  "f1": 0.8064323618122873,
+  "f1_macro_binary": 0.40321618090614364,
+  "roc_auc": 0.7515900636025441,
+  "average_precision": 0.8388558028807638,
+  "ece": 0.027473047607849847,
+  "n": 37000,
+  "threshold": 0.5293607197586429,
+  "model": "dimensions_ungated_full",
+  "C": 0.001,
+  "development_n": 110999,
+  "validation_n": 37016,
+  "seconds": 0.8101491928100586,
+  "macro_style_auc": 0.7516390123974594,
+  "macro_style_f1": 0.8063795347126723
+}

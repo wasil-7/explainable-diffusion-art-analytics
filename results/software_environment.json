@@ -1,0 +1,42 @@
+{
+  "python": "3.12.16",
+  "OS": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.1",
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "streamlit": "1.67.0",
+    "plotly": "7.1.0",
+    "PyWavelets": "1.10.0",
+    "ImageHash": "4.3.2",
+    "matplotlib": "3.11.2",
+    "statsmodels": "0.15.0",
+    "joblib": "1.6.0",
+    "fastparquet": "2026.9.0"
+  },
+  "cuda": "12.4 (original execution record)",
+  "cudnn": "not recorded in original outputs; revision import unavailable",
+  "gpu": "NVIDIA GeForce GTX 1650 SUPER",
+  "original_packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.1",
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "streamlit": "1.67.0",
+    "plotly": "7.1.0",
+    "PyWavelets": "1.10.0",
+    "ImageHash": "4.3.2",
+    "matplotlib": "3.11.2",
+    "statsmodels": "0.15.0",
+    "joblib": "1.6.0",
+    "fastparquet": "2026.9.0"
+  },
+  "recorded": "2026-11-21",
+  "runtime_note": "torch import did not complete during revision; no cuDNN value invented.",
+  "driver": "621.14"
+}

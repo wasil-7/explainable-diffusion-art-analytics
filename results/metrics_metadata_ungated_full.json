@@ -1,0 +1,20 @@
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "f1_macro_binary": 1.0,
+  "roc_auc": 1.0,
+  "average_precision": 1.0,
+  "ece": 0.07713409944152161,
+  "n": 37000,
+  "threshold": 0.9048787391865434,
+  "model": "metadata_ungated_full",
+  "C": 0.001,
+  "development_n": 110999,
+  "validation_n": 37016,
+  "seconds": 2.647451400756836,
+  "macro_style_auc": 1.0,
+  "macro_style_f1": 1.0
+}

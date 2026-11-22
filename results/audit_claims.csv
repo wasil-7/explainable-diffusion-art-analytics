@@ -1,0 +1,12 @@
+claim,status,evidence
+Separate audit input,Not supplied/located,Header still contains [PATH TO AUDIT FILE]. No separate new audit found in Downloads or chat attachment storage. Enumerated prompt findings independently checked; cannot claim to have read a missing audit.
+Five overlapping crops originally planned,Not reproduced,M2 p7 explicitly plans four disjoint quadrants; five crops are the additional sensitivity.
+Fixed S>.05 threshold violated,Not reproduced,M2 p8 calls .05 a starting cutoff with development calibration.
+Supervisor M2 spells Atif,Not reproduced,M2 cover and user confirmation say Azka Atiq.
+Heatmap exceeds normalization maximum 1.0,Not reproduced in previous implementation,"Previous norm maximum was 1.013, last displayed tick 1.0. New maximum 1.05 and caption removes ambiguity."
+Git repository populated,Not yet,ls-remote returns exit0 and no refs. Authors will push after this build; post-push content verification remains a sequel.
+Baseline essential metrics missing,Confirmed and fixed,"All five accuracy/BA, precision, recall and ECE values now in Table IV alongside AUC/F1 intervals and macro scores."
+S1 distributions absent from delivered PDF,Confirmed and fixed,A separate supplementary.pdf now embeds actual violin/ECDF composite and a full caption.
+Dashboard chart labels and legend too raw,Confirmed and fixed,"Actual rerender uses H/C and two origin symbols; compact linked held-out image, no hero/KPIs."
+Origin colors reused for unrelated quantities,Confirmed and fixed,Reserved blue/orange/purple for origin; model and HSV/Lab palettes use other colors.
+Ordinal JPEG-block mechanism established,Unsupported; not claimed,Explicitly an untested hypothesis. Prior GenImage evidence is a different dataset; cannot establish this pixel-probe mechanism.

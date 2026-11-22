@@ -1,0 +1,1710 @@
+--- before/latex/appendix_evidence.tex
++++ after/latex/appendix_evidence.tex
+@@ -1,7 +1,7 @@
+-The frozen cohort SHA256 is \texttt{e27a00766ad8825201aac6d4167a5a98b}\allowbreak\texttt{319d5b18b136ffb20d5765073472936}. Split IDs and resamples accompany \href{https://github.com/wasil-7/explainable-diffusion-art-analytics}{the official repository}. Seeds: analysis 42; t-SNE 42--46; supplementary repartitions 43--47.
++The frozen cohort SHA256 is \texttt{e27a00766ad8825201aac6d4167a5a98b}\allowbreak\texttt{319d5b18b136ffb20d5765073472936}; IDs/resamples are in the prepared local release for \href{https://github.com/wasil-7/explainable-diffusion-art-analytics}{the official repository}. 
+ 
+-L-BFGS uses unweighted L2, max\_iter 2000 and tol $10^{-4}$. PCA uses three components/full SVD; t-SNE uses random initialization, automatic learning rate, 1,000 iterations and perplexity 15/30/50. NumPy Lloyd clustering uses k=2, k-means++ initialization, 20 starts and at most 300 iterations. Encoder extraction averages four 224-pixel quadrant views with ImageNet normalization, CUDA FP16, 32-quadrant batches and four workers.
++Unweighted L2 L-BFGS: max\_iter 2000, tol $10^{-4}$. PCA: three components/full SVD. t-SNE: random initialization, automatic learning rate, 1,000 iterations, perplexity 15/30/50. NumPy Lloyd: k=2, k-means++, 20 starts, max 300 iterations. 
+ 
+-Recorded environment: Windows 11 (26300), CUDA 12.4, driver 621.14; original cuDNN version unrecorded and revision import unavailable. Section IV and the pinned release specify package versions.
++CUDA 12.4, driver 621.14; original cuDNN unrecorded and revision import unavailable. Fit/tune seconds (Table~\ref{tab:t4} order): 7.00, 0.47, 0.11, 12.49, 1.70. ResNet-50/DINOv2 cache-state times 2916.85/5020.19 s exclude cold imports/earlier interruptions; resume timings are not end-to-end totals.
+ 
+-Recorded probe fitting/tuning seconds (handcrafted, FFT, metadata, ResNet-50, DINOv2): 7.00, 0.47, 0.11, 12.49, 1.70. Encoder cache-state seconds: 2916.85 and 5020.19 for ResNet-50 and DINOv2, excluding cold imports and interrupted earlier work. Released runtime records distinguish cache-reusing resumes; no end-to-end total is reconstructed. 
++Selected $C$: 10 (handcrafted/FFT), 0.001 (metadata), 1 (both encoders). Thresholds in Table~\ref{tab:t4} order: 0.4380, 0.4036, 0.6415, 0.7827, 0.2774.
+--- before/latex/derived_improvements.tex
++++ after/latex/derived_improvements.tex
+@@ -1 +1 @@
+-The matched handcrafted-minus-FFT differences, computed before rounding, are 0.298514 AUROC (43.6487\% relative to FFT-only) and 0.259029 F1 (37.9268\% relative). Thus the displayed gains are +0.2985 AUROC (+43.65\%) and +0.2590 F1 (+37.93\%). The denominator for each relative gain is the corresponding FFT-only score; the latter differs from a percentage computed using already rounded table entries.+The handcrafted probe first trails the strongest matched baseline, ResNet-50, by -0.0175 AUROC (-1.75\%; 95\% interval $[-0.0216,-0.0140]$), and DINOv2 by -0.0173 (-1.73\%). Relative differences divide the unrounded score difference by the comparator's AUROC. Against FFT-only, the internal ablation comparator, the gain is +0.2985 AUROC (+43.65\%) and +0.2590 F1 (+37.93\%); each denominator is the corresponding FFT-only score.
+--- before/latex/figures\figure_01.tex
++++ after/latex/figures\figure_01.tex
+@@ -1,5 +1,9 @@
+ \begin{figure}[t]
++
+ \centering
++
+ \includegraphics[width=\columnwidth,height=1.55in,keepaspectratio]{figure_01.png}
+-\caption{Implemented architecture. The gate separates descriptive measurements from attribution eligibility; source IDs and development calibration are frozen before held-out evaluation.}\label{fig:f1}
++
++\caption{Implemented branch structure. Frozen splits and development calibration precede held-out evaluation; descriptive outputs remain available when the common-support gate blocks independent attribution.}\label{fig:f1}
++
+ \end{figure}--- before/latex/figures\figure_02.tex
++++ after/latex/figures\figure_02.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
+-\includegraphics[width=\textwidth,height=2.05in,keepaspectratio]{figure_02.png}
+-\caption{Release audit and metadata diagnostic. Native-size matching leaves perfect metadata ranking; full-release and primary probes have different source compositions.}\label{fig:f2}
++
++\includegraphics[width=\textwidth,height=1.65in,keepaspectratio]{figure_02.png}
++
++\caption{All 185,015 files are audited; annotations show native dimensions. Full-release/native-256 metadata ROC curves coincide and are drawn once. Size matching leaves perfect technical label ranking, without proving use of that association by pixel probes.}\label{fig:f2}
++
+ \end{figure*}--- before/latex/figures\figure_03.tex
++++ after/latex/figures\figure_03.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
+-\includegraphics[width=\textwidth,height=2.25in,keepaspectratio]{figure_03.png}
+-\caption{Baseline ROC/PR, per-style AUROC and F1 with 1,000-group-bootstrap 95\% intervals, and unlabeled k-means ARI versus origin silhouette.}\label{fig:f3}
++
++\includegraphics[width=\textwidth,height=2.8in,keepaspectratio]{figure_03.png}
++
++\caption{Five probes share 6,000 test IDs; whiskers are frozen-fit group-bootstrap 95\% intervals. Insets zoom ROC to FPR 0--0.02/TPR 0.98--1 and PR to [0.98,1]². Numbered style keys follow B1. Low ARI coexists with strong supervised ranking.}\label{fig:f3}
++
+ \end{figure*}--- before/latex/figures\figure_04.tex
++++ after/latex/figures\figure_04.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
+-\includegraphics[width=\textwidth,height=2.0in,keepaspectratio]{figure_04.png}
+-\caption{Entropy--complexity atlas across ten styles. Shared axes; LD minus Human arrows; 500-group-bootstrap Gaussian 95\% centroid ellipses and KDE contours. All displacements are descriptive.}\label{fig:f4}
++
++\includegraphics[width=\textwidth,height=2.05in,keepaspectratio]{figure_04.png}
++
++\caption{Shared-axis H--C atlas with LD-minus-Human arrows, Gaussian 95\% centroid ellipses (500 group resamples) and within-cell KDE contours (15/40/70\% of peak). Full movement names reveal heterogeneous descriptive displacements, without establishing attribution.}\label{fig:f4}
++
+ \end{figure*}--- before/latex/figures\figure_05.tex
++++ after/latex/figures\figure_05.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
+-\includegraphics[width=\textwidth,height=1.85in,keepaspectratio]{figure_05.png}
+-\caption{Fixed PCA and exploratory t-SNE with neighborhood fidelity. Fixed t-SNE display: perplexity 30, seed 42. Whiskers denote seed ranges, not confidence intervals.}\label{fig:f5}
++
++\includegraphics[width=\textwidth,height=1.9in,keepaspectratio]{figure_05.png}
++
++\caption{Equal-aspect PCA retains all points (A1); A2 zooms PC1 to [$-$5,10] and PC2 to [$-$6,6]. Transparent t-SNE uses perplexity 30, seed 42. Fidelity axis 0.905--0.921 magnifies small differences; whiskers are seed ranges, not confidence intervals.}\label{fig:f5}
++
+ \end{figure*}--- before/latex/figures\figure_06.tex
++++ after/latex/figures\figure_06.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
+-\includegraphics[width=\textwidth,height=2.0in,keepaspectratio]{figure_06.png}
+-\caption{Hann-windowed sixteen-annulus FFT and two-level Haar energy profiles. Intervals use 1,000 source-group bootstraps. SD is resized and descriptive; LL2 remains in Haar normalization.}\label{fig:f6}
++
++\includegraphics[width=\textwidth,height=1.95in,keepaspectratio]{figure_06.png}
++
++\caption{FFT/Haar means with 1,000-group-bootstrap 95\% intervals. Small open Haar markers expose whiskers; LL2 remains in normalization. SD resizing is descriptive. Broadly similar spectra do not eliminate style-specific differences.}\label{fig:f6}
++
+ \end{figure*}--- before/latex/figures\figure_07.tex
++++ after/latex/figures\figure_07.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
++
+ \includegraphics[width=\textwidth,height=2.05in,keepaspectratio]{figure_07.png}
+-\caption{Actual style-family drift heatmaps: mean standardized W1 and signed median shift. An asterisk marks at least one exploratory constituent pass, not confirmatory family discovery.}\label{fig:f7}
++
++\caption{Family-average W$_1$ and signed median shifts. All families contain exploratory constituents; redundant asterisks are omitted. The W$_1$ scale ends at 1.05 (including 1.013); signed colors are zero-centered. These shifts remain unconfirmed.}\label{fig:f7}
++
+ \end{figure*}--- before/latex/figures\figure_08.tex
++++ after/latex/figures\figure_08.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
++
+ \includegraphics[width=\textwidth,height=2.8in,keepaspectratio]{figure_08.png}
+-\caption{Six development-coefficient-selected features: raw-unit rainclouds and ECDFs. Displayed test effects did not determine feature selection; KS D is descriptive.}\label{fig:f8}
++
++\caption{Supplementary Fig. S1. Six features selected from absolute coefficients of the development-trained handcrafted probe, with prespecified display styles and 300 test artworks per origin/style. Violin/jitter distributions and ECDFs retain raw units; KS D is descriptive. Feature selection does not rank held-out effects. Common-support controls remain failed.}\label{fig:f8}
++
+ \end{figure*}--- before/latex/figures\figure_09.tex
++++ after/latex/figures\figure_09.tex
+@@ -1,5 +1,5 @@
+ \begin{figure*}[t]
+ \centering
+ \includegraphics[width=\textwidth,height=1.65in,keepaspectratio]{figure_09.png}
+-\caption{Actual Streamlit--Plotly overview and fixed-axis atlas, arranged horizontally. Linked movement/origin encodings accompany persistent failed-control warnings; the views support inspection, not causal attribution.}\label{fig:f9}
++\caption{Cropped dashboard atlas with H/C labels and a two-origin legend, linked to an actual held-out case. Movement identity remains in filters/hover; inspection does not establish attribution.}\label{fig:f9}
+ \end{figure*}
+--- before/latex/figures\figure_10.tex
++++ after/latex/figures\figure_10.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
++
+ \includegraphics[width=\textwidth,height=2.3in,keepaspectratio]{figure_10.png}
+-\caption{Paired family ablations, development-defined saturation strata and crop-context sensitivity. Group intervals condition on frozen fits; silhouette intervals also condition on cached geometry.}\label{fig:f10}
++
++\caption{Paired family losses and color/crop sensitivities; ordinal removal causes the largest conditional AUROC decrease. B retains all intervals on an explicitly zoomed axis; C bars start at zero. Group intervals retain fits; silhouette intervals additionally retain geometry.}\label{fig:f10}
++
+ \end{figure*}--- before/latex/figures\figure_11.tex
++++ after/latex/figures\figure_11.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
+-\includegraphics[width=\textwidth,height=1.8in,keepaspectratio]{figure_11.png}
+-\caption{JPEG/resize robustness and style-rank stability. Ranking, silhouette and style distance order respond differently to identical source transformations.}\label{fig:f11}
++
++\includegraphics[width=\textwidth,height=1.85in,keepaspectratio]{figure_11.png}
++
++\caption{Separate panels and condition groups avoid dual-axis ambiguity. A shows paired AUROC changes and group-bootstrap 95\% intervals from Table XII; original is the zero reference. Silhouette/rank points are descriptive. JPEG 50 reduces ranking despite increased silhouette.}\label{fig:f11}
++
+ \end{figure*}--- before/latex/figures\figure_12.tex
++++ after/latex/figures\figure_12.tex
+@@ -1,5 +1,9 @@
+ \begin{figure*}[t]
++
+ \centering
++
+ \includegraphics[width=\textwidth,height=4.9in,keepaspectratio]{figure_12.png}
+-\caption{Eight actual forensic cases with canvas, disjoint quadrants, FFT/Haar and color/edge evidence. Cases are purposive; hue R is undefined without valid hue pixels.}\label{fig:f12}
++
++\caption{Eight purposive cases, not prevalence estimates; FP/FN/TP refer to release labels. FFT rows share 10$^{-4}$--1 and Haar rows 10$^{-5}$--10$^{-1}$, both logarithmic. S = saturation, V = value, E = edge density, R = hue concentration (N/A when undefined).}\label{fig:f12}
++
+ \end{figure*}--- before/latex/main.tex
++++ after/latex/main.tex
+@@ -7,6 +7,7 @@
+ \floatstyle{boxed}\restylefloat{algorithm}
+ \usepackage{placeins,dblfloatfix}
+ \usepackage[hidelinks]{hyperref}
++\hypersetup{pdfauthor={Wasil Kayani and Umar Asghar},pdftitle={Explainable Visual Analytics and Forensic Shortcut Auditing of Human and Diffusion Artwork Across Art-Historical Movements}}
+ \graphicspath{{figures/}}
+ \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+ \setlength{\textfloatsep}{9pt plus 2pt minus 2pt}
+@@ -23,13 +24,18 @@
+ \renewcommand{\floatpagefraction}{0.8}
+ \renewcommand{\dblfloatpagefraction}{0.8}
+ \title{Explainable Visual Analytics and Forensic Shortcut Auditing of Human and Diffusion Artwork Across Art-Historical Movements}
+-\author{Muhammad Wasil Kayani and Umar Asghar\thanks{The authors are with the Department of Computer Science (BS Data Science, Section DSB), National University of Computer and Emerging Sciences (FAST-NUCES), Islamabad, Pakistan. E-mail: i242551@nu.edu.pk; i242532@nu.edu.pk. }}
++\author{\begin{tabular}{@{}c@{\hspace{0.45in}}c@{}}
++Wasil Kayani & Umar Asghar\\[3pt]
++\normalsize Department of AI \& Data Science & \normalsize Department of AI \& Data Science\\
++\normalsize FAST-NUCES, Islamabad, Pakistan & \normalsize FAST-NUCES, Islamabad, Pakistan\\
++\normalsize i242551@nu.edu.pk & \normalsize i242532@nu.edu.pk
++\end{tabular}}
+ \linespread{0.97}
+ \begin{document}
+ \raggedbottom
+ \maketitle
+ \begin{abstract}
+-Diffusion artwork detection can achieve high predictive accuracy without identifying which visual differences survive benchmark confounds. This study develops a twelve-step explainable visual analytics framework combining mathematical features, grouped evaluation, neighborhood diagnostics and a mandatory control-variable gate. An exhaustive AI-ArtBench audit covers 185,015 files; a balanced cohort contains 45,000 artworks, with a native-$256^2$ Human--Latent Diffusion primary cohort of 30,000 and 6,000 held-out test images. A 104-feature logistic probe attains AUROC 0.9824 and F1 0.9420, outperforming FFT-only features (AUROC 0.6839) but trailing frozen ResNet-50 (0.9999) and DINOv2 (0.9997). The handcrafted AUROC gain over FFT-only is 0.2985. Across 1,040 within-style feature comparisons, 542 satisfy an exploratory statistical rule. However, metadata AUROC 1.0000 exposes origin-aligned JPEG quantization, and verified subject matches are unavailable; consequently no comparison is eligible for confirmatory diffusion-origin attribution. Removing ordinal features reduces AUROC to 0.9080, a decrease of 0.0744, while JPEG-quality-50 recompression reduces it to 0.6819. Linked artwork views, uncertainty summaries and explicit projection fidelity make these associations inspectable. The contribution is a reproducible descriptive atlas and forensic diagnosis of shortcut availability, rather than confirmation of an encoding-independent origin effect.
++Diffusion-artwork detection can rank benchmark origins accurately without isolating which differences survive source confounds. This study combines named image measurements, grouped evaluation, projection diagnostics and a common-support gate. An exhaustive AI-ArtBench audit covers 185,015 files; a balanced tier contains 45,000 artworks, including a native-$256^2$ Human--Latent Diffusion primary cohort of 30,000 with 6,000 held-out test images. A 104-feature handcrafted logistic probe attains area under the receiver operating characteristic curve (AUROC) 0.9824 and F1, the harmonic mean of precision and recall, 0.9420. It trails frozen ResNet-50 (0.9999) and DINOv2 (0.9997), while exceeding the internal fast Fourier transform (FFT)-only comparator by 0.2985 AUROC. Of 1,040 within-style feature comparisons, 542 meet an exploratory statistical rule. Metadata AUROC 1.0000 reveals origin-aligned technical information, but JPEG common support and verified subject matches are absent; no comparison is eligible for confirmatory diffusion-origin attribution. Removing ordinal features reduces AUROC by 0.0744 to 0.9080; JPEG-quality-50 recompression reduces it to 0.6819. Linked artwork views and measured projection fidelity make these associations inspectable. The contribution is a descriptive atlas and a negative validity audit, not confirmation of an encoding-independent origin effect.
+ \end{abstract}
+ \begin{IEEEkeywords}
+ Computational Aesthetics, Explainable Visual Analytics, Diffusion Artwork Detection, Complexity--Entropy Plane, Shortcut Learning Audit, Wasserstein Style Drift.
+@@ -39,16 +45,16 @@
+ \section{Introduction}
+ Artwork provenance affects attribution, collection practice and the credibility of authenticity claims. Diffusion images complicate these tasks, while benchmark-specific content or processing can make a detector appear more general than it is \cite{p1,p3}. The practical question is which measured differences reflect origin and which merely identify the dataset. Within-movement analysis therefore requires named measurements and explicit controls.
+ 
+-The research question is whether human and diffusion artworks within the same AI-ArtBench style differ in named ordinal, frequency and color measurements after subject, native-dimension and file-encoding controls. Three linked gaps organize the study. \textbf{G1} concerns explainable visual analytics and projection fidelity versus opaque learned features. \textbf{G2} concerns style-conditional human--diffusion feature drift across movements. \textbf{G3} asks whether separation survives subject, native-dimension and encoding controls. The planned temporal question was refined to within-style distribution differences. Neither movement labels nor the present measurements establish a temporal trajectory or aesthetic intention.
+-
+-ArtBrain supplies the artwork benchmark \cite{p1}, and complexity--entropy analysis supplies inspectable formal coordinates \cite{p2}. The proposed contribution joins measurement, prediction and validity auditing, rather than claiming a stronger detector than frozen learned representations.
+-
+-Code and reproducibility artifacts are released through the official repository\footnote{\url{https://github.com/wasil-7/explainable-diffusion-art-analytics}}.
++Within each AI-ArtBench style, the question is which human--diffusion measurement differences survive subject, native-size and encoding controls. \textbf{G1} concerns inspectable diagnostics and projection fidelity; \textbf{G2}, within-style distribution differences; and \textbf{G3}, survival under verified controls. The temporal question was refined before execution: movement labels do not establish chronology or aesthetic intention.
++
++ArtBrain supplies the artwork benchmark \cite{p1}; complexity--entropy analysis supplies inspectable formal coordinates \cite{p2}.
++
++Code and reproducibility artifacts are prepared for the official repository\footnote{\url{https://github.com/wasil-7/explainable-diffusion-art-analytics}}.
+ 
+ The contributions are:
+ \begin{itemize}
+ \item An exhaustive 185,015-file audit and frozen grouped splits, separating a 45,000-artwork balanced tier from the 30,000-artwork native-resolution primary comparison.
+-\item A four-family, 104-predictor representation with linked visual diagnostics; AUROC 0.9824 exceeds the identically evaluated FFT-only probe by 0.2985.
++\item A transparent 104-predictor probe (AUROC 0.9824), trailing ResNet-50 by 0.0175 (95\% interval $[-0.0216,-0.0140]$) and DINOv2 by 0.0173, while exceeding FFT-only, a matched internal ablation comparator, by 0.2985.
+ \item A control-gated analysis of 1,040 style-feature contrasts: 542 exploratory passes, but zero eligible confirmations because JPEG support and verified subjects are absent.
+ \item Audited projections, including PCA trustworthiness 0.6928, and paired sensitivity evidence: ordinal removal loses 0.0744 AUROC and JPEG 50 yields AUROC 0.6819.
+ \item An artwork-linked dashboard and eight-case forensic gallery connecting aggregate results to actual quadrant pixels and cached measurements.
+@@ -57,16 +63,16 @@
+ 
+ \section{Related Work}
+ \subsection{Artwork Benchmarks and Complexity--Entropy Aesthetics}
+-ArtBrain \cite{p1} provides joint artwork/source tasks, whereas entropy--complexity coordinates \cite{p2} describe platform art. Historical latent representations \cite{p11} and artwork self-distillation \cite{p16} add context and saliency. Their tasks differ from matched binary ranking; formal coordinates do not establish semantic or chronological interpretation.
++ArtBrain \cite{p1} establishes artwork/source prediction, while complexity--entropy coordinates \cite{p2}, historical latent representations \cite{p11} and self-distilled saliency \cite{p16} support formal or contextual description. Their joint-label, observational or context-prediction tasks do not establish matched binary origin effects. This study instead compares named within-style measurements on frozen grouped Human--LD identities. It treats entropy and complexity as descriptors, not aesthetic merit or chronology.
+ 
+ \subsection{Spectral, Wavelet and Color Forensics}
+-SCADET \cite{p4}, SPAI \cite{p5} and FIRE \cite{p6} learn spectral/reconstruction evidence; SIDWA \cite{p14} learns wavelet attention and CoDA \cite{p8} probes color. The present fixed descriptors expose named measurements and conditional family contributions rather than reproducing those trained architectures or assuming compression invariance.
++SCADET \cite{p4}, SPAI \cite{p5} and FIRE \cite{p6} establish learned frequency or reconstruction evidence; SIDWA \cite{p14} learns wavelet attention and CoDA \cite{p8} probes color. Different training, crop contexts and domains prevent direct attribution of those scores to our fixed measurements. The present FFT/Haar/color families expose conditional contributions without reproducing these networks. Grommelt et al. \cite{jpeg_bias} demonstrate JPEG/size bias on GenImage; that prior finding motivates encoding checks but does not prove that our pixel probes use the available JPEG association.
+ 
+ \subsection{Alignment, Generalization and Grounding}
+-B-Free \cite{p3} motivates content controls and VIB-Net \cite{p7} targets generalization. FakeBench \cite{p12}, pixel-inconsistency localization \cite{p13} and region reasoning \cite{p15} provide richer supervised grounding than the unverified semantic labels available here. Their AP, localization and explanation endpoints cannot be ranked as artwork AUROC.
++B-Free \cite{p3} establishes content-aligned training and VIB-Net \cite{p7} tests detector generalization. FakeBench \cite{p12}, pixel-inconsistency localization \cite{p13} and region reasoning \cite{p15} provide supervised explanations or localization beyond the semantic labels available here. Their photographic, AP, localization and explanation endpoints do not form a matched artwork-AUROC comparison. This study exposes missing subject support explicitly and links release-labeled errors to pixels; it claims neither equivalent content alignment nor unseen-generator performance.
+ 
+ \subsection{Scalable and Diagnostic Visual Analytics}
+-PixelatedScatter \cite{p9} informs count-aware display abstraction; MisVisFix \cite{p10} motivates visible diagnostics. Neither validates this artwork embedding or interface. Neighborhood fidelity is measured separately. Table~\ref{tab:t1} summarizes the sixteen studies; claims follow the collected manuscript versions, with verified publication metadata in References.
++PixelatedScatter \cite{p9} establishes count-aware display abstraction, while MisVisFix \cite{p10} supports visible chart diagnostics. Their display/user-task evaluations do not establish the fidelity or usefulness of this artwork interface. The present workflow measures neighborhood preservation separately and links fixed-axis views to actual quadrant evidence, without claiming a user-study benefit. Table~\ref{tab:t1} summarizes the sixteen reviewed studies with published years and marked manuscript-version evidence.
+ 
+ \input{tables/table_01.tex}
+ 
+@@ -75,7 +81,7 @@
+ An artwork record is $(I_i,y_i,s_i,g_i,m_i)$: RGB image $I_i$, origin label $y_i$ (Human $=0$, LD $=1$ for the primary task), style $s_i$, recorded source-family group $g_i$, and technical metadata $m_i$. The four disjoint $128\times128$ quadrants $\mathcal Q(I_i)=\{q_1,q_2,q_3,q_4\}$ tile each native-$256^2$ canvas once. Groups define the dependence structure. The architecture in Fig.~\ref{fig:f1} freezes IDs and development calibration before descriptive projections and probe evaluation. It explicitly separates origin ranking from eligibility for independent origin attribution.
+ \input{figures/figure_01.tex}
+ 
+-Algorithm~\ref{alg:pipeline} preserves the twelve-step planned workflow, including a descriptive restriction whenever subject matching is uncertain.
++Algorithm~\ref{alg:pipeline} implements the planned twelve-step workflow. Planned steps 1--3 map to the input and lines 1--3/6; step 4 to lines 4--7; step 5 to line 8; steps 6--7 to lines 9--10/16; steps 8--9 to lines 11--15; and steps 10--12 to line 16 and the output.
+ 
+ \subsection{Mathematical Features}
+ Let $Y$ denote normalized crop luminance. For permutation entropy \cite{bandt}, stable row-major ranking within each overlapping $2\times2$ neighborhood yields $4!=24$ ordinal states. Their pooled probability vector is $p=(p_1,\ldots,p_{24})$. With uniform distribution $u$ and point mass $\delta$,
+@@ -93,20 +99,20 @@
+ Median and interquartile-range crop aggregation, plus pooled ordinal probabilities, produce 104 primary predictors: 8 ordinal, 36 FFT, 14 Haar and 46 color/edge features. The cache contains 169 measurements including full-canvas, tie-excluded and diagnostic fields. Raw hue angles and undefined-count flags are excluded from the primary predictor vector.
+ 
+ \subsection{Probe Objective and Statistical Gate}
+-For standardized feature $\tilde x_i$, coefficients $w$, unpenalized intercept $b$ and sigmoid $\sigma(z)=(1+e^{-z})^{-1}$, the nominal averaged binary cross-entropy objective is
++For development-standardized feature $\tilde x_i$, coefficients $w$, unpenalized intercept $b$ and $N_d$ development artworks, let $\sigma_i=(1+e^{-(w^\top\tilde x_i+b)})^{-1}$. The executed unweighted scikit-learn \cite{sklearn} L-BFGS objective is
+ \begin{align}
+-\mathcal{L}(w,b)&=-\frac{1}{N_d}\sum_{i=1}^{N_d}\{y_i\log\sigma_i+(1-y_i)\log(1-\sigma_i)\}\nonumber\\
+-&\quad+\frac{\|w\|_2^2}{2C_{\mathrm{avg}}},\quad \sigma_i=\sigma(w^\top\tilde x_i+b).
++\mathcal L(w,b)&=-\frac{1}{N_d}\sum_{i=1}^{N_d}\{y_i\log\sigma_i+(1-y_i)\log(1-\sigma_i)\}\nonumber\\
++&\quad+\frac{\|w\|_2^2}{2N_d C_{\mathrm{solver}}}.
+ \end{align}
+-The executed unweighted scikit-learn \cite{sklearn} L-BFGS fit uses $C_{\mathrm{avg}}=N_d C_{\mathrm{solver}}$. Thus the averaged-loss penalty is $\|w\|^2/(2N_d C_{\mathrm{solver}})$; tabulated $C$ values are solver values. This preserves the executed regularization scale.
++Thus tabulated $C$ values retain the executed solver scale, rather than an unadjusted averaged-loss penalty.
+ 
+ For feature CDFs $F_H,F_L$, Wasserstein distance \cite{ot} is $W_1=\int_{-\infty}^{\infty}|F_H(x)-F_L(x)|\,dx$ and the two-sample Kolmogorov--Smirnov statistic \cite{ks} is $D=\sup_x|F_H(x)-F_L(x)|$. Signed shifts are median(LD) minus median(Human). Sliced distance $SW_1=128^{-1}\sum_{r=1}^{128}W_1(\langle v_r,X_H\rangle,\langle v_r,X_L\rangle)$ averages fixed unit directions $v_r$ in development-standardized space. Source dispersion uses AI/Human interquartile-range ratios with zero denominators flagged.
+ 
+-Let $G$ indicate satisfied subject, native-size, style, encoding and support controls. Confirmatory eligibility requires
++Let $G$ indicate satisfied subject, native-size, style, encoding and support controls. A comparison is gate-eligible only when these controls hold; an exploratory pass meets the statistical rule without verified controls. Confirmatory eligibility requires
+ \begin{equation}
+  G\ \wedge\ p_{\mathrm{BH}}<0.05\ \wedge\ W_1>P_{95}^{\mathrm{split\text{-}half}}.
+ \end{equation}
+-The Benjamini--Hochberg adjustment \cite{bh} spans all 1,040 prespecified feature/style tests. Each style uses 10,000 whole-source-group label randomizations; the number of AI groups is fixed, while artwork counts can vary. Intervals adapt bootstrap resampling \cite{bootstrap} to 1,000 whole-source-group draws; within-origin disjoint group halves yield 2,000 pooled null distances. Subject and encoding exchangeability is unsupported, so adjusted probabilities and raw passes remain exploratory regardless of numerical threshold satisfaction.
++The Benjamini--Hochberg adjustment \cite{bh} spans all 1,040 prespecified feature/style tests. Each style uses 10,000 whole-source-group label randomizations; the number of AI groups is fixed, while artwork counts can vary. Intervals adapt bootstrap resampling \cite{bootstrap} to 1,000 whole-source-group draws; conditional on frozen fits means preprocessing, coefficients and thresholds stay fixed. Within-origin disjoint group halves yield 2,000 pooled null distances. With subject/encoding exchangeability unverified, adjusted probabilities remain exploratory.
+ \begin{algorithm}[t]
+ \caption{Control-gated explainable visual analytics}
+ \label{alg:pipeline}
+@@ -119,7 +125,7 @@
+ \For{each frozen artwork}
+ \State Tile four disjoint quadrants; cache ordinal/FFT/Haar/color features
+ \EndFor
+-\State Evaluate Step 5 technical, subject and JPEG common-support gates
++\State Evaluate technical, subject and JPEG common-support gates
+ \State Fit scalers, PCA and probes using development/validation only
+ \State Freeze fits/thresholds; evaluate identical held-out IDs
+ \For{each prespecified style-feature comparison}
+@@ -133,46 +139,50 @@
+ \end{algorithm}
+ 
+ \subsection{Refinements to the Planned Methodology}
+-Refinements comprise NumPy Lloyd clustering, a combined HSV+Lab family with isolated ablations, whole-source-group randomization and paired fixed-geometry silhouette bootstraps. The released \texttt{manuscript/tables/changes.csv} records their validity costs; none repairs absent controls.
+-Separate leave-artist, leave-style and unseen-generator experiments were promised but not run. Known artist families are split-disjoint, which does not substitute for those protocols. AI numeric filename prefixes are conservative groups, not verified prompt IDs. No GAN cohort, independently annotated material labels or dashboard user study was implemented. These departures limit the scope of the implemented evaluation.
++The plan's four disjoint quadrants remain primary; five overlapping crops add a sensitivity, while the full-canvas comparison also changes dimensionality. The planned development calibration selects $\tau_S=0.01$ from a 0.05 starting cutoff; this is not a fixed-cutoff violation. Combining hue--saturation--value (HSV) and Lab changes the primary family definition, so isolated color ablations bound that choice. NumPy Lloyd clustering substitutes for a blocked library implementation; paired silhouette intervals reuse cached geometry rather than recomputing distances.
++
++Separate artist/style/generator holdouts and the GAN arm were not run; source groups and AI-prefix proxies do not establish those generalizations or verified prompts. Missing subjects and JPEG overlap restrict all contrasts to description; whole-group randomization lacks verified exchangeability. The planned movement-by-generator output is a Human--LD style-family heatmap, with resized Stable Diffusion (SD) only descriptive. Eight primary cases replace a generator-spanning gallery; semantic/material labels and a user study are unavailable. Dispersion ratios and inter-style centroid distances are cached but omitted from the main results to prioritize control evidence. The released \texttt{results/changes.csv} checks all twelve steps and records these limits and completed stretch analyses.
+ 
+ \section{Experimental Setup}
+ \subsection{Release, Preprocessing and Grouped Splits}
+-AI-ArtBench combines generated artworks with ArtBench-10 human images \cite{p1,artbench}. All 185,015 release files decode as RGB JPEG (Table~\ref{tab:t2}); no EXIF or embedded ICC profiles are supplied. Human and LD images are native $256^2$; SD is native $768^2$ and remains a separate resized descriptive sensitivity. Table~\ref{tab:t3} gives grouped development, validation and test counts. Five exact duplicate pairs and conservative perceptual/source links are joined before splitting; the perceptual rule requires both 64-bit pHash and dHash distances at most four, using ImageHash \cite{imagehash}. Transitive source links remain split-disjoint.
++AI-ArtBench joins generated images with ArtBench-10 human art \cite{p1,artbench}. All 185,015 files are RGB JPEG without EXIF/ICC (Table~\ref{tab:t2}); Human/LD are native $256^2$, while SD is native $768^2$ and resized only descriptively. Before freezing splits (Table~\ref{tab:t3}), transitive grouping joins five exact duplicate pairs, conservative source links and paired 64-bit pHash/dHash distances at most four, using ImageHash \cite{imagehash}.
++
+ \input{tables/table_02.tex}
+ \input{tables/table_03.tex}
+ The balanced tier contains 1,500 artworks per style/origin, split 900/300/300. The primary comparison therefore has 300 test artworks per style/origin, exceeding the planned minimum of 50. No verified subject text or prompt pairing is available. Human and LD JPEG quantization hashes have zero common support; their table means are 7.2421875 and 36.234375. Figure~\ref{fig:f2} shows why native-size matching alone cannot remove metadata discrimination.
+ \input{figures/figure_02.tex}
+ 
+ \subsection{Baselines, Metrics and Computing Environment}
+-Five logistic probes use identical 6,000 test IDs: handcrafted 104-D, FFT-only 36-D, metadata, frozen ResNet-50 \cite{resnet} 2,048-D and frozen DINOv2 \cite{dinov2} ViT-S/14 384-D. ResNet-50 uses ImageNet \cite{imagenet} weights IMAGENET1K\_V2 from torchvision \cite{torchvision}. Encoder views are resized to 224 pixels and ImageNet normalized; four float32 embeddings are averaged after CUDA FP16 inference (32-quadrant batches, four loaders). The encoders are not fine-tuned. Metadata inputs are width, height, bytes, aspect ratio, subsampling, progressive flag and quantization-table mean. Median imputation and robust scaling use development only; deep embeddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold maximizes validation F1. Final fitting uses development only.
+-
+-AUROC evaluates ranking; precision, recall and F1 use AI-positive labels. Accuracy equals balanced accuracy on the balanced primary test. Fifteen-bin expected calibration error (ECE) measures probability calibration. Macro-style AUROC/F1 average the ten styles. Label-based origin silhouette \cite{silhouette} is $(b-a)/\max(a,b)$, with within-origin mean distance $a$ and other-origin distance $b$. Unsupervised $k=2$ ARI compares clusters with origin only after fitting. Neighborhood trustworthiness $T(15)$ \cite{venna} penalizes false neighbors and continuity $C(15)$ penalizes lost neighbors on a fixed 3,000-artwork subset. The latter is unrelated to complexity or regularization despite the conventional shared letter.
+-
+-The recorded environment uses Python 3.12.16, NumPy 2.5.4 \cite{numpy}, SciPy 1.18.1 \cite{scipy}, scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 \cite{pytorch}, torchvision 0.21.0+cu124, Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical CPUs. Appendix A records driver/cuDNN, solver/projection settings and stage timings. Seven synthetic feature tests and three numerical tests check bounds, tiling, spectra, distances, randomization and clustering; they do not establish attribution validity.
++Five logistic probes use identical 6,000 test IDs: Handcrafted (104-D), FFT-only (36-D), Metadata-only (the implementation's \texttt{metadata\_gated} probe), frozen ResNet-50 \cite{resnet} 2,048-D and frozen DINOv2 \cite{dinov2} ViT-S/14 384-D. ResNet-50 uses ImageNet \cite{imagenet} weights IMAGENET1K\_V2 from torchvision \cite{torchvision}. Encoder views are resized to 224 pixels and ImageNet normalized; four float32 embeddings are averaged after CUDA FP16 inference (32-quadrant batches, four loaders). The encoders are not fine-tuned. Metadata inputs are width, height, bytes, aspect ratio, subsampling, progressive flag and quantization-table mean. Median imputation and robust scaling use development only; deep embeddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold maximizes validation F1. Final fitting uses development only.
++
++Fifteen-bin expected calibration error (ECE) measures calibration. Origin silhouette \cite{silhouette} is $(b-a)/\max(a,b)$ for mean same-origin distance $a$ and other-origin distance $b$; unlabeled $k=2$ adjusted Rand index (ARI) compares clusters with origin after fitting. On a fixed 3,000-artwork subset, trustworthiness $T(15)$ \cite{venna} penalizes false neighbors and continuity $C(15)$ lost neighbors. This continuity is distinct from complexity and regularization; threshold/macro metrics are defined in Table~\ref{tab:essential}.
++
++The recorded environment uses Python 3.12.16, NumPy 2.5.4 \cite{numpy}, SciPy 1.18.1 \cite{scipy}, scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 \cite{pytorch}, torchvision 0.21.0+cu124, Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical CPUs. Appendix A records driver/cuDNN, solver/projection settings and stage timings. Synthetic tests cover feature invariants and numerical routines, not attribution validity.
++
++Relative to the preceding report, aggregate probe intervals, paired differences, five grouped repartitions, mixed-cohort F1 and JPEG quantization means are additional manuscript summaries from the same cached features, predictions and metadata; no new data were collected. Released scripts and CSVs identify their provenance.
+ 
+ \section{Results and Analysis}
+ \subsection{Held-Out Probe Evaluation}
+-Table~\ref{tab:t4} reports all primary metrics and validation-selected settings; Fig.~\ref{fig:f3} combines ROC/PR curves, per-style scores with 1,000-group-bootstrap 95\% intervals and the clustering cross-check. Handcrafted AUROC is 0.9824, and is outperformed by ResNet-50 (0.9999) and DINOv2 (0.9997). Metadata AUROC 1.0000 exposes an available shortcut. Its ECE 0.1940 also shows that perfect ranking need not imply well-calibrated probabilities. Near-zero unlabeled ARI in full standardized/PCA spaces (maximum 0.0034 after rounding) coexists with supervised separation: a fitted decision rule need not reveal two natural clusters. Neither establishes attribution.
++Tables~\ref{tab:t4}--\ref{tab:seeds} and Fig.~\ref{fig:f3} compare the same primary test identities. ResNet-50 (0.9999) and DINOv2 (0.9997) outperform handcrafted AUROC 0.9824. Metadata-only achieves AUROC 1.0000, yet ECE 0.1940 shows that perfect ranking need not imply calibration. Full standardized/PCA unlabeled ARI remains near zero (maximum 0.0034): supervised ranking need not reveal natural origin clusters.
+ \input{tables/table_04.tex}
+-Table~\ref{tab:paired} gives paired AUROC-difference intervals using the same 1,000 origin-stratified source-group draws for every probe. These percentile intervals condition on frozen fits and thresholds; exclusion of zero concerns predictive ranking on this release, not origin attribution. Table~\ref{tab:seeds} reports five new grouped repartitions of the same fixed cohort (seeds 43--47), retuning all five probes within each development/validation partition. Cached embeddings are reused. Feature-extraction thresholds remain fixed from the original seed-42 development set; only preprocessing and probes are refitted. Thus these are conditional split-sensitivity runs, not full pipeline replications.
++Paired intervals in Table~\ref{tab:paired} use identical origin-stratified group draws and concern predictive ranking, not attribution. Table~\ref{tab:seeds} repartitions the same cohort at seeds 43--47 and refits preprocessing, regularization and thresholds. Cached embeddings and original seed-42 extraction calibration remain fixed; these are conditional split sensitivities, not full pipeline replications.
+ \input{tables/paired.tex}
+ \input{tables/seeds.tex}
+ \input{figures/figure_03.tex}
+ 
+ \subsection{Entropy--Complexity Atlas and Projection Fidelity}
+-The ten-movement atlas in Fig.~\ref{fig:f4} displays shared axes, signed centroid displacements and 500-group-bootstrap Gaussian 95\% ellipses. Most LD clouds occupy lower entropy and higher complexity than Human clouds, but magnitudes differ across styles; the arrows remain descriptive. Equal artwork counts need not imply equal group precision; formal coordinates do not measure aesthetic quality.
++Figure~\ref{fig:f4} compares shared-axis centroids and distributions. Most LD clouds have lower entropy and higher complexity than Human clouds, with heterogeneous descriptive magnitudes. Equal artwork counts do not imply equal source-group precision.
+ \input{figures/figure_04.tex}
+-Two-dimensional PCA explains 93.57\% of development variance yet attains $T(15)=0.6928$ and continuity 0.7571 (Table~\ref{tab:t5}). Three dimensions raise these to 0.7800 and 0.8869. Fifteen t-SNE \cite{tsne} runs span seeds 42--46 and perplexities 15, 30 and 50; trustworthiness ranges 0.9101--0.9185. Figure~\ref{fig:f5} fixes the display at perplexity 30, seed 42, random initialization and 1,000 iterations, without selecting the strongest test-separated embedding. Seed ranges describe algorithmic sensitivity, not inferential confidence intervals. Distance inference remains in standardized features or fixed PCA.
++PCA2 explains 93.57\% of development variance but attains $T(15)=0.6928$ and $C(15)=0.7571$; PCA3 reaches 0.7800/0.8869 (Table~\ref{tab:t5}). Fifteen t-SNE \cite{tsne} runs cover seeds 42--46 and perplexities 15/30/50, with trustworthiness 0.9101--0.9185. Figure~\ref{fig:f5} fixes perplexity 30/seed 42 without selecting test separation. Seed ranges measure algorithmic sensitivity; distance inference stays in standardized features or fixed PCA.
+ \input{tables/table_05.tex}
+ \input{figures/figure_05.tex}
+ 
+ \subsection{Spectral, Wavelet and Within-Style Contrasts}
+-Figure~\ref{fig:f6} contrasts radial power shares and raw-luminance Haar energy. Human and LD spectra are broadly similar, while wavelet bands and style-specific features differ. SD remains a resized sensitivity. Figure~\ref{fig:f7} and Table~\ref{tab:t6} summarize mean standardized $W_1$ and mean signed shifts by family. Averaging signed constituents can cancel opposing directions; family means are not independent tests. Asterisks indicate at least one exploratory constituent pass, not a confirmed family discovery.
++Figure~\ref{fig:f6} contrasts radial power shares and raw-luminance Haar energy. Human and LD spectra are broadly similar, while wavelet bands and style-specific features differ. SD remains a resized sensitivity. Figure~\ref{fig:f7} and Table~\ref{tab:t6} summarize mean standardized $W_1$ and mean signed shifts by family. Averaging signed constituents can cancel opposing directions; family means are not independent tests. Every family contains an exploratory constituent pass; redundant asterisks are omitted, and no family-level test or confirmation is implied.
+ \input{figures/figure_06.tex}
+ \input{figures/figure_07.tex}
+ \input{tables/table_06.tex}
+-The 542 raw-rule passes among 1,040 tests fail confirmatory eligibility because Step 5 lacks subjects and encoding overlap. Adjusted probabilities cannot remove systematic bias. Supplementary Fig. S1 supplies the six development-selected feature rainclouds/ECDFs; selection does not use held-out effect strength.
++The 542 exploratory passes among 1,040 tests cannot be confirmed because the common-support gate (Algorithm~\ref{alg:pipeline}, line 8) lacks verified subjects and encoding overlap. Adjusted probabilities cannot remove systematic bias. Supplementary Fig. S1, file \texttt{supplementary.pdf}, supplies the six development-selected feature rainclouds/ECDFs; selection does not use held-out effect strength.
+ 
+ 
+ \subsection{Interactive Visual Analytics}
+@@ -182,65 +192,65 @@
+ 
+ \section{Comparison with Base Papers and State-of-the-Art}
+ \subsection{Base-Paper Summary}
+-Base papers are studies supplying the benchmark, features, bias controls or detection/explanation objectives used here. Table~\ref{tab:t7} includes FIRE, VIB-Net and FakeBench; PixelatedScatter and MisVisFix instead inform interface design (Table~\ref{tab:t1}). The internal matched comparator is FFT-only.
++The base papers are ArtBrain \cite{p1}, Kim et al. \cite{p2}, B-Free \cite{p3}, SCADET \cite{p4}, SPAI \cite{p5}, FIRE \cite{p6}, VIB-Net \cite{p7}, CoDA \cite{p8}, FakeBench \cite{p12} and SIDWA \cite{p14} (Table~\ref{tab:t7}). The remaining Table~\ref{tab:t1} studies are related work rather than base methods. No base-paper method was reimplemented; FFT-only is the matched internal ablation comparator, limiting external comparisons to source-reported protocols.
+ 
+ \input{tables/table_07.tex}
+ \subsection{Quantitative Side-by-Side Evaluation}
+-Table~\ref{tab:t8} marks original-paper quantities with an asterisk. Unstarred primary probes are implemented logistic evaluations on the same frozen split; none is a reproduction of SCADET, SPAI or B-Free. The mixed 45,000-image experiment has a 9,000-image Human-versus-LD+SD test and AUROC 0.9220; its different class/source composition prevents a paired resolution-only interpretation. Original paper endpoints that are not AUROC/F1 remain labeled separately rather than substituted into those columns.
++Table~\ref{tab:t8} distinguishes executed probes from starred source-reported scores. The mixed-cohort 9,000-image test yields AUROC 0.9220/F1 0.8977; its different class/source composition cannot isolate resolution effects. Incompatible endpoints retain their original metric labels.
+ \input{tables/table_08.tex}
+ \subsection{Methodological Differences}
+ ArtBrain supplies the release and learned joint tasks, whereas the present binary probe isolates native-resolution Human--LD ranking and explicitly audits encoding. Kim et al.'s observational entropy--complexity analysis motivates named coordinates; neither its art-platform study nor the present atlas establishes an origin intervention.
+ 
+ SCADET and SPAI train spectral representations; FIRE learns reconstruction evidence. The present fixed FFT/Haar descriptors and family ablations expose measured contributions without reproducing those networks. B-Free controls photographic content during training, while the present subject audit cannot establish such alignment. Its value is identifying this missing support rather than claiming equivalent robustness.
+ 
+-VIB-Net targets generalization with a learned bottleneck, CoDA probes color-domain shifts, and SIDWA learns wavelet attention. The proposed frozen/linear evaluation measures conditional prediction and transparent shifts, without unseen-generator evidence. FakeBench evaluates multimodal explanations; the artwork-linked gallery provides pixel/feature traces but no verified semantic grounding or user-study equivalence. No additional trained frequency architecture is presented as a faithful reproduction: the existing FFT-only logistic probe remains the matched frequency comparator.
++VIB-Net targets generalization with a learned bottleneck, CoDA probes color-domain shifts, and SIDWA learns wavelet attention. The proposed frozen/linear evaluation measures conditional prediction and transparent shifts, without unseen-generator evidence. FakeBench evaluates multimodal explanations; the artwork-linked gallery provides pixel/feature traces but no verified semantic grounding or user-study equivalence. 
+ 
+ \subsection{Absolute and Relative Differences}
+ \input{derived_improvements.tex}
+-Ordinal removal produces the largest family loss (Table~\ref{tab:t9}), supporting predictive complementarity rather than causal allocation. Cross-protocol AUROC differences are SCADET local: +0.1814 (+22.65\%); SCADET full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%); B-Free: -0.0076 (-0.77\%). Each percentage divides the absolute difference by the corresponding paper-reported score; none is a verified improvement over a reproduced method. No improvement is computed for ArtBrain joint F1/attribution accuracy, CoDA/VIB-Net AP, SIDWA accuracy or FakeBench human/LMM endpoints because their tasks or metrics differ.
++Ordinal removal produces the largest family loss (Table~\ref{tab:t9}), supporting predictive complementarity rather than causal allocation. Cross-protocol AUROC differences are SCADET local: +0.1814 (+22.65\%); SCADET full: +0.0204 (+2.12\%); SPAI mean: +0.0724 (+7.96\%); B-Free: -0.0076 (-0.77\%). Each percentage uses the corresponding paper-reported score as denominator; none is a verified reproduced-method gain. No delta is computed for incompatible F1, AP, accuracy or human/LMM tasks.
+ 
+ \subsection{Fairness and Limitations}
+-SCADET reports a 7:1:2 split rather than the present grouped 60:20:20 split; its release-level processing includes native-$768^2$ SD images resized to $256^2$. The available evidence does not establish equivalent source-group protection. ArtBrain reports joint source/style F1 0.869* and attribution accuracy 0.999*, and its training description reuses test as validation. B-Free's 99.0\%* AUC comes from end-to-end content-aligned photographic training rather than frozen artwork probing. CoDA and VIB-Net use AP endpoints; visualization user-task metrics have no meaningful detector-score delta. The JPEG audit demonstrates a perfect metadata shortcut on this release but does not identify its causal share in any pixel model. Thus the table deliberately does not rank incompatible studies, and available paper versions are stated in the reference crosswalk.
++SCADET uses 7:1:2 rather than grouped 60:20:20 splitting and includes resized native-$768^2$ SD; equivalent source-group protection is unverified. ArtBrain's joint F1 0.869*/attribution accuracy 0.999* use different targets, and its training description reuses test as validation. B-Free's 99.0\%* AUROC uses end-to-end content-aligned photographic training, not frozen artwork probing. These differences preclude a matched external leaderboard.
+ 
+ \section{Ablation Study and Perturbation Robustness}
+ \subsection{Feature Families, Color and Geometry}
+-Thirteen paired variants in Table~\ref{tab:t9} and Fig.~\ref{fig:f10} refit preprocessing/probes on development and retain held-out IDs. Removing ordinal features causes the largest family loss, $-0.0744$ AUROC with 95\% interval $[-0.0842,-0.0654]$, followed by color/edges ($-0.0248$), FFT ($-0.0111$) and Haar ($-0.0035$). Ordinal-only attains AUROC 0.8888 and the largest origin-silhouette increase, $+0.0955$. Increased silhouette does not compensate for lower predictive ranking or establish independence from nuisance variables.
++Thirteen paired variants in Table~\ref{tab:t9} and Fig.~\ref{fig:f10} refit preprocessing/probes on development and retain held-out IDs. Removing ordinal features causes the largest family loss, $-0.0744$ AUROC (interval in Table~\ref{tab:t9}), followed by color/edges ($-0.0248$), FFT ($-0.0111$) and Haar ($-0.0035$). Ordinal-only attains AUROC 0.8888 and the largest origin-silhouette increase, $+0.0955$. Greater silhouette does not establish robustness or attribution.
+ \input{tables/table_09.tex}
+ \input{figures/figure_10.tex}
+ HSV, Lab and their combination vary across development-defined saturation tertiles. Strata remain descriptive. Tie exclusion reduces AUROC to 0.9753. Full-$256^2$ and five-overlapping-$128^2$-crop variants reach 0.9790 and 0.9810, respectively. The full-image variant also changes predictor dimensionality, so the difference cannot be attributed solely to context size. Group-paired intervals condition on frozen fits; silhouette intervals additionally condition on cached geometry.
+ \subsection{JPEG Recompression and Resizing}
+-Both origins undergo identical transformations with the primary probe and scaler frozen. Table~\ref{tab:t10} and Fig.~\ref{fig:f11} show AUROC 0.9822 at JPEG 95, 0.8354 at JPEG 75 and 0.6819 at JPEG 50. The latter retains only style-rank Spearman $\rho=0.3697$, while full-space origin-silhouette retention increases to 1.3749. Half-size reduction followed by standardization yields AUROC 0.7744. Predictive ranking, geometric separability and movement ranking therefore respond differently. Original inputs are release JPEGs, not pristine quality-100 images. Equal recompression cannot restore absent subject correspondence, recover lost image information or establish original encoding common support.
++Both origins undergo identical transformations with the primary probe and scaler frozen. Table~\ref{tab:t10} and Fig.~\ref{fig:f11} show AUROC 0.9822 at JPEG 95, 0.8354 at JPEG 75 and 0.6819 at JPEG 50. The latter retains only style-rank Spearman $\rho=0.3697$, while full-space origin-silhouette retention increases to 1.3749. Bilinear downsampling to 128 and upsampling to 256 before feature extraction yields AUROC 0.7744. Silhouette ratio divides mean full-space origin silhouette by its original value; $\rho$ correlates ten styles ranked by mean standardized $W_1$ over 104 features. Ranking and geometric separation respond differently. Original inputs are release JPEGs, not pristine quality-100 images. Equal recompression cannot restore absent subject correspondence, recover lost image information or establish original encoding common support.
+ \input{tables/table_10.tex}
+ \input{figures/figure_11.tex}
+ 
+ \section{Discussion}
+-\subsection{Control-Gate Failure as a Forensic Discovery}
+-ResNet-50 and DINOv2 outperform the handcrafted probe in ranking. High AUROC and zero confirmed effects answer different questions. The probe ranks observed release labels; attribution asks whether contrasts persist independently of subjects and processing. The Step 5 gate succeeds as an audit by detecting why that stronger inference is unavailable. Origin-aligned JPEG quantization and unverified subjects invalidate interpreting the 542 raw passes as confirmed diffusion-origin effects. They do not erase those reproducible associations.
+-
+-Whole-group permutations preserve recorded families, not the unobserved balance needed for exchangeability. Benjamini--Hochberg controls multiplicity under an appropriate testing model; it cannot remove confounding. Bootstrap intervals quantify conditional uncertainty but cannot manufacture common support. Zero of 1,040 comparisons is confirmed because none is eligible, not because each null has been accepted. Neither a zero true origin effect nor complete causal mediation by JPEG follows from this evidence.
++\subsection{Common-Support Failure and Technical Source Association}
++ResNet-50 and DINOv2 outperform the handcrafted probe, but ranking release labels differs from attributing differences independently of subjects and processing. The common-support gate (Algorithm~\ref{alg:pipeline}, line 8) blocks that stronger inference: origin-aligned JPEG quantization and unverified subjects invalidate interpreting 542 exploratory passes as confirmed diffusion-origin effects, without erasing their descriptive associations.
++
++Whole-group permutations preserve recorded families, not verified exchangeability. Multiplicity adjustment and frozen-fit bootstrap intervals cannot remove confounding or create common support. Zero of 1,040 comparisons is confirmed because none is eligible, not because each null is accepted; neither zero true effects nor complete JPEG mediation follows. An untested hypothesis is that ordinal patterns respond to JPEG blocks and thereby contribute to the largest ablation effect; JPEG-50 sensitivity motivates, but does not establish, this mechanism.
+ 
+ \subsection{Forensic Cases and Boundary Sensitivity}
+ Table~\ref{tab:t11} indexes two FP, two FN, two TP and two H--C/PCA outliers. Figure~\ref{fig:f12} connects actual canvases and quadrants to their measurements. Typographic cards, ornate frames, isolated objects and monochrome examples illustrate unusual inputs, without verified semantic/material annotation. The cases are purposive and restricted to the primary Human--LD test; no SD-specific error-gallery arm was run.
+ \input{tables/table_11.tex}
+ \input{figures/figure_12.tex}
+-Development-quantile low-saturation, low-edge and high-frequency proxies complement a fixed border heuristic. The latter flags an outer eight-pixel luminance strip with standard deviation below 0.025 and adjacent-strip mean jump above 0.08. It flags 369 artworks; 76 lose every quadrant. Comparing both conditions on the identical 5,924 supported artworks yields 12 signed-shift reversals and 23 exploratory-rule reversals, with zero confirmed reversals. This exposes support sensitivity without repairing subject or encoding controls. Overlapping-trigger error-rate gaps and group intervals are supplied in released \texttt{failure\_trigger\_associations.csv}.
++Development-defined saturation/edge/frequency proxies complement a fixed border heuristic (released \texttt{src/border\_analysis.py}). It flags 369 artworks; 76 lose every quadrant. The identical 5,924 supported artworks yield 12 signed-shift and 23 exploratory-rule reversals, with zero confirmed reversals. Support sensitivity does not repair subject/encoding controls. Overlapping-trigger error gaps and group intervals are in \texttt{failure\_trigger\_associations.csv}.
+ 
+ \subsection{Threats to Validity and Gap Verdicts}
+-\textit{Internal validity:} deterministic encoding differences, unavailable verified subjects and uncertain AI filename-family semantics prevent independent origin attribution. Known Human artist groups are protected, but unknown derivative links can remain. Recompression sensitivity is not an identified causal encoding intervention.
+-
+-\textit{External validity:} only ten release movements and two primary origins are evaluated. Separate artist/style/generator holdouts, raw museum captures and new generator versions remain untested. SD resizing and mixed-source composition limit transportability. Near-perfect frozen encoders therefore do not establish universal detection.
+-
+-\textit{Construct validity:} entropy, complexity and color are formal descriptors, not aesthetic merit or intentional style. Quantile triggers are proxies, and an inspectable dashboard has no user-study validation. G1 is achieved as implemented auditability and measured fidelity, not proof of human explanation quality. G2 is achieved descriptively over the 1,040 feature/style cells, not as temporal art-history inference.
+-
+-\textit{Statistical conclusion validity:} source dependence reduces effective sample size; conditional bootstraps and unsupported randomization exchangeability restrict interpretation. Resampling precision cannot substitute for matched subjects. G3 yields a negative forensic audit identifying benchmark leakage; the original requirement that separation survive verified controls remains unestablished. The distinction between implemented auditability, descriptive contrasts and unsupported attribution remains essential.
++\textit{Internal validity:} deterministic encoding differences, unavailable verified subjects and uncertain AI filename-family semantics prevent independent origin attribution. Known Human artist groups are protected, but unknown derivative links can remain.
++
++\textit{External validity:} ten release movements and two primary origins are tested; SD resizing and mixed-source composition restrict transfer, with no separate artist/style/generator holdouts.
++
++\textit{Construct validity:} entropy, complexity and color are formal descriptors, not aesthetic merit or intentional style. Quantile triggers are proxies, and an inspectable dashboard has no user-study validation. G1 is addressed through implemented diagnostics (auditability and measured fidelity); explanation faithfulness and human usefulness were not tested, and display PCA trustworthiness is 0.6928. G2 is achieved descriptively over the 1,040 feature/style cells, not as temporal art-history inference.
++
++\textit{Statistical conclusion validity:} source dependence reduces effective sample size; conditional bootstraps and unsupported randomization exchangeability restrict interpretation. Resampling precision cannot substitute for matched subjects. G3 yields a negative validity audit consistent with encoding leakage; the original requirement that separation survive verified controls remains unestablished.
+ 
+ \section{Conclusion and Future Work}
+-The study combines transparent feature measurements, grouped held-out probes, neighborhood diagnostics and artwork-linked evidence within a mandatory control-gate workflow. Strong release discrimination coexists with encoding leakage and absent verified subjects, so style-conditioned shifts remain descriptive. Frozen ResNet-50 and DINOv2 outperform the handcrafted probe, but none establishes encoding-independent attribution. The contribution is an inspectable atlas and an explicit account of the inference the benchmark cannot support. Future work should capture lossless museum and diffusion originals with common encoding support, verified subject/prompt links and prespecified processing, then evaluate leave-artist, leave-style and unseen-generator holdouts. Dashboard usefulness and material-specific analyses require independent annotations and human evaluation.
++The control-gated workflow joins named features, grouped probes, projection diagnostics and linked artwork evidence. Strong release prediction coexists with origin-aligned encoding and unverified subjects; within-style shifts remain descriptive. Frozen ResNet-50 and DINOv2 outperform the handcrafted probe, but none establishes encoding-independent attribution. Future work requires common-encoding originals, verified subject/prompt links and separate artist/style/generator holdouts. Independent annotations and human evaluation are needed to test material-specific explanations and dashboard usefulness.
+ 
+ \section{Declarations and Acknowledgements}
+-\textit{Data and code availability:} AI-ArtBench is available from its authors\footnote{\url{https://www.kaggle.com/datasets/ravidussilva/real-ai-art}} \cite{p1}; ArtBench-10 supplies its human-art source \cite{artbench}. The release includes code/tests, pinned dependencies, frozen split IDs/cohort hash, CSVs, figure generators and exact build commands. Raw images, model weights and large caches are excluded. The official code and artifact repository is \url{https://github.com/wasil-7/explainable-diffusion-art-analytics}. No fresh-environment experimental replication is claimed.
+-
+-\textit{Competing interests and funding:} The authors declare no competing interests. This research received no external funding. \textit{AI-assisted tools:} Codex, Antigravity, Claude and SciSpace were used for coding assistance, literature exploration, drafting and formatting. The authors are responsible for verifying all sources, numerical results and interpretations and for the final manuscript. \textit{Acknowledgements:} The authors thank Ms. Azka Atiq and FAST-NUCES Islamabad for academic guidance.
++\textit{Data and code availability:} AI-ArtBench is available from its authors\footnote{\url{https://www.kaggle.com/datasets/ravidussilva/real-ai-art}} \cite{p1}; ArtBench-10 supplies its human-art source \cite{artbench}. The prepared local release contains code/tests, pinned dependencies, frozen split IDs/cohort hash, CSVs, figure generators and build commands; publication awaits the authors' push. Raw images, model weights and large caches are excluded. The official code and artifact repository is \url{https://github.com/wasil-7/explainable-diffusion-art-analytics}. No fresh-environment experimental replication is claimed.
++
++\textit{Competing interests and funding:} The authors declare no competing interests. This research received no external funding. \textit{AI-assisted tools:} Codex, Antigravity, Claude and SciSpace supported coding, literature exploration, drafting and formatting. Wasil Kayani and Umar Asghar verified the evidence and take responsibility for the final manuscript. \textit{Acknowledgements:} The authors thank Ms. Azka Atiq and FAST National University of Computer and Emerging Sciences (FAST-NUCES), Islamabad, for academic guidance.
+ 
+ \bibliographystyle{IEEEtran}
+ \bibliography{references}
+--- before/latex/rebuild_tables.py
++++ after/latex/rebuild_tables.py
+@@ -0,0 +1,29 @@
++"""Rebuild all printed table cells from CSV, preserving the approved layout."""
++from pathlib import Path
++import csv,json,re
++B=Path(__file__).resolve().parent
++def esc(s):
++ d={'&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}'}
++ s=''.join(d.get(c,c) for c in str(s))
++ for a,b in {'–':'--','—':'---','−':'$-$','Δ':r'$\Delta$','ρ':r'$\rho$','₁':r'$_1$','²':r'$^2$','≥':r'$\geq$','≤':r'$\leq$','×':r'$\times$','†':r'$\dagger$'}.items():s=s.replace(a,b)
++ return s
++def val(s):
++ if re.fullmatch(r'[+-]?\d+\.\d+(?:e[+-]?\d+)?',s):
++  x=float(s)
++  if 0<x<1e-8:return '<0.00000001'
++  if 1e-8<=abs(x)<1e-4:return f'{x:.8f}'
++  return f'{x:.4f}'
++ return s
++def main():
++ count=0
++ for p in sorted((B/'tables').glob('*.template.json')):
++  spec=json.loads(p.read_text(encoding='utf8'));cp=p.with_name(p.name.replace('.template.json','.csv'));rows=list(csv.reader(cp.open(encoding='utf8')));out=spec['prefix']
++  out+=' & '.join(r'\textbf{'+esc(s)+'}' for s in rows[0])+r'\\\midrule'+'\n'
++  assert len(spec['citation_keys'])==len(rows)-1
++  for row,key in zip(rows[1:],spec['citation_keys']):
++   cells=[esc(val(s)) for s in row]
++   if key:cells[0]=re.sub(r'^\[\d+\]',lambda m:r'\cite{'+key+'}',cells[0])
++   out+='{}'+' & '.join(cells)+r'\\'+'\n'
++  out+=spec['suffix'];cp.with_suffix('.tex').write_text(out,encoding='utf8');count+=1
++ print(f'Rebuilt {count} tables from CSV; no experiments run.')
++if __name__=='__main__':main()
+--- before/latex/reference_numbers.json
++++ after/latex/reference_numbers.json
+@@ -9,31 +9,32 @@
+   "p6": "8",
+   "p14": "9",
+   "p8": "10",
+-  "p7": "11",
+-  "p12": "12",
+-  "p13": "13",
+-  "p15": "14",
+-  "p9": "15",
+-  "p10": "16",
+-  "bandt": "17",
+-  "rosso": "18",
+-  "imaging": "19",
+-  "wavelet": "20",
+-  "sklearn": "21",
+-  "ot": "22",
+-  "ks": "23",
+-  "bh": "24",
+-  "bootstrap": "25",
+-  "artbench": "26",
+-  "imagehash": "27",
+-  "resnet": "28",
+-  "dinov2": "29",
+-  "imagenet": "30",
+-  "torchvision": "31",
+-  "silhouette": "32",
+-  "venna": "33",
+-  "numpy": "34",
+-  "scipy": "35",
+-  "pytorch": "36",
+-  "tsne": "37"
++  "jpeg_bias": "11",
++  "p7": "12",
++  "p12": "13",
++  "p13": "14",
++  "p15": "15",
++  "p9": "16",
++  "p10": "17",
++  "bandt": "18",
++  "rosso": "19",
++  "imaging": "20",
++  "wavelet": "21",
++  "sklearn": "22",
++  "ot": "23",
++  "ks": "24",
++  "bh": "25",
++  "bootstrap": "26",
++  "artbench": "27",
++  "imagehash": "28",
++  "resnet": "29",
++  "dinov2": "30",
++  "imagenet": "31",
++  "torchvision": "32",
++  "silhouette": "33",
++  "venna": "34",
++  "numpy": "35",
++  "scipy": "36",
++  "pytorch": "37",
++  "tsne": "38"
+ }--- before/latex/references.bib
++++ after/latex/references.bib
+@@ -1,16 +1,16 @@
+ @article{p1,
+  author={Silva, Ravidu Suien Rammuni and Lotfi, Ahmad and Ihianle, Isibor Kennedy and Shahtahmassebi, Golnaz and Bird, Jordan J.},
+- title={ArtBrain: An Explainable End-to-End Toolkit for Classification and Attribution of AI-Generated Art and Style},
++ title={{ArtBrain: An Explainable End-to-End Toolkit for Classification and Attribution of AI-Generated Art and Style}},
+  journal={IEEE Trans. Multimedia},
+  year={2026},
+  doi={10.1109/tmm.2026.3743638},
+  pages={1--11},
+- note={Evidence: arXiv:2412.01512v1. doi: \url{10.1109/tmm.2026.3743638}}
++ note={Manuscript version read: arXiv:2412.01512v1. doi: \url{10.1109/tmm.2026.3743638}}
+ }
+ 
+ @article{p2,
+  author={Kim, Seunghwan and Lee, Byunghwee and Lee, Wonjae},
+- title={Investigating the diversity and stylization of contemporary user generated visual arts in the complexity entropy plane},
++ title={{Investigating the diversity and stylization of contemporary user generated visual arts in the complexity entropy plane}},
+  journal={Sci. Rep.},
+  year={2025},
+  doi={10.1038/s41598-025-04448-9},
+@@ -22,7 +22,7 @@
+ 
+ @article{p3,
+  author={Guillaro, Fabrizio and Zingarini, Giada and Usman, Ben and Sud, Avneesh and Cozzolino, Davide and Verdoliva, Luisa},
+- title={A Bias-Free Training Paradigm for More General AI-generated Image Detection},
++ title={{A Bias-Free Training Paradigm for More General AI-generated Image Detection}},
+  journal={2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025},
+  doi={10.1109/cvpr52734.2025.01741},
+@@ -32,7 +32,7 @@
+ 
+ @article{p4,
+  author={Zhang, Xiaolong and Yu, Zekai and Zhao, Jianqiao},
+- title={SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis},
++ title={{SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis}},
+  journal={PLOS One},
+  year={2025},
+  doi={10.1371/journal.pone.0336328},
+@@ -44,7 +44,7 @@
+ 
+ @article{p5,
+  author={Karageorgiou, Dimitrios and Papadopoulos, Symeon and Kompatsiaris, Ioannis and Gavves, Efstratios},
+- title={Any-Resolution AI-Generated Image Detection by Spectral Learning},
++ title={{Any-Resolution AI-Generated Image Detection by Spectral Learning}},
+  journal={2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025},
+  doi={10.1109/cvpr52734.2025.01743},
+@@ -54,7 +54,7 @@
+ 
+ @article{p6,
+  author={Chu, Beilin and Xu, Xuan and Wang, Xin and Zhang, Yufei and You, Weike and Zhou, Linna},
+- title={FIRE: Robust Detection of Diffusion-Generated Images via Frequency-Guided Reconstruction Error},
++ title={{FIRE: Robust Detection of Diffusion-Generated Images via Frequency-Guided Reconstruction Error}},
+  journal={2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025},
+  doi={10.1109/cvpr52734.2025.01197},
+@@ -64,7 +64,7 @@
+ 
+ @article{p7,
+  author={Zhang, Haifeng and He, Qinghui and Bi, Xiuli and Li, Weisheng and Liu, Bo and Xiao, Bin},
+- title={Towards Universal AI-Generated Image Detection by Variational Information Bottleneck Network},
++ title={{Towards Universal AI-Generated Image Detection by Variational Information Bottleneck Network}},
+  journal={2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025},
+  doi={10.1109/cvpr52734.2025.02219},
+@@ -74,78 +74,78 @@
+ 
+ @article{p8,
+  author={Jia, Zexi and Yuan, Zhiqiang and Duan, Xiaoyue and Zhang, Jinchao and Zhou, Jie and Jain, Anil K.},
+- title={CoDA: Color Distribution Probing for Efficient and Generalizable AI-Generated Image Detection},
++ title={{CoDA: Color Distribution Probing for Efficient and Generalizable AI-Generated Image Detection}},
+  journal={IEEE Trans. Pattern Anal. Mach. Intell.},
+  year={2026},
+  doi={10.1109/tpami.2026.3696399},
+  volume={48},
+  number={10},
+  pages={12100--12115},
+- note={Evidence: arXiv:2605.24306. doi: \url{10.1109/tpami.2026.3696399}}
++ note={Manuscript version read: arXiv:2605.24306. doi: \url{10.1109/tpami.2026.3696399}}
+ }
+ 
+ @article{p9,
+  author={Guo, Ziheng and Wei, Tianxiang and Li, Zeyu and Zhang, Lianghao and Li, Sisi and Zhang, Jiawan},
+- title={PixelatedScatter: Arbitrary-Level Visual Abstraction for Large-Scale Multiclass Scatterplots},
++ title={{PixelatedScatter: Arbitrary-Level Visual Abstraction for Large-Scale Multiclass Scatterplots}},
+  journal={IEEE Trans. Vis. Comput. Graph.},
+  year={2026},
+  doi={10.1109/tvcg.2025.3633908},
+  volume={32},
+  number={1},
+  pages={123--133},
+- note={Evidence: collected author manuscript. doi: \url{10.1109/tvcg.2025.3633908}}
++ note={Manuscript version read: collected author manuscript. doi: \url{10.1109/tvcg.2025.3633908}}
+ }
+ 
+ @article{p10,
+  author={Das, Amit Kumar and Mueller, Klaus},
+- title={MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models},
++ title={{MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models}},
+  journal={IEEE Trans. Vis. Comput. Graph.},
+  year={2026},
+  doi={10.1109/tvcg.2025.3633884},
+  volume={32},
+  number={1},
+  pages={134--144},
+- note={Evidence: collected author manuscript. doi: \url{10.1109/tvcg.2025.3633884}}
++ note={Manuscript version read: collected author manuscript. doi: \url{10.1109/tvcg.2025.3633884}}
+ }
+ 
+ @article{p11,
+  author={Kim, Jin and Lee, Byunghwee and You, Taekho and Yun, Jinhyuk},
+- title={Context-aware multimodal AI navigates hidden pathways in five centuries of art evolution},
++ title={{Context-aware multimodal AI navigates hidden pathways in five centuries of art evolution}},
+  journal={Proceedings of the National Academy of Sciences},
+  year={2026},
+  doi={10.1073/pnas.2517969123},
+  volume={123},
+  number={30},
+  pages={e2517969123},
+- note={Evidence: arXiv:2503.13531v1. doi: \url{10.1073/pnas.2517969123}}
++ note={Manuscript version read: arXiv:2503.13531v1. doi: \url{10.1073/pnas.2517969123}}
+ }
+ 
+ @article{p12,
+  author={Li, Yixuan and Liu, Xuelin and Wang, Xiaoyang and Lee, Bu Sung and Wang, Shiqi and Rocha, Anderson and Lin, Weisi},
+- title={FakeBench: Probing Explainable Fake Image Detection via Large Multimodal Models},
++ title={{FakeBench: Probing Explainable Fake Image Detection via Large Multimodal Models}},
+  journal={IEEE Trans. Inf. Forensics Security},
+  year={2025},
+  doi={10.1109/tifs.2025.3597211},
+  volume={20},
+  pages={8730--8745},
+- note={Evidence: arXiv:2404.13306v2. doi: \url{10.1109/tifs.2025.3597211}}
++ note={Manuscript version read: arXiv:2404.13306v2. doi: \url{10.1109/tifs.2025.3597211}}
+ }
+ 
+ @article{p13,
+  author={Kong, Chenqi and Luo, Anwei and Wang, Shiqi and Li, Haoliang and Rocha, Anderson and Kot, Alex C.},
+- title={Pixel-Inconsistency Modeling for Image Manipulation Localization},
++ title={{Pixel-Inconsistency Modeling for Image Manipulation Localization}},
+  journal={IEEE Trans. Pattern Anal. Mach. Intell.},
+  year={2025},
+  doi={10.1109/tpami.2025.3541028},
+  volume={47},
+  number={6},
+  pages={4455--4472},
+- note={Evidence: arXiv:2310.00234v2. doi: \url{10.1109/tpami.2025.3541028}}
++ note={Manuscript version read: arXiv:2310.00234v2. doi: \url{10.1109/tpami.2025.3541028}}
+ }
+ 
+ @article{p14,
+  author={Li, Luo and Lu, Tianyi and Song, Jiaxin and Cheng, Ke},
+- title={SIDWA: Synthetic Image Detection Based on Discrete Wavelet Transform Stem and Deformable Sliding Window Cross-Attention},
++ title={{SIDWA: Synthetic Image Detection Based on Discrete Wavelet Transform Stem and Deformable Sliding Window Cross-Attention}},
+  journal={Electronics},
+  year={2026},
+  doi={10.3390/electronics15040891},
+@@ -157,7 +157,7 @@
+ 
+ @article{p15,
+  author={Yikun Ji and Yan Hong and Bowen Deng and Jun Lan and Huijia Zhu and Weiqiang Wang and Liqing Zhang and Jianfu Zhang},
+- title={Locate-Then-Examine: Grounded Region Reasoning Improves Detection of AI-Generated Images},
++ title={{Locate-Then-Examine: Grounded Region Reasoning Improves Detection of AI-Generated Images}},
+  journal={arXiv:2510.04225v2},
+  year={2026},
+  doi={10.48550/arXiv.2510.04225},
+@@ -165,8 +165,8 @@
+ }
+ 
+ @article{p16,
+- author={{Wang Yinghua} and {Li Linyan} and {Ma Wenjuan} and {Zhang Yunzhe}},
+- title={AI-generated artwork detection using self-distilled transformers with global–local feature learning and Grad-CAM interpretability},
++ author={Wang, Yinghua and Li, Linyan and Ma, Wenjuan and Zhang, Yunzhe},
++ title={{AI-generated artwork detection using self-distilled transformers with global–local feature learning and Grad-CAM interpretability}},
+  journal={Sci. Rep.},
+  year={2026},
+  doi={10.1038/s41598-025-29229-2},
+@@ -178,7 +178,7 @@
+ 
+ @article{resnet,
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+- title={Deep Residual Learning for Image Recognition},
++ title={{Deep Residual Learning for Image Recognition}},
+  journal={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2016},
+  doi={10.1109/cvpr.2016.90},
+@@ -188,7 +188,7 @@
+ 
+ @article{imagenet,
+  author={Russakovsky, Olga and Deng, Jia and Su, Hao and Krause, Jonathan and Satheesh, Sanjeev and Ma, Sean and Huang, Zhiheng and Karpathy, Andrej and Khosla, Aditya and Bernstein, Michael and Berg, Alexander C. and Fei-Fei, Li},
+- title={ImageNet Large Scale Visual Recognition Challenge},
++ title={{ImageNet Large Scale Visual Recognition Challenge}},
+  journal={Int. J. Comput. Vis.},
+  year={2015},
+  doi={10.1007/s11263-015-0816-y},
+@@ -200,7 +200,7 @@
+ 
+ @article{bandt,
+  author={Bandt, Christoph and Pompe, Bernd},
+- title={Permutation Entropy: A Natural Complexity Measure for Time Series},
++ title={{Permutation Entropy: A Natural Complexity Measure for Time Series}},
+  journal={Phys. Rev. Lett.},
+  year={2002},
+  doi={10.1103/physrevlett.88.174102},
+@@ -212,7 +212,7 @@
+ 
+ @article{rosso,
+  author={Rosso, O. A. and Larrondo, H. A. and Martin, M. T. and Plastino, A. and Fuentes, M. A.},
+- title={Distinguishing Noise from Chaos},
++ title={{Distinguishing Noise from Chaos}},
+  journal={Phys. Rev. Lett.},
+  year={2007},
+  doi={10.1103/physrevlett.99.154102},
+@@ -224,7 +224,7 @@
+ 
+ @article{venna,
+  author={Venna, Jarkko and Kaski, Samuel},
+- title={Neighborhood Preservation in Nonlinear Projection Methods: An Experimental Study},
++ title={{Neighborhood Preservation in Nonlinear Projection Methods: An Experimental Study}},
+  journal={Lecture Notes in Computer Science},
+  year={2001},
+  doi={10.1007/3-540-44668-0_68},
+@@ -234,7 +234,7 @@
+ 
+ @article{silhouette,
+  author={Rousseeuw, Peter J.},
+- title={Silhouettes: A graphical aid to the interpretation and validation of cluster analysis},
++ title={{Silhouettes: A graphical aid to the interpretation and validation of cluster analysis}},
+  journal={J. Comput. Appl. Math.},
+  year={1987},
+  doi={10.1016/0377-0427(87)90125-7},
+@@ -245,7 +245,7 @@
+ 
+ @article{bh,
+  author={Benjamini, Yoav and Hochberg, Yosef},
+- title={Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing},
++ title={{Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing}},
+  journal={Journal of the Royal Statistical Society Series B: Statistical Methodology},
+  year={1995},
+  doi={10.1111/j.2517-6161.1995.tb02031.x},
+@@ -257,7 +257,7 @@
+ 
+ @article{bootstrap,
+  author={Efron, B.},
+- title={Bootstrap Methods: Another Look at the Jackknife},
++ title={{Bootstrap Methods: Another Look at the Jackknife}},
+  journal={The Annals of Statistics},
+  year={1979},
+  doi={10.1214/aos/1176344552},
+@@ -269,7 +269,7 @@
+ 
+ @article{ks,
+  author={Massey, Frank J.},
+- title={The Kolmogorov-Smirnov Test for Goodness of Fit},
++ title={{The Kolmogorov-Smirnov Test for Goodness of Fit}},
+  journal={J. Am. Stat. Assoc.},
+  year={1951},
+  doi={10.1080/01621459.1951.10500769},
+@@ -281,7 +281,7 @@
+ 
+ @article{ot,
+  author={Peyré, Gabriel and Cuturi, Marco},
+- title={Computational Optimal Transport with Applications to Data Sciences},
++ title={{Computational Optimal Transport with Applications to Data Sciences}},
+  journal={Foundations and Trends® in Machine Learning},
+  year={2019},
+  doi={10.1561/2200000073},
+@@ -293,7 +293,7 @@
+ 
+ @article{numpy,
+  author={Harris, Charles R. and Millman, K. Jarrod and van der Walt, Stéfan J. and Gommers, Ralf and Virtanen, Pauli and Cournapeau, David and Wieser, Eric and Taylor, Julian and Berg, Sebastian and Smith, Nathaniel J. and Kern, Robert and Picus, Matti and Hoyer, Stephan and van Kerkwijk, Marten H. and Brett, Matthew and Haldane, Allan and del Río, Jaime Fernández and Wiebe, Mark and Peterson, Pearu and Gérard-Marchant, Pierre and Sheppard, Kevin and Reddy, Tyler and Weckesser, Warren and Abbasi, Hameer and Gohlke, Christoph and Oliphant, Travis E.},
+- title={Array programming with NumPy},
++ title={{Array programming with NumPy}},
+  journal={Nature},
+  year={2020},
+  doi={10.1038/s41586-020-2649-2},
+@@ -305,7 +305,7 @@
+ 
+ @article{scipy,
+  author={Virtanen, Pauli and Gommers, Ralf and Oliphant, Travis E. and Haberland, Matt and Reddy, Tyler and Cournapeau, David and Burovski, Evgeni and Peterson, Pearu and Weckesser, Warren and Bright, Jonathan and van der Walt, Stéfan J. and Brett, Matthew and Wilson, Joshua and Millman, K. Jarrod and Mayorov, Nikolay and Nelson, Andrew R. J. and Jones, Eric and Kern, Robert and Larson, Eric and Carey, C J and Polat, İlhan and Feng, Yu and Moore, Eric W. and VanderPlas, Jake and Laxalde, Denis and Perktold, Josef and Cimrman, Robert and Henriksen, Ian and Quintero, E. A. and Harris, Charles R. and Archibald, Anne M. and Ribeiro, Antônio H. and Pedregosa, Fabian and van Mulbregt, Paul and Vijaykumar, Aditya and Bardelli, Alessandro Pietro and Rothberg, Alex and Hilboll, Andreas and Kloeckner, Andreas and Scopatz, Anthony and Lee, Antony and Rokem, Ariel and Woods, C. Nathan and Fulton, Chad and Masson, Charles and Häggström, Christian and Fitzgerald, Clark and Nicholson, David A. and Hagen, David R. and Pasechnik, Dmitrii V. and Olivetti, Emanuele and Martin, Eric and Wieser, Eric and Silva, Fabrice and Lenders, Felix and Wilhelm, Florian and Young, G. and Price, Gavin A. and Ingold, Gert-Ludwig and Allen, Gregory E. and Lee, Gregory R. and Audren, Hervé and Probst, Irvin and Dietrich, Jörg P. and Silterra, Jacob and Webber, James T and Slavič, Janko and Nothman, Joel and Buchner, Johannes and Kulick, Johannes and Schönberger, Johannes L. and de Miranda Cardoso, José Vinícius and Reimer, Joscha and Harrington, Joseph and Rodríguez, Juan Luis Cano and Nunez-Iglesias, Juan and Kuczynski, Justin and Tritz, Kevin and Thoma, Martin and Newville, Matthew and Kümmerer, Matthias and Bolingbroke, Maximilian and Tartre, Michael and Pak, Mikhail and Smith, Nathaniel J. and Nowaczyk, Nikolai and Shebanov, Nikolay and Pavlyk, Oleksandr and Brodtkorb, Per A. and Lee, Perry and McGibbon, Robert T. and Feldbauer, Roman and Lewis, Sam and Tygier, Sam and Sievert, Scott and Vigna, Sebastiano and Peterson, Stefan and More, Surhud and Pudlik, Tadeusz and Oshima, Takuya and Pingel, Thomas J. and Robitaille, Thomas P. and Spura, Thomas and Jones, Thouis R. and Cera, Tim and Leslie, Tim and Zito, Tiziano and Krauss, Tom and Upadhyay, Utkarsh and Halchenko, Yaroslav O. and Vázquez-Baeza, Yoshiki},
+- title={SciPy 1.0: fundamental algorithms for scientific computing in Python},
++ title={{SciPy 1.0: fundamental algorithms for scientific computing in Python}},
+  journal={Nature Methods},
+  year={2020},
+  doi={10.1038/s41592-019-0686-2},
+@@ -317,7 +317,7 @@
+ 
+ @article{wavelet,
+  author={Lee, Gregory and Gommers, Ralf and Waselewski, Filip and Wohlfahrt, Kai and O'Leary, Aaron},
+- title={PyWavelets: A Python package for wavelet analysis},
++ title={{PyWavelets: A Python package for wavelet analysis}},
+  journal={Journal of Open Source Software},
+  year={2019},
+  doi={10.21105/joss.01237},
+@@ -329,7 +329,7 @@
+ 
+ @article{dinov2,
+  author={Maxime Oquab and Timothee Darcet and Theo Moutakanni and others},
+- title={DINOv2: Learning Robust Visual Features without Supervision},
++ title={{DINOv2: Learning Robust Visual Features without Supervision}},
+  journal={Transactions on Machine Learning Research},
+  year={2024},
+  url={https://openreview.net/forum?id=a68SUt6zFt}
+@@ -337,7 +337,7 @@
+ 
+ @article{sklearn,
+  author={Fabian Pedregosa and Gael Varoquaux and Alexandre Gramfort and others},
+- title={Scikit-learn: Machine Learning in Python},
++ title={{Scikit-learn: Machine Learning in Python}},
+  journal={J. Mach. Learn. Res.},
+  volume={12},
+  number={85},
+@@ -348,7 +348,7 @@
+ 
+ @article{tsne,
+  author={Laurens van der Maaten and Geoffrey Hinton},
+- title={Visualizing Data using t-SNE},
++ title={{Visualizing Data using t-SNE}},
+  journal={J. Mach. Learn. Res.},
+  volume={9},
+  number={86},
+@@ -359,7 +359,7 @@
+ 
+ @article{pytorch,
+  author={Adam Paszke and Sam Gross and Francisco Massa and others},
+- title={PyTorch: An Imperative Style, High-Performance Deep Learning Library},
++ title={{PyTorch: An Imperative Style, High-Performance Deep Learning Library}},
+  journal={Adv. Neural Inf. Process. Syst.},
+  volume={32},
+  year={2019},
+@@ -368,7 +368,7 @@
+ 
+ @article{artbench,
+  author={Peiyuan Liao and Xiuyu Li and Xihui Liu and Kurt Keutzer},
+- title={The ArtBench Dataset: Benchmarking Generative Models with Artworks},
++ title={{The ArtBench Dataset: Benchmarking Generative Models with Artworks}},
+  journal={arXiv:2206.11404},
+  year={2022},
+  doi={10.48550/arXiv.2206.11404},
+@@ -377,7 +377,7 @@
+ 
+ @article{imagehash,
+  author={Johannes Buchner},
+- title={ImageHash: Perceptual image hashing in Python},
++ title={{ImageHash: Perceptual image hashing in Python}},
+  journal={Software, version 4.3.2},
+  year={2025},
+  url={https://pypi.org/project/ImageHash/4.3.2/},
+@@ -386,20 +386,32 @@
+ 
+ @book{imaging,
+  author={Rafael C. Gonzalez and Richard E. Woods},
+- title={Digital Image Processing},
++ title={{Digital Image Processing}},
+  edition={4},
+  publisher={Pearson},
+  year={2018},
+- note={ISBN 9780133356724},
++ note={{ISBN} 9780133356724},
+  url={https://imageprocessingplace.com/}
+ }
+ 
+ @article{torchvision,
+  author={{PyTorch contributors}},
+- title={Torchvision ResNet-50: IMAGENET1K V2 weights},
++ title={{Torchvision ResNet-50: IMAGENET1K V2 weights}},
+  journal={Torchvision 0.21 documentation},
+  year={2025},
+  url={https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.resnet50.html}
+ }
+ 
+-@IEEEtranBSTCTL{bstctl, CTLuse_forced_etal={yes}, CTLmax_names_forced_etal={3}, CTLnames_show_etal={1}}+@IEEEtranBSTCTL{bstctl, CTLuse_forced_etal={yes}, CTLmax_names_forced_etal={3}, CTLnames_show_etal={1}}
++@inproceedings{jpeg_bias,
++ author={Grommelt, Patrick and Weiss, Louis and Pfreundt, Franz-Josef and Keuper, Janis},
++ title={{Fake or JPEG? Revealing Common Biases in Generated Image Detection Datasets}},
++ booktitle={Computer Vision -- ECCV 2024 Workshops},
++ series={Lecture Notes in Computer Science},
++ volume={15644},
++ pages={80--95},
++ publisher={Springer},
++ year={2025},
++ doi={10.1007/978-3-031-92089-9_6},
++ note={Manuscript version read: arXiv:2403.17608v2. doi: \url{10.1007/978-3-031-92089-9_6}}
++}
+--- before/latex/tables\changes.csv
++++ after/latex/tables\changes.csv
+@@ -1,6 +1,6 @@
+ Item,Implementation,Validity impact
+-"Clustering","NumPy Lloyd k=2 / 20 starts","Host-library adaptation; no origin labels in fitting"
+-"Color family","Combined HSV+Lab; isolated ablations","Family contribution is conditional on this grouping"
+-"Randomization","Whole recorded source groups","Group counts preserved; exchangeability remains unsupported"
+-"Silhouette CI","Paired cached per-artwork scores","Fixed geometry, not pairwise recomputation"
+-"Controls / holdouts","Subject/JPEG unresolved; separate holdouts unrun","Descriptive restriction retained; generalization unestablished"+Clustering,NumPy Lloyd k=2 / 20 starts,Host-library adaptation; no origin labels in fitting
++Color family,Combined HSV+Lab; isolated ablations,Family contribution is conditional on this grouping
++Randomization,Whole recorded source groups,Group counts preserved; exchangeability remains unsupported
++Silhouette CI,Paired cached per-artwork scores,"Fixed geometry, not pairwise recomputation"
++Controls / holdouts,Subject/JPEG unresolved; separate holdouts unrun,Descriptive restriction retained; generalization unestablished
+--- before/latex/tables\changes.template.json
++++ after/latex/tables\changes.template.json
+@@ -0,0 +1,11 @@
++{
++  "prefix": "\\begin{center}\\footnotesize\\begin{tabularx}{\\columnwidth}{YYY}\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\\end{center}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\changes.tex
++++ after/latex/tables\changes.tex
+@@ -1,6 +1,8 @@
+-\begin{center}\footnotesize\begin{tabularx}{\columnwidth}{YYY}\toprule Refinement & Implementation & Validity impact\\\midrule
+-Clustering & NumPy Lloyd k=2 / 20 starts & Host-library adaptation; no origin labels in fitting\\
+-Color family & Combined HSV+Lab; isolated ablations & Family contribution is conditional on this grouping\\
+-Randomization & Whole recorded source groups & Group counts preserved; exchangeability remains unsupported\\
+-Silhouette CI & Paired cached per-artwork scores & Fixed geometry, not pairwise recomputation\\
+-Controls / holdouts & Subject/JPEG unresolved; separate holdouts unrun & Descriptive restriction retained; generalization unestablished\\\bottomrule\end{tabularx}\end{center}+\begin{center}\footnotesize\begin{tabularx}{\columnwidth}{YYY}\toprule
++\textbf{Item} & \textbf{Implementation} & \textbf{Validity impact}\\\midrule
++{}Clustering & NumPy Lloyd k=2 / 20 starts & Host-library adaptation; no origin labels in fitting\\
++{}Color family & Combined HSV+Lab; isolated ablations & Family contribution is conditional on this grouping\\
++{}Randomization & Whole recorded source groups & Group counts preserved; exchangeability remains unsupported\\
++{}Silhouette CI & Paired cached per-artwork scores & Fixed geometry, not pairwise recomputation\\
++{}Controls / holdouts & Subject/JPEG unresolved; separate holdouts unrun & Descriptive restriction retained; generalization unestablished\\
++\bottomrule\end{tabularx}\end{center}--- before/latex/tables\paired.csv
++++ after/latex/tables\paired.csv
+@@ -1,4 +1,4 @@
+ Comparator,Difference,95% CI
+-frequency,+0.2985,"[+0.2812, +0.3176]"
+-resnet50,-0.0175,"[-0.0216, -0.0140]"
+-dinov2,-0.0173,"[-0.0213, -0.0138]"
++FFT-only (36-D),+0.2985,"[+0.2812, +0.3176]"
++ResNet-50 (frozen),-0.0175,"[-0.0216, -0.0140]"
++DINOv2 (frozen),-0.0173,"[-0.0213, -0.0138]"
+--- before/latex/tables\paired.template.json
++++ after/latex/tables\paired.template.json
+@@ -0,0 +1,9 @@
++{
++  "prefix": "\\begin{table}[t]\\caption{Paired AUROC differences, handcrafted minus comparator. 95\\% percentile source-group intervals condition on frozen fits.}\\label{tab:paired}\\centering\\footnotesize\\begin{tabular}{lrr}\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabular}\\end{table}",
++  "citation_keys": [
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\paired.tex
++++ after/latex/tables\paired.tex
+@@ -1,5 +1,6 @@
+-\begin{table}[t]\caption{Paired AUROC differences, handcrafted minus comparator. 95\% percentile source-group intervals condition on frozen fits.}\label{tab:paired}\centering\footnotesize\begin{tabular}{lrr}\toprule Comparator & Difference & 95\% CI\\\midrule
+-frequency & +0.2985 & [+0.2812, +0.3176]\\
+-resnet50 & -0.0175 & [-0.0216, -0.0140]\\
+-dinov2 & -0.0173 & [-0.0213, -0.0138]\\
++\begin{table}[t]\caption{Paired AUROC differences, handcrafted minus comparator. 95\% percentile source-group intervals condition on frozen fits.}\label{tab:paired}\centering\footnotesize\begin{tabular}{lrr}\toprule
++\textbf{Comparator} & \textbf{Difference} & \textbf{95\% CI}\\\midrule
++{}FFT-only (36-D) & 0.2985 & [+0.2812, +0.3176]\\
++{}ResNet-50 (frozen) & -0.0175 & [-0.0216, -0.0140]\\
++{}DINOv2 (frozen) & -0.0173 & [-0.0213, -0.0138]\\
+ \bottomrule\end{tabular}\end{table}--- before/latex/tables\seeds.csv
++++ after/latex/tables\seeds.csv
+@@ -1,6 +1,6 @@
+ Probe,AUROC,F1
+-dinov2,0.999838 ± 0.000019,0.9957 ± 0.0006
+-frequency,0.688800 ± 0.008013,0.6801 ± 0.0042
+-handcrafted,0.981684 ± 0.002027,0.9397 ± 0.0041
+-metadata_gated,1.000000 ± 0.000000,0.9997 ± 0.0003
+-resnet50,0.999871 ± 0.000024,0.9954 ± 0.0013
++DINOv2 (frozen),0.999838 ± 0.000019,0.9957 ± 0.0006
++FFT-only (36-D),0.688800 ± 0.008013,0.6801 ± 0.0042
++Handcrafted (104-D),0.981684 ± 0.002027,0.9397 ± 0.0041
++Metadata-only,1.000000 ± 0.000000,0.9997 ± 0.0003
++ResNet-50 (frozen),0.999871 ± 0.000024,0.9954 ± 0.0013
+--- before/latex/tables\seeds.template.json
++++ after/latex/tables\seeds.template.json
+@@ -0,0 +1,11 @@
++{
++  "prefix": "\\begin{table}[t]\\caption{Five grouped repartitions of the same frozen cohort, seeds 43--47. Mean $\\pm$ sample SD; not independent data collections.}\\label{tab:seeds}\\centering\\footnotesize\\begin{tabular}{lcc}\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabular}\\end{table}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\seeds.tex
++++ after/latex/tables\seeds.tex
+@@ -1,7 +1,8 @@
+-\begin{table}[t]\caption{Five grouped repartitions of the same frozen cohort, seeds 43--47. Mean $\pm$ sample SD; not independent data collections.}\label{tab:seeds}\centering\footnotesize\begin{tabular}{lcc}\toprule Probe & AUROC & F1\\\midrule
+-dinov2 & $0.999838\pm0.000019$ & $0.9957\pm0.0006$\\
+-frequency & $0.688800\pm0.008013$ & $0.6801\pm0.0042$\\
+-handcrafted & $0.981684\pm0.002027$ & $0.9397\pm0.0041$\\
+-metadata\_gated & $1.000000\pm0.000000$ & $0.9997\pm0.0003$\\
+-resnet50 & $0.999871\pm0.000024$ & $0.9954\pm0.0013$\\
++\begin{table}[t]\caption{Five grouped repartitions of the same frozen cohort, seeds 43--47. Mean $\pm$ sample SD; not independent data collections.}\label{tab:seeds}\centering\footnotesize\begin{tabular}{lcc}\toprule
++\textbf{Probe} & \textbf{AUROC} & \textbf{F1}\\\midrule
++{}DINOv2 (frozen) & 0.999838 ± 0.000019 & 0.9957 ± 0.0006\\
++{}FFT-only (36-D) & 0.688800 ± 0.008013 & 0.6801 ± 0.0042\\
++{}Handcrafted (104-D) & 0.981684 ± 0.002027 & 0.9397 ± 0.0041\\
++{}Metadata-only & 1.000000 ± 0.000000 & 0.9997 ± 0.0003\\
++{}ResNet-50 (frozen) & 0.999871 ± 0.000024 & 0.9954 ± 0.0013\\
+ \bottomrule\end{tabular}\end{table}--- before/latex/tables\table_01.csv
++++ after/latex/tables\table_01.csv
+@@ -1,17 +1,17 @@
+ Study / year / venue,Theme,Dataset and protocol,Reported endpoint,Comparison limit
+-[1] ArtBrain / 2024 / arXiv version,A,"AI-ArtBench, 185,015; joint source/style and attribution; test reused for validation",Joint F1 0.869; attribution accuracy 0.999,Joint labels; distinct test protocol
++[1] ArtBrain / 2026 / IEEE TMM†,A,"AI-ArtBench, 185,015; joint source/style and attribution; test reused for validation",Joint F1 0.869; attribution accuracy 0.999,Joint labels; distinct test protocol
+ [3] Complexity–entropy / 2025 / Sci. Rep.,A,"149,780 platform works, 2010–2020; observational, no origin split","H–C distributions; 149,780 artworks",Platform art; no origin probe
+ [2] B-Free / 2025 / CVPR,C,"COCO: 51,517 real, 309,102 generated; aligned training, external tests",DINOv2+reg e2e AUC/BA 99.0%/95.2%; probing 80.8%/68.5%,Photographs; not this artwork split
+ [6] SCADET / 2025 / PLOS One,B,AI-ArtBench; 7:1:2; full/local and unseen-generator tests,Full/local AUC 0.962/0.801; cross-model accuracy 0.81,Different split/crop/model
+ [7] SPAI / 2025 / CVPR,B,"13 generators; spectral self-supervision, cross-generator tests","Mean AUC 91.0% vs. RINE 85.5% (+5.5 points); SD3 75.9%, SD1.3 99.6%",Cross-generator learned detection
+ [8] FIRE / 2025 / CVPR,B,DiffusionForensics; source-specific training and updated generators,Kandinsky3-trained mean AUC 78.1% vs. 70.5%,Source-specific trained detector
+-[11] VIB-Net / 2025 / CVPR,C,15 Table-1 generator columns (17 overall); cross-series testing,Mean AP 95.53% vs. NPR 89.98%,AP is not AUROC
+-[10] CoDA / 2026 / arXiv version,B,"FakeForm: 62 domains; photographic training, domain shift",Mean accuracy/AP 77.7%/88.1%,AP/domain endpoint differs
+-[15] PixelatedScatter / 2026 / TVCG ms.,D,Scatterplot datasets; visualization user tasks,E1 Friedman p: 0.0362 / 0.0625 / 0.1070 (600² / 1200² / 1800²),Display study; not embedding fidelity
+-[16] MisVisFix / 2026 / TVCG ms.,D,Misleading-chart benchmark; chart/user studies,96% issue identification; 74 misinformation types,Chart issues; not image authenticity
+-[4] Art evolution / 2025 / arXiv version,A,"72,447 WikiArt works; creation-year regression",Creation-year R² = 0.869,Year regression; no AI-origin test
+-[12] FakeBench / 2024 / arXiv version,C,FakeBench; human and zero/few-shot LMM assessment,Human average accuracy 74.51%,Human/LMM endpoint differs
+-[13] Pixel inconsistency / 2024 / arXiv version,C,12 manipulation datasets; localization and perturbations,16 representative models on 12 datasets,Localization; not source ranking
++[12] VIB-Net / 2025 / CVPR,C,15 Table-1 generator columns (17 overall); cross-series testing,Mean AP 95.53% vs. NPR 89.98%,AP is not AUROC
++[10] CoDA / 2026 / TPAMI,B,"FakeForm: 62 domains; photographic training, domain shift",Mean accuracy/AP 77.7%/88.1%,AP/domain endpoint differs
++[16] PixelatedScatter / 2026 / TVCG†,D,Scatterplot datasets; visualization user tasks,E1 Friedman p: 0.0362 / 0.0625 / 0.1070 (600² / 1200² / 1800²),Display study; not embedding fidelity
++[17] MisVisFix / 2026 / TVCG†,D,Misleading-chart benchmark; chart/user studies,96% issue identification; 74 misinformation types,Chart issues; not image authenticity
++[4] Art evolution / 2026 / PNAS†,A,"72,447 WikiArt works; creation-year regression",Creation-year R² = 0.869,Year regression; no AI-origin test
++[13] FakeBench / 2025 / TIFS†,C,FakeBench; human and zero/few-shot LMM assessment,Human average accuracy 74.51%,Human/LMM endpoint differs
++[14] Pixel inconsistency / 2025 / TPAMI†,C,12 manipulation datasets; localization and perturbations,16 representative models on 12 datasets,Localization; not source ranking
+ [9] SIDWA / 2026 / Electronics,B,SIDset 8:1:1; additional GenImage testing,"Average accuracy >95%; 18.2 ms, NVIDIA A100",SIDset; no matched style inference
+-[14] Locate–then–examine / 2026 / arXiv version,C,"TRACE; 20,000 region-annotated real/generated examples","20,000 region-annotated images",Region labels absent here
++[15] Locate–then–examine / 2026 / arXiv†,C,"TRACE; 20,000 region-annotated real/generated examples","20,000 region-annotated images",Region labels absent here
+ [5] Self-distilled artwork / 2026 / Sci. Rep.,A,Balanced artwork dataset; 70:30; global/local learned detector,"Abstract accuracy 99.01%, precision 95.29%, recall 94.58%, F1 94.93%, AUC 99%",Different split; abstract metrics scoped
+--- before/latex/tables\table_01.template.json
++++ after/latex/tables\table_01.template.json
+@@ -0,0 +1,22 @@
++{
++  "prefix": "\\begin{table*}[tb]\n\\caption{Thematic summary of sixteen reviewed studies, using published years. $\\dagger$ marks results read in a collected arXiv/author-manuscript version; publication metadata appear in References. Themes A--D follow Section II.}\\label{tab:t1}\n\\centering\n\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=0.800\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.225\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.450\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.600\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.925\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
++  "citation_keys": [
++    "p1",
++    "p2",
++    "p3",
++    "p4",
++    "p5",
++    "p6",
++    "p7",
++    "p8",
++    "p9",
++    "p10",
++    "p11",
++    "p12",
++    "p13",
++    "p14",
++    "p15",
++    "p16"
++  ]
++}--- before/latex/tables\table_01.tex
++++ after/latex/tables\table_01.tex
+@@ -1,5 +1,5 @@
+ \begin{table*}[tb]
+-\caption{Thematic summary of the sixteen collected studies. All endpoints are paper-reported and version-scoped; themes A--D follow Section II.}\label{tab:t1}
++\caption{Thematic summary of sixteen reviewed studies, using published years. $\dagger$ marks results read in a collected arXiv/author-manuscript version; publication metadata appear in References. Themes A--D follow Section II.}\label{tab:t1}
+ \centering
+ \scriptsize
+ \setlength{\tabcolsep}{3pt}
+@@ -7,21 +7,21 @@
+ \begin{tabularx}{\textwidth}{>{\hsize=0.800\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.225\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.450\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.600\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.925\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+ \toprule
+ \textbf{Study / year / venue} & \textbf{Theme} & \textbf{Dataset and protocol} & \textbf{Reported endpoint} & \textbf{Comparison limit}\\\midrule
+-{}\cite{p1} ArtBrain / 2024 / arXiv version & A & AI-ArtBench, 185,015; joint source/style and attribution; test reused for validation & Joint F1 0.869; attribution accuracy 0.999 & Joint labels; distinct test protocol\\
++{}\cite{p1} ArtBrain / 2026 / IEEE TMM$\dagger$ & A & AI-ArtBench, 185,015; joint source/style and attribution; test reused for validation & Joint F1 0.869; attribution accuracy 0.999 & Joint labels; distinct test protocol\\
+ {}\cite{p2} Complexity--entropy / 2025 / Sci. Rep. & A & 149,780 platform works, 2010--2020; observational, no origin split & H--C distributions; 149,780 artworks & Platform art; no origin probe\\
+ {}\cite{p3} B-Free / 2025 / CVPR & C & COCO: 51,517 real, 309,102 generated; aligned training, external tests & DINOv2+reg e2e AUC/BA 99.0\%/95.2\%; probing 80.8\%/68.5\% & Photographs; not this artwork split\\
+ {}\cite{p4} SCADET / 2025 / PLOS One & B & AI-ArtBench; 7:1:2; full/local and unseen-generator tests & Full/local AUC 0.962/0.801; cross-model accuracy 0.81 & Different split/crop/model\\
+ {}\cite{p5} SPAI / 2025 / CVPR & B & 13 generators; spectral self-supervision, cross-generator tests & Mean AUC 91.0\% vs. RINE 85.5\% (+5.5 points); SD3 75.9\%, SD1.3 99.6\% & Cross-generator learned detection\\
+ {}\cite{p6} FIRE / 2025 / CVPR & B & DiffusionForensics; source-specific training and updated generators & Kandinsky3-trained mean AUC 78.1\% vs. 70.5\% & Source-specific trained detector\\
+ {}\cite{p7} VIB-Net / 2025 / CVPR & C & 15 Table-1 generator columns (17 overall); cross-series testing & Mean AP 95.53\% vs. NPR 89.98\% & AP is not AUROC\\
+-{}\cite{p8} CoDA / 2026 / arXiv version & B & FakeForm: 62 domains; photographic training, domain shift & Mean accuracy/AP 77.7\%/88.1\% & AP/domain endpoint differs\\
+-{}\cite{p9} PixelatedScatter / 2026 / TVCG ms. & D & Scatterplot datasets; visualization user tasks & E1 Friedman p: 0.0362 / 0.0625 / 0.1070 (600$^2$ / 1200$^2$ / 1800$^2$) & Display study; not embedding fidelity\\
+-{}\cite{p10} MisVisFix / 2026 / TVCG ms. & D & Misleading-chart benchmark; chart/user studies & 96\% issue identification; 74 misinformation types & Chart issues; not image authenticity\\
+-{}\cite{p11} Art evolution / 2025 / arXiv version & A & 72,447 WikiArt works; creation-year regression & Creation-year R$^2$ = 0.869 & Year regression; no AI-origin test\\
+-{}\cite{p12} FakeBench / 2024 / arXiv version & C & FakeBench; human and zero/few-shot LMM assessment & Human average accuracy 74.51\% & Human/LMM endpoint differs\\
+-{}\cite{p13} Pixel inconsistency / 2024 / arXiv version & C & 12 manipulation datasets; localization and perturbations & 16 representative models on 12 datasets & Localization; not source ranking\\
++{}\cite{p8} CoDA / 2026 / TPAMI & B & FakeForm: 62 domains; photographic training, domain shift & Mean accuracy/AP 77.7\%/88.1\% & AP/domain endpoint differs\\
++{}\cite{p9} PixelatedScatter / 2026 / TVCG$\dagger$ & D & Scatterplot datasets; visualization user tasks & E1 Friedman p: 0.0362 / 0.0625 / 0.1070 (600$^2$ / 1200$^2$ / 1800$^2$) & Display study; not embedding fidelity\\
++{}\cite{p10} MisVisFix / 2026 / TVCG$\dagger$ & D & Misleading-chart benchmark; chart/user studies & 96\% issue identification; 74 misinformation types & Chart issues; not image authenticity\\
++{}\cite{p11} Art evolution / 2026 / PNAS$\dagger$ & A & 72,447 WikiArt works; creation-year regression & Creation-year R$^2$ = 0.869 & Year regression; no AI-origin test\\
++{}\cite{p12} FakeBench / 2025 / TIFS$\dagger$ & C & FakeBench; human and zero/few-shot LMM assessment & Human average accuracy 74.51\% & Human/LMM endpoint differs\\
++{}\cite{p13} Pixel inconsistency / 2025 / TPAMI$\dagger$ & C & 12 manipulation datasets; localization and perturbations & 16 representative models on 12 datasets & Localization; not source ranking\\
+ {}\cite{p14} SIDWA / 2026 / Electronics & B & SIDset 8:1:1; additional GenImage testing & Average accuracy >95\%; 18.2 ms, NVIDIA A100 & SIDset; no matched style inference\\
+-{}\cite{p15} Locate--then--examine / 2026 / arXiv version & C & TRACE; 20,000 region-annotated real/generated examples & 20,000 region-annotated images & Region labels absent here\\
++{}\cite{p15} Locate--then--examine / 2026 / arXiv$\dagger$ & C & TRACE; 20,000 region-annotated real/generated examples & 20,000 region-annotated images & Region labels absent here\\
+ {}\cite{p16} Self-distilled artwork / 2026 / Sci. Rep. & A & Balanced artwork dataset; 70:30; global/local learned detector & Abstract accuracy 99.01\%, precision 95.29\%, recall 94.58\%, F1 94.93\%, AUC 99\% & Different split; abstract metrics scoped\\
+ \bottomrule\end{tabularx}
+ \end{table*}--- before/latex/tables\table_02.template.json
++++ after/latex/tables\table_02.template.json
+@@ -0,0 +1,9 @@
++{
++  "prefix": "\\begin{table}[tb]\n\\caption{Full-release image audit. All files are readable RGB JPEG; native sizes differ by origin.}\\label{tab:t2}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\columnwidth}{>{\\hsize=0.897\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.897\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.897\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.103\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.897\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.310\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table}",
++  "citation_keys": [
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_03.template.json
++++ after/latex/tables\table_03.template.json
+@@ -0,0 +1,15 @@
++{
++  "prefix": "\\begin{table}[tb]\n\\caption{Frozen grouped development/validation/test counts. Source groups are split-disjoint.}\\label{tab:t3}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\columnwidth}{>{\\hsize=1.000\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.000\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.000\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.000\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_04.csv
++++ after/latex/tables\table_04.csv
+@@ -1,6 +1,6 @@
+-Probe,AUROC [95% CI],F1 [95% CI],ECE,Macro AUC/F1,C,Threshold
+-handcrafted,"0.982415 [0.978332, 0.986003]","0.9420 [0.9347, 0.9487]",0.015435971446845661,0.9817/0.9422,10.0,0.4380296315052076
+-frequency,"0.683901 [0.664844, 0.701442]","0.6830 [0.6605, 0.7027]",0.04995761160114183,0.6909/0.6826,10.0,0.4035715017446563
+-metadata_gated,"1.000000 [1.000000, 1.000000]","0.9997 [0.9992, 1.0000]",0.19397675111796184,1.0000/0.9997,0.001,0.641548065827023
+-resnet50,"0.999945 [0.999868, 0.999988]","0.9972 [0.9957, 0.9985]",0.0021608168142993405,0.9999/0.9972,1.0,0.7827492356300354
+-dinov2,"0.999688 [0.999296, 0.999939]","0.9955 [0.9936, 0.9973]",0.0020538061260012685,0.9997/0.9955,1.0,0.2773941159248352
++Probe,AUROC [95% CI],F1 [95% CI],Acc./BA,Prec.,Recall,ECE,Macro AUC/F1
++Handcrafted (104-D),"0.982415 [0.978332, 0.986003]","0.9420 [0.9347, 0.9487]",0.9406666666666667,0.9212874442319949,0.9636666666666667,0.015435971446845661,0.9817/0.9422
++FFT-only (36-D),"0.683901 [0.664844, 0.701442]","0.6830 [0.6605, 0.7027]",0.596,0.5619888075764098,0.8703333333333333,0.04995761160114183,0.6909/0.6826
++Metadata-only,"1.000000 [1.000000, 1.000000]","0.9997 [0.9992, 1.0000]",0.9996666666666667,1.0,0.9993333333333333,0.19397675111796184,1.0000/0.9997
++ResNet-50 (frozen),"0.999945 [0.999868, 0.999988]","0.9972 [0.9957, 0.9985]",0.9971666666666666,0.9973324441480493,0.997,0.0021608168142993405,0.9999/0.9972
++DINOv2 (frozen),"0.999688 [0.999296, 0.999939]","0.9955 [0.9936, 0.9973]",0.9955,0.994675540765391,0.9963333333333333,0.0020538061260012685,0.9997/0.9955
+--- before/latex/tables\table_04.template.json
++++ after/latex/tables\table_04.template.json
+@@ -0,0 +1,11 @@
++{
++  "prefix": "\\begin{table*}[t]\n\\caption{Primary-test metrics (6,000 artworks). Accuracy equals balanced accuracy (BA); precision/recall/F1 use diffusion-positive labels. Macro scores average ten styles. Percentile 95\\% intervals use 1,000 origin-stratified source-group draws with fits/thresholds fixed. Selected settings appear in Appendix A.}\\label{tab:t4}\\label{tab:essential}\n\\centering\\footnotesize\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=1.471\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=2.059\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.353\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.553\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.553\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.553\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.494\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.965\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}\n",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_04.tex
++++ after/latex/tables\table_04.tex
+@@ -1,14 +1,13 @@
+ \begin{table*}[t]
+-\caption{Frozen primary-test metrics (6,000 artworks). Percentile 95\% intervals resample source groups within origin 1,000 times, conditional on fixed fits; accuracy/precision/recall remain in the released CSV.}\label{tab:t4}
+-\centering\footnotesize
+-\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+-\begin{tabularx}{\textwidth}{>{\hsize=0.990\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.697\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.697\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.495\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.990\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.424\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.707\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
++\caption{Primary-test metrics (6,000 artworks). Accuracy equals balanced accuracy (BA); precision/recall/F1 use diffusion-positive labels. Macro scores average ten styles. Percentile 95\% intervals use 1,000 origin-stratified source-group draws with fits/thresholds fixed. Selected settings appear in Appendix A.}\label{tab:t4}\label{tab:essential}
++\centering\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
++\begin{tabularx}{\textwidth}{>{\hsize=1.471\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=2.059\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.353\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.553\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.553\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.553\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.494\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.965\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+ \toprule
+-\textbf{Probe} & \textbf{AUROC [95\% CI]} & \textbf{F1 [95\% CI]} & \textbf{ECE} & \textbf{Macro AUC/F1} & \textbf{C} & \textbf{Threshold}\\\midrule
+-{}handcrafted & 0.982415 [0.978332, 0.986003] & 0.9420 [0.9347, 0.9487] & 0.0154 & 0.9817/0.9422 & 10.0000 & 0.4380\\
+-{}frequency & 0.683901 [0.664844, 0.701442] & 0.6830 [0.6605, 0.7027] & 0.0500 & 0.6909/0.6826 & 10.0000 & 0.4036\\
+-{}metadata\_gated & 1.000000 [1.000000, 1.000000] & 0.9997 [0.9992, 1.0000] & 0.1940 & 1.0000/0.9997 & 0.0010 & 0.6415\\
+-{}resnet50 & 0.999945 [0.999868, 0.999988] & 0.9972 [0.9957, 0.9985] & 0.0022 & 0.9999/0.9972 & 1.0000 & 0.7827\\
+-{}dinov2 & 0.999688 [0.999296, 0.999939] & 0.9955 [0.9936, 0.9973] & 0.0021 & 0.9997/0.9955 & 1.0000 & 0.2774\\
++\textbf{Probe} & \textbf{AUROC [95\% CI]} & \textbf{F1 [95\% CI]} & \textbf{Acc./BA} & \textbf{Prec.} & \textbf{Recall} & \textbf{ECE} & \textbf{Macro AUC/F1}\\\midrule
++{}Handcrafted (104-D) & 0.982415 [0.978332, 0.986003] & 0.9420 [0.9347, 0.9487] & 0.9407 & 0.9213 & 0.9637 & 0.0154 & 0.9817/0.9422\\
++{}FFT-only (36-D) & 0.683901 [0.664844, 0.701442] & 0.6830 [0.6605, 0.7027] & 0.5960 & 0.5620 & 0.8703 & 0.0500 & 0.6909/0.6826\\
++{}Metadata-only & 1.000000 [1.000000, 1.000000] & 0.9997 [0.9992, 1.0000] & 0.9997 & 1.0000 & 0.9993 & 0.1940 & 1.0000/0.9997\\
++{}ResNet-50 (frozen) & 0.999945 [0.999868, 0.999988] & 0.9972 [0.9957, 0.9985] & 0.9972 & 0.9973 & 0.9970 & 0.0022 & 0.9999/0.9972\\
++{}DINOv2 (frozen) & 0.999688 [0.999296, 0.999939] & 0.9955 [0.9936, 0.9973] & 0.9955 & 0.9947 & 0.9963 & 0.0021 & 0.9997/0.9955\\
+ \bottomrule\end{tabularx}
+-\end{table*}+\end{table*}
+--- before/latex/tables\table_05.template.json
++++ after/latex/tables\table_05.template.json
+@@ -0,0 +1,11 @@
++{
++  "prefix": "\\begin{table}[tb]\n\\caption{Neighborhood fidelity on the fixed audit subset. t-SNE entries give min--max over five seeds, not confidence intervals.}\\label{tab:t5}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\columnwidth}{>{\\hsize=1.100\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.600\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.100\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.100\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.100\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_06.template.json
++++ after/latex/tables\table_06.template.json
+@@ -0,0 +1,16 @@
++{
++  "prefix": "\\begin{table*}[tb]\n\\caption{Ten-style family summaries: mean standardized W1 / mean signed shift; last column counts constituent exploratory passes.}\\label{tab:t6}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=1.320\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.020\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.020\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.020\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.020\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.600\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_07.csv
++++ after/latex/tables\table_07.csv
+@@ -1,11 +1,11 @@
+ Authors / year,Problem,Method,Dataset,Metric,Reported result*,Limitation
+-"[1] Silva et al., 2024",Joint source/style classification and generator attribution,AttentionConvNeXt,"AI-ArtBench, 185,015 images, 10 styles",F1; attribution accuracy,"Joint source/style F1 0.869; generator-attribution accuracy 0.999; 60,000 human and 125,015 generated images","Joint task, different protocol"
++"[1] Silva et al., 2026†",Joint source/style classification and generator attribution,AttentionConvNeXt,"AI-ArtBench, 185,015 images, 10 styles",F1; attribution accuracy,"Joint source/style F1 0.869; generator-attribution accuracy 0.999; 60,000 human and 125,015 generated images","Joint task, different protocol"
+ "[3] Kim et al., 2025",Observational style analysis in entropy-complexity space,Ordinal H-C,DeviantArt and Behance 2010–2020,H and C; similarity relationships,"149,780 platform artwork images analyzed; not a matched human–diffusion dataset",Platform art; no matched origin test
+ "[2] Guillaro et al., 2025",Bias-controlled general AI-image detection,Content-aligned DINOv2,MS-COCO and self-conditioned synthetic images,Dataset counts; AUC; balanced accuracy,"Training construction uses 51,517 real images and 309,102 generated images","Photographs, end-to-end training"
+ "[6] Zhang et al., 2025",Full-image and local-image AI-art detection,Contrastive spectral attention,AI-ArtBench,ROC-AUC; accuracy,AUC 0.962 full image and 0.801 local image; cross-model mean accuracy 0.81,Different split/crop/model
+ "[7] Karageorgiou et al., 2025",AI-image detection,Spectral self-supervision,13 generators; mixed real-image sources,ROC-AUC,5.5 percentage-point absolute AUC improvement across 13 generators,Cross-generator learned detector
+ "[8] Chu et al., 2025",Diffusion-image detection,Reconstruction error,DiffusionForensics and updated-generator benchmark,AUC; accuracy,Table 2 Kandinsky3-trained mean AUC FIRE 78.1% versus FakeInversion 70.5%; source-specific setting,Source-specific trained detector
+-"[11] Zhang et al., 2025",Universal AI-image detection,Variational bottleneck,15 generator columns in Table 1; 17 generators overall,Average precision,Table 1 mean AP VIB-Net 95.53%; compare NPR row in same table for 89.98%,"AP, not AUROC"
++"[12] Zhang et al., 2025",Universal AI-image detection,Variational bottleneck,15 generator columns in Table 1; 17 generators overall,Average precision,Table 1 mean AP VIB-Net 95.53%; compare NPR row in same table for 89.98%,"AP, not AUROC"
+ "[10] Jia et al., 2026",Cross-domain AI-image detection,Color probing,"FakeForm, 62 domains",Accuracy; AP,"FakeForm mean accuracy/AP 77.7%/88.1%; endpoint is AP, not AUROC",AP/domain endpoint differs
+-"[12] Li et al., 2024",Explainable image authenticity assessment,Multimodal explanations,FakeBench,Detection accuracy,Human overall average accuracy 74.51%,Human/LMM endpoints
++"[13] Li et al., 2025†",Explainable image authenticity assessment,Multimodal explanations,FakeBench,Detection accuracy,Human overall average accuracy 74.51%,Human/LMM endpoints
+ "[9] Li et al., 2026",Synthetic-image detection,Wavelet attention,SIDset; additional GenImage experiments,Accuracy; inference latency,Abstract reports average accuracy exceeding 95% and inference time 18.2 ms on NVIDIA A100,"SIDset, different protocol"
+--- before/latex/tables\table_07.template.json
++++ after/latex/tables\table_07.template.json
+@@ -0,0 +1,16 @@
++{
++  "prefix": "\\begin{table*}[t]\n\\caption{Benchmark, feature and control bases. Years identify published versions; manuscript evidence is marked as in Table I; starred results are paper-reported, not local reproductions.}\\label{tab:t7}\n\\centering\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=0.824\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.961\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.961\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.098\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.686\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.647\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.824\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
++  "citation_keys": [
++    "p1",
++    "p2",
++    "p3",
++    "p4",
++    "p5",
++    "p6",
++    "p7",
++    "p8",
++    "p12",
++    "p14"
++  ]
++}--- before/latex/tables\table_07.tex
++++ after/latex/tables\table_07.tex
+@@ -1,11 +1,11 @@
+ \begin{table*}[t]
+-\caption{Benchmark, feature and control bases. Years identify collected evidence versions; starred results are paper-reported, not local reproductions.}\label{tab:t7}
++\caption{Benchmark, feature and control bases. Years identify published versions; manuscript evidence is marked as in Table I; starred results are paper-reported, not local reproductions.}\label{tab:t7}
+ \centering\scriptsize
+ \setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+ \begin{tabularx}{\textwidth}{>{\hsize=0.824\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.961\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.961\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.098\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.686\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.647\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.824\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+ \toprule
+ \textbf{Authors / year} & \textbf{Problem} & \textbf{Method} & \textbf{Dataset} & \textbf{Metric} & \textbf{Reported result*} & \textbf{Limitation}\\\midrule
+-{}\cite{p1} Silva et al., 2024 & Joint source/style classification and generator attribution & AttentionConvNeXt & AI-ArtBench, 185,015 images, 10 styles & F1; attribution accuracy & Joint source/style F1 0.869; generator-attribution accuracy 0.999; 60,000 human and 125,015 generated images & Joint task, different protocol\\
++{}\cite{p1} Silva et al., 2026$\dagger$ & Joint source/style classification and generator attribution & AttentionConvNeXt & AI-ArtBench, 185,015 images, 10 styles & F1; attribution accuracy & Joint source/style F1 0.869; generator-attribution accuracy 0.999; 60,000 human and 125,015 generated images & Joint task, different protocol\\
+ {}\cite{p2} Kim et al., 2025 & Observational style analysis in entropy-complexity space & Ordinal H-C & DeviantArt and Behance 2010--2020 & H and C; similarity relationships & 149,780 platform artwork images analyzed; not a matched human--diffusion dataset & Platform art; no matched origin test\\
+ {}\cite{p3} Guillaro et al., 2025 & Bias-controlled general AI-image detection & Content-aligned DINOv2 & MS-COCO and self-conditioned synthetic images & Dataset counts; AUC; balanced accuracy & Training construction uses 51,517 real images and 309,102 generated images & Photographs, end-to-end training\\
+ {}\cite{p4} Zhang et al., 2025 & Full-image and local-image AI-art detection & Contrastive spectral attention & AI-ArtBench & ROC-AUC; accuracy & AUC 0.962 full image and 0.801 local image; cross-model mean accuracy 0.81 & Different split/crop/model\\
+@@ -13,7 +13,7 @@
+ {}\cite{p6} Chu et al., 2025 & Diffusion-image detection & Reconstruction error & DiffusionForensics and updated-generator benchmark & AUC; accuracy & Table 2 Kandinsky3-trained mean AUC FIRE 78.1\% versus FakeInversion 70.5\%; source-specific setting & Source-specific trained detector\\
+ {}\cite{p7} Zhang et al., 2025 & Universal AI-image detection & Variational bottleneck & 15 generator columns in Table 1; 17 generators overall & Average precision & Table 1 mean AP VIB-Net 95.53\%; compare NPR row in same table for 89.98\% & AP, not AUROC\\
+ {}\cite{p8} Jia et al., 2026 & Cross-domain AI-image detection & Color probing & FakeForm, 62 domains & Accuracy; AP & FakeForm mean accuracy/AP 77.7\%/88.1\%; endpoint is AP, not AUROC & AP/domain endpoint differs\\
+-{}\cite{p12} Li et al., 2024 & Explainable image authenticity assessment & Multimodal explanations & FakeBench & Detection accuracy & Human overall average accuracy 74.51\% & Human/LMM endpoints\\
++{}\cite{p12} Li et al., 2025$\dagger$ & Explainable image authenticity assessment & Multimodal explanations & FakeBench & Detection accuracy & Human overall average accuracy 74.51\% & Human/LMM endpoints\\
+ {}\cite{p14} Li et al., 2026 & Synthetic-image detection & Wavelet attention & SIDset; additional GenImage experiments & Accuracy; inference latency & Abstract reports average accuracy exceeding 95\% and inference time 18.2 ms on NVIDIA A100 & SIDset, different protocol\\
+ \bottomrule\end{tabularx}
+ \end{table*}--- before/latex/tables\table_08.csv
++++ after/latex/tables\table_08.csv
+@@ -1,9 +1,9 @@
+ Method,Protocol / test,AUROC,F1,Scope
+-handcrafted,"Primary / 6,000",0.9824147777777779,0.942000651678071,Implemented logistic probe
+-frequency,"Primary / 6,000",0.6839008888888889,0.6829714883599267,Implemented logistic probe
+-metadata_gated,"Primary / 6,000",1.0,0.9996665555185061,Implemented logistic probe
+-resnet50,"Primary / 6,000",0.9999447777777777,0.9971661943657276,Implemented logistic probe
+-dinov2,"Primary / 6,000",0.9996876666666668,0.995503746877602,Implemented logistic probe
++Handcrafted (104-D),"Primary / 6,000",0.9824147777777779,0.942000651678071,Implemented logistic probe
++FFT-only (36-D),"Primary / 6,000",0.6839008888888889,0.6829714883599267,Implemented logistic probe
++Metadata-only,"Primary / 6,000",1.0,0.9996665555185061,Implemented logistic probe
++ResNet-50 (frozen),"Primary / 6,000",0.9999447777777777,0.9971661943657276,Implemented logistic probe
++DINOv2 (frozen),"Primary / 6,000",0.9996876666666668,0.995503746877602,Implemented logistic probe
+ Unmatched mixed,"Human vs. LD+SD / 9,000",0.9219999444444444,0.8976608187134503,Different source mixture
+ SCADET full*,AI-ArtBench / 7:1:2,0.962,—,Different model/split
+ SCADET local*,AI-ArtBench / 7:1:2,0.801,—,Different crop protocol
+--- before/latex/tables\table_08.template.json
++++ after/latex/tables\table_08.template.json
+@@ -0,0 +1,16 @@
++{
++  "prefix": "\\begin{table*}[t]\n\\caption{Comparable metric columns with protocol limits. Unstarred rows are executed probes; starred rows are original-paper AUROCs, not reproduced or matched evaluations.}\\label{tab:t8}\n\\centering\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=0.964\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.446\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.542\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.542\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.506\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_08.tex
++++ after/latex/tables\table_08.tex
+@@ -5,11 +5,11 @@
+ \begin{tabularx}{\textwidth}{>{\hsize=0.964\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.446\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.542\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.542\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.506\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+ \toprule
+ \textbf{Method} & \textbf{Protocol / test} & \textbf{AUROC} & \textbf{F1} & \textbf{Scope}\\\midrule
+-{}handcrafted & Primary / 6,000 & 0.9824 & 0.9420 & Implemented logistic probe\\
+-{}frequency & Primary / 6,000 & 0.6839 & 0.6830 & Implemented logistic probe\\
+-{}metadata\_gated & Primary / 6,000 & 1.0000 & 0.9997 & Implemented logistic probe\\
+-{}resnet50 & Primary / 6,000 & 0.9999 & 0.9972 & Implemented logistic probe\\
+-{}dinov2 & Primary / 6,000 & 0.9997 & 0.9955 & Implemented logistic probe\\
++{}Handcrafted (104-D) & Primary / 6,000 & 0.9824 & 0.9420 & Implemented logistic probe\\
++{}FFT-only (36-D) & Primary / 6,000 & 0.6839 & 0.6830 & Implemented logistic probe\\
++{}Metadata-only & Primary / 6,000 & 1.0000 & 0.9997 & Implemented logistic probe\\
++{}ResNet-50 (frozen) & Primary / 6,000 & 0.9999 & 0.9972 & Implemented logistic probe\\
++{}DINOv2 (frozen) & Primary / 6,000 & 0.9997 & 0.9955 & Implemented logistic probe\\
+ {}Unmatched mixed & Human vs. LD+SD / 9,000 & 0.9220 & 0.8977 & Different source mixture\\
+ {}SCADET full* & AI-ArtBench / 7:1:2 & 0.9620 & --- & Different model/split\\
+ {}SCADET local* & AI-ArtBench / 7:1:2 & 0.8010 & --- & Different crop protocol\\
+--- before/latex/tables\table_09.csv
++++ after/latex/tables\table_09.csv
+@@ -1,4 +1,4 @@
+-Variant,D,AUROC,f1,ΔAUC,95% CI,Δsil.
++Variant,Dim.,AUROC,F1,ΔAUC,95% CI,Δ silhouette
+ without Ordinal,96,0.9079940000000001,0.8443490262229719,-0.07442077777777778,"[-0.0842, -0.0654]",-0.002743137660100754
+ only Ordinal,8,0.8888064444444445,0.8153176675369886,-0.0936083333333334,"[-0.1045, -0.0836]",0.09546142149291639
+ without FFT,68,0.9713042222222223,0.9205007315883597,-0.011110555555555512,"[-0.0142, -0.0082]",0.006083438364735283
+@@ -10,5 +10,5 @@
+ HSV,86,0.9803832222222222,0.9397944199706314,-0.0020315555555556752,"[-0.0030, -0.0011]",-0.0019847645949387155
+ Lab,78,0.9790681111111113,0.9349190617773373,-0.003346666666666609,"[-0.0053, -0.0017]",0.02026099666969617
+ full 256,51,0.9789832222222223,0.9329248629474363,-0.003431555555555521,"[-0.0058, -0.0014]",0.018875016394201683
+-five 128 crops,104,0.9810186666666666,0.9397590361445783,-0.0013961111111112645,"[-0.0028, +4.27e-05]",-0.0043094600312495995
++five 128 crops,104,0.9810186666666666,0.9397590361445783,-0.0013961111111112645,"[-0.0028, +0.0000427]",-0.0043094600312495995
+ ties excluded,104,0.9752618888888889,0.9253098499673842,-0.007152888888888986,"[-0.0091, -0.0053]",-0.00019537586100261544
+--- before/latex/tables\table_09.template.json
++++ after/latex/tables\table_09.template.json
+@@ -0,0 +1,19 @@
++{
++  "prefix": "\\begin{table*}[t]\n\\caption{Thirteen paired ablations. Dim. is predictor dimensionality; $\\Delta$ silhouette is variant minus baseline. Intervals refer to AUROC differences; silhouette uncertainty conditions on cached geometry.}\\label{tab:t9}\n\\centering\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=1.842\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.368\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.737\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.737\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.737\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.842\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.737\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_09.tex
++++ after/latex/tables\table_09.tex
+@@ -1,10 +1,10 @@
+ \begin{table*}[t]
+-\caption{Thirteen paired ablations. Intervals refer to AUROC differences; silhouette uncertainty conditions on cached geometry.}\label{tab:t9}
++\caption{Thirteen paired ablations. Dim. is predictor dimensionality; $\Delta$ silhouette is variant minus baseline. Intervals refer to AUROC differences; silhouette uncertainty conditions on cached geometry.}\label{tab:t9}
+ \centering\footnotesize
+ \setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+ \begin{tabularx}{\textwidth}{>{\hsize=1.842\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.368\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.737\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.737\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.737\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.842\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.737\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+ \toprule
+-\textbf{Variant} & \textbf{D} & \textbf{AUROC} & \textbf{f1} & \textbf{$\Delta$AUC} & \textbf{95\% CI} & \textbf{$\Delta$sil.}\\\midrule
++\textbf{Variant} & \textbf{Dim.} & \textbf{AUROC} & \textbf{F1} & \textbf{$\Delta$AUC} & \textbf{95\% CI} & \textbf{$\Delta$ silhouette}\\\midrule
+ {}without Ordinal & 96 & 0.9080 & 0.8443 & -0.0744 & [-0.0842, -0.0654] & -0.0027\\
+ {}only Ordinal & 8 & 0.8888 & 0.8153 & -0.0936 & [-0.1045, -0.0836] & 0.0955\\
+ {}without FFT & 68 & 0.9713 & 0.9205 & -0.0111 & [-0.0142, -0.0082] & 0.0061\\
+@@ -16,7 +16,7 @@
+ {}HSV & 86 & 0.9804 & 0.9398 & -0.0020 & [-0.0030, -0.0011] & -0.0020\\
+ {}Lab & 78 & 0.9791 & 0.9349 & -0.0033 & [-0.0053, -0.0017] & 0.0203\\
+ {}full 256 & 51 & 0.9790 & 0.9329 & -0.0034 & [-0.0058, -0.0014] & 0.0189\\
+-{}five 128 crops & 104 & 0.9810 & 0.9398 & -0.0014 & [-0.0028, +4.27e-05] & -0.0043\\
++{}five 128 crops & 104 & 0.9810 & 0.9398 & -0.0014 & [-0.0028, +0.0000427] & -0.0043\\
+ {}ties excluded & 104 & 0.9753 & 0.9253 & -0.0072 & [-0.0091, -0.0053] & -0.0002\\
+ \bottomrule\end{tabularx}
+ \end{table*}--- before/latex/tables\table_10.csv
++++ after/latex/tables\table_10.csv
+@@ -1,5 +1,5 @@
+-View,AUROC,f1,95% CI,Sil. ratio,Rank rho
+-jpeg95,0.9822376666666666,0.9429645366890015,"[-0.0003, -3.52e-05]",0.9922460436843361,0.9999999999999999
++View,AUROC,F1,95% CI,Silhouette ratio,Rank ρ
++jpeg95,0.9822376666666666,0.9429645366890015,"[-0.0003, -0.0000352]",0.9922460436843361,0.9999999999999999
+ jpeg75,0.8354356666666667,0.745259899393783,"[-0.1586, -0.1347]",0.963878839278545,0.9636363636363635
+ jpeg50,0.6818928888888889,0.6921453692848769,"[-0.3170, -0.2832]",1.3748840607376251,0.3696969696969697
+ resize0.5,0.7744086666666666,0.6772366930917327,"[-0.2244, -0.1918]",0.8419757677730254,0.8787878787878788
+--- before/latex/tables\table_10.template.json
++++ after/latex/tables\table_10.template.json
+@@ -0,0 +1,11 @@
++{
++  "prefix": "\\begin{table*}[t]\n\\caption{Frozen-probe stress tests. AUROC-difference intervals are paired group-bootstrap 95\\% intervals; original inputs are release JPEGs.}\\label{tab:t10}\n\\centering\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=0.960\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.720\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.720\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.800\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.900\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.900\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_10.tex
++++ after/latex/tables\table_10.tex
+@@ -4,8 +4,8 @@
+ \setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+ \begin{tabularx}{\textwidth}{>{\hsize=0.960\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.720\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.720\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.800\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.900\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.900\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+ \toprule
+-\textbf{View} & \textbf{AUROC} & \textbf{f1} & \textbf{95\% CI} & \textbf{Sil. ratio} & \textbf{Rank rho}\\\midrule
+-{}jpeg95 & 0.9822 & 0.9430 & [-0.0003, -3.52e-05] & 0.9922 & 1.0000\\
++\textbf{View} & \textbf{AUROC} & \textbf{F1} & \textbf{95\% CI} & \textbf{Silhouette ratio} & \textbf{Rank $\rho$}\\\midrule
++{}jpeg95 & 0.9822 & 0.9430 & [-0.0003, -0.0000352] & 0.9922 & 1.0000\\
+ {}jpeg75 & 0.8354 & 0.7453 & [-0.1586, -0.1347] & 0.9639 & 0.9636\\
+ {}jpeg50 & 0.6819 & 0.6921 & [-0.3170, -0.2832] & 1.3749 & 0.3697\\
+ {}resize0.5 & 0.7744 & 0.6772 & [-0.2244, -0.1918] & 0.8420 & 0.8788\\
+--- before/latex/tables\table_11.template.json
++++ after/latex/tables\table_11.template.json
+@@ -0,0 +1,14 @@
++{
++  "prefix": "\\begin{table*}[tb]\n\\caption{Purposively selected held-out cases. IDs are prefixes; complete IDs and measurements accompany the paper.}\\label{tab:t11}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=1.202\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.919\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.636\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.414\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.990\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.919\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.919\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
++  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
++  "citation_keys": [
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null,
++    null
++  ]
++}--- before/latex/tables\table_11.tex
++++ after/latex/tables\table_11.tex
+@@ -13,7 +13,7 @@
+ {}6c9f139321 & FN & LD & expressionism & 0.0254 & 0.9567 & 0.0560\\
+ {}f3fa732e66 & TP & LD & art\_nouveau & 1.0000 & 0.9086 & 0.1160\\
+ {}89f0f4d605 & TP & LD & baroque & 1.0000 & 0.9498 & 0.0667\\
+-{}f4af268f19 & HC outlier & Human & art\_nouveau & 0.0000 & 0.4618 & 0.2216\\
+-{}a1dce1b036 & PCA outlier & Human & romanticism & 0.0000 & 0.9773 & 0.0287\\
++{}f4af268f19 & HC outlier & Human & art\_nouveau & <0.00000001 & 0.4618 & 0.2216\\
++{}a1dce1b036 & PCA outlier & Human & romanticism & 0.00000968 & 0.9773 & 0.0287\\
+ \bottomrule\end{tabularx}
+ \end{table*}--- before/src/dashboard_theme.py
++++ after/src/dashboard_theme.py
+@@ -79,7 +79,7 @@
+         title_font=dict(family='Quicksand, sans-serif',size=18,color='#1E40AF'),
+         colorway=PALETTE,paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#F8FAFC',
+         hoverlabel=dict(bgcolor='#FFFFFF',bordercolor='#E5EAF5',font=dict(family='Quicksand, sans-serif',size=14,color='#1E40AF')),
+-        margin=dict(l=65,r=25,t=65,b=legend_bottom),legend=dict(orientation='h',y=-.30,x=0,bgcolor='rgba(0,0,0,0)'))
++        margin=dict(l=65,r=25,t=65,b=legend_bottom),legend=dict(orientation='h',y=-.20,x=0,bgcolor='rgba(0,0,0,0)'))
+     for i,trace in enumerate(fig.data):
+         if trace.type=='scatter':
+             if trace.name and ',' in trace.name and trace.name.startswith('LD'):
+--- before/src/dashboard_views.py
++++ after/src/dashboard_views.py
+@@ -61,9 +61,9 @@
+     if filtered.empty:st.info('Select at least one movement and origin to display artworks.');return
+     selected=None
+     if mode=='Raw artworks':
+-        fig=px.scatter(filtered,x=x,y=y,color='origin',symbol='style',color_discrete_map=COLORS,custom_data=['artwork_id','style'],hover_data=['artwork_id','style'],opacity=.65)
++        fig=px.scatter(filtered,x=x,y=y,color='origin',symbol='origin',symbol_map={'Human':'circle','LD':'square'},labels={'H_pooled':'H','C_pooled':'C','origin':'Origin'},color_discrete_map=COLORS,custom_data=['artwork_id','style'],hover_data=['artwork_id','style'],opacity=.65)
+         fig.update_traces(marker_size=6);fig.update_xaxes(range=extent[:2]);fig.update_yaxes(range=extent[2:])
+-        fig.update_layout(height=680,legend=dict(orientation='h',y=-.30,font_size=11))
++        fig.update_layout(height=520,legend=dict(orientation='h',y=-.20,font_size=14))
+         event=chart(fig,on_select='rerun',selection_mode='points',key='projection_selection_'+space)
+         if event.selection.points:selected=event.selection.points[0]['customdata'][0]
+     else:
+@@ -72,7 +72,7 @@
+     ids=filtered.artwork_id.tolist()
+     if selected in ids and selected!=st.session_state.get('last_clicked_artwork'):
+         st.session_state['inspect_artwork']=selected;st.session_state['last_clicked_artwork']=selected
+-    if st.session_state.get('inspect_artwork') not in ids:st.session_state['inspect_artwork']=ids[0]
++    if st.session_state.get('inspect_artwork') not in ids:st.session_state['inspect_artwork']=next((i for i in features.artwork_id if i in set(ids)),ids[0])
+     aid=st.selectbox('Inspect artwork (or select a raw point)',ids,key='inspect_artwork');detail(aid,features,cohort,'explorer')
+ 
+ def baselines(table,show_table):
+@@ -80,7 +80,7 @@
+     metrics=table('baseline_metrics.csv');show_table(metrics[metrics.model.isin(models)][['model','roc_auc','f1','accuracy','ece','n']])
+     roc=go.Figure()
+     for i,name in enumerate(models):
+-        r=table(f'roc_{name}.csv');roc.add_trace(go.Scatter(x=r.fpr,y=r.tpr,name=name,line_color=PALETTE[i]))
++        r=table(f'roc_{name}.csv');roc.add_trace(go.Scatter(x=r.fpr,y=r.tpr,name=name,line_color=['#334155','#A21CAF','#78716C','#854D0E','#4D7C0F'][i]))
+     roc.update_layout(title='Held-out ROC · five frozen probes',xaxis_title='False positive rate',yaxis_title='True positive rate',height=380);chart(roc,key='baseline_roc')
+     st.caption('Identical 6,000 test IDs. Frozen encoders; development/validation tuning. Metadata exposes residual JPEG leakage.');show_table(table('baseline_per_style_ci.csv'))
+ 
+@@ -102,7 +102,7 @@
+     title('05 / shifts & sensitivity','Style Drift & Ablations','A measurable difference begins an investigation. The control gate determines which conclusions are supported.')
+     family=table('style_family_drift.csv');family=family[family['style'].isin(styles)]
+     if len(family):
+-        fig=px.density_heatmap(family,x='family',y='style',z='w1',histfunc='avg',color_continuous_scale=['#FFFFFF','#FDBA74','#EA580C','#1E40AF']);fig.update_layout(title='Style-conditional feature drift · mean standardized W₁',height=460);chart(fig,key='style_heatmap')
++        fig=px.density_heatmap(family,x='family',y='style',z='w1',histfunc='avg',color_continuous_scale='Greys');fig.update_layout(title='Style-conditional feature drift · mean standardized W₁',height=460);chart(fig,key='style_heatmap')
+     else:st.info('Select a movement to display its drift summaries.')
+     st.caption('542 exploratory passes · Zero confirmatory-eligible comparisons. Subject/encoding exchangeability is unsupported; multiplicity correction cannot fix those controls.')
+     data=table('style_feature_drift.csv');feature=st.selectbox('Inspect measured feature',sorted(data.feature.unique()),key='drift_feature')
+--- before/src/regenerate_figures.py
++++ after/src/regenerate_figures.py
+@@ -0,0 +1,181 @@
++"""Final DAV figures from released CSVs only. No fitting or inferential rerun."""
++from pathlib import Path
++import sys,json,hashlib,textwrap,warnings
++import numpy as np
++import matplotlib
++matplotlib.use('Agg')
++import matplotlib.pyplot as plt
++from matplotlib.patches import Ellipse,FancyBboxPatch,Patch
++from matplotlib.lines import Line2D
++from matplotlib.ticker import MaxNLocator,LogLocator,NullFormatter
++from scipy.stats import gaussian_kde
++from PIL import Image
++sys.path.insert(0,str(Path(__file__).resolve().parent))
++from common import pd
++warnings.filterwarnings('ignore',message="The 'float_precision' argument is deprecated.*")
++B=Path(__file__).resolve().parents[1];OUT=B/'results';FIG=B/'figures';TEX=(B/'latex/figures' if (B/'latex').exists() else B/'paper/latex_source/figures')
++for p in [FIG,TEX,B/'qa']:p.mkdir(exist_ok=True,parents=True)
++ORIGIN={'Human':'#2563EB','LD':'#F97316','SD':'#8458B3'}
++MODELS=['handcrafted','frequency','metadata_gated','resnet50','dinov2']
++NAMES=['Handcrafted (104-D)','FFT-only (36-D)','Metadata-only','ResNet-50 (frozen)','DINOv2 (frozen)']
++MC=['#334155','#A21CAF','#78716C','#854D0E','#4D7C0F'];MARK=['o','s','^','D','X'];DASH=['-','--','-.',':',(0,(5,2,1,2))]
++READ={};AUDIT=[];CAPTIONS={}
++SHORT_CAPTIONS={
++1:'Implemented branch structure. Frozen splits and development calibration precede held-out evaluation; descriptive outputs remain available when the common-support gate blocks independent attribution.',
++2:'All 185,015 files are audited; annotations show native dimensions. Full-release/native-256 metadata ROC curves coincide and are drawn once. Size matching leaves perfect technical label ranking, without proving use of that association by pixel probes.',
++3:'Five probes share 6,000 test IDs; whiskers are frozen-fit group-bootstrap 95% intervals. Insets zoom ROC to FPR 0–0.02/TPR 0.98–1 and PR to [0.98,1]². Numbered style keys follow B1. Low ARI coexists with strong supervised ranking.',
++4:'Shared-axis H–C atlas with LD-minus-Human arrows, Gaussian 95% centroid ellipses (500 group resamples) and within-cell KDE contours (15/40/70% of peak). Full movement names reveal heterogeneous descriptive displacements, without establishing attribution.',
++5:'Equal-aspect PCA retains all points (A1); A2 zooms PC1 to [−5,10] and PC2 to [−6,6]. Transparent t-SNE uses perplexity 30, seed 42. Fidelity axis 0.905–0.921 magnifies small differences; whiskers are seed ranges, not confidence intervals.',
++6:'FFT/Haar means with 1,000-group-bootstrap 95% intervals. Small open Haar markers expose whiskers; LL2 remains in normalization. SD resizing is descriptive. Broadly similar spectra do not eliminate style-specific differences.',
++7:'Family-average W₁ and signed median shifts. All families contain exploratory constituents; redundant asterisks are omitted. The W₁ scale ends at 1.05 (including 1.013); signed colors are zero-centered. These shifts remain unconfirmed.',
++10:'Paired family losses and color/crop sensitivities; ordinal removal causes the largest conditional AUROC decrease. B retains all intervals on an explicitly zoomed axis; C bars start at zero. Group intervals retain fits; silhouette intervals additionally retain geometry.',
++11:'Separate panels and condition groups avoid dual-axis ambiguity. A shows paired AUROC changes and group-bootstrap 95% intervals from Table XII; original is the zero reference. Silhouette/rank points are descriptive. JPEG 50 reduces ranking despite increased silhouette.',
++12:'Eight purposive cases, not prevalence estimates; FP/FN/TP refer to release labels. FFT rows share 10⁻⁴–1 and Haar rows 10⁻⁵–10⁻¹, both logarithmic. S = saturation, V = value, E = edge density, R = hue concentration (N/A when undefined).'
++}
++plt.rcParams.update({'font.family':'DejaVu Sans','font.size':7,'axes.titlesize':7.5,'axes.labelsize':7,'xtick.labelsize':6.5,'ytick.labelsize':6.5,'legend.fontsize':6.5,'axes.spines.top':False,'axes.spines.right':False,'axes.linewidth':.65,'savefig.facecolor':'white'})
++def read(name):
++ p=OUT/name;READ[name]=hashlib.sha256(p.read_bytes()).hexdigest();return pd.read_csv(p,float_precision='round_trip')
++def title(s):return s.replace('_',' ').replace('ukiyo-e','Ukiyo-e').title().replace('Ukiyo-E','Ukiyo-e')
++def legend(fig,handles,labels,ncol=3,anchor=(.5,.005)):
++ return fig.legend(handles,labels,loc='lower center',bbox_to_anchor=anchor,ncol=ncol,frameon=False,columnspacing=1,handlelength=1.8,handletextpad=.4)
++def origins():return [Line2D([],[],color=ORIGIN[o],marker=m,ls=ls,ms=3) for o,m,ls in [('Human','o','-'),('LD','s','--'),('SD','^',':')]]
++def finish(fig,n,name,caption,extra=None):
++ fig.canvas.draw();ren=fig.canvas.get_renderer();overlap=[]
++ for leg in fig.legends:
++  overlap += [i for i,a in enumerate(fig.axes) if leg.get_window_extent(ren).overlaps(a.get_window_extent(ren))]
++ assert not overlap,(name,overlap)
++ fig.savefig(FIG/name,dpi=450,bbox_inches='tight',pad_inches=.035);fig.savefig(TEX/f'figure_{n:02}.png',dpi=450,bbox_inches='tight',pad_inches=.035)
++ CAPTIONS[str(n)]=SHORT_CAPTIONS.get(n,caption);AUDIT.append(dict(figure=n,file=name,legend_axes_overlaps=overlap,source_csvs=dict(READ),details=extra or {},full_explanation=caption));plt.close(fig);print('Rendered',n,name,flush=True)
++def architecture():
++ fig,ax=plt.subplots(figsize=(3.45,1.6));ax.set(xlim=(0,1),ylim=(0,1));ax.axis('off')
++ def box(x,y,w,h,txt,edge='#475569',fill='#FFFFFF'):
++  ax.add_patch(FancyBboxPatch((x-w/2,y-h/2),w,h,boxstyle='round,pad=.012',facecolor=fill,edgecolor=edge,lw=.8));ax.text(x,y,txt,ha='center',va='center',fontsize=6.8)
++ def arrow(a,b,ls='-'):ax.annotate('',xy=b,xytext=a,arrowprops=dict(arrowstyle='->',color='#334155',lw=.8,linestyle=ls))
++ box(.5,.91,.77,.13,'Audit images, sources and duplicates');box(.5,.68,.77,.13,'Freeze grouped IDs; calibrate on development');box(.5,.45,.77,.13,'Cache measurements and frozen representations');arrow((.5,.84),(.5,.76));arrow((.5,.61),(.5,.53))
++ box(.23,.15,.40,.21,'Descriptive outputs:\nheld-out probes and atlas');box(.77,.18,.40,.25,'Common-support gate\nSubjects / JPEG fail\nNo eligible attribution',edge='#991B1B',fill='#FEF2F2');arrow((.38,.37),(.23,.27));arrow((.62,.37),(.77,.32))
++ fig.subplots_adjust(0,0,1,1)
++ finish(fig,1,'fig00_implemented_architecture.png','Implemented branch structure. Frozen source-group splits and development calibration precede held-out evaluation. Descriptive outputs remain available when the common-support gate blocks independent attribution.')
++def dataset():
++ fig,ax=plt.subplots(1,2,figsize=(7.16,1.65),gridspec_kw={'width_ratios':[1,1.2]});d=read('audit_counts.csv');tot=d.groupby('origin')['count'].sum()
++ for i,o in enumerate(['Human','LD','SD']):
++  ax[0].bar(i,tot[o],width=.6,color=ORIGIN[o],edgecolor='#334155',linewidth=.4,hatch=['','///','..'][i]);ax[0].text(i,tot[o]+2000,f'{tot[o]:,}\n'+('256²' if o!='SD' else '768²'),ha='center',fontsize=6.5)
++ ax[0].set(xticks=range(3),xticklabels=['Human','LD','SD'],ylim=(0,80000),ylabel='Audited artworks',title='A  Counts and native dimensions');ax[0].yaxis.set_major_locator(MaxNLocator(4))
++ d=read('roc_metadata_gated.csv');ax[1].plot(d.fpr,d.tpr,color='#334155',lw=1,marker='o',ms=2,label='Full / native-256 metadata: 1.0000')
++ q=read('roc_metadata_ungated_full.csv');assert all(((v.fpr==0)|(v.tpr==1)).all() for v in [d,q])
++ d=read('roc_dimensions_ungated_full.csv');ax[1].plot(d.fpr,d.tpr,color='#78716C',ls='--',lw=1,marker='s',ms=2,label='Full dimensions only: 0.7516');ax[1].plot([0,1],[0,1],':',color='#A8A29E',lw=.6)
++ ax[1].set(xlabel='False positive rate',ylabel='True positive rate',title='B  Metadata ranking remains perfect',xlim=(-.02,1.02),ylim=(-.02,1.05));h,l=ax[1].get_legend_handles_labels();fig.tight_layout(rect=[0,.26,1,1],pad=.35,w_pad=1.2);legend(fig,h,l,2)
++ finish(fig,2,'fig01_dataset_audit_and_confound.png','All 185,015 files are audited. Counts are summed over ten movements; annotations give native dimensions. The full-release and native-256 metadata ROC curves coincide and are shown once, despite different test populations. Matching native size therefore leaves a technical source association; it does not identify use of that association by pixel probes.')
++def baselines():
++ fig=plt.figure(figsize=(7.16,2.8));gs=fig.add_gridspec(2,6,height_ratios=[.85,1.6]);roc=fig.add_subplot(gs[0,:2]);pr=fig.add_subplot(gs[0,2:4]);ari=fig.add_subplot(gs[0,4:]);auc=fig.add_subplot(gs[1,:3]);f1=fig.add_subplot(gs[1,3:]);ci=read('baseline_per_style_ci.csv');styles=sorted(ci['style'].unique())
++ ir=roc.inset_axes([.48,.12,.47,.40]);ip=pr.inset_axes([.48,.06,.47,.40])
++ for j,m in enumerate(MODELS):
++  r=read('roc_'+m+'.csv');p=read('pr_'+m+'.csv')
++  for a,x,y in [(roc,r.fpr,r.tpr),(ir,r.fpr,r.tpr),(pr,p.recall,p.precision),(ip,p.recall,p.precision)]:a.plot(x,y,color=MC[j],ls=DASH[j],lw=.8)
++  g=ci[ci.model.eq(m)].set_index('style').loc[styles];yy=np.arange(10)+(j-2)*.18
++  for a,key,lo,hi in [(auc,'roc_auc','auc_low','auc_high'),(f1,'f1','f1_low','f1_high')]:
++   a.errorbar(g[key],yy,xerr=np.vstack([np.maximum(0,g[key]-g[lo]),np.maximum(0,g[hi]-g[key])]),fmt=MARK[j],color=MC[j],ms=1.6,markerfacecolor='white',capsize=.8,elinewidth=.65,lw=.6)
++ roc.set(xlabel='False positive rate',ylabel='TPR',title='A1  ROC',xlim=(0,1),ylim=(0,1.03));pr.set(xlabel='Recall',ylabel='Precision',title='A2  Precision–recall',xlim=(0,1),ylim=(0,1.03))
++ ir.set(xlim=(0,.02),ylim=(.98,1.001),xticks=[],yticks=[]);ip.set(xlim=(.98,1),ylim=(.98,1.001),xticks=[],yticks=[]);
++ for a in [ir,ip]:a.tick_params(labelsize=4.5,pad=.5,length=1);a.set_facecolor('#F8FAFC');a.text(.98,.05,'zoom',transform=a.transAxes,ha='right',fontsize=4.5)
++ d=read('origin_silhouette_ari.csv');d=d[d.space.eq('full')]
++ for i,r in enumerate(d.sort_values('silhouette').itertuples()):
++  ari.plot(r.silhouette,r.ari,'o',color='#334155',ms=2);ari.annotate(str(styles.index(r.style)+1),(r.silhouette,r.ari),xytext=(.028+(i//2)*.017,.0048 if i%2==0 else .0039),textcoords='data',fontsize=5.5,ha='center',arrowprops=dict(arrowstyle='-',lw=.3,color='#64748B'))
++ ari.set(xlabel='Origin silhouette',ylabel='k=2 ARI',title='C  Full-space clusters',ylim=(-.0005,.0056));ari.xaxis.set_major_locator(MaxNLocator(3));ari.yaxis.set_major_locator(MaxNLocator(3))
++ for a,head,key in [(auc,'B1  Per-style AUROC','AUROC'),(f1,'B2  Per-style F1','F1')]:a.set(yticks=range(10),yticklabels=[title(s) if a==auc else str(i+1) for i,s in enumerate(styles)],xlabel=key,title=head);a.invert_yaxis();a.set_xlim(.38 if a==f1 else .45,1.015);a.xaxis.set_major_locator(MaxNLocator(4));a.tick_params(axis='y',labelsize=6)
++ fig.tight_layout(rect=[0,.15,1,1],pad=.35,h_pad=.9,w_pad=1.3);legend(fig,[Line2D([],[],color=c,marker=m,ls=ls,ms=3) for c,m,ls in zip(MC,MARK,DASH)],NAMES,3)
++ finish(fig,3,'fig07_baseline_probes_and_ari.png','Five probes use identical 6,000 test IDs. Insets magnify FPR 0–0.02/TPR 0.98–1 and recall/precision 0.98–1; full curves remain visible. Per-style dots show 1,000-group-bootstrap 95% intervals conditional on frozen fits. Style keys 1–10 follow the full names in B1 (alphabetical order). C labels every style and includes the maximum ARI point; near-zero clustering agreement does not validate attribution.')
++def atlas():
++ d=read('hc_plot_points.csv');ell=read('hc_centroid_ellipses.csv');fig,axes=plt.subplots(2,5,figsize=(7.16,2.05),sharex=True,sharey=True);xl=(min(.7,d.H_pooled.min()-.01),1.005);yl=(-.005,max(.25,d.C_pooled.max()+.01))
++ for ax,style in zip(axes.flat,sorted(d['style'].unique())):
++  for o,m,ls in [('Human','o','-'),('LD','s','--')]:
++   g=d[d['style'].eq(style)&d.origin.eq(o)];ax.scatter(g.H_pooled,g.C_pooled,s=1.6,c=ORIGIN[o],marker=m,alpha=.18,rasterized=True)
++   xx,yy=np.meshgrid(np.linspace(*xl,70),np.linspace(*yl,70));z=gaussian_kde(g[['H_pooled','C_pooled']].to_numpy().T)(np.vstack([xx.ravel(),yy.ravel()])).reshape(xx.shape);ax.contour(xx,yy,z,levels=z.max()*np.array([.15,.4,.7]),colors=[ORIGIN[o]],linestyles=ls,linewidths=.65)
++   e=ell[ell['style'].eq(style)&ell.origin.eq(o)].iloc[0];ax.add_patch(Ellipse((e.H,e.C),e.width,e.height,angle=e.angle,facecolor='none',edgecolor=ORIGIN[o],linestyle=ls,lw=.9,zorder=5));ax.plot(e.H,e.C,m,color=ORIGIN[o],ms=2.4)
++  es=ell[ell['style'].eq(style)].set_index('origin');h,l=es.loc['Human'],es.loc['LD'];ax.annotate('',xy=(l.H,l.C),xytext=(h.H,h.C),arrowprops=dict(arrowstyle='->',color='#111827',lw=.9,mutation_scale=5),zorder=7);ax.set(title=title(style),xlim=xl,ylim=yl)
++  ax.tick_params(labelsize=6,length=2,pad=1)
++ for a in axes[-1]:a.set_xlabel('H',labelpad=1)
++ for a in axes[:,0]:a.set_ylabel('C',labelpad=1)
++ fig.tight_layout(rect=[0,.18,1,1],pad=.3,h_pad=.7,w_pad=.5)
++ handles=origins()[:2]+[Line2D([],[],color='#111827',marker='>',ls='-',ms=3),Patch(facecolor='none',edgecolor='#475569'),Line2D([],[],color='#475569',ls='--')];legend(fig,handles,['Human','LD','LD − Human centroid','95% centroid ellipse','Within-cell KDE contours'],3)
++ finish(fig,4,'fig02_hc_causality_atlas.png','Ten full movement names share H/C axes. Dark arrows show descriptive LD-minus-Human centroid displacement; outlined ellipses are Gaussian 95% contours of 500 source-group bootstrap centroids. KDE contours denote 15/40/70% of each cell peak. Neither formal coordinates nor displacement establish aesthetic merit or independent origin effects.')
++def projections():
++ pc=read('pca_plot_points.csv');ts=read('tsne_plot_points.csv');f=read('projection_fidelity.csv');fig=plt.figure(figsize=(7.16,1.9));gs=fig.add_gridspec(1,4,width_ratios=[1,1,1.7,1.55]);a,z,t,c=[fig.add_subplot(gs[0,i]) for i in range(4)]
++ for o,m in [('Human','o'),('LD','s')]:
++  g=pc[pc.origin.eq(o)]
++  for ax in [a,z]:ax.scatter(g.PC1,g.PC2,color=ORIGIN[o],marker=m,s=1.2,alpha=.2,rasterized=True)
++  g=ts[ts.origin.eq(o)];t.scatter(g.TSNE1,g.TSNE2,edgecolors=ORIGIN[o],facecolors='none',linewidths=.25,marker=m,s=2.1,alpha=.25,rasterized=True)
++ a.set(title='A1  PCA full',xlabel='PC1',ylabel='PC2');a.set_aspect('equal',adjustable='box');z.set(title='A2  PCA zoom',xlabel='PC1',ylabel='PC2',xlim=(-5,10),ylim=(-6,6));z.set_aspect('equal',adjustable='box');t.set(title='B  t-SNE, p=30, seed=42',xlabel='t-SNE 1',ylabel='t-SNE 2')
++ for j,key in enumerate(['trustworthiness','continuity']):
++  q=f.groupby('perplexity')[key];mu=q.mean();lo=q.min();hi=q.max();c.errorbar(mu.index,mu,yerr=np.vstack([mu-lo,hi-mu]),color=['#334155','#78716C'][j],fmt=['o-','s--'][j],ms=2.5,capsize=2,lw=.8,label=['T(15)','C(15)'][j])
++ c.set(title='C  Fidelity (zoom)',xlabel='Perplexity',ylabel='T(15), C(15)',ylim=(.905,.921),yticks=[.905,.910,.915,.920],xticks=[15,30,50]);
++ for ax in [a,z,t]:ax.xaxis.set_major_locator(MaxNLocator(3));ax.yaxis.set_major_locator(MaxNLocator(3))
++ fig.tight_layout(rect=[0,.22,1,1],pad=.3,w_pad=.8);legend(fig,origins()[:2]+[Line2D([],[],color='#334155',marker='o',ms=3),Line2D([],[],color='#78716C',marker='s',ls='--',ms=3)],['Human','LD','Trustworthiness T(15)','Continuity C(15)'],4)
++ finish(fig,5,'fig03_pca_tsne_trustworthiness.png','Fixed PCA uses equal coordinate scaling: A1 retains all points; A2 explicitly zooms PC1 to [−5,10] and PC2 to [−6,6] without changing analysis. Hollow, transparent t-SNE markers expose both origins. Fidelity panel C zooms 0.905–0.921; whiskers are seed ranges, not confidence intervals. PCA2 T(15)=0.6928 and C(15)=0.7571; explained variance alone does not guarantee neighborhood preservation.')
++def spectral():
++ d=read('spectral_wavelet_profiles.csv');fig,axes=plt.subplots(1,2,figsize=(7.16,1.95));bands=['LH1','HL1','HH1','LH2','HL2','HH2'];x=(np.arange(16)+.5)/32
++ for j,o in enumerate(ORIGIN):
++  g=d[d.origin.eq(o)].set_index('feature');s=g.loc[[f'fft_{i:02d}_median' for i in range(16)]];axes[0].plot(x,s['mean'],color=ORIGIN[o],ls=DASH[j],marker=MARK[j],ms=1.5,lw=.8);axes[0].fill_between(x,s.ci_low,s.ci_high,color=ORIGIN[o],alpha=.18)
++  w=g.loc[['dwt_'+v+'_median' for v in bands]];xx=np.arange(6)+(j-1)*.18;axes[1].plot(xx,w['mean'],linestyle='none',marker=MARK[j],color=ORIGIN[o],markerfacecolor='white',ms=2,zorder=2);axes[1].errorbar(xx,w['mean'],yerr=np.vstack([w['mean']-w.ci_low,w.ci_high-w['mean']]),fmt='none',color=ORIGIN[o],elinewidth=1,capsize=2,capthick=.8,zorder=5)
++ axes[0].set(title='A  Hann-windowed FFT',xlabel='Radial frequency (cycles/pixel)',ylabel='Power share (log scale)',yscale='log');axes[1].set(title='B  Two-level Haar',xticks=range(6),xticklabels=bands,ylabel='Energy ratio (log scale)',yscale='log')
++ fig.tight_layout(rect=[0,.20,1,1],pad=.3,w_pad=1);legend(fig,origins(),['Human','LD','SD (resized sensitivity)'],3)
++ finish(fig,6,'fig04_spectral_and_wavelet_profiles.png','Mean FFT shares and Haar energies with 1,000-source-group-bootstrap 95% intervals. Small open Haar markers leave whiskers visible. Human/LD use native 256²; SD is resized and descriptive. LL2 remains in Haar normalization. Similar pooled spectra do not rule out style-specific contrasts.')
++def heatmap():
++ d=read('style_family_drift.csv');styles=sorted(d['style'].unique());families=['Ordinal','FFT','Haar','Color/edges'];fig,axes=plt.subplots(1,2,figsize=(7.16,2.05))
++ for ax,key,cmap,head in zip(axes,['w1','median_shift'],['Greys','RdGy_r'],['A  Mean standardized W₁','B  Mean signed shift (LD − Human)']):
++  vals=d.pivot(index='style',columns='family',values=key).loc[styles,families].to_numpy();lim=1.05 if key=='w1' else float(np.max(np.abs(vals)));im=ax.imshow(vals,cmap=cmap,vmin=0 if key=='w1' else -lim,vmax=lim,aspect='auto')
++  for i in range(10):
++   for j in range(4):
++    rgb=im.cmap(im.norm(vals[i,j]));lum=sum(x*w for x,w in zip(rgb,[.2126,.7152,.0722]));ax.text(j,i,f'{vals[i,j]:.3f}',ha='center',va='center',fontsize=6,color='white' if lum<.5 else 'black')
++  ax.set(xticks=range(4),xticklabels=families,yticks=range(10),yticklabels=[title(s) for s in styles],title=head);ax.tick_params(labelsize=6.2,length=0,pad=2);cb=fig.colorbar(im,ax=ax,fraction=.035,pad=.02);cb.ax.tick_params(labelsize=6,length=2)
++ fig.tight_layout(pad=.3,w_pad=1)
++ finish(fig,7,'fig05_style_drift_heatmap.png','Family-average standardized Wasserstein distance and signed median shift. Every family has at least one exploratory constituent pass, so redundant asterisks are omitted. The distance scale extends to 1.05 and includes the Ukiyo-e Haar value 1.013; signed colors are symmetric around zero. Averages are descriptive, not family-level tests or confirmed effects.',dict(distance_color_max=1.05,signed_center=0))
++
++def distributions():
++ d=read('feature_distribution_values.csv');top=read('display_feature_selection.csv').feature.tolist();stats=read('style_feature_drift.csv');styles=['renaissance','impressionism','ukiyo-e'];fig,axes=plt.subplots(3,4,figsize=(7.16,2.8));rng=np.random.default_rng(42)
++ for j,feature in enumerate(top):
++  style=styles[j%3];a,e=axes.flat[2*j],axes.flat[2*j+1];g=d[d.feature.eq(feature)&d['style'].eq(style)]
++  for k,(o,m,ls) in enumerate([('Human','o','-'),('LD','s','--')]):
++   values=g[g.origin.eq(o)].value.dropna().to_numpy();v=a.violinplot(values,positions=[k],showmedians=True,widths=.65)
++   for body in v['bodies']:body.set_facecolor(ORIGIN[o]);body.set_alpha(.20)
++   for key in ['cbars','cmins','cmaxes','cmedians']:v[key].set_color(ORIGIN[o]);v[key].set_linewidth(.6)
++   a.scatter(k+rng.uniform(-.13,.13,len(values)),values,s=.5,marker=m,color=ORIGIN[o],alpha=.15,rasterized=True);x=np.sort(values);e.plot(x,np.arange(1,len(x)+1)/len(x),color=ORIGIN[o],ls=ls,lw=.8)
++  a.set(xticks=[0,1],xticklabels=['Human','LD'],title=feature.replace('_median','').replace('_pooled','')+' / '+title(style));a.title.set_fontsize(6.5);stat=stats[stats.feature.eq(feature)&stats['style'].eq(style)].iloc[0];e.set(title=f'ECDF; KS D={stat.ks_D:.3f}',xlabel='Raw measurement',ylabel='Fraction');a.yaxis.set_major_locator(MaxNLocator(3));e.xaxis.set_major_locator(MaxNLocator(3));e.set_yticks([0,1])
++ fig.tight_layout(rect=[0,.12,1,1],pad=.3,h_pad=.65,w_pad=.7);legend(fig,origins()[:2],['Human','LD'],2)
++ finish(fig,8,'fig06_feature_ecdfs_and_rainclouds.png','Supplementary Fig. S1. Six features selected from absolute coefficients of the development-trained handcrafted probe, with prespecified display styles and 300 test artworks per origin/style. Violin/jitter distributions and ECDFs retain raw units; KS D is descriptive. Feature selection does not rank held-out effects. Common-support controls remain failed.')
++def ablations():
++ d=read('ablation_results.csv');fam=d[d.kind.eq('family')];fig=plt.figure(figsize=(7.16,2.3));gs=fig.add_gridspec(2,3,width_ratios=[1.1,1,1.1]);a=fig.add_subplot(gs[:,0]);s=fig.add_subplot(gs[:,1]);c=fig.add_subplot(gs[0,2]);g=fig.add_subplot(gs[1,2]);yy=np.arange(len(fam))
++ for ax,key,label in [(a,'auc','Δ AUROC'),(s,'silhouette','Δ silhouette')]:
++  ax.errorbar(fam['delta_'+key],yy,xerr=np.vstack([fam['delta_'+key]-fam['delta_'+key+'_low'],fam['delta_'+key+'_high']-fam['delta_'+key]]),fmt='o',color='#334155',ms=2.4,capsize=1.4,elinewidth=.8);ax.axvline(0,color='#78716C',ls='--',lw=.7);ax.set(yticks=yy,yticklabels=fam.label if key=='auc' else ['']*len(fam),xlabel=label,title='A  Family removal / isolation' if key=='auc' else 'Paired held-out differences');ax.invert_yaxis();ax.tick_params(labelsize=6);ax.xaxis.set_major_locator(MaxNLocator(4))
++ color=read('color_saturation_ablation.csv');palette=['#854D0E','#4B5563','#A21CAF']
++ for j,model in enumerate(['HSV','Lab','HSV+Lab']):
++  v=color[color.model.eq(model)].set_index('tertile').loc[['low','medium','high']];c.errorbar(range(3),v.roc_auc,yerr=np.vstack([v.roc_auc-v.auc_low,v.auc_high-v.roc_auc]),fmt=MARK[j]+DASH[j],ms=2.2,color=palette[j],capsize=1.5,lw=.7,label=model)
++ lower=min(.94,float(color.auc_low.min())-.003);upper=max(1,float(color.auc_high.max())+.003);c.set(xticks=range(3),xticklabels=['Low','Medium','High'],ylim=(lower,upper),ylabel='AUROC (zoom)',title='B  Saturation strata');c.yaxis.set_major_locator(MaxNLocator(3));c.tick_params(labelsize=6)
++ geom=d[d.kind.eq('geometry')];base=read('baseline_metrics.csv').set_index('model').loc['handcrafted','roc_auc'];values=[base]+geom.roc_auc.tolist();g.bar(range(3),values,color='#64748B',edgecolor='#334155',linewidth=.4);g.set(xticks=range(3),xticklabels=['4 quadrants','Full 256','5 crops'],ylim=(0,1.14),ylabel='AUROC',title='C  Crop context (zero baseline)');g.tick_params(labelsize=6)
++ for i,v in enumerate(values):g.text(i,v+.035,f'{v:.4f}',ha='center',va='bottom',fontsize=6)
++ fig.tight_layout(rect=[0,.08,1,1],pad=.3,w_pad=.7,h_pad=1.2);legend(fig,[Line2D([],[],color=co,marker=ma,ls=ls,ms=3) for co,ma,ls in zip(palette,MARK,DASH)],['HSV','Lab','HSV+Lab'],3,anchor=(.82,.002))
++ finish(fig,10,'fig08_ablation_forest_plot.png',f'Paired family changes, development-defined saturation strata and crop sensitivities. Family intervals resample source groups; silhouette intervals condition on cached geometry. B zooms AUROC to {lower:.3f}–{upper:.3f} and retains all whiskers; C starts at zero and offsets bar labels. Ordinal removal has the largest conditional predictive loss. Brown/gray/magenta encode color representations, never origin.',dict(saturation_ylim=[lower,upper],all_saturation_intervals_in_bounds=bool((color.auc_low>=lower).all() and (color.auc_high<=upper).all())))
++def robustness():
++ d=read('perturbation_results.csv').set_index('view');iv=read('perturbation_auc_intervals.csv').set_index('view');order=['original','jpeg95','jpeg75','jpeg50','original','resize0.75','resize0.5'];xx=np.array([0,1,2,3,5,6,7]);labs=['Orig.','95','75','50','Orig.','×.75','×.50'];fig,axes=plt.subplots(1,3,figsize=(7.16,1.85))
++ base=iv.loc['original','roc_auc'];auc=np.array([0 if k=='original' else d.loc[k,'roc_auc']-base for k in order]);lo=np.array([0 if k=='original' else d.loc[k,'delta_auc_low'] for k in order]);hi=np.array([0 if k=='original' else d.loc[k,'delta_auc_high'] for k in order]);axes[0].errorbar(xx,auc,yerr=np.vstack([auc-lo,hi-auc]),fmt='o',color='#334155',ms=2.2,capsize=2,elinewidth=.8);axes[0].axhline(0,color='#78716C',ls='--',lw=.6)
++ for ax,key in [(axes[1],'silhouette_retention'),(axes[2],'style_w1_rank_rho')]:ax.plot(xx,[1 if k=='original' else d.loc[k,key] for k in order],linestyle='none',marker='s' if ax==axes[1] else '^',color='#334155',ms=3)
++ for ax,head,label,ylim in zip(axes,['A  Paired frozen-probe change','B  Origin silhouette ratio','C  Style-rank correlation'],['Δ AUROC','Ratio to original','Spearman ρ'],[(-.35,.025),(0,1.5),(0,1.08)]):
++  ax.set(xticks=xx,xticklabels=labs,title=head,ylabel=label,ylim=ylim);ax.tick_params(axis='x',rotation=45,labelsize=6);ax.axvline(4,color='#CBD5E1',lw=.65);ax.yaxis.set_major_locator(MaxNLocator(4));ax.set_xlabel('JPEG quality       Resize factor',fontsize=6.3)
++ fig.tight_layout(pad=.3,w_pad=1)
++ finish(fig,11,'fig09_perturbation_robustness.png','Separate aligned panels compare paired frozen-probe AUROC change, silhouette ratio and style-rank correlation. A uses the exact paired changes and group-bootstrap intervals in Table XII. Original is a zero reference by definition, not an estimated zero-width interval. B/C are descriptive points, without invented intervals. JPEG 50 weakens ranking while silhouette rises; inputs are release JPEGs, not pristine quality 100.')
++def gallery():
++ d=read('error_gallery_cases.csv');fig,axes=plt.subplots(8,5,figsize=(7.16,4.9));bands=['LH1','HL1','HH1','LH2','HL2','HH2']
++ for row,(r,axs) in enumerate(zip(d.itertuples(),axes)):
++  bottom=.925-row*.122;pos=[(.025,bottom,.07,.065),(.135,bottom,.20,.065),(.415,bottom,.18,.061),(.665,bottom,.14,.061),(.87,bottom,.12,.061)]
++  for k,ax in enumerate(axs):ax.set_position(pos[k]);ax.tick_params(labelsize=4.5,length=1,pad=.5);ax.title.set_fontsize(5)
++  axs[0].imshow(Image.open(OUT/'gallery'/f'{r.artwork_id}.png'));axs[0].axis('off');axs[0].set_title(f'{row+1}. {r.selection_reason} / {r.origin}\n{title(r.style)}',fontsize=5,pad=2);axs[1].imshow(Image.open(OUT/'gallery'/f'{r.artwork_id}_crops.png'));axs[1].axis('off');axs[1].set_title('TL · TR · BL · BR',fontsize=5,pad=2)
++  vals=np.array([getattr(r,f'fft_{i:02d}_median') for i in range(16)]);axs[2].plot((np.arange(16)+.5)/32,vals,color=ORIGIN[r.origin],lw=.75);axs[2].set(yscale='log',ylim=(1e-4,1),xlim=(0,.5),xticks=[0,.5],yticks=[1e-4,1e-2,1]);axs[2].set_title(f'FFT (log); β={r.fft_beta_median:.2f}',fontsize=5,pad=2);axs[2].set_xlabel('f (cycles/pixel)',fontsize=4.5,labelpad=.5)
++  vals=np.array([getattr(r,f'dwt_{v}_median') for v in bands]);axs[3].plot(range(6),vals,linestyle='none',marker='o' if r.origin=='Human' else 's',color=ORIGIN[r.origin],ms=2.2);axs[3].set(yscale='log',ylim=(1e-5,.1),xticks=range(6),xticklabels=bands,yticks=[1e-5,1e-3,.1]);axs[3].set_title('Haar (log scale)',fontsize=5,pad=2);axs[3].tick_params(axis='x',rotation=35,labelsize=4)
++  for ax in axs[2:4]:ax.yaxis.set_minor_locator(LogLocator(base=10,subs=[]));ax.yaxis.set_minor_formatter(NullFormatter())
++  vals=[r.s_median_median,r.v_median_median,r.edge_density_median,r.hue_resultant_median];axs[4].barh(range(4),vals,color=ORIGIN[r.origin],height=.58);axs[4].set(xlim=(0,1),ylim=(-1.1,3.9),yticks=range(4),yticklabels=['S','V','E','R'],xticks=[0,1]);axs[4].set_title(f'H={r.H_pooled:.3f}; C={r.C_pooled:.3f}',fontsize=5,pad=2);axs[4].tick_params(axis='y',pad=2)
++  for i,v in enumerate(vals):
++   if not np.isfinite(v):axs[4].text(.05,i,'N/A',fontsize=5,va='center')
++ finish(fig,12,'fig10_forensic_error_gallery.png','Eight purposively selected held-out cases: FP/FN/TP are false positive/false negative/true positive against release labels. All FFT rows share 10⁻⁴–1 and all Haar rows 10⁻⁵–10⁻¹, both logarithmic. S = saturation, V = value, E = edge density, R = hue resultant; N/A means undefined hue. Canvas, disjoint quadrants and measurements expose inspectable examples, not estimated error prevalence.',dict(fft_shared_limits=[1e-4,1],haar_shared_limits=[1e-5,.1]))
++def main():
++ for fn in [architecture,dataset,baselines,atlas,projections,spectral,heatmap,distributions,ablations,robustness,gallery]:fn()
++ (B/'qa/figure_audit.json').write_text(json.dumps(AUDIT,indent=2),encoding='utf8');(B/'results/figure_captions.json').write_text(json.dumps(CAPTIONS,indent=2),encoding='utf8');(B/'results/figure_source_hashes.json').write_text(json.dumps(READ,indent=2),encoding='utf8');(B/'results/color_map.json').write_text(json.dumps(dict(origins=ORIGIN,models=dict(zip(MODELS,MC)),color_representations={'HSV':'#854D0E','Lab':'#4B5563','HSV+Lab':'#A21CAF'}),indent=2),encoding='utf8');print('All static composites regenerated from saved data; origin hues are reserved.',flush=True)
++if __name__=='__main__':main()

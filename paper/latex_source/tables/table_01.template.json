@@ -1,0 +1,22 @@
+{
+  "prefix": "\\begin{table*}[tb]\n\\caption{Thematic summary of sixteen reviewed studies, using published years. $\\dagger$ marks results read in a collected arXiv/author-manuscript version; publication metadata appear in References. Themes A--D follow Section II.}\\label{tab:t1}\n\\centering\n\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{1.12}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=0.800\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.225\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.450\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.600\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.925\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
+  "citation_keys": [
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "p6",
+    "p7",
+    "p8",
+    "p9",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p14",
+    "p15",
+    "p16"
+  ]
+}

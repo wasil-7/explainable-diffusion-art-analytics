@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": 36,
+  "stages_completed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "stages_not_run": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+}

@@ -1,0 +1,4 @@
+test,passed
+exact CDF W1 matches scipy unequal-size samples,True
+NumPy Lloyd recovers separated clusters,True
+randomization preserves whole source groups,True

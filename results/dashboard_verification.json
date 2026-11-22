@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "default H-C raw",
+    "PCA",
+    "t-SNE",
+    "hexagonal density",
+    "movement filter",
+    "origin filter",
+    "same artwork in explorer/gallery",
+    "empty filter"
+  ],
+  "runtime": "streamlit.testing.v1.AppTest actual script runtime",
+  "server_left_running": false
+}

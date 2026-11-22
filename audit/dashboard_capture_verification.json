@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "views": [
+    "02 H\u2013C Atlas",
+    "03 Manifold & Fidelity",
+    "04 Spectral Profiles",
+    "05 Drift & Ablations",
+    "06 Forensic Gallery"
+  ],
+  "footer": "Wasil Kayani \u00b7 Umer Asghar",
+  "horizontal_composite": true,
+  "server_left_running": false
+}

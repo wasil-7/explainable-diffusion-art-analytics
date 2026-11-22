@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": 167,
+  "paper_pages": 12,
+  "references": 37,
+  "figures": 10,
+  "failures": [],
+  "scope": "Executable numeric/table/citation/layout/preservation checks; separate visual and scientific reviews are recorded in VERIFICATION.md. Repository publication remains an author action."
+}

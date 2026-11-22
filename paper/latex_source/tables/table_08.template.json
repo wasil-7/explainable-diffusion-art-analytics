@@ -1,0 +1,16 @@
+{
+  "prefix": "\\begin{table*}[t]\n\\caption{Comparable metric columns with protocol limits. Unstarred rows are executed probes; starred rows are original-paper AUROCs, not reproduced or matched evaluations.}\\label{tab:t8}\n\\centering\\footnotesize\n\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=0.964\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.446\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.542\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.542\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.506\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
+  "citation_keys": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

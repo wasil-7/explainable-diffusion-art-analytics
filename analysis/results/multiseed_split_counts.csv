@@ -1,0 +1,16 @@
+seed,split,n,groups
+43,development,18000,7374
+43,validation,6000,2460
+43,test,6000,2461
+44,development,18000,7372
+44,validation,6000,2459
+44,test,6000,2464
+45,development,18000,7374
+45,validation,6000,2460
+45,test,6000,2461
+46,development,18000,7373
+46,validation,6000,2459
+46,test,6000,2463
+47,development,18000,7374
+47,validation,6000,2459
+47,test,6000,2462

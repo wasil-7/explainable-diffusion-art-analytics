@@ -1,0 +1,23 @@
+[
+  {
+    "comparator": "resnet50",
+    "handcrafted_auc": 0.9824147777777779,
+    "comparator_auc": 0.9999447777777777,
+    "absolute": -0.017529999999999824,
+    "relative_percent": -1.753096809901596
+  },
+  {
+    "comparator": "dinov2",
+    "handcrafted_auc": 0.9824147777777779,
+    "comparator_auc": 0.9996876666666668,
+    "absolute": -0.017272888888888893,
+    "relative_percent": -1.727828547338508
+  },
+  {
+    "comparator": "frequency",
+    "handcrafted_auc": 0.9824147777777779,
+    "comparator_auc": 0.6839008888888889,
+    "absolute": 0.29851388888888897,
+    "relative_percent": 43.64870608281773
+  }
+]

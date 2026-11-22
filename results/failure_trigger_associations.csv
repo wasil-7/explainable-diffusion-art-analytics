@@ -1,0 +1,5 @@
+trigger,error_rate_gap_flag_minus_unflagged,gap_ci_low,gap_ci_high,bootstrap_resamples,interpretation
+low_saturation,-0.0064065206427073446,-0.025587186303888933,0.015204973562902641,1000,Descriptive association; overlapping triggers and encoding/source composition uncontrolled.
+flat_color,0.01280833798556806,-0.00801010249393887,0.03490820094307011,1000,Descriptive association; overlapping triggers and encoding/source composition uncontrolled.
+high_frequency,-0.016630283650873365,-0.03711831057606632,0.005787713313081289,1000,Descriptive association; overlapping triggers and encoding/source composition uncontrolled.
+heavy_border,-0.002581528212724858,-0.02701553186593809,0.023752368059381187,1000,Descriptive association; overlapping triggers and encoding/source composition uncontrolled.

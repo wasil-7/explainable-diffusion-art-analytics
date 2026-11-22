@@ -1,0 +1,8 @@
+test,passed,seconds,details
+__main__.FeatureTests.test_constant,True,0.7586150169372559,[]
+__main__.FeatureTests.test_monochrome,True,0.2865927219390869,[]
+__main__.FeatureTests.test_monotone_ramp,True,0.003008127212524414,[]
+__main__.FeatureTests.test_noise,True,0.08391880989074707,[]
+__main__.FeatureTests.test_point_mass_uniform_bounds,True,0.0,[]
+__main__.FeatureTests.test_quadrants_cover_once,True,0.0010013580322265625,[]
+__main__.FeatureTests.test_sinusoid_axes,True,0.013768434524536133,[]

@@ -1,0 +1,30 @@
+{
+  "audit": {
+    "seconds": 3407.080109834671,
+    "source": "audit_summary.json"
+  },
+  "split": {
+    "seconds": 43.79053497314453,
+    "source": "control_gate.json"
+  },
+  "features": {
+    "seconds": 2985.6733214855194,
+    "source": "feature_summary.json"
+  },
+  "projections": {
+    "seconds": 385.3160638809204,
+    "source": "projection_runtime.json"
+  },
+  "pixel sensitivity": {
+    "seconds": 1180.8405554294586,
+    "source": "sensitivity_pixel_protocol.json"
+  },
+  "drift resume": {
+    "seconds": 2.4553685188293457,
+    "source": "stage6_protocol.json"
+  },
+  "ablation resume": {
+    "seconds": 153.2586386203766,
+    "source": "stage7_8_protocol.json"
+  }
+}

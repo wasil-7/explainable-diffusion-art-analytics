@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "seed": 42,
+  "cohort_n": 45000,
+  "primary_n": 30000,
+  "minimum_primary_test_cell": 300,
+  "split": "grouped 60:20:20",
+  "near_duplicate_rule": "64-bit pHash <=4 AND dHash <=4; exhaustive multi-index search; transitive closure with SHA256 and filename families",
+  "family_semantics": "Human artist prefix where underscore exists; AI first two numeric fields grouped conservatively across generators and styles; unverified as actual prompt IDs",
+  "subject_match": "No verified subject/prompt text supplied. Subject matching cannot be claimed. Primary is file/style-controlled only; subject-control component of G3 unresolved.",
+  "sd": "separate descriptive sensitivity, bilinear resized for standardized feature extraction",
+  "group_count": 33381,
+  "max_group_size": 443,
+  "edges": 151644,
+  "manifest_sha256": "e27a00766ad8825201aac6d4167a5a98b319d5b18b136ffb20d5765073472936",
+  "seconds": 43.79053497314453,
+  "confirmatory_subject_gate_passed": false,
+  "interpretation": "Native dimensions/style/JPEG-format gate passes. Full confirmatory gate fails: subjects unverified and JPEG quantization aligned with origin. All comparisons descriptive; no attribution independent of encoding is established.",
+  "feature_unit_gate_passed": true,
+  "feature_cache_n": 45000,
+  "feature_readiness_passed": true,
+  "step5_finalization": "Frozen file/style/support IDs rechecked after Step4 features and before Step6 projections; subject gate unmet, all cells descriptive",
+  "jpeg_quantization_common_support_human_ld": 0,
+  "jpeg_encoding_control_passed": false,
+  "jpeg_origin_profiles": [
+    {
+      "origin": "Human",
+      "subsampling": 2,
+      "progressive": 0,
+      "qt_hash": "2ec7c65c56d1c46b",
+      "qt_mean": 7.2421875,
+      "count": 60000
+    },
+    {
+      "origin": "LD",
+      "subsampling": 2,
+      "progressive": 0,
+      "qt_hash": "88cc76a6d3102388",
+      "qt_mean": 36.234375,
+      "count": 62092
+    },
+    {
+      "origin": "SD",
+      "subsampling": 2,
+      "progressive": 0,
+      "qt_hash": "88cc76a6d3102388",
+      "qt_mean": 36.234375,
+      "count": 62923
+    }
+  ],
+  "gated_metadata_roc_auc": 1.0,
+  "full_jpeg_header_roc_auc": 1.0,
+  "confirmatory_gate_passed": false
+}

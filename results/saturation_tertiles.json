@@ -1,0 +1,8 @@
+{
+  "development_cutpoints": [
+    0.29676310718059534,
+    0.47071440021197003
+  ],
+  "feature": "s_median_median",
+  "rule": "Development-only pooled Human/LD tertiles; fixed for every model"
+}

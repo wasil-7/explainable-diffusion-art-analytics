@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scope": "Synthetic filesystem fixture only; no experiments or authoritative evidence moved",
+  "receipt": {
+    "root": "D:\\Vault\\Documents\\Uni Work\\Sem5\\DAV\\DAV_Phase3\\final_round\\qa\\rerun_fixture",
+    "preserved_archive": "D:\\Vault\\Documents\\Uni Work\\Sem5\\DAV\\DAV_Phase3\\final_round\\qa\\rerun_fixture\\reproduction_before\\20261122_145851_008777",
+    "new_results_input": "literature_facts.csv",
+    "status": "Prepared empty derived-state folders; no experiment executed",
+    "warning": "Run ordered archive-dependent commands next and compare the frozen cohort IDs/hash before accepting results."
+  }
+}

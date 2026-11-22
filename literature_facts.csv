@@ -1,0 +1,1104 @@
+paper_id,crosswalk_id,title,authors,venue,year,pdf_version_type,dataset,task,split_protocol,metrics,headline_numbers,page_number,table_figure,verification_status,doi,evidence_text
+7174ac285c4f,Phase1/1; Phase2/7,Any-Resolution AI-Generated Image Detection by Spectral Learning,Dimitrios Karageorgiou; Symeon Papadopoulos; Ioannis Kompatsiaris; Efstratios Gavves,CVPR,2025,CVF conference paper,13 generators; mixed real-image sources,AI-image detection,Self-supervised spectral learning; cross-generator evaluation,ROC-AUC,5.5 percentage-point absolute AUC improvement across 13 generators,1,Abstract,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/CVPR52734.2025.01743,"                     This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.
+                                 Except for this watermark, it is identical to the accepted version;
+                                the final published version of the proceedings is available on IEEE Xplore.
+
+
+
+
+
+     Any-Resolution AI-Generated Image Detection by Spectral Learning
+
+
+ Dimitrios Karageorgiou1,2  Symeon Papadopoulos1   Ioannis Kompatsiaris1   Efstratios Gavves2,3
+                        1Information Technologies Institute, CERTH, Greece
+                             2University of Amsterdam, The Netherlands
+                               3Archimedes/Athena RC, Greece
+              {dkarageo,papadop,ikom}@iti.gr   {d.karageorgiou,e.gavves}@uva.nl
+
+
+                 Abstract
+
+Recent works have established that AI models introduce
+spectral artifacts into generated images and propose ap-
+proaches for learning to capture them using labeled data.
+However, the significant differences in such artifacts among
+different generative models hinder these approaches from
+generalizing to generators not seen during training. In this
+work, we build upon the key idea that the spectral dis-
+tribution of real images constitutes both an invariant and
+highly discriminative pattern for AI-generated image detec-
+tion. To model this under a self-supervised setup, we em-
+ploy masked spectral learning using the pretext task of fre-
+quency reconstruction. Since generated images constitute
+out-of-distribution samples for this model, we propose spec-
+tral reconstruction similarity to capture this divergence.
+Moreover, we introduce spectral context attention, which
+enables our approach to efficiently capture subtle spectral      Figure 1. SPAI employs spectral learning to learn the spectral dis-
+inconsistencies in images of any resolution. Our spectral       tribution of real images under a self-supervised setup. Then, using
+AI-generated image detection approach (SPAI) achieves a      the spectral reconstruction similarity it detects AI-generated im-
+5.5% absolute improvement in AUC over the previous state-      ages as out-of-distribution samples of this learned model.
+of-the-art across 13 recent generative approaches, while ex-
+hibiting robustness against common online perturbations.      thetic imagery on the Internet [16], which calls for robust
+Code is available on https://mever-team.github.io/spai.         AI-generated Image Detection (AID) approaches.
+
+                                                     To this end, the image forensics community has estab-
+                                                                 lished that generative models introduce subtle artifacts to
+1. Introduction                                                                the generated images [61, 66, 70] and proposed several AID
+                                                      methods for capturing them [46].  However, even gener-Generative AI technology advances at an outstanding pace
+                                                                   ators with minimal differences introduce significantly dif-[18]. Early AI approaches for image synthesis, primarily
+                                                                   ferent artifacts [1, 68].  Consequently, existing detectorsbased on Generative Adversarial Networks (GANs) [12],
+                                                            poorly generalize to images originating from generators nothave recently been superseded by Diffusion Models (DMs)
+                                                          seen during training [9, 68], while, due to the large num-[10], capable of producing high-fidelity imagery, while sup-
+                                                             ber of available generative models,  it is very difficult, ifporting advanced conditioning schemes [4]. Recent meth-
+                                                             not intractable, to maintain an exhaustive up-to-date train-ods for efficient training [33, 37] have further lowered the
+                                                             ing dataset. Thus, current AID approaches perform poorlybarrier for creating new generative models.  In this land-
+                                                when tested outside of lab-controlled environments[16, 36].scape of numerous accessible high-performing commercial
+and open-source models, making strong assumptions about        Recently, the idea of modeling the distribution of real
+safeguards implemented at the model level [44] seems in-     images emerged as an alternative to learning to capture the
+tractable, leading to an increasing numbers of harmful syn-      artifacts introduced by specific detectors [9].  Under this
+
+
+
+                                                     18706"
+23ae70d55065,Phase1/2,Context-aware Multimodal AI Reveals Hidden Pathways in Five Centuries of Art Evolution,Jin Kim; Byunghwee Lee; Taekho You; Jinhyuk Yun,arXiv:2503.13531v1 (earlier than PNAS),2025,Author preprint,"WikiArt, 72,447 processed paintings",Creation-year prediction from latent context,Year regression; not a human-vs-AI detection split,R-squared,Context C-vector creation-year prediction R2 = 0.869,8,Fig. 1I discussion,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1073/pnas.2517969123,"predicted numerous 20th-century paintings as 19th-century works. Meanwhile, the C-vector model
+consistently showed more accurate creation year predictions (𝑅2 = 0.869; Fig. 1I). In short, the
+
+C-vectors exhibited superior performance in predicting the creation year of artworks compared to
+
+the A-vectors.
+
+
+Unveiling latent information encoded in vectors
+
+In the previous section, we observed that C-vectors exhibit greater predictive power than A-vectors.
+
+Thus, a natural question arises: what makes C-vectors more expressible than A-vectors? To answer
+
+this question, we conducted an in-depth analysis of the encoded information, particularly for
+
+paintings, within the A- and C-vectors to unveil the factors that make C-vectors more interpretable.
+
+Because both the autoencoder and CLIP models were trained using general image datasets, we first
+
+performed principal component analysis (PCA) on the A- and C-vectors to extract the key features
+
+of paintings. We then investigated how paintings vary in style and context along each PC axis to
+
+interpret what each axis encodes.
+
+  We first projected paintings onto the principal components (PCs) by computing the dot product
+
+between the latent vectors of paintings and each PC. The distributions of the projected values on
+
+the first- and second-largest PCs (PC1 and PC2, respectively) of the A-vectors initially appeared
+
+to show little evidence of temporal patterns (Fig. 2A). We noticed subtle temporal variations,
+
+with a modest increase during 1500–1550, followed by a plateau period between 1550 and 1750,
+
+before a gradual decline throughout 1750–1990 for PC1; meanwhile, the PC2 distribution remained
+
+temporally consistent. We observed a similar temporal stability across the remaining PC axes of
+
+the A-vector (Fig. S13). It should be noted that the eigenvalues (i.e., explained variance ratios)
+
+of the PCs for both the A- and C-vectors exhibited steeply declining distributions (Fig. S12); the
+
+largest PCs (corresponding to the largest eigenvalues) largely explain the vital information that the
+
+vectors encode for paintings. As PC1 has a high explained variance ratio (0.190), which is almost
+
+six times that of PC2 (0.034), PC1 shows the significant expressibility of paintings for the A-vector.
+
+Therefore, although the PCs of the A-vector effectively characterize certain aspects of paintings,
+
+they lack a clear temporal correspondence.
+
+    In contrast, the C-vector demonstrated more drastic temporal variations in PCs over time
+
+
+
+                                       8"
+5cbf64c5f2f5,Phase1/3,FakeBench: Probing Explainable Fake Image Detection via Large Multimodal Models,Yixuan Li; Xuelin Liu; Xiaoyang Wang; Bu Sung Lee; Shiqi Wang; Anderson Rocha; Weisi Lin,arXiv:2404.13306v2 (TIFS author version),2024,Author preprint,FakeBench,Explainable image authenticity assessment,Human evaluation and zero/few-shot LMM testing; not our grouped artwork split,Detection accuracy,Human overall average accuracy 74.51%,4,"Fig. 3(a), human accuracy summary",claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/TIFS.2025.3597211,"                                                                                                                                                  4
+
+
+Covering diverse generative visual forgery orchestrating          1.0
+                                                                                                                                                                          Subject/Image Set    Real + Fake    Real    Fake
+with  various image  content. FakeBench  is designed  to        0.8
+encompass a broad spectrum of forgery appearances generated                                                           Experienced            79.80%     78.87%   80.73%
+by various image generation models. This ensures a  rich        0.6                                                 Naive                    70.34%     66.69%   73.89%
+diversity in the image content and generative patterns included        0.4                                                                     Best          87.5%      93.00%   97.00%
+in the benchmark. 3) Ensuring that descriptive annotations         0.2          AIGC-ExperiencedAIGC-Naive                                      Overall    Worst        55.00%      13.00%   43.00%
+on generative forgery resonate with human understanding.                          Overall                                                Average       74.51%       72.12%   76.91%
+                                                                                                                              0.0    Real + Fake           Real              Fake
+To effectively evince the fakes through forgery descriptions,                                                        (a)
+figuring out what influences human perceptions of authenticity           16%  14.27%                          12.65%                                                                                   Low-level
+                                                                                                                                                                             11.60%
+                                                                                                                                                                                                                                                                                                                               Mid-level                                                                                                                                                                                              10.33%is essential. Therefore, a human-participated subjective study            12%
+                                                                                                                                                            8.17%                                                                                                                                                             7.62%                                                                                                                                                                                    7.80%                          7.50%                             High-level
+                                                                                                                                    8%
+is crucial to determine what to explain, guiding the creation                                                                  3.80%                                  4.73%   4.70%
+of informative and relevant descriptions.                                                          4%                                                                2.35%   1.81%           2.25%                             (fall0.42%out)
+                                                                                                                                    0
+
+B. Image Preparation                                                                                                                                           texture  edge  claritydistortionoverallhuelight&shadow  contentdeficiencyshape         reflectionsymmetry  layoutperspective theme irreality intuition
+  To cater to increasingly diversified image generators, the                                                     (b)
+generation  models  included  in  the FakeBench  span  ten
+different  types,  including two  generative  adversarial  net-    Fig. 3.   Subjective analyses on image authenticity judgment. (a) Human
+works (GAN) based models [49], [50], one auto-regressive    distinguishing analyses regarding accuracy on genuine and fake images.
+                                                                The left part illustrates the estimated distributions for the accuracy of each
+model [51], four stable diffusion (SD) based models [53]–    authenticity category, and the detailed statistics are on the right side. (b) The
+[56], and three proprietary models [1], [2], [61]. The details   proposed taxonomy of authenticity-relevant judging criteria and human-rating
+are  listed  in Table  II. To enhance  the  diversity  of  fake    statistics. Different human subjects contribute to each subset’s best and worst
+                                                                           performances.
+pattern and image content, the fake images are sampled from
+multiple datasets (see Table II), including CNNSpot [18], HPS
+v2 [52], AGIQA-3K [57], GenImage [46], NIGHTS [59],                                                                       fairness, and reliability. Each participant is asked to distinguish
+I2IQA [58], DiffusionDB [60], DALL·E3 dataset [2], Dalle3-                                                         whether each image is generated by AI with no time limit
+reddit-dataset [62], and Midjourney-v5 dataset [63]. Regarding                                                       and then select no less than one forgery aspect evincing their
+the genuine images, we sample 3,000 images from Ima-                                                            judgments. The candidate forgery types are the preset 14 crite-
+geNet [76] and DIV2K dataset [77]. The AI-generated images                                                                           ria influencing the authenticity-relevant judgment of humans,
+are carefully chosen to ensure content diversification, which                                                     making up the taxonomy of generative visual forgery cues.
+includes things, people, artwork, digital illustration, scenery,                                                        According to the level of abstraction, we consider five low-
+and creature. Each image  is assigned at least one content                                                                     level criteria including texture, edge, clarity, distortion, and
+label. The examples for the image content of FakeBench are                                                                  overall hue, five mid-level criteria including light&shadow,
+illustrated in Fig. 2.                                                              shape, content deficiency, symmetry, and reflection, and four
+                                                                  high-level vision criteria including layout, perspective, theme,
+C. Fine-Grained Generative Visual Forgery Taxonomy        and irreality. In practice, we further provided one fallback
+  The factors influencing human judgments of image au-   option “intuition” for the occasion where none of the pre-
+thenticity are still undetermined and complex questions [78].   set forgery satisfy perception. Classification accuracy (ACC)
+How to characterize generative forgery cues from the visual   functions as the measure. The averaged performance and the
+perspective needs to be clarified to align with human com-  number of each criterion for correctly distinguished images are
+prehension. Relevant works either draw a rough equivalence  shown in Fig. 3(a) and Fig. 3(b), respectively. Detailed textual
+between authenticity and low-level image characteristics [79]   definitions and illustrations of forgery cues are provided in the
+or focus on certain aspects such as content smudging and   supplementary material.
+false perspective [44], [45], [80], [81]. To remedy this issue,   We discover some patterns concerning human distinguishing
+we construct a comprehensive taxonomy of visual forgery   abilities from Fig. 3(a). Humans obtain an average accuracy
+cues for AI-generated images and validate  it with human-   of 74.51% on assessing image authenticity, and the peak
+participated subjective studies. Our objective is twofold: 1)  performance reaches 87.50%. However, human performance
+benchmarking human distinguishing ability towards real and   diversifies  in terms of knowledge background and image
+fake images, and 2) focalizing human visual criteria in image   authenticity, where experience in AI-generated content (AIGC)
+authenticity judgment. The results can function as the baseline   lowers the minimum accuracy but generally increases the mean
+to benchmark LMM’s humanoid intelligence towards image   accuracy. Additionally, all participants demonstrate lower av-
+defaking and guide the description of generative forgery.       erage accuracy on  real images than fake ones, indicating
+  The subjective study is conducted on genuine images and  AIGC significantly erodes human trust, even when exposed
+AI-generated images with diversified contents, generators, and   to genuine information. Moreover, Fig. 3(b) indicates that the
+fine-grained visual forgery aspects. We evenly sampled 200   fallback option “intuition” merely occupies 0.42% of the total
+fake and 200 genuine images from Sec. III-B and recruited 34  number of selections, meaning the other 99.58% selections
+participants of balanced backgrounds (17 naive and 17 expe-   of successfully-identified images correspond to at least one
+rienced) in image generation to ensure statistical significance,   of the predefined forgery  criteria. This  validates the pro-"
+7a92da907ad0,Phase1/4,Pixel-Inconsistency Modeling for Image Manipulation Localization,Chenqi Kong; Anwei Luo; Shiqi Wang; Haoliang Li; Anderson Rocha; Alex C. Kot,arXiv:2310.00234v2 (TPAMI author version),2024,Author preprint,12 manipulation datasets,Manipulation localization,Cross-dataset and perturbed-image evaluation; exact per-dataset protocols in full text,Pixel localization; benchmark size,Abstract describes 16 representative detection models across 12 datasets,1,Abstract,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/TPAMI.2025.3541028,"        JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2015                                                                              1
+
+        Pixel-Inconsistency Modeling for Image
+              Manipulation Localization
+
+       Chenqi Kong, Member, IEEE, Anwei Luo, Shiqi Wang, Senior Member, IEEE, Haoliang Li, Member, IEEE,
+                       Anderson Rocha, Fellow, IEEE, and Alex C. Kot, Life Fellow, IEEE
+
+
+
+               Abstract—Digital image forensics plays a crucial role in image authentication and manipulation localization. Despite the progress
+             powered by deep neural networks, existing forgery localization methodologies exhibit limitations when deployed to unseen datasets and
+               perturbed images (i.e., lack of generalization and robustness to real-world applications). To circumvent these problems and aid image
+                    integrity, this paper presents a generalized and robust manipulation localization model through the analysis of pixel inconsistency artifacts.
+             The rationale is grounded on the observation that most image signal processors (ISP) involve the demosaicing process, which introduces
+                  pixel correlations in pristine images. Moreover, manipulating operations, including splicing, copy-move, and inpainting, directly affect such
+                  pixel regularity. We, therefore, first split the input image into several blocks and design masked self-attention mechanisms to model the2024         global pixel dependency in input images. Simultaneously, we optimize another local pixel dependency stream to mine local manipulation
+               clues within input forgery images. In addition, we design novel Learning-to-Weight Modules (LWM) to combine features from the two
+               streams, thereby enhancing the final forgery localization performance. To improve the training process, we propose a novel
+                Pixel-Inconsistency Data Augmentation (PIDA) strategy, driving the model to focus on capturing inherent pixel-level artifacts instead ofNov        mining semantic forgery traces. This work establishes a comprehensive benchmark integrating 16 representative detection models across
+19       12achievedatasets.state-of-the-artExtensive experimentsgeneralizationshowandthatrobustnessour methodperformancessuccessfullyin extractsimage manipulationinherent pixel-inconsistencylocalization.     forgery fingerprints and
+
+              Index Terms—Image forensics, image manipulation localization, image manipulation detection, generalization, robustness.
+                                 ✦
+
+      1  INTRODUCTION[cs.CR]
+        MAGE manipulation has been carried out since photog-  people. Image manipulation certainly undermines the trust
+         raphy was born [3]. In recent decades, there has been   in media content. Moreover, the proliferation of fakes has    I
+         significant advances in image manipulation techniques,  raised pressing security concerns for the public. Therefore,
+        including splicing, copy-move, and inpainting, which are   designing effective image forgery localization models to
+         three pervasive but notorious attack types [88], as shown   address these issues is paramount.
+         in Fig. 1. These techniques can produce forgery content      Early attempts at image manipulation localization mainly
+       with a very high level of realism, blurring the boundaries   focused on extracting features based on prior knowledge,
+       between authentic and forgery images. Manipulation traces  such as lens distortions [29], [33], [47], [68], [97], [97], Color
+         are very subtle and can hardly be perceived by the naked eye.   Filter Array (CFA) artifacts [10], [26], [30], [39], [77], noise
+       With the widespread use of digital images on the internet,  patterns [17], [23], [49], [65], [66], [76], compression artifacts
+             it has become much easier for malicious attackers to launch    [6], [9], [15], [24], [28], [44], [74]. However, these traditional
+        manipulation attacks using off-the-shelf yet powerful image  methods demonstrate limited accuracy and generalizability.
+         editing tools, such as Photoshop, After Effects Pro, GIMP, and   In turn, learning-based detectors have been proposed thanks
+       more recently, Firefly. The produced sophisticated content can   to recent advancements in deep learning and  artificial
+        be used to commit fraud, generate fake news, and blackmail   intelligence. These methods exhibit promising performancearXiv:2310.00234v2                                                                   in image forgery localization under the intra-domain setting.
+                                                                 Nonetheless, data-driven methods are typically prone to
+         •   C. Kong and A. Kot are with the Rapid-Rich Object Search (ROSE) Lab,
+                                                                          overfitting the training data, resulting in limited robustness              School of Electrical and Electronic Engineering, Nanyang Technology
+               University, Singapore, 639798.                           and generalization performance. Namely, they are fragile
+               E-mail: chenqi.kong@ntu.edu.sg, eackot@ntu.edu.sg.                   to image perturbations and vulnerable to unseen image
+         •  A. Luo is with the School of Computer Science and Engineering, Sun                                                               manipulation datasets.
+              Yat-sen University, Guangzhou, China. He is also with the Rapid-Rich
+              Object Search (ROSE) Lab, School of Electrical and Electronic Engineering,      Extracting inherent forgery fingerprints for generalized
+            Nanyang Technology University, Singapore, 639798.               and robust image forgery localization remains a challenging
+               E-mail: luoanw@mail2.sysu.edu.cn.                            problem. This paper recasts the typical image manipulation
+         •   S. Wang is with the Department of Computer Science, City University of
+                                                                       pipeline and proposes a new forgery localization framework           Hong Kong, Hong Kong.
+               E-mail: shiqwang@cityu.edu.hk.                                    that captures the pixel inconsistencies in manipulated images.
+         •  H. Li is with the Department of Electrical Engineering, City University of   Fig. 2 shows the typical forgery image construction chain.
+           Hong Kong, Hong Kong.                                The filter and lens eliminate undesired light and focus light
+               E-mail: haoliang.li@cityu.edu.hk.
+         •  A. Rocha is with the Artificial Intelligence Laboratory (Recod.ai), Institute  onto the sensor. Subsequently, the Color Filter Array (CFA)
+                 of Computing, University of Campinas, Campinas 13084-851, Brazil        is applied to extract single-color components. A series of
+               E-mail: arrocha@unicamp.br                                  software operations is carried out during the in-camera
+         •   Corresponding author: Haoliang Li.
+                                                                      processing. Demosaicing, also known as color interpolation,"
+6c04d0eeab5e,Phase1/5; Phase2/8,SCADET: A detection framework for AI-generated artwork integrating dynamic frequency attention and contrastive spectral analysis,Xiaolong Zhang; Zekai Yu; Jianqiao Zhao,PLOS One,2025,Publisher version,AI-ArtBench,Full-image and local-image AI-art detection,7:1:2 training/validation/test; extra unseen-generator evaluation,ROC-AUC; accuracy,AUC 0.962 full image and 0.801 local image; cross-model mean accuracy 0.81,1,Abstract (detailed experiments in full PDF),claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1371/journal.pone.0336328,"                             RESEARCH ARTICLE
+                SCADET: A detection framework for AI-generated
+                    artwork integrating dynamic frequency attention
+                 and contrastive spectral analysis
+
+                                  Xiaolong Zhang  1*, Zekai Yu   2, Jianqiao Zhao3
+
+                                    1 School of Art and Design, Xihua University, Chengdu, China, 2 School of Computer Science and
+                                          Technology, Hangzhou Dianzi University, Hangzhou, China, 3 Faculty of Fine and Applied Arts and
+                                               Cultural Science, Mahasarakham University, Maha Sarakham, Thailand
+
+                                         * choushouryuu@outlook.com
+
+
+                       Abstract
+
+                                With the rapid development of generative AI technology, AI-generated images pose
+                                        significant challenges for authenticity verification and originality validation. This paper
+                                proposes SCADET, a novel detection framework that integrates Dynamic Frequency
+                                     Attention Network (DFAN) and Contrastive Spectral Analysis Network (CSAN). DFAN
+                                    adaptively analyzes image frequency domain features and dynamically adjusts atten-
+  OPEN ACCESS                       tion for different artistic styles, while CSAN establishes discriminative feature spaces
+Citation: Zhang X, Yu Z, Zhao J (2025)     through contrastive learning to enhance cross-model generalization capabilities.
+SCADET: A detection framework for
+                              Comprehensive experiments on the AI-ArtBench dataset demonstrate that SCADET
+AI-generated artwork integrating dynamic
+frequency attention and contrastive        achieves AUC values of 0.962 and 0.801 in full image and local image detection
+spectral analysis. PLoS One 20(11):       tasks respectively, representing substantial improvements of 30.5% and 34.4% over
+e0336328. https://doi.org/10.1371/journal.
+                                   baseline methods. Cross-model evaluation shows that the framework maintains sta-
+pone.0336328
+                                    ble performance across various generation techniques, with an average accuracy of
+Editor: Eyas Mahmoud, West Virginia
+State University, UNITED STATES OF      0.81 and low variance. Ablation studies validate the effectiveness of both DFAN and
+AMERICA                  CSAN components. These results advance the field of AI-generated content detec-
+Received: March 18, 2025                tion and provide valuable insights for addressing authenticity challenges in digital
+Accepted: October 22, 2025           media applications.
+
+Published: November 26, 2025
+
+Copyright: © 2025 Zhang et al. This is an
+open access article distributed under the   1 Introduction
+terms of the Creative Commons
+Attribution License, which permits         1.1 Background
+unrestricted use, distribution, and
+                                       In recent years, generative AI technology has achieved breakthrough progress,
+reproduction in any medium, provided the
+original author and source are credited.     especially with the rapid development of Generative Adversarial Networks (GANs),
+                                      Diffusion Models, and Transformer-based text-to-image models (such as DALL-E,
+Data availability statement: All the data
+used in this research are available from     Midjourney, and Stable Diffusion), which have brought AI-generated images to
+the public repository on Kaggle at        unprecedented levels of quality and realism [1]. These technologies generate realistic
+https://www.kaggle.com/datasets/          visual content from text descriptions or reference images. They demonstrate enor-
+ravidussilva/real-ai-art.
+                           mous potential in creative industries, entertainment media, and digital art. However,
+
+
+
+PLOS One https://doi.org/10.1371/journal.pone.0336328  November 26, 2025                                                                        1/ 29"
+c6446b5d4119,Phase1/6,SIDWA: Synthetic Image Detection Based on Discrete Wavelet Transform Stem and Deformable Sliding Window Cross-Attention,Luo Li; Tianyi Lu; Jiaxin Song; Ke Cheng,Electronics,2026,Publisher version,SIDset; additional GenImage experiments,Synthetic-image detection,SIDset 8:1:1 train/validation/test; paper-specific external evaluation,Accuracy; inference latency,Abstract reports average accuracy exceeding 95% and inference time 18.2 ms on NVIDIA A100,1,Abstract,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.3390/electronics15040891,"Article
+SIDWA: Synthetic Image Detection Based on Discrete Wavelet
+Transform Stem and Deformable Sliding
+Window Cross-Attention
+
+Luo Li     , Tianyi Lu     , Jiaxin Song  and Ke Cheng *
+
+
+
+                                  School of Computer, Jiangsu University of Science and Technology, Zhenjiang 212100, China;
+                                   231710701110@stu.just.edu.cn (L.L.); 231710701112@stu.just.edu.cn (T.L.); 231210702101@stu.just.edu.cn (J.S.)
+                                     *  Correspondence: chengke1972@just.edu.cn
+
+
+                           Abstract
+
+                         With the rapid evolution of Generative Adversarial Networks (GANs) and diffusion mod-
+                                 els (DMs), the detection of synthetic images faces significant challenges due to non-rigid
+                                 artifacts and complex frequency biases. In this paper, we propose SIDWA, a novel dual-
+                         branch detection framework that leverages the synergy between frequency and spatial
+                         domains. Within the spatial branch, we design a Deformable Sliding Window Cross-
+                           Attention (DSWA) module, which utilizes a learnable offset mechanism to dynamically
+                      warp the receptive field, effectively capturing distorted edges and non-linear texture fea-
+                                tures. Simultaneously, the Discrete Wavelet Transform (DWT) Stem decomposes input
+                         images into multi-scale sub-bands to preserve crucial high-frequency residues. Through
+                          a Frequency-Semantic Resonance Projector (FSRP) strategy, the semantic priors from the
+                               spatial branch act as queries to guide the model toward localized frequency anomalies,
+                            achieving a unified “where to look” and “how to analyze” approach. Experimental results
+                               for the SIDataset (SIDset) benchmark demonstrate that Synthetic Image Detection based
+                       on Discrete Wavelet Transform Stem and Deformable Sliding Window Cross-Attention
+                       (SIDWA) achieves superior performance, with an average accuracy exceeding 95% and
+                          a competitive inference time of 18.2 ms on an NVIDIA A100 GPU. Ablation studies fur-
+                             ther validate the critical role of learnable offsets and frequency integration in enhancing
+                            robustness and generalization. SIDWA offers an efficient and reliable forensic solution for
+                         combating the growing threats of sophisticated generative forgeries.
+
+
+                        Keywords: AIGC detection; image generation;  attention mechanism; deformable
+                            convolution; wavelet transform
+
+
+
+                             1. Introduction
+Academic Editor: Silvia Liberata Ullo      Amid the rapid advancement of Generative Artificial Intelligence (AIGC), break-
+Received: 28 January 2026          throughs in text-to-image and image editing models have enabled large-scale production
+Revised: 19 February 2026
+                             of high-quality synthetic images. While these technologies show immense potential in
+Accepted: 20 February 2026
+                            content marketing, they have sharply blurred the line between authentic and generated
+Published: 21 February 2026
+                             visual content. Current detection technologies face severe challenges. From a technical
+Copyright: © 2026 by the authors.
+Licensee MDPI, Basel, Switzerland.     perspective, sophisticated Generative Adversarial Networks (GANs) [1] and advanced
+This article is an open access article      diffusion models (DMs) [2,3] continue to narrow the gap between synthetic and real photos.
+distributed under the terms and       Recent studies highlight that DMs, characterized by their iterative denoising process, intro-
+conditions of the Creative Commons   duce subtle non-rigid artifacts that are harder to capture than the periodic checkerboard
+Attribution (CC BY) license.
+
+
+
+Electronics 2026, 15, 891                                                                            https://doi.org/10.3390/electronics15040891"
+b8504307f55a,Phase1/7,Locate-Then-Examine: Grounded Region Reasoning Improves Detection of AI-Generated Images,Yikun Ji; Yan Hong; Bowen Deng; Jun Lan; Huijia Zhu; Weiqiang Wang; Liqing Zhang; Jianfu Zhang,arXiv:2510.04225v2,2026,arXiv version identified by the cited DOI,TRACE and external benchmarks,Grounded real-vs-generated verdict and artifact localization,TRACE training split; TRACE test plus out-of-domain datasets,Accuracy; region grounding,"TRACE introduced with 20,000 real and synthetic images with region annotations",1,Abstract,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.48550/arXiv.2510.04225,"         Locate-Then-Examine: Grounded Region Reasoning Improves Detection of
+                                AI-Generated Images
+
+
+              Yikun Ji1,2  Yan Hong2  Bowen Deng1   Jun Lan2*  Huijia Zhu2   Weiqiang Wang2
+                                         Liqing Zhang1*  Jianfu Zhang1*
+                                1Shanghai Jiao Tong University     2Ant Group
+                         {da-kun, lqzhang, c.sis}@sjtu.edu.cn   yelan.lj@antgroup.com
+2026                     Abstract                              generators.
+                                                             The rise of Vision-Language Models (VLMs) [6, 11, 30,
+         The rapid growth of AI-generated imagery has blurred the     49, 50, 56] has opened a new frontier, offering a promis-
+          boundary between real and synthetic content, raising prac-     ing path towards semantic-level analysis and greater inter-Apr
+             tical concerns for digital integrity. Vision-language mod-      pretability. Recent approaches re-frame the detection task
+             els (VLMs) can provide natural language explanations, but     as a visual question answering problem [13] or an image21
+           standard one-pass classifiers often miss subtle artifacts in     captioning task [21]. However, to reach high accuracy, these
+           high-quality synthetic images and offer limited grounding     methods typically rely on external modules such as segmen-
+            in the pixels. We propose Locate-Then-Examine (LTE), a      tation or classification heads [19, 59], which underutilize
+           two-stage VLM-based forensic framework that first localizes     the intrinsic knowledge and common-sense reasoning em-
+            suspicious regions and then re-examines these crops together     bedded in the VLMs and reduce them to passive feature
+           with the full image to refine the real vs. AI-generated ver-      extractors. More fundamentally, most approaches perform a[cs.CV]
+             dict and its explanation. LTE explicitly links each decision      single global pass over the image: the visual encoder com-
+            to localized visual evidence through region proposals and     presses the scene into a limited set of tokens, attention is
+           region-aware reasoning. To support training and evaluation,     spread across the entire image, and fine-grained forensic
+        we introduce TRACE, a dataset of 20,000 real and high-     cues (e.g., tiny text artifacts, stitching seams, periodic tex-
+            quality synthetic images with region-level annotations and      tures, specular edges) are weakened by downsampling and
+           automatically generated forensic explanations, constructed     pooling [29, 34]. Without a mechanism to revisit localized
+          by a VLM-based pipeline with additional consistency checks     regions and verify hypotheses, these subtle but decisive ar-
+         and quality control. Across TRACE and multiple external      tifacts are easily missed, leading to unstable decisions on
+          benchmarks, LTE achieves competitive accuracy and im-     high-quality synthetic images. As illustrated in Fig. 1(a),
+          proved robustness while providing human-understandable,      insufficient localization can cause the model to rely on prior
+           region-grounded explanations suitable for forensic deploy-     expectations rather than pixel-level evidence, resulting in
+           ment.                                                           unreliable reasoning and incorrect outcomes.
+                                                                           In this work, we introduce a region-grounded reason-
+                                                                       ing framework, Locate-Then-Examine (LTE), that movesarXiv:2510.04225v2     1. Introduction                                     beyond single-pass classification. Instead of relying on a
+                                                                           global prediction, our approach equips a VLM with the abil-
+           Recent advances in image generation [1, 26, 46] have pushed
+                                                                                       ity to localize suspicious regions and then re-examine these
+           photorealism to a point where synthetic content is difficult
+                                                                        regions together with the full image to refine its decision.
+            to distinguish from real imagery. As these models are in-
+                                                                    This design integrates the VLM’s semantic reasoning with
+            creasingly adopted in consumer and creative platforms, the
+                                                                           targeted visual inspection, enabling the system to generate
+          need for reliable and interpretable forensic tools has become
+                                                                      hypotheses about potentially synthetic cues and verify them
+         more urgent. Existing detection systems are predominantly
+                                                                                   at higher resolution. To support this process, we construct
+            classification-based: they can achieve high accuracy on cu-
+                                                                    a dataset, Text-Region Aligned Cues for Explainable AIGI
+            rated datasets, but their decision process is opaque and their
+                                                                            detection (TRACE), that provides region crops coupled with
+           robustness is limited. Models trained to detect generated
+                                                                 grounded forensic explanations for supervised training. As
+          images from one architecture often underperform on unseen
+                                                             shown in Fig. 1(b), this targeted locate-then-examine mecha-
+                *Corresponding authors.                                   nism produces more reliable evidence attribution and more"
+39084024fc88,Phase1/8,AI-generated artwork detection using self-distilled transformers with global–local feature learning and Grad-CAM interpretability,Wang Yinghua; Li Linyan; Ma Wenjuan; Zhang Yunzhe,Scientific Reports 16:497,2026,Publisher version,Balanced real/generated artwork dataset,Self-distilled transformer artwork detection,70:30 training/testing (Table 2); differs from our grouped protocol,Accuracy; precision; recall; F1; AUC,"Abstract: accuracy 99.01%, precision 95.29%, recall 94.58%, F1 94.93%, AUC 99%; metrics are paper-reported, not independently reconciled",1,Abstract,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1038/s41598-025-29229-2,"                                                                        www.nature.com/scientificreports
+
+
+
+    OPEN AI-generated artwork detection
+          using self-distilled transformers
+         with global–local feature learning
+        and Grad-CAM interpretability
+                  Wang Yinghua1, Li Linyan1, Ma Wenjuan1 & Zhang Yunzhe2
+
+                            This study presents a strong framework for the detection of artificial intelligence-generated artwork
+                           using digital imaging and deep learning–based transformers models, which helps in art community
+                           to distinguish the authenticity of human-created art from highly fascinated machine-generated
+                            content. Art holds reflection of deep cultural, historical, and social significance, however, due to rapid
+                        advancements in artificial intelligence, particularly in generative adversarial networks and diffusion
+                          models, have enabled the production of visually creating artworks that blur the boundaries between
+                                originality and synthesis. Traditional methods relying on conventional features and statistical analysis
+                            are increasingly lower performance against such advance transformation, highlighting the need for
+                      more advanced detection mechanisms. To address this challenge, the proposed approach employs
+                                Distillation with No Labels (DINO) v2, a self-distilled transformer model that excels in extracting
+                             discriminative features by capturing both global structures and fine-grained visual cues. The model
+                       was trained and evaluated on a balanced dataset of real and AI-generated art images, with results
+                        benchmarked against strong baselines. Experimental findings demonstrate that the proposed
+                        framework achieves 99.01% accuracy, 95.29% precision, 94.58% recall, 94.93% F1-score, and an
+                    AUC of 99%, outperforming all baselines with superior generalization. Furthermore, interpretability
+                       methods along with statistical validation based on log of p-values, confirmed that predictions are both
+                         dependable and transparent.
+
+                       Keywords  Artificial intelligence, Computer vision, Feature extraction, Art detection, Content authenticity
+
+                            Art has always shown reflection of human culture, creativity, and identity based on ancient cave paintings to
+                        modern digital illustrations. It captures not only aesthetic beauty but also increases the values, emotions, and
+                                narratives of societies across centuries1. With its ability to exceed geographical and temporal boundaries, art
+                               serves as a universal language that communicates human experience in ways words often cannot2. In today’s
+                                   digital era, however, the landscape of artistic creation has been gradually transformed, targeting the very actual
+                                  authenticity, originality, and authorship3.
+                            The emergence of artificial intelligence (AI) has brought new aspects to the creation of art. More sophisticated
+                          models like Generative Adversarial Networks (GANs) and diffusion-based models have now been able to generate
+                             artworks that are highly realistic and can have a variety of styles4. These innovations provide new opportunities
+                                to be creative, on the other hand, they are very problematic to the art authentication, cultural preservation and
+                                   intellectual property5. The conventional authentication methods, which were once effective to detect any manual
+                                 forgery, are no longer effective in detecting patterns of irregularities being built into AI-generated images6. Art
+                             trend is becoming increasingly day-by-day because of the introduction of numerous AI-tools to create images.
+                              This widening divide reaffirms the urgent necessity of smart, automatic systems of detection that will be able to
+                                distinguish between real artworks created by man and the machine-generated fakes7.
+                            The previous approaches were based on the intensive use of traditional feature extraction8 and the statistical
+                                 analysis of image textures, color histograms, and brushstroke patterns9. Although these methods offered useful
+                              information, their low flexibility to investigate more complicated generative processes and generalization over a
+                                 variety of datasets greatly weakened their performance10. As the technologies of AIs-generated images appear to
+                           be sophisticated, it is necessary to investigate more advanced systems, which are capable of effectively addressing
+                              the changing nature of forging digital art11.
+
+                              1School of Art and Design, Xi’an Mingde Institute of Technology, Xi’an 710124, Shaanxi, China. 2Department of
+                             Cross-Media Arts, Xi’an Academy of Fine Arts, Xi’an 710065, Shaanxi, China. email: 18792699211@163.com
+
+Scientific Reports |     (2026) 16:497                                 | https://doi.org/10.1038/s41598-025-29229-2                                  1"
+268221a5e3f9,Phase2/1,A Bias-Free Training Paradigm for More General AI-generated Image Detection,Fabrizio Guillaro; Giada Zingarini; Ben Usman; Avneesh Sud; Davide Cozzolino; Luisa Verdoliva,CVPR,2025,CVF conference paper,MS-COCO and self-conditioned synthetic images,Bias-controlled general AI-image detection,Aligned COCO-based training; external generator tests; not paintings,Dataset counts; AUC; balanced accuracy,"Training construction uses 51,517 real images and 309,102 generated images",5,Training paradigm / dataset construction,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/CVPR52734.2025.01741,"                                                                 Synthbuster                      New Generators                WildRF               AVG
+
+     Method           Training setting      Midjourney   SDXL    DALL·E 2   DALL·E 3      Firefly     FLUX     SD 3.5     Facebook      Reddit       Twitter     AUC↑/bAcc↑
+
+      paired by text   −                   96.9 / 56.9   99.5 / 78.1   78.7 / 50.1   98.8 / 56.6   91.3 / 51.1   94.6 / 51.5   96.6 / 66.9   97.8 / 72.5   84.4 / 67.2   96.1 / 68.1      93.5 / 61.9
+       reconstructed   −                   100. / 99.8   100. / 100.   81.1 / 52.2   99.1 / 75.8   96.7 / 62.1   98.2 / 64.0   99.7 / 88.8   98.9 / 97.5   77.8 / 75.5   94.8 / 91.1      94.6 / 80.7
+                                             100.                                                   99.9   100.                                                                                    99.2                                                                                                                                         98.8       reconstructed                         inpainted                                                                              /                                                                                                   /                                                                99.9   90.1                                                                                                                       /                                                                             62.0                                                                                                                                            /                                                                                          79.5   98.1                                                                                                                                                                 /                                                                                                       77.2                                                                                                               95.8                                                                                                                                                                                     /                                                                                                                    69.1                                                                                                                            99.4 /                                                                                                                                  89.1                                                                                                                                                                                                                               /                                                                                                                                               95.9                                                                                                                                                      78.7                                                                                                                                                                                                                                                   /                                                                                                                                                            76.1                                                                                                                                                                   94.9                                                                                                                                                                                                                                                                        /                                                                                                                                                                         90.3                                                                                                                                                                                   95.5                                                                                                                                                                                                                                                                                                 /                                                                                                                                                                                         83.9  bAcc             −                                                          100.                                                                                                 99.4                                                                                                                            100.                                                                                                                                  98.4       self-conditioned                                             99.9 /                                                   97.2                                                                                                   / 99.2                                                                       90.4                                                                                                                       /                                                                             58.1   98.9                                                                                                                                            /                                                                                          76.1                                                                                                                                                                 /                                                                                                       89.7   95.4                                                                                                                                                                                     /                                                                                                                    59.4                                                                                                                                                                                                          /                                                                                                                                         95.4 /                                                                                                                                               86.6                                                                                                                                                      75.7                                                                                                                                                                                                                                                   /                                                                                                                                                            66.3                                                                                                                                                                   91.4                                                                                                                                                                                                                                                                        /                                                                                                                                                                         82.7                                                                                                                                                                                   94.7                                                                                                                                                                                                                                                                                                 /                                                                                                                                                                                         81.4 /
+  AUC   self-conditioned”         cutmix/mixupinpainted            100.99.9 // 94.399.4   100.99.9 // 97.899.6   93.596.7 // 53.277.8   99.199.4 // 72.792.8   99.899.9 // 99.276.4   98.790.4 // 52.387.5   99.899.9 // 98.491.0   98.996.4 // 90.394.4   89.480.3 // 81.274.8   93.897.5 // 82.992.0      98.095.3 // 92.278.6
+             ”          inpainted+           99.9 / 98.8   100. / 99.7   99.7 / 95.9   99.6 / 96.8   100. / 99.6   97.9 / 85.3   99.3 / 95.1   98.0 / 95.0   96.0 / 89.8   99.4 / 96.5      99.0 / 95.2
+             ”          inpainted++          100. / 99.6   100. / 99.8   99.7 / 95.7   99.9 / 98.2   100. / 99.7   99.3 / 92.3   99.9 / 98.9   99.0 / 95.6   95.8 / 86.3   99.7 / 97.4      99.3 / 96.4
+
+     Method           Training setting      Midjourney   SDXL    DALL·E 2   DALL·E 3      Firefly     FLUX     SD 3.5     Facebook      Reddit       Twitter     NLL↓/ECE↓
+
+      paired by text   −                   1.96 / .418   0.72 / .218   3.60 / .496   1.71 / .416   2.95 / .484   2.62 / .473   1.42 / .327   1.00 / .273   1.77 / .324   1.31 / .310      1.91 / .374
+       reconstructed   −                   0.00 / .003   0.00 / .001   3.33 / .469   0.83 / .240   1.56 / .368   1.46 / .354   0.38 / .115   0.13 / .025   1.20 / .192   0.43 / .082      0.93 / .185
+  ECE   reconstructed      inpainted            0.01 / .008   0.01 / .008   1.16 / .353   0.40 / .197   0.51 / .222   0.79 / .290   0.23 / .107   0.12 / .032   0.73 / .153   0.29 / .066      0.42 / .144
+ /   self-conditioned  −                   0.08 / .031   0.02 / .008   1.48 / .399   0.59 / .234   0.27 / .114   1.22 / .379   0.04 / .021   0.31 / .084   0.92 / .237   0.40 / .078      0.53 / .158
+  NLL   self-conditioned”         cutmix/mixupinpainted            0.020.14 // .016.063   0.060.02 // .028.017   1.660.49 // .440.199   0.180.67 // .085.268   0.480.04 // .238.025   1.820.27 // .452.117   0.050.22 // .021.103   0.160.29 // .070.076   0.770.39 // .162.059   0.190.48 // .033.141      0.180.66 // .064.197
+             ”          inpainted+           0.04 / .008   0.01 / .006   0.12 / .044   0.10 / .037   0.02 / .011   0.40 / .149   0.14 / .044   0.17 / .032   0.25 / .043   0.11 / .028      0.14 / .040
+             ”          inpainted++          0.02 / .013   0.01 / .011   0.10 / .045   0.06 / .031   0.02 / .019   0.19 / .084   0.04 / .014   0.14 / .039   0.28 / .075   0.09 / .047      0.10 / .038
+
+Table 2.  Ablation study. We compare several forms of content alignment and content augmentation.  Performance are in terms of
+AUC/Accuracy (top) and ECE/NLL (bottom). Note that all variants share a standard augmentation (blurring + JPEG compression) as
+proposed in [43]. For content alignment we consider image pairing strategies described in Fig. 3: text-driven generation, reconstruction
+through autoencoder, and our proposal using self-conditioned images. For the last solution we test several forms of augmentation: a stan-
+dard cutmix/mixup, and three proposed strategies based on inpainting described in Sec. 4.2. Bold underlines the best performance for each
+column with a margin of 1%.
+
+
+4. Proposed Method
+
+To realize and test our bias-free training paradigm we:
+• build a dataset consisting of real and generated fake im-
+  ages, where the latter are well aligned with their real
+  counterparts but include the forensic  artifacts of the
+  diffusion-based generation process. The dataset is created
+                                                                                                   (a)                     (b)                      (c)
+  starting from the images collected from the training set of
+ MS-COCO dataset [25], for a total of 51,517 real images.      Figure 5. Power spectra computed by averaging (2000 images)
+   It is then enriched through several forms of augmentation,      the differences between:  (a) real and reconstructed images, (b)
+  including locally inpainted images, and comprises even-       real and self-conditioned images, and (c) reconstructed and self-
+                                                                   conditioned images. We can observe that the self-conditioned gen-  tually 309,102 generated images.
+                                                                         eration embeds forensic artifacts even at lower frequencies com-
+• use this aligned dataset to fine-tune end-to-end a Vision
+                                                                 pared to reconstructed images. This means that it is possible to
+  Transformer (ViT)-based model. Specifically, we adopt a
+                                                                            better exploit such inconsistencies to distinguish real from fakes.
+  variant of the ViT network proposed in [13] with four reg-
+  isters and use the pretraining based on the self-supervised
+  learning method DINOv2 [31]. During training, we avoid
+  resizing the image and rely on large crops of 504 × 504      puts: the reference image, a binary mask of the area to in-
+  pixels. At inference time, we also extract crops of the      paint, and a textual description. Using an empty mask, we
+  same dimension from the image (if the image is larger we     induce the diffusion steps to regenerate the input, that is, to
+  average the results of multiple crops).                        generate a new image with exactly the same content as the
+                                                               input image. For the content augmentation process, we useTo ensure fake images semantically match the content of
+                                                                the Stable Diffusion 2.1 inpainting method to replace an ob-real images, we exploit the conditioning mechanism of Sta-
+                                                                        ject with a new one, chosen from the same category or fromble Diffusion models that allows us to control the synthesis
+                                                          a different one. Moreover, as shown in Fig. 4, besides theprocess through a side input, which can be a class-label, a
+                                                                  default inpainting, which regenerates the whole image, wetext or another image. The side input is firstly projected
+                                                             consider also a version where the original background is re-to an intermediate representation by a domain specific en-
+                                                                   stored. Note that during training, we balance the real andcoder, and then feeds the intermediate layers of the autoen-
+                                                             fake class taking an equal number of images from each.coders for denoising in the embedding space. After several
+denoising steps, a decoder is used to obtain the conditioned        In the following, we present our ablation study. To avoid
+synthetic image from embedded vector (See Fig. 1). In our      dataset bias we use WildRF and Synthbuster. In addition,
+self-conditioned generation, we use the inpainting diffusion    we test on 1000 FLUX and 1000 Stable Diffusion 3.5 im-
+model of Stable Diffusion 2.1 [36], that has three side in-      ages, which are some of the latest synthetic generators.
+
+
+
+                                                    18689"
+601afa6e41bc,Phase2/2,Investigating the diversity and stylization of contemporary user generated visual arts in the complexity entropy plane,Seunghwan Kim; Byunghwee Lee; Wonjae Lee,Scientific Reports 15:22075,2025,Publisher version,DeviantArt and Behance 2010–2020,Observational style analysis in entropy-complexity space,Temporal observational analysis; no binary classification split,H and C; similarity relationships,"149,780 platform artwork images analyzed; not a matched human–diffusion dataset",1,Abstract,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1038/s41598-025-04448-9,"                                                                        www.nature.com/scientificreports
+
+
+
+    OPEN Investigating the diversity and
+           stylization of contemporary
+          user generated visual arts in the
+         complexity entropy plane
+                    Seunghwan Kim1,4, Byunghwee Lee2,3,4 & Wonjae Lee1
+
+                       The advent of computational and numerical methods in recent times has provided new avenues for
+                            analyzing art historiographical narratives and tracing the evolution of art styles therein. Here, we
+                             investigate an evolutionary process underpinning the emergence and stylization of contemporary user-
+                          generated visual art styles using the complexity-entropy (C-H) plane, which quantifies local structures
+                                in paintings. Informatizing 149,780 images curated on the DeviantArt and Bēhance platforms from
+                        2010 to 2020, we analyze the relationship between local information in the C-H space and multi-level
+                        image features generated by a deep neural network and a feature extraction algorithm. The results
+                             reveal significant statistical relationships between the C-H information of visual artistic styles and the
+                                dissimilarities of the multi-level image features over time within groups of artworks. By disclosing
+                         a particular C-H region where the diversity of image representations is noticeably manifested, our
+                           analyses reveal an empirical condition of emerging styles that are both novel in the C-H plane and
+                            characterized by greater stylistic diversity. Our research shows that visual art analyses, combined
+                          with physics-inspired methodologies and machine learning, can provide macroscopic insights into
+                             quantitatively mapping relevant characteristics of an evolutionary process underpinning the creative
+                               stylization of uncharted visual arts of given groups and times.
+
+                          The contemporary visual arts scene embraces a wide array of artistic forms and creative standards that are gaining
+                               popularity through information-sharing platforms. While there have been significant historical examinations of
+                      how creative visual art styles have evolved, the quantitative analysis of creative stylization is a relatively recent
+                            development. We introduce a research design that aims to document the characteristics of the emergence of
+                                     artistic movements and their subsequent stylizations. By testing more refined empirical data, we improve upon
+                              the previous statistical physics approach. Our interdisciplinary research design incorporates two distinct fields.
+                                         First, theoretical definitions of creativity have identified two sequential phases in the recognition of creativity.
+                             In the first phase, creativity is considered “the intentional arrangement of cultural and material elements in a
+                        way that is unexpected for a given audience1. In the following phase, the creativity finds its “relevance in the new
+                                 context,” where it contributes to the solution of a problem it assiduously formulated2. While the first phase that
+                              “caused scandal” may not necessarily result in the second phase, it often serves as a catalyst for the development
+                                of novel artistic styles. Art movements such as Surrealism and Dadaism, among others, have used this disruption
+                                to challenge conventional norms and spark creative revolutions3.
+                         Upon the concatenation of the initial disruption and the emergence of a new style, a transformative process
+                               takes place. This process influences the creative acts of subsequent artists through the observation, analysis,
+                         and internalization of the new style. By assimilating and building upon these innovations, artists contribute to
+                              the dynamic evolution of art4,5. Therefore, to gain a comprehensive understanding of the creative process, it is
+                                  essential to consider the two phases separately. By analyzing the initial novelty and the emergence of a new style
+                                as distinct phenomena, we can better appreciate the individualized contributions of each artwork as an original
+                             mutation. This analytical approach allows for a more nuanced interpretation of artistic development within an
+                          enhanced spatiotemporal framework.
+                               Second, while theoretical studies of creativity in the domain of art can be traced back to earlier eras,
+                           contemporary efforts to quantitatively assess and measure relevant characteristics have only recently gained
+
+
+                             1Graduate School of Culture Technology, KAIST, Daejeon 34141, Republic of Korea. 2Center for Complex Networks
+                          and Systems Research, Luddy School of Informatics, Computing, and Engineering, Indiana University, Bloomington,
+                             IN 47408, USA. 3Institute of Basic Science, Sungkyunkwan University, Suwon 16419, Republic of Korea. 4Seunghwan
+                        Kim and Byunghwee Lee contributed equally to this work. email: wnjlee@kaist.ac.kr
+
+Scientific Reports |    (2025) 15:22075                               | https://doi.org/10.1038/s41598-025-04448-9                                  1"
+1c5b90c3f4ee,Phase2/3,ArtBrain: An Explainable End-to-End Toolkit for Classification and Attribution of AI-Generated Art and Style,Ravidu Suien Rammuni Silva; Ahmad Lotfi; Isibor Kennedy Ihianle; Golnaz Shahtahmassebi; Jordan J. Bird,arXiv:2412.01512v1 (earlier than TMM),2024,Author preprint,"AI-ArtBench, 185,015 images, 10 styles",Joint source/style classification and generator attribution,Release train/test; test also used as validation in training (PDF training section); differs from our independent validation,F1; attribution accuracy,"Joint source/style F1 0.869; generator-attribution accuracy 0.999; 60,000 human and 125,015 generated images",1,Abstract,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/TMM.2026.3743638,"        ARTBRAIN: AN EXPLAINABLE END-TO-END TOOLKIT FOR
+        CLASSIFICATION AND ATTRIBUTION OF AI-GENERATED ART
+                        AND STYLE
+
+
+
+
+                                       Ravidu Suien Rammuni Silva1, Ahmad Lotfi2,
+                                    Isibor Kennedy Ihianle3, Golnaz Shahtahmassebi4, Jordan J. Bird5
+                                              Department of Computer Science1,2,3,5
+                                             Department of Physics and Mathematics42024                                    Nottingham Trent University, United Kingdom.
+                          1ravidu.rammunisilva2024@my.ntu.ac.uk, 2ahmad.lotfi@ntu.ac.uk
+               3isibor.ihianle@ntu.ac.uk, 4golnaz.shahtahmassebi@ntu.ac.uk, 5jordan.bird@ntu.ac.ukDec
+2
+
+                                     ABSTRACT
+
+                       Recently, the quality of artworks generated using Artificial Intelligence (AI) has increased signif-
+                          icantly, resulting in growing difficulties in detecting synthetic artworks. However, limited studies
+                     have been conducted on identifying the authenticity of synthetic artworks and their source. This[cs.AI]                     paper introduces AI-ArtBench, a dataset featuring 185,015 artistic images across 10 art styles. It
+                        includes 125,015 AI-generated images and 60,000 pieces of human-created artwork. This paper also
+                         outlines a method to accurately detect AI-generated images and trace them to their source model. This
+                   work proposes a novel Convolutional Neural Network model based on the ConvNeXt model called
+                     AttentionConvNeXt. AttentionConvNeXt was implemented and trained to differentiate between the
+                      source of the artwork and its style with an F1-Score of 0.869. The accuracy of attribution to the
+                       generative model reaches 0.999. To combine the scientific contributions arising from this study, a
+                    web-based application named ArtBrain was developed to enable both technical and non-technical
+                        users to interact with the model. Finally, this study presents the results of an Artistic Turing Test con-
+                      ducted with 50 participants. The findings reveal that humans could identify AI-generated images with
+                     an accuracy of approximately 58%, while the model itself achieved a significantly higher accuracy of
+                     around 99%.
+
+
+           Keywords AI Art · Explainable AI · Diffusion Models · Convolutional Neural NetworksarXiv:2412.01512v1          1  Introduction
+
+
+         A key advancement of recent generative AI models is their ability to produce visually appealing and realistic art [1, 2, 3].
+              Generative AI models have become very advanced; an art generated using the model won a fine art competition meant
+                for human artists [4]. A recent example is the ‘Sony World Photography Award’ [5], which was won by an AI-generated
+             image. Taking into account these recent developments, the future of the internet can be envisioned to be filled with
+               synthetic artwork generated using Image Generative Models (IGMs) and other synthetic media content. The ownership
+             and responsibility aspects of this synthetic content are still an ongoing debate and a heavily understudied topic. Due to
+                  this, the detection of synthetic data is crucial, especially for art, where due credit should always be given to the artist
+             and the artist’s skill.
+
+          IGMs were inspired by the ideas published in [6]. One of the first generative models published was Generative
+              Adversarial Models (GAN), a type of IGM that generates images using two competing models [7]. Variational Auto
+             Encoder (VAE) has been explored for image generation using an Encoder-Decoder-based model setup [8]. The encoder
+             encodes the input image in a vector-based form, while the decoder uses the vector to recreate the image. GANs rapidly
+             improved with new variants including StyleGAN [9], generating increasingly more realistic images."
+5a21e33267e5,Phase2/4,CoDA: Color Distribution Probing for Efficient and Generalizable AI-Generated Image Detection,Zexi Jia; Zhiqiang Yuan; Xiaoyue Duan; Jinchao Zhang; Jie Zhou; Anil K. Jain,arXiv:2605.24306 (TPAMI author version),2026,Author preprint,"FakeForm, 62 domains",Cross-domain AI-image detection,Photorealistic training; held-out diverse visual domains,Accuracy; AP,"FakeForm mean accuracy/AP 77.7%/88.1%; endpoint is AP, not AUROC",11,Discussion of Table VI (table on PDF p12),claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/TPAMI.2026.3696399,"                                                                                                                                                 11
+
+
+  Robustness to Diverse GANs. On the GAN-centric Foren-   whereas CoDA remains comparatively stable. Its advantage
+Synths benchmark [6], CoDA achieves state-of-the-art perfor-    is particularly clear in domains far from natural photography,
+mance with 98.2/99.6 Acc/AP (Table  II), outperforming or   such as Paper Cutting, Depth Map, and Film Still. At the same
+matching prior leading methods such as FatFormer. CoDA   time, performance remains domain-dependent, with lower re-
+also remains stable across varied GAN architectures, from   sults on domains such as Sketch and Thermodynamic Diagram.
+earlier models such as CycleGAN to stronger generators such   This observation motivates the more detailed domain-wise
+as StyleGAN2, suggesting that the learned cue is not tied to   analyses and failure-case discussion that follow.
+a specific adversarial architecture.
+  Generalization from GANs to Diffusion Models. A key                                                             E. Efficiency
+test for modern detectors  is generalizing from GAN-based
+                                           CoDA also provides a favorable balance between robustnesstraining to the distinct artifacts of diffusion models. On the
+                                                       and efficiency. Many recent detectors rely on large VLMsdiffusion-only dataset from Ojha et al. [13], CoDA achieves
+                                                                    to achieve strong generalization, but their computational costthe best mean result with 97.5% accuracy and 99.4% AP
+                                                                      limits practical deployment. In contrast, CoDA achieves high(Table III).
+                                                            accuracy with real-time throughput using a compact archi-  This advantage carries over to the highly diverse GenIm-
+                                                                    tecture that explicitly exploits probe-induced color cues. Asage benchmark [51], where CoDA again achieves the best
+                                                      summarized in Table VII, CoDA processes 125.2 frames peroverall performance (95.9% accuracy, 99.1% AP; Table IV),
+                                                             second, whereas VLM-based systems such as AIGI-Holmesoutperforming competitors on most recent models, includ-
+                                                             reach only 2.2 FPS. CoDA is also extremely compact, withing Midjourney and Stable Diffusion variants. In contrast,
+                                                           only 1.48M parameters, compared with the 7B+ scale of AIGI-methods relying on pre-trained semantic features (e.g., UFD,
+                                                       Holmes.FatFormer) or frequency analysis (FreqNet) exhibit marked
+                                                                      Crucially, this efficiency does not come at the expense ofdegradation when moving from GANs to diffusion models,
+                                                                 robustness. Compared with other lightweight detectors suchwhereas CoDA remains  consistently  strong. These  results
+                                                               as FreqNet and SAFE, CoDA maintains stronger performancesuggest that the probe-induced color-distribution cue captured
+                                                          under both generator and domain  shifts. This makes  it aby CoDA transfers more consistently across generator families
+                                                                     practical solution for settings that require both scalability andthan cues tied primarily to high-level semantics or specific
+                                                          broad generalization.frequency patterns.
+
+                                                                         F. Robustness to Image Perturbations
+D. Performance on FakeForm
+                                                     To assess practical robustness, we evaluate CoDA under
+  Traditional benchmarks are essential for assessing cross-                                             common image perturbations that simulate real-world degra-
+model generalization, but they are largely confined to photo-                                                               dation during storage and transmission. Following the proto-
+realistic imagery. We next report results on FakeForm, which                                                                 col of FatFormer [14], we apply four transformations with
+enables  evaluation  of both cross-model and cross-domain                                           50% probability: Gaussian blurring, random cropping, JPEG
+generalization in a broader setting.                                                         compression (QF=75), and Gaussian noise. The evaluation is
+  Cross-Model  Generalization. We  first  consider  cross-                                                          conducted on the GAN-based ForenSynths and the diffusion-
+model generalization on the photorealistic subset of FakeForm.                                                          based GenImage test sets.
+In this setting,  all test images belong to the photorealistic                                                     The results in Table VIII show that CoDA remains highly
+setting, and the goal is to measure transfer across generators                                                                          resilient under these perturbations. The advantage is especially
+rather than across domains. As reported  in Table V, the                                                                    clear on diffusion-generated images, where competing meth-
+evaluated generators span Diffusion, Flow-Matching, Unified,                                                         ods suffer larger performance drops. For example, under JPEG
+and Autoregressive paradigms, including Janus-Pro, BLIP-3o,                                                            compression, CoDA decreases only from 95.3% to 93.7% in
+Infinity, BAGEL, VAR, HART, Hi-MAR, SD-3, PlayGround,                                                         Acc, whereas other methods degrade more substantially. This
+PixArt, FLUX, SD-XL, and SD-2.0. CoDA achieves strong                                                             behavior is consistent with the proposed probe mechanism:
+overall performance, surpassing most specialized detectors and                                                                 perturbations such as blurring and compression may weaken
+remaining highly competitive with large VLM-based systems.                                                             high-frequency or semantic cues, but the broader statistical
+It also attains top-tier results on several recent generators,                                                                       regularities captured by the Noise-Quantization Probe remain
+including Infinity, PlayGround, SD-XL, and SD-2.0. These                                                                       relatively stable.
+results indicate that the proposed cue transfers well across
+diverse generation paradigms within the photorealistic setting.
+                                                      G. Case Study and Failure Analysis  Cross-Domain Generalization. We further evaluate domain
+generalization by training on photorealistic images and testing     Figure 6 presents representative qualitative examples illus-
+across 62 diverse visual domains. As shown in Table VI,   trating both the strengths and limitations of CoDA across
+CoDA achieves the highest mean performance of 77.7/88.1   diverse FakeForm domains. When generative artifacts mani-
+Acc/AP, outperforming all compared methods, including large   fest as color-distribution irregularities, the Noise-Quantization
+VLMs. Methods  that  perform  strongly on  photorealistic   Probe yields clear and informative responses, enabling CoDA
+content, such as FatFormer  (76.5/87.2) and AIGI-Holmes   to make accurate predictions while retaining the efficiency of
+(73.6/86.4), degrade more substantially under domain shift,   a lightweight detector."
+db8080fbeb05,Phase2/5,FIRE: Robust Detection of Diffusion-Generated Images via Frequency-Guided Reconstruction Error,Beilin Chu; Xuan Xu; Xin Wang; Yufei Zhang; Weike You; Linna Zhou,CVPR,2025,CVF conference paper,DiffusionForensics and updated-generator benchmark,Diffusion-image detection,ImageNet-subset pretraining then training-source-specific fine tuning and updated generator testing,AUC; accuracy,Table 2 Kandinsky3-trained mean AUC FIRE 78.1% versus FakeInversion 70.5%; source-specific setting,6,"Table 2, Average row, Kandinsky3 configuration",claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/CVPR52734.2025.01197,"                 Train set w.
+                                              LSUN-B. w ADM                                                Imagenet w ADM
+    Eval set    Gen. method
+               Gen.
+                   Model  CNNDet[42] AEROBLADE[32]  DIRE[43]  FakeInversion[7] FIRE(ours)  CNNDet AEROBLADE   DIRE    FakeInversion FIRE(ours)
+             method
+           ADM[12]         73.4/57.6       99.1/98.3       99.4/96.4     100.0/99.8    100.0/100.0  99.6/99.3  100.0/100.0  100.0/100.0  100.0/100.0  100.0/100.0 Imagenet[11]
+              SD-v1[33]        67.3/53.4       98.7/97.4       98.3/95.2      99.7/97.6     100.0/100.0  87.2/84.7    99.7/98.3    100.0/99.6   100.0/100.0  100.0/100.0
+        ADM             96.8/93.7      100.0/100.0    100.0/100.0   100.0/100.0   100.0/100.0  76.0/54.2    98.4/97.5    100.0/99.7   100.0/100.0  100.0/100.0
+           DDPM[18]        75.3/55.1       98.9/97.8      100.0/100.0   100.0/100.0    100.0/99.8   68.4/45.1    99.1/98.2    100.0/97.7   100.0/100.0  100.0/100.0
+            IDDPM[29]       76.2/49.5       99.7/98.2      100.0/100.0     99.8/98.4     100.0/100.0  77.6/53.8    99.5/98.7    100.0/100.0   98.6/97.9   100.0/100.0
+           PNDM[25]        81.1/49.0       99.2/97.9       99.7/88.6     100.0/99.7    100.0/100.0  73.2/38.7    97.9/97.4    100.0/100.0  100.0/100.0  100.0/100.0
+              SD-v1[33]        69.7/49.7       99.6/98.4      100.0/99.8    100.0/100.0   100.0/100.0  66.8/54.3    99.3/98.1    100.0/100.0  100.0/100.0  100.0/100.0
+ LSUN-B.[46] SD-v2[33]        78.7/50.4       98.3/97.5      100.0/100.0   100.0/100.0   100.0/100.0  82.4/63.1    99.0/97.8    100.0/100.0   100.0/99.9   100.0/100.0
+            LDM[33]         59.4/49.2       99.8/98.5      100.0/100.0    100.0/99.8    100.0/100.0  60.8/47.5    98.6/97.7    100.0/98.6   100.0/100.0  100.0/100.0
+            VQD[15]         71.5/51.9       98.5/97.2      100.0/99.8    100.0/100.0   100.0/100.0  72.1/50.2    99.8/98.4    100.0/100.0   100.0/99.7   100.0/100.0
+               IF[35]            78.0/50.3       99.3/97.6      100.0/100.0    100.0/99.9    100.0/100.0  75.6/49.8    98.9/97.3    100.0/100.0   100.0/99.9   100.0/100.0
+             DALLE·2[31]     78.3/67.1       99.0/98.1      100.0/98.2    100.0/100.0   100.0/100.0  77.1/57.3    99.2/98.5    100.0/99.9   100.0/100.0  100.0/100.0
+              Mid.              86.1/74.6       97.9/97.3      100.0/100.0    100.0/99.8    100.0/100.0  87.9/73.2    98.7/97.9    100.0/100.0   100.0/99.7   100.0/100.0
+ Average                         76.3/57.8       99.08/98.0      99.8/98.3     100.0/99.6    100.0/100.0  77.3/59.3    99.1/98.1    100.0/99.7    99.9/99.7   100.0/100.0
+
+Table 1. Comparisons of our FIRE and other competitive state-of-the-art detectors. We evaluate models on the ofﬁcal Diffusion-
+Forensics dataset [43]. All the modles are re-trained with the ofﬁcial codes. We report AUC (%) and ACC (%) (ACC/AUC in the table).
+
+    Train set                   LAION[36] + DALLE·3                             LAION + Kan.3
+ Eval set Model  CNNDet AEROBLADE  DIRE   FakeInversion FIRE(ours)  CNNDet AEROBLADE  DIRE   FakeInversion FIRE(ours)
+ DALLE·3[6]     52.1/49.8    55.6/52.7    56.2/53.9   74.1/65.9    78.3/72.6   44.8/48.9    51.2/49.7    45.4/47.7   64.5/61.2    76.6/72.0
+ Kan.3[3]         46.3/50.0    53.5/51.0    52.4/49.6   68.3/62.7    74.5/68.7   51.5/47.6    56.6/53.8    55.2/52.1   78.7/73.8    86.5/79.9
+ Mid.            50.6/50.0    47.6/50.2    53.1/50.2   59.6/54.5    66.2/64.7   45.6/50.0    48.6/49.9    52.1/49.8   65.0/58.2    71.4/66.9
+ SDXL[30]       48.4/50.1    53.3/49.6    53.2/52.6   72.1/69.4    70.2/67.2   47.8/50.0    53.2/49.5    51.2/49.6   70.7/66.4    79.8/73.7
+ Vega[16]        50.0/50.0    52.8/49.5    47.2/47.0   69.7/65.1    70.6/67.2   47.3/50.0    51.3/50.0    48.3/49.9   73.5/68.6    76.2/71.9
+ Average         49.5/50.0    52.6/50.6    52.4/50.7   68.8/63.5    72.0/68.1   47.7/49.3    52.2/50.6    50.4/49.8   70.5/65.6    78.1/72.9
+
+Table 2. Performance comparison of FIRE and baselines on updated generation methods. Each model is loaded with weights pre-
+trained on the ImageNet subset of DiffusionForensics, then ﬁne-tuned and tested on speciﬁc datasets. We report AUC (%) and ACC (%)
+(ACC/AUC in the table).
+
+
+DiffusionForensics  is  a  relatively  simple  open-source      training, with 1,000 for testing.  These models include:
+benchmark.  We chose to use the LSUN-bedroom and    DALL·E 3 [6], Kandinsky 3 [3], Midjourney1, SDXL [30],
+ImageNet subsets for experiments. LSUN-bedroom sub-     and Segmind Vega [16].
+set collects bedroom images from LSUN-Bedroom [46]     Implementation details.  For the data preprocessing, we
+and generates fake images using various DMs, including:     apply a series of random augmentations, including ﬂip,
+ADM [12], DDPM [18], IDDPM [29], PNDM [25], SD-v1      crop, color jitter, grayscale, cutout, noise, blur, jpeg, and
+[33], SD-v2 [33], LDM [33], VQ-Diffusion [15], IF [35],      rotate. Each image is resized to 256 ≃256 along the short-DALLE·2 [31], and Midjourney 1. The training set con-      est side. During training, the batch size is set to 16, and we
+sists of 40,000 real images and 40,000 ADM-generated im-     use the Adam optimizer with an initial learning rate of 1e-4.
+ages. For each subset, we select 1,000 real and 1,000 gener-   We train for 100 epochs, and all experiments are conducted
+ated images for testing. Additionally, the ImageNet subset     on a single NVIDIA A100 GPU. We adopt two widely used
+is crafted to evaluate models in general scenarios. Specif-     metrics for image generation detection: Area Under ROC
+ically, they use ADM [12] and SD-v1 [33] to generate im-    (AUC) and accuracy (ACC), to evaluate the effectiveness of
+ages. We also use 40,000 real and 40,000 ADM-generated     models. It is worth mentioning that we use the AE from SD-
+images for training, with 5,000 real and 5,000 generated im-     v1.5 [1] to compute reconstruction errors. Stable Diffusion
+ages selected for testing across both ADM and SD-v1 sub-     uses a variational autoencoder (VAE) [22] with Kullback-
+sets.                                                           Leibler regularization.
+Self-collected dataset. To assess the performance of our
+model in more realistic scenarios, we follow [7] and form     4.2. Comparison to Baselines
+a new dataset using several novel DMs. For real images,      4.2.1. Performance on DiffusionForensics
+we randomly sample 10,000 images from LAION [36] for                                                           Table 1 shows  the performance of  different  detection
+training, with 1,000 images for testing. For generated im-                                                      models under various generation methods on the LSUN-
+ages, we use prompts from Midjourney and generate 10,000                                                 Bedroom and ImageNet datasets. We observe that existing
+images using several open-source text-to-image models for                                                                   detectors, such as CNNDetection, exhibit signiﬁcant per-
+  1https://www.midjourney.com                          formance drops when dealing with unseen datasets and un-
+
+
+
+                                                    12835"
+013f01af5670,Phase2/6,Towards Universal AI-Generated Image Detection by Variational Information Bottleneck Network,Haifeng Zhang; Qinghui He; Xiuli Bi; Weisheng Li; Bo Liu; Bin Xiao,CVPR,2025,CVF conference paper,15 generator columns in Table 1; 17 generators overall,Universal AI-image detection,Diffusion-source training and cross-series generalization; Table 1 endpoint,Average precision,Table 1 mean AP VIB-Net 95.53%; compare NPR row in same table for 89.98%,6,"Table 1, mAP column",claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/CVPR52734.2025.02219,"                                        Diffusion Models                         Generative Adversarial Networks       Others     AP
+ Detection method
+               SDV1.4 SDV1.5 ADM GLIDE Midjourney Wukong VQDM Pro-  Cycle-Big-  Style- Star-  Gau- Deep- SAN  Average
+                                               GAN GAN GAN GAN GAN GAN fake
+
+  CNNSpot[39]    99.98   99.83  51.10  58.80    67.93     99.80   49.92  53.15 50.23 49.79 55.98 47.07 56.08 54.86 54.03  63.24
+    Fusing[14]     99.90   97.98  69.30  94.20    81.20     99.90   84.60  67.63 87.79 69.37 67.90 91.20 43.08 72.56 89.42  81.07
+    Lgrad[36]     99.94   99.92  58.52  84.00    91.06     99.72   56.34  83.59 90.24 47.51 82.74 99.19 49.25 66.49 65.09  78.24
+    Univfd[28]     96.04   96.26  66.34  93.73    92.08     90.98   74.53  51.77 63.42 75.81 54.12 54.93 65.99 70.24 83.34  75.31
+    NPR[37]     100.00  99.97  94.70  95.80    95.50    100.00  86.30  83.30 94.90 72.00 82.70 97.30 66.00 85.30 95.90   89.98
+   CLIPping[17]    93.97   93.10  68.00  87.44    77.34     86.52   77.17  88.54 88.44 85.33 77.23 89.82 81.56 61.19 57.37  80.87
+     Ours       100.00  99.97  95.49  97.13    97.81     99.93   97.00  96.59 98.44 97.17 84.31 97.60 96.94 81.32 93.27  95.53
+
+
+Table 1. The AP values of different methods based on diffusion sources. Models outside the Diffusion Models (DMs) column are
+considered as the generalization domain across generative model series.
+
+
+                                        Diffusion Models                        Generative Adversarial Networks      Others   ACC
+ Detection method
+               SDV1.4 SDV1.5 ADM GLIDE Midjourney Wukong VQDM Pro-  Cycle-Big-  Style- Star- Gau- Deep- SAN Average
+                                               GAN GAN GAN GAN GAN GAN fake
+
+  CNNSpot[39]    99.48   99.35  50.10  50.90    56.42     97.90   50.04  50.27 49.81 50.10 50.98 49.77 50.38 51.98 50.22  60.51
+    Fusing[14]     99.90   99.91  51.30  57.50    52.30     99.90   64.20  51.20 52.40 53.50 50.20 58.20 49.32 51.02 64.84  63.71
+    Lgrad[36]     99.12   99.05  53.00  64.24    76.34     97.53   50.93  61.61 60.74 48.82 61.43 50.17 49.70 50.17 56.49  65.29
+    Univfd[28]     83.55   84.80  53.35  75.30    71.60     73.55   55.10  58.65 59.30 61.45 56.80 61.45 55.30 58.40 72.00  65.37
+    NPR[37]     100.00  99.90  73.00  89.70    82.30    100.00  68.30  60.30 67.20 59.20 58.00 73.20 52.00 74.80 89.60  76.50
+   CLIPping[17]    96.07   95.48  70.14  85.00    77.66     88.86   79.35  88.78 88.48 89.57 80.69 90.82 85.94 66.91 61.64  83.03
+     Ours       99.55   99.20  73.85  74.25    88.05     98.25   89.35  89.70 88.60 91.20 74.10 80.70 87.15 72.00 81.50  85.83
+
+
+Table 2. Similar to Tab. 1, we compare these methods using classification accuracy, which is influenced by manually set thresholds. For a
+fair comparison, the classification threshold for all models is set to 0.5.
+
+
+cluding CNNDetection (CVPR 2020) [39], FreDect (ICML     5.2. Performance evaluation based on Diffusion
+2020)  [8],  Fusing  (ICIP  2022)  [14],  LGrad (CVPR          sources
+2023)  [36], DIRE (ICCV  2023)  [40],  Ojha (CVPR
+                                                                                     It is well-known that images generated by the current state-
+2023) [28], NPR (CVPR 2024) [37], CLIPping(ICMR
+                                                                     of-the-art diffusion models are more realistic than those
+2024) [17]. To ensure a fair comparison, we re-train and
+                                                            generated by other types of generative models. To validate
+predict using the official code on ForenSynths and Genim-
+                                                                the effectiveness of the proposed method, we designed a
+age.
+                                                             challenging experimental scenario. Specifically, we trained
+Evaluation metrics We follow existing research and con-     various detector using Stable Diffusion v1.4 and then tested
+sider two metrics: Average Precision (AP) and Accuracy     them on images generated by 15 different models, which
+(ACC). Average Precision (AP) is threshold-independent     include the latest diffusion-based generative models as well
+and evaluates the overall performance of the model. Accu-     as classic GANs. The results are presented in Tabs. 1 and 2.
+racy is defined as the number of correct predictions divided     Bold indicates the highest value in the column, and under-
+by the number of test images, and this metric is influenced      line indicates the second highest value in the column. This
+by the decision threshold. Given that there is no prior infor-      applies to the other tables as well.
+mation in real-world scenarios, we standardize the decision                                          We first evaluated the performance of each model on the
+threshold to 0.5.                                                                          latest generative models. As shown in Tabs. 1 and 2, ad-
+Implementation Details Our method is implemented using     vanced diffusion models significantly challenged most de-
+the PyTorch framework on the NVIDIA Tesla V100. The      tection models, causing a sharp drop in performance. For
+model is trained with the Adam optimizer, a learning rate of     example, Univfd and Lgrad experienced a 40% decrease
+2 × 10−4, and a batch size of 256. Following the same data      in accuracy and precision when tested on ADM, Midjour-
+augmentation strategy as in [39][28], which includes Gaus-      ney, and VQDM. This decline is likely due to the high-
+sian blur and JPEG compression, experiments have shown      quality images produced by these models, which make it
+that this is critical for the model’s generalization ability.          difficult for detection methods to extract distinguishing fea-
+
+
+
+                                                    23833"
+b11a212074da,Phase2/9,PixelatedScatter: Arbitrary-Level Visual Abstraction for Large-Scale Multiclass Scatterplots,Ziheng Guo; Tianxiang Wei; Zeyu Li; Lianghao Zhang; Sisi Li; Jiawan Zhang,TVCG author manuscript,2026,Author manuscript,Scatterplot datasets and user study,Density-aware scatterplot abstraction,Visualization user tasks; not a classifier train/test protocol,Friedman p-value for regional density accuracy,"E1 across-method p-values 0.0362, 0.0625, 0.1070 for 600-square, 1200-square, 1800-square canvases; only first <0.05",8,"Section 4.2, Fig. 9 discussion",claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/TVCG.2025.3633908,"        MDM Invmin                         RS* Sampling                                 Dgird
+                                                                          Density distortion in high-density
+
+                                                               artifact
+
+
+
+
+
+                            Density Reversal                                                                             Density and Shape distortion
+   Both Density distortion
+              Color weaving                              Ours                                 Grey
+                                                                        Global Density preservation
+
+
+
+
+
+                                                                                             Legible Outlier labels
+
+
+Fig. 10: Detailed comparison results on DBLP samples. The first five images show results from different methods, followed by a grayscale density
+map. This map linearly converts density values in the range [0, 7] to grayscale [0, 1], as this range captures over 99.5% of the data points.
+
+ably worse on the small canvas.  Friedman tests indicate statisti-
+cally significant differences in accuracy among these methods (p =
+0.0362,0.0625,0.1070 for canvas sizes of 600 × 600, 1200 × 1200,
+and 1800×1800 respectively; all subsequent p-values follow this or-
+der). For relative class density perception(E2), our method and Color
+Weaving share the top rank, whereas the outlier-oriented strategy of
+MDM Invmin more readily inverts class density on small canvases
+(p = 0.0252,0.0153,0.0112). Recognition times in E1 and E2 are
+short and similar across methods (for E1, p = 0.6268,0.7603,0.2674;          𝜃𝑘= 5              𝜃𝑘= 25             𝜃𝑘= 35
+                                                                                                         (a)                                                                                                                               (b)                                                                                                                                                                              (c)                                                                                            𝐿𝑖𝑛𝑖𝑡= −1                                                                                                                     𝐿𝑖𝑛𝑖𝑡= −1                                                                                                                                               𝐿𝑖𝑛𝑖𝑡= −1for E2, p = 0.4830,0.6151,0.3386).
+  For semantic outlier perception(E3), on the 600 canvas size MDM
+Invmin and Color Weaving facilitate outlier perception due to more col-
+ored pixels; our method performs closely. As canvas size grows, outlier
+perception declines for all methods because the absolute number of
+colored pixels per region increases, making outliers harder to spot. Be-
+cause of the outlier-enhancement strategy, our method amplifies outlier                             Legible
+visibility, significantly outperforming others and declining more slowly                            line structure
+in terms of accuracy (p = 0.0117,0.0245,0.0382). The strategy also          𝜃𝑘= 15              𝜃𝑘= 15            𝜃𝑘= 15                                                                                                  (d)yields easily recognizable outlier class clusters, giving our method the                                                                                            𝐿𝑖𝑛𝑖𝑡= 0                (e)   𝐿𝑖𝑛𝑖𝑡= −1               (f)  𝐿𝑖𝑛𝑖𝑡= −2
+shortest completion times on all canvases (p = 0.0910,0.1290,0.0306).
+FPR appears correlated with the confusion of class distributions: our
+                                                                                              Fig. 11: Parameters analyze on HT sensor.
+method maintains a comparatively low FPR across all canvas sizes
+(p = 0.1875,0.1598,0.2081).                                                                      space. Our method also allows slight pixel displacement to maintain
+                                                                             inter-class density, but our displacement is controlled and does not
+4.3  Qualitative Evaluation                                                               exceed the original region. Additionally, our nonlinear mapping of
+To further explore the effectiveness of methods in terms of density   visual density enhances contrast for better density perception, and our
+and outlier preservation, we conducted a qualitative comparison on the    outlier highlighting strategy safely accentuates outlier representation.
+large-scale multiclass dataset DBLP samples, which contains 820,000
+points across 34 classes, shown in Fig. 10. All methods were rendered   4.4  Parameter Analysis
+on a 1200 × 1200 canvas. To facilitate the comparison of global density  The parameter θk influences the granularity of cluster partitioning, as
+preservation, we provide the greyscale density map.                shown in Fig. 11(a-c, e). For larger θk, the cluster partition is more
+  Both MDM Invmin and Color Weaving exhibited obvious density    lenient, even if there are some peaks within the region. When the pa-
+distortion because all pixels with points were rendered. This caused the   rameter is smaller, we obtain more fine-grained clusters. Thus, smaller
+visual density to be related to the area occupied by points rather than   θk generally leads to higher contrast. However, too small θk can result
+the data density. While MDM Invmin strategy can highlight outliers in   in overly fine cluster partitions, causing loss of structural information
+most cases, it leads to an imbalance in inter-class density and suffers   and increased computational time. Typically, we set θk from 10 to 20,
+from density reversal, where low-density but uniformly distributed   which maintains a good balance between density expression and com-
+classes occupy more pixels than the density. In Dgrid, displacement   putation time for most datasets. For sparser datasets or larger canvases,
+disrupts local structures, with noticeable distortion particularly in high   the value should be adjusted downward accordingly.
+density areas, and large-scale scatterplots require additional canvas     The parameter Linit helps retain structural information in sparse"
+8c3f3f2351ec,Phase2/10,"MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models",Amit Kumar Das; Klaus Mueller,TVCG author manuscript,2026,Author manuscript,Misleading-visualization benchmark,Detect/explain/correct misleading charts,Chart benchmark and user studies; not image authenticity detection,Issue identification coverage,Abstract reports 96% issue identification and coverage of 74 misinformation types; not artwork projection accuracy,1,Abstract,claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/TVCG.2025.3633884,"    © 2026 IEEE.Transactions on Visualization and Computer Graphics, 2026 (author's copy)
+
+MisVisFix: An Interactive Dashboard for Detecting, Explaining, and
+Correcting Misleading Visualizations using Large Language Models
+
+
+                                   Amit Kumar Das     , Klaus Mueller
+
+
+
+
+
+       Fig. 1: MisVisFix dashboard. Panel A displays the original misleading visualization with interactive issue localization, where hovering
+      over identified issues highlights the corresponding problematic regions directly on the chart. Panels B and C show corrected versions
+      generated by Claude and GPT, enabling side-by-side comparison. Panel D allows users to upload the original dataset to improve
+      accuracy when data extraction fails. Panels E and F list detected issues from GPT and Claude, categorized by severity. Panel G
+      contains the interactive chat, where users can request modifications and view updated visualizations.
+
+      Abstract—Misleading visualizations pose a significant challenge to accurate data interpretation. While recent research has explored
+       the use of Large Language Models (LLMs) for detecting such misinformation, practical tools that also support explanation and correction
+      remain limited. We present MisVisFix, an interactive dashboard that leverages both Claude and GPT models to support the full
+      workflow of detecting, explaining, and correcting misleading visualizations. MisVisFix correctly identifies 96% of visualization issues
+     and addresses all 74 known visualization misinformation types, classifying them as major, minor, or potential concerns. It provides
+       detailed explanations, actionable suggestions, and automatically generates corrected charts. An interactive chat interface allows users
+       to ask about specific chart elements or request modifications. The dashboard adapts to newly emerging misinformation strategies
+      through targeted user interactions. User studies with visualization experts and developers of fact-checking tools show that MisVisFix
+       accurately identifies issues and offers useful suggestions for improvement. By transforming LLM-based detection into an accessible,
+       interactive platform, MisVisFix advances visualization literacy and supports more trustworthy data communication.
+
+      Index Terms—Misinformation, Large Language Models, Data Extraction
+
+
+
+
+1  INTRODUCTION                                                     unjustified data filtering [21, 26, 36, 46]. As visualizations play an
+                                                                       increasingly central role in data-driven decision-making, identifyingData visualizations are powerful tools for communicating complex in-
+                                                              and correcting misleading visualizations has become increasingly criti-formation clearly and efficiently, enabling users to comprehend patterns,
+                                                                           cal [14,22,28,43].trends, and relationships within datasets [7,42]. However, misleading
+visualizations, whether created intentionally to deceive or inadvertently     Recent taxonomic work by Lo et al. [29] systematically categorized
+through poor design choices, can significantly distort a viewer’s percep-  74 misleading issues that can arise in visualizations. This comprehen-
+tion of the underlying data [4,11,34]. These misleading representations   sive framework has established a foundation for understanding how
+span various techniques, from obvious manipulations like truncated   visualizations can mislead viewers. However, detecting these issues
+axes to subtle distortions such as inappropriate encoding choices or   requires substantial expertise in visualization design principles and crit-
+                                                                                 ical data thinking skills, which many consumers of data visualizations
+                                                  may lack [6,10]. This expertise gap creates a pressing need for auto-
+ • Amit Kumar Das and Klaus Mueller are with the Computer Science        mated systems that can assist in identifying and correcting potentially
+   Department, Stony Brook University, USA (E-mails:                      misleading visualizations.
+   amitkumar.das@stonybrook.edu, mueller@cs.stonybrook.edu).             The emergence of multimodal Large Language Models (LLMs) with
+ Manuscript received xx xxx. 201x; accepted xx xxx. 201x. Date of Publication   advanced vision capabilities presents new opportunities for addressing
+xx xxx. 201x; date of current version xx xxx. 201x. For information on            this challenge [33, 40]. Recent research has shown that models like
+obtaining reprints of this article, please send e-mail to: reprints@ieee.org.     GPT-4V and Claude 3 can interpret complex visual information and rea-
+Digital Object Identifier: xx.xxxx/TVCG.201x.xxxxxxx                      son about visualization design issues [12,44]. In particular, Alexander"
+268221a5e3f9,Phase2/1,A Bias-Free Training Paradigm for More General AI-generated Image Detection,Fabrizio Guillaro; Giada Zingarini; Ben Usman; Avneesh Sud; Davide Cozzolino; Luisa Verdoliva,CVPR,2025,CVF conference paper,MS-COCO and self-conditioned synthetic images,Bias-controlled general AI-image detection,Aligned COCO-based training; external generator tests; not paintings,AUC; balanced accuracy,"Table 3 DINOv2+registers end-to-end AUC 99.0% and balanced accuracy 95.2%, versus linear probing 80.8% and 68.5%",6,"Table 3, DINOv2+reg LP and e2e rows",claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/CVPR52734.2025.01741," 100                              100                              100
+                                                                     Architecture  FT   AUC↑   bAcc↑   NLL↓   ECE↓
+  90                               90                               90
+                                                          DINOv2+reg   LP     80.8      68.5      0.58      .141
+  80                               80                               80                     DINOv2+reg   e2e     99.0      95.2      0.14      .040
+  70                               70                               70                    DINOv2       e2e     98.4      91.1      0.24      .077
+                                                                  SigLIP        e2e     95.4      89.9      0.28      .066
+  60                               60                               60
+     none 100  90   80   70   60       1.5    1.25    1.0    0.75   0.50       0.0    1.0    2.0    3.0    4.0
+              JPEG (QF)                       Resizing (scale)                       Blurring (  )           Table 3. We compare our solution, DINOv2+reg trained end-to-
+      reconstructed              self-conditioned              self-cond. inpainted+        end, with linear probing (LP) and also consider alternative archi-
+      reconst. inpainted          self-cond. inpainted          self-cond. inpainted++                                                                             tectures, basic DINOv2 and SigLIP.
+
+Figure 6. Robustness analysis in terms of balanced Accuracy car-
+ried out on nine generators of the Synthbuster dataset.                     Architecture   Training Set   AUC↑   bAcc↑   NLL↓   ECE↓
+
+                                                                       ProGAN [43]     54.7      45.2      4.85      .525
+                                                                        CLIP/ViT   LDM [10]        63.9      48.5      3.39      .487
+4.1. Influence of content alignment                                          Ours             75.2      73.9      0.66      .225
+
+                                                                       ProGAN [43]     66.1      65.0      5.43      .312
+In Tab. 2 we show the performance achieved with different         RINE    LDM [10]        83.0      75.7      0.53      .132
+dataset alignment strategies, as described in Fig. 3. Note                     Ours             89.9      83.2      0.39      .089
+that all variants are trained with standard augmentations,
+                                                                  Table 4. Ablation study on the influence of the training data (Pro-
+including blurring and JPEG compression, as proposed in
+                                                GAN, Latent Diffusion and our dataset) on methods used for AI-
+[43]. From the Table, we can observe that there is a large
+                                                                   generated image detection: CLIP [34] and RINE [22].
+gain in terms of balanced accuracy (≃20%) when moving
+from a text-driven generation (first row) to a solution where
+real and fake images share the semantic content, both re-     ing to reconstruction increases the accuracy from 80.7 to
+constructed and self-conditioned.  The proposed solution      83.9, while the joint use of self-conditioning and inpainting
+that uses a diffusion pass demonstrates further improve-      grants a significant extra gain, reaching 92.2 or even 96.4
+ment on average across all the evaluation metrics.  This     with inpainted++. The most significant gains are observed
+is highlighted in Fig. 5, where we show the power spec-     on DALL·E 2, DALL·E 3 and FLUX that, probably, differ
+tra evaluated by averaging the difference between the real      the most from Stable 2.1 in terms of architecture and hence
+and reconstructed images and the real and self-conditioned      require a stronger augmentation strategy to generalize.
+images. We observe that self-conditioned generation intro-                                                                 In Fig. 6, we analyze the impact of our content augmen-
+duces forensic artifacts even at the lowest frequencies, indi-                                                                        tation, assessing robustness under various operations: JPEG
+cating a detector trained on such images can exploit incon-                                                           compression, resizing, and blurring.  All three proposed
+sistencies on a broader range of frequencies.                                                                  variants of augmentation offer a clear advantage, especially
+                                                when resizing is applied. The joint use of self-conditioning
+4.2. Effect of content augmentation                                                      and inpainting results in the most robust approach.
+We also analyze the effect of different content augmenta-
+                                                               4.3. Influence of training data and architecturetion strategies (Fig. 4). We consider standard operations
+like cut-mix [48] and mix-up [51] and compare them with   We conduct additional experiments to gain deeper insights
+our proposed solutions that include three variants:               into the impact of the chosen architecture and the proposed
+• inpainted, we replace an object with another from the      training data on the same datasets shown in Tab. 2.
+  same category plus the version where the background is         First we compare our adopted model, DINOv2+reg
+  substituted with pristine pixels (effectively a local image      trained end-to-end, with an alternative fine-tuning strategy
+  edit);                                                             that involves training only the final linear layer, known as
+• inpainted+, we replace an object with another from both      linear probing (LP) that is largely adopted in the literature
+  the same and a different category plus the corresponding      [11, 30]. From Tab. 3 we can see that this latter solution
+  versions where the background is substituted with pristine     does not perform well. One possible explanation is that
+  pixels;                                                         features from last layer capture high-level semantics, while
+• inpainted++, we further add some more standard aug-     our dataset is built to exploit low-level artifacts that derive
+  mentation operations, such as scaling, cut-out, noise ad-     from first and intermediate layers [10, 22]. In the same Ta-
+  dition, and jittering.                                          ble we compare DINOv2+reg with the basic DINOv2 [31]
+Overall, it is evident from Tab. 2 that augmentation plays      architecture and SigLIP [49] and we can observe that DI-
+a critical role in enhancing model generalization and this    NOv2 with the use of registers achieves the best perfor-
+can be appreciated especially by looking at balanced ac-     mance, probably thanks to the fact that it avoids to discard
+curacy and calibration measures.  In fact, adding inpaint-      local patch information [13].
+
+
+
+                                                     18690"
+7174ac285c4f,Phase1/1; Phase2/7,Any-Resolution AI-Generated Image Detection by Spectral Learning,Dimitrios Karageorgiou; Symeon Papadopoulos; Ioannis Kompatsiaris; Efstratios Gavves,CVPR,2025,CVF conference paper,13 generators; mixed real-image sources,AI-image detection,Self-supervised spectral learning; cross-generator evaluation,ROC-AUC,Table 1 mean AUC SPAI 91.0% versus RINE 85.5% across 13 generators; SPAI SD3 75.9% and SD1.3 99.6%,6,"Table 1, average and generator columns",claim checked against batch-extracted PDF page; version scoped,https://doi.org/10.1109/CVPR52734.2025.01743," Image Size     < 0.5 MPixels                   0.5 - 1.0 MPixels                   > 1.0 MPixels
+                                                                         AVG
+ Approach    Glide SD1.3 SD1.4 Flux DALLE2 SD2 SDXL SD3 GigaGAN MJv5 MJv6.1 DALLE3 Firefly
+
+ NPR [66]      72.2   89.6   60.5  19.8     3.9    12.5  18.1  60.6    83.2     15.3    19.8     97.1     38.0   45.4
+ Dire [71]       33.3   59.9   61.3  45.7    52.2    68.5  46.9  49.2    36.3     41.9    50.3     65.2     49.9   50.8
+ CNNDet. [70]  59.2   59.0   61.2  39.8    71.5    57.5  67.4  30.2    73.4     48.8    56.7     23.5     73.4   55.5
+ FreqDet. [23]   43.6   92.3   92.7  36.5    47.4    42.5  66.5  69.8    63.2     36.9    27.5     42.2     80.9   57.1
+ Fusing [34]    63.0   62.8   62.2  57.5    76.7    66.9  62.1  38.8    80.4     64.0    74.0     25.2     76.3   62.3
+ LGrad [65]     76.5   82.4   83.4  74.9    85.7    60.7  70.2  12.7    89.9     69.2    79.6     30.0     42.0   65.9
+ UnivFD [52]   63.3   80.8   81.2  36.3    91.4    84.3  78.3  28.6    86.2     57.1    60.5     31.0     95.5   67.3
+ GramNet [48]  78.2   83.9   84.3  78.6    85.2    66.7  77.8  19.2    85.0     63.8    84.9     42.9     38.0   68.4
+ DeFake [63]    86.1   64.2   63.6  90.5    41.4    66.2  52.3  87.7    71.7     67.0    87.5     93.3     39.4   70.1
+ PatchCr. [77]   78.4   95.7   96.2  86.9    81.8    95.7  96.7  33.8    98.0     79.0    96.1     28.1     79.1   80.4
+ DMID [7]      73.1  100.0  100.0  97.2    54.3    99.7  99.6  67.9    67.9     99.9    94.4     41.3     90.2   83.5
+ RINE [39]     95.6   99.9   99.9  93.0    93.0    96.6  99.3  39.1    92.9     96.4    81.2     41.8     82.9   85.5
+
+ SPAI (Ours)    90.2   99.6   99.6  83.0    91.1    96.5  97.4  75.9    85.4     94.5    84.0     90.2     96.0   91.0
+
+Table 1. Comparison against state-of-the-art. Average AUC over 5 sources of real images is reported. Lower values are highlighted in
+red, while higher values are highlighted in green. Best overall average value is highlighted in bold, while second best is underlined. Our
+approach generalizes across all the considered generative approaches, even on ones producing imagery of extreme fidelity, such as SD3,
+where the single method [63] that scores better was required to explicitly train on relevant data.
+
+  Backbone                # Training Data  AUC      Fake [63], DIRE [71], PatchCraft [77], NPR [66] and
+                                             RINE [39] on their default setups. To facilitate our exper-  CLIP ViT-B/16 [53]           400 million      87.6
+ DINOv2 ViT-B/14 [56]        142 million      87.5       iments we used the SIDBench framework [62].  In total,
+                                                                   for the 12 considered methods, we evaluated 25 different
+ MFM ViT-B/16 (Ours) [72]      1.2 million      91.0
+                                                         weight checkpoints. We report best results per method.
+
+Table 2. Evaluation of different backbones. Average AUC over 5     4.2. Comparison Against State-of-the-Art
+sources of real images and 13 generative models is reported. Best
+value is highlighted in bold.                        We compare against the considered detectors and report the
+                                                            obtained AUC scores for each of the 13 considered gen-
+generated and provided by GigaGAN [35], which consti-                                                                    erative models in Tab. 1, averaged over all the sources of
+tutes one of the few recently proposed GAN-based genera-                                                                     real images. While almost all competitors successfully dis-
+tors. These approaches represent a group of recent methods,                                                                tinguish AI-generated images from specific generators, in
+capable of producing images up to 1 megapixel. Finally, we                                                 some cases even achieving near-perfect performance, they
+collect images for Midjourney-v5 (MJv5), DALLE3 [2] and                                                                  catastrophically fail to others.  For example, while in the
+Firefly from [1], as well as for Midjourney-v6.1 (MJv6.1)                                                            case of Firefly images our method achieves the best perfor-
+from [60]. For each model we collect 1k images, with the                                                      mance, in the case of DALLE3 images NPR [66] performs
+exception of MJv6.1 for which we use 631 publicly avail-                                                                      best. However, NPR underperforms in all the rest generative
+able images. Regarding the real images we employ 1k sam-                                                            approaches, overall scoring the worst among the consid-
+ples from each of RAISE [11] and FODB [29], as repre-                                                            ered detectors. This highlights the inability of detectors that
+sentative sources of images captured by DSLR cameras and                                                                 learn to capture specific types of artifacts to generalize to
+smartphones respectively. We include another 1k images                                                              generators that introduce different types of inconsistencies.
+from the test sets of ImageNet [13], COCO [47] and Open                                                                  Instead, our approach, exhibits consistently high detection
+Images [41] that represent a general collection of online im-                                                         performance across all the generative models, achieving an
+ages, an object-focused database and a collection of high-                                                              absolute average improvement of 5.5% over the second best
+resolution Web images respectively.  These datasets have                                                        method, even with the later using a much larger ViT-L back-
+been collected before the advent of capable generative AI                                                     bone pre-trained on the 400 million images of CLIP.
+approaches and thus can be safely assumed to be real.                                                        Robustness Against Online Perturbations: To under-
+   Detection Approaches: We compare our approach     stand the robustness of our network against common per-
+against several recent methods proposed to tackle the is-      turbations encountered online we study five different types
+sue of generalization on generative models not seen dur-     of perturbations. In particular, we study the effects of JPEG
+ing training.  We considered 12 approaches with pub-     and WebP compression with quality factors Q = 85, 70, 50
+licly available code and weights.  In particular, we em-     as well as Gaussian Blur with kernel size k = 3, 5, 7, Gaus-
+ployed CNNDetect [70], FreqDetect [23], GramNet [48],      sian Noise with standard deviation σ = 1, 3, 5 and resizing
+Fusing [34], LGrad [65], DMID [7], UnivFD [52], De-     with scaling factors of 85, 70, 50%. To better isolate the ef-
+
+
+
+                                                    18711"

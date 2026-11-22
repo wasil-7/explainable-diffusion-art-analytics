@@ -1,0 +1,9 @@
+trigger,flag,n,errors,error_rate,threshold,threshold_source
+low_saturation,False,5458,327,0.059912055698057895,0.15386073142290116,development pooled quantile
+low_saturation,True,542,29,0.05350553505535055,0.15386073142290116,development pooled quantile
+flat_color,False,5321,308,0.05788385641796655,0.0891387939453125,development pooled quantile
+flat_color,True,679,48,0.07069219440353461,0.0891387939453125,development pooled quantile
+high_frequency,False,5523,335,0.060655440883577764,0.10575359713988673,development pooled quantile
+high_frequency,True,477,21,0.0440251572327044,0.10575359713988673,development pooled quantile
+heavy_border,False,5631,335,0.05949209731841591,SD<0.025 and adjacent strip jump>0.08,fixed geometry heuristic
+heavy_border,True,369,21,0.056910569105691054,SD<0.025 and adjacent strip jump>0.08,fixed geometry heuristic

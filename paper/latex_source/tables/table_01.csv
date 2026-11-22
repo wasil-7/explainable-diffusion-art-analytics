@@ -1,0 +1,17 @@
+Study / year / venue,Theme,Dataset and protocol,Reported endpoint,Comparison limit
+[1] ArtBrain / 2026 / IEEE TMM†,A,"AI-ArtBench, 185,015; joint source/style and attribution; test reused for validation",Joint F1 0.869; attribution accuracy 0.999,Joint labels; distinct test protocol
+[3] Complexity–entropy / 2025 / Sci. Rep.,A,"149,780 platform works, 2010–2020; observational, no origin split","H–C distributions; 149,780 artworks",Platform art; no origin probe
+[2] B-Free / 2025 / CVPR,C,"COCO: 51,517 real, 309,102 generated; aligned training, external tests",DINOv2+reg e2e AUC/BA 99.0%/95.2%; probing 80.8%/68.5%,Photographs; not this artwork split
+[6] SCADET / 2025 / PLOS One,B,AI-ArtBench; 7:1:2; full/local and unseen-generator tests,Full/local AUC 0.962/0.801; cross-model accuracy 0.81,Different split/crop/model
+[7] SPAI / 2025 / CVPR,B,"13 generators; spectral self-supervision, cross-generator tests","Mean AUC 91.0% vs. RINE 85.5% (+5.5 points); SD3 75.9%, SD1.3 99.6%",Cross-generator learned detection
+[8] FIRE / 2025 / CVPR,B,DiffusionForensics; source-specific training and updated generators,Kandinsky3-trained mean AUC 78.1% vs. 70.5%,Source-specific trained detector
+[12] VIB-Net / 2025 / CVPR,C,15 Table-1 generator columns (17 overall); cross-series testing,Mean AP 95.53% vs. NPR 89.98%,AP is not AUROC
+[10] CoDA / 2026 / TPAMI,B,"FakeForm: 62 domains; photographic training, domain shift",Mean accuracy/AP 77.7%/88.1%,AP/domain endpoint differs
+[16] PixelatedScatter / 2026 / TVCG†,D,Scatterplot datasets; visualization user tasks,E1 Friedman p: 0.0362 / 0.0625 / 0.1070 (600² / 1200² / 1800²),Display study; not embedding fidelity
+[17] MisVisFix / 2026 / TVCG†,D,Misleading-chart benchmark; chart/user studies,96% issue identification; 74 misinformation types,Chart issues; not image authenticity
+[4] Art evolution / 2026 / PNAS†,A,"72,447 WikiArt works; creation-year regression",Creation-year R² = 0.869,Year regression; no AI-origin test
+[13] FakeBench / 2025 / TIFS†,C,FakeBench; human and zero/few-shot LMM assessment,Human average accuracy 74.51%,Human/LMM endpoint differs
+[14] Pixel inconsistency / 2025 / TPAMI†,C,12 manipulation datasets; localization and perturbations,16 representative models on 12 datasets,Localization; not source ranking
+[9] SIDWA / 2026 / Electronics,B,SIDset 8:1:1; additional GenImage testing,"Average accuracy >95%; 18.2 ms, NVIDIA A100",SIDset; no matched style inference
+[15] Locate–then–examine / 2026 / arXiv†,C,"TRACE; 20,000 region-annotated real/generated examples","20,000 region-annotated images",Region labels absent here
+[5] Self-distilled artwork / 2026 / Sci. Rep.,A,Balanced artwork dataset; 70:30; global/local learned detector,"Abstract accuracy 99.01%, precision 95.29%, recall 94.58%, F1 94.93%, AUC 99%",Different split; abstract metrics scoped

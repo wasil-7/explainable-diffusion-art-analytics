@@ -1,0 +1,12 @@
+Rendered 1 fig00_implemented_architecture.png
+Rendered 2 fig01_dataset_audit_and_confound.png
+Rendered 3 fig07_baseline_probes_and_ari.png
+Rendered 4 fig02_hc_causality_atlas.png
+Rendered 5 fig03_pca_tsne_trustworthiness.png
+Rendered 6 fig04_spectral_and_wavelet_profiles.png
+Rendered 7 fig05_style_drift_heatmap.png
+Rendered 8 fig06_feature_ecdfs_and_rainclouds.png
+Rendered 10 fig08_ablation_forest_plot.png
+Rendered 11 fig09_perturbation_robustness.png
+Rendered 12 fig10_forensic_error_gallery.png
+All static composites regenerated from saved data; origin hues are reserved.

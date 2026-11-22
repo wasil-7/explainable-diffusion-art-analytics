@@ -1,0 +1,7 @@
+The frozen cohort SHA256 is \texttt{e27a00766ad8825201aac6d4167a5a98b}\allowbreak\texttt{319d5b18b136ffb20d5765073472936}; IDs/resamples are in the prepared local release for \href{https://github.com/wasil-7/explainable-diffusion-art-analytics}{the official repository}. 
+
+Unweighted L2 L-BFGS: max\_iter 2000, tol $10^{-4}$. PCA: three components/full SVD. t-SNE: random initialization, automatic learning rate, 1,000 iterations, perplexity 15/30/50. NumPy Lloyd: k=2, k-means++, 20 starts, max 300 iterations. 
+
+CUDA 12.4, driver 621.14; original cuDNN unrecorded and revision import unavailable. Fit/tune seconds (Table~\ref{tab:t4} order): 7.00, 0.47, 0.11, 12.49, 1.70. ResNet-50/DINOv2 cache-state times 2916.85/5020.19 s exclude cold imports/earlier interruptions; resume timings are not end-to-end totals.
+
+Selected $C$: 10 (handcrafted/FFT), 0.001 (metadata), 1 (both encoders). Thresholds in Table~\ref{tab:t4} order: 0.4380, 0.4036, 0.6415, 0.7827, 0.2774.

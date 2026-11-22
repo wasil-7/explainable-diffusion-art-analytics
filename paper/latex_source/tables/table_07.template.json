@@ -1,0 +1,16 @@
+{
+  "prefix": "\\begin{table*}[t]\n\\caption{Benchmark, feature and control bases. Years identify published versions; manuscript evidence is marked as in Table I; starred results are paper-reported, not local reproductions.}\\label{tab:t7}\n\\centering\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\\renewcommand{\\arraystretch}{1.10}\n\\begin{tabularx}{\\textwidth}{>{\\hsize=0.824\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.961\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.961\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.098\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.686\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=1.647\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X>{\\hsize=0.824\\hsize\\linewidth=\\hsize\\raggedright\\arraybackslash}X}\n\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabularx}\n\\end{table*}",
+  "citation_keys": [
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "p6",
+    "p7",
+    "p8",
+    "p12",
+    "p14"
+  ]
+}

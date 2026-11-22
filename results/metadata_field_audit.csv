@@ -1,0 +1,9 @@
+field,availability,source,interpretation
+style,all files,parent directory; ukiyo_e normalized to ukiyo-e,"Provided style labels, not verified artwork dates"
+origin/generator,all files,"AI_LD_, AI_SD_, or human directory",Release generator family only; exact versions unknown
+artist,60000 files,"Human filename text before first underscore, when present",Conservative string family; unparsed names remain unavailable
+generated family,125015 files,First two of three hyphen-separated numeric filename fields,Conservative grouping key; not verified prompt/source-work identity
+subject/prompt text,no verified matching metadata,"No supplied sidecar metadata; numeric names lack subject text; 60 directory-stratified JPEG headers had no text fields, see jpeg_metadata_header_sample.json","Header-text check is sampled, not exhaustive COM-tag absence proof. No subject matching claimed; all subject-uncertain cells descriptive"
+source-work link,unverified,Duplicate hashes and filename prefixes only,No complete derivative linkage can be guaranteed
+creation year,partial ambiguous filename strings,Not parsed into a verified field,Style is not interpreted as a chronological label
+technical metadata,all successfully decoded files,"PIL headers, raw bytes, JPEG tables","Dimensions, format, color, bytes, subsampling, progressive, quantization, ICC, EXIF"

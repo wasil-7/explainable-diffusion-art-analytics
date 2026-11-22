@@ -1,0 +1,20 @@
+{
+  "accuracy": 0.9955,
+  "balanced_accuracy": 0.9955,
+  "precision": 0.994675540765391,
+  "recall": 0.9963333333333333,
+  "f1": 0.995503746877602,
+  "f1_macro_binary": 0.9954999968749978,
+  "roc_auc": 0.9996876666666668,
+  "average_precision": 0.9997496643363754,
+  "ece": 0.0020538061260012685,
+  "n": 6000,
+  "threshold": 0.2773941159248352,
+  "model": "dinov2",
+  "C": 1.0,
+  "development_n": 18000,
+  "validation_n": 6000,
+  "seconds": 1.7006404399871826,
+  "macro_style_auc": 0.9996855555555555,
+  "macro_style_f1": 0.9955069098335476
+}

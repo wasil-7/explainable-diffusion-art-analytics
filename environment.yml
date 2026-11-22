@@ -1,0 +1,7 @@
+name: artwork-forensics
+channels: [conda-forge]
+dependencies:
+  - python=3.12.16
+  - pip
+  - pip:
+    - -r requirements.txt

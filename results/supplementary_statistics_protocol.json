@@ -1,0 +1,17 @@
+{
+  "bootstrap_seed": 42,
+  "bootstrap_draws": 1000,
+  "bootstrap": "Origin-stratified source-group resampling, same indices for every probe; percentile intervals; frozen fits and thresholds.",
+  "split_seeds": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "scope": "Regroup the same frozen 30000-artwork primary cohort; transitive group identities preserved; greedy style/origin-balanced 60:20:20 allocation; all five probes retune C and threshold within each development/validation split. Cached frozen encoder embeddings reused; no new embedding extraction.",
+  "limitations": "Conditional on the original selected cohort and cached features. These are five grouped repartitions, not five independent data collections. Original seed42 point estimates remain authoritative.",
+  "seconds_this_resume": 206.81619834899902,
+  "initial_three_probe_run_seconds": 35.907137870788574,
+  "feature_calibration": "Original seed42 development-calibrated feature thresholds fixed across repartitions. Only imputer/scaler/C/F1 threshold refitted. Conditional split sensitivity, not full pipeline replication."
+}

@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\caption{Frozen-probe stress tests. AUROC-difference intervals are paired group-bootstrap 95\% intervals; original inputs are release JPEGs.}\label{tab:t10}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\textwidth}{>{\hsize=0.960\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.720\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.720\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.800\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.900\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.900\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+\toprule
+\textbf{View} & \textbf{AUROC} & \textbf{F1} & \textbf{95\% CI} & \textbf{Silhouette ratio} & \textbf{Rank $\rho$}\\\midrule
+{}jpeg95 & 0.9822 & 0.9430 & [-0.0003, -0.0000352] & 0.9922 & 1.0000\\
+{}jpeg75 & 0.8354 & 0.7453 & [-0.1586, -0.1347] & 0.9639 & 0.9636\\
+{}jpeg50 & 0.6819 & 0.6921 & [-0.3170, -0.2832] & 1.3749 & 0.3697\\
+{}resize0.5 & 0.7744 & 0.6772 & [-0.2244, -0.1918] & 0.8420 & 0.8788\\
+{}resize0.75 & 0.8325 & 0.6986 & [-0.1631, -0.1366] & 0.8649 & 0.9030\\
+\bottomrule\end{tabularx}
+\end{table*}

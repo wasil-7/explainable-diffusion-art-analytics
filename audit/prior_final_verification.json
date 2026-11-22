@@ -1,0 +1,233 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Word native tables/images/math",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_01.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_02.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_03.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_04.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/paired.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/seeds.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_05.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_06.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_07.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_08.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_09.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_10.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all cells tables/table_11.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word all table references repaired",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word no raw TeX fragments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word references before appendix",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word37 bibliography entries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Word page1 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page2 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page3 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page4 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page5 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page6 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page7 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page8 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page9 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page10 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page11 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page12 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page13 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page14 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page15 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Word page16 bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "167 manuscript checks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all344 numeric literals matched to source values/parameters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "clean-source and CSV-rebuild compiles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "local overlap screen sixteen sources no14wordmatches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "seven fresh package feature tests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "three fresh package numerical tests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nine CSV-only numerical composites redraw",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "released original cohort checksum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release excludes raw JPEGs/model weights/large caches/binaries",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "word_pages": 16,
+  "paper_pages": 12,
+  "visual_review": "All twelve paper pages, sixteen Word pages and supplementary page were inspected. Final changed pages rechecked; unchanged renders retain identical PNG hashes.",
+  "open_author_actions": [
+    "Public GitHub URL and versioned Zenodo DOI",
+    "Institutional similarity report",
+    "Final author read-through"
+  ],
+  "limits": [
+    "No fresh-environment full image/encoder rerun",
+    "cuDNN version not retained; revision torch import did not complete",
+    "Repartitions retain original feature calibration; no full pipeline replication claimed"
+  ]
+}

@@ -1,0 +1,10 @@
+Cohort,Split,Artworks,Source groups
+Full release,development,110999,20026
+Full release,test,37000,6677
+Full release,validation,37016,6678
+Balanced45k,development,27000,13636
+Balanced45k,test,9000,4561
+Balanced45k,validation,9000,4570
+Primary30k,development,18000,7364
+Primary30k,test,6000,2466
+Primary30k,validation,6000,2465

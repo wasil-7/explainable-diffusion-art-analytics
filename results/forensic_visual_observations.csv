@@ -1,0 +1,9 @@
+artwork_id,selection_reason,observation,evidence
+2f0c78f46f838cb12767,FP,Repeating ornament fills most of the canvas.,"Direct visual inspection of held-out gallery artwork; qualitative, not independently annotated or a prevalence estimate."
+305d3cd479c457dbf225,FP,A landscape and reclining figure share the canvas.,"Direct visual inspection of held-out gallery artwork; qualitative, not independently annotated or a prevalence estimate."
+e679eb4f822495ac7950,FN,Prominent typographic lettering over a textured field.,"Direct visual inspection of held-out gallery artwork; qualitative, not independently annotated or a prevalence estimate."
+6c9f13932106dacd1dd3,FN,Prominent light lettering over a textured field.,"Direct visual inspection of held-out gallery artwork; qualitative, not independently annotated or a prevalence estimate."
+f3fa732e66faac5deb05,TP,Ornate framing occupies much of the canvas.,"Direct visual inspection of held-out gallery artwork; qualitative, not independently annotated or a prevalence estimate."
+89f0f4d605728ba8c906,TP,Ornate framing surrounds the portrait.,"Direct visual inspection of held-out gallery artwork; qualitative, not independently annotated or a prevalence estimate."
+f4af268f19ef5d76001a,HC outlier,Decorative object photographed against a pale background.,"Direct visual inspection of held-out gallery artwork; qualitative, not independently annotated or a prevalence estimate."
+a1dce1b0364bbfecf333,PCA outlier,Near-monochrome graphic with strong edge structure; hue resultant undefined.,"Direct visual inspection of held-out gallery artwork; qualitative, not independently annotated or a prevalence estimate."

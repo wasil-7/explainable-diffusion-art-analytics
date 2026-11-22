@@ -1,0 +1,10 @@
+{
+  "seconds": 180.1443338394165,
+  "flagged_artworks": 369,
+  "all_crops_excluded": 76,
+  "paired_supported_n": 5924,
+  "direction_reversals": 12,
+  "exploratory_rule_reversals": 23,
+  "confirmatory_reversals": 0,
+  "protocol": "Both arms restricted to exactly the same supported artwork IDs. Rerun 10000 whole-group randomizations, 1000 source-group bootstraps and 2000 within-origin split-half nulls; BH across1040 tests separately per arm. Same random group draws in both arms. Encoding/subject limitations apply."
+}

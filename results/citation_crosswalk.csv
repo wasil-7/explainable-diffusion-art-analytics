@@ -1,0 +1,17 @@
+reference,key,evidence_year,paper_id,source_crosswalk
+1,p1,2024,1c5b90c3f4ee,Phase2/3
+2,p3,2025,268221a5e3f9,Phase2/1
+3,p2,2025,601afa6e41bc,Phase2/2
+4,p11,2025,23ae70d55065,Phase1/2
+5,p16,2026,39084024fc88,Phase1/8
+6,p4,2025,6c04d0eeab5e,Phase1/5; Phase2/8
+7,p5,2025,7174ac285c4f,Phase1/1; Phase2/7
+8,p6,2025,db8080fbeb05,Phase2/5
+9,p14,2026,c6446b5d4119,Phase1/6
+10,p8,2026,5a21e33267e5,Phase2/4
+11,p7,2025,013f01af5670,Phase2/6
+12,p12,2024,5cbf64c5f2f5,Phase1/3
+13,p13,2024,7a92da907ad0,Phase1/4
+14,p15,2026,b8504307f55a,Phase1/7
+15,p9,2026,b11a212074da,Phase2/9
+16,p10,2026,8c3f3f2351ec,Phase2/10

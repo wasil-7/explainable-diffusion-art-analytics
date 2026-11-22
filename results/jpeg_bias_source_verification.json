@@ -1,0 +1,18 @@
+{
+  "title": "Fake or JPEG? Revealing Common Biases in Generated Image Detection Datasets",
+  "authors": [
+    "Patrick Grommelt",
+    "Louis Weiss",
+    "Franz-Josef Pfreundt",
+    "Janis Keuper"
+  ],
+  "publication_year": 2025,
+  "online_date": "2025-05-12",
+  "volume": "15644",
+  "pages": "80-95",
+  "doi": "10.1007/978-3-031-92089-9_6",
+  "publisher_url": "https://link.springer.com/chapter/10.1007/978-3-031-92089-9_6",
+  "evidence_version": "https://arxiv.org/html/2403.17608v2",
+  "read_scope": "Abstract, introduction, related work, sections3 and3.1. JPEG/size bias experiments are on GenImage; not evidence that the present artwork pixel probes use JPEG.",
+  "verified": "2026-11-22"
+}

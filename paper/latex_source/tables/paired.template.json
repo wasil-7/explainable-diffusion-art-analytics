@@ -1,0 +1,9 @@
+{
+  "prefix": "\\begin{table}[t]\\caption{Paired AUROC differences, handcrafted minus comparator. 95\\% percentile source-group intervals condition on frozen fits.}\\label{tab:paired}\\centering\\footnotesize\\begin{tabular}{lrr}\\toprule\n",
+  "suffix": "\\bottomrule\\end{tabular}\\end{table}",
+  "citation_keys": [
+    null,
+    null,
+    null
+  ]
+}
