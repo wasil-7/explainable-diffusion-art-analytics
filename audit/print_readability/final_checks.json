@@ -1,0 +1,2404 @@
+{
+  "passed": true,
+  "checks": 464,
+  "paper_pages": 12,
+  "references": 38,
+  "tables": 13,
+  "figures": 11,
+  "items": [
+    {
+      "check": "exactly12IEEEpages",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "check": "preserved layout \\\\documentclass[^\\n]+",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserved layout \\\\linespread[^\\n]+",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserved layout \\\\setlength[^\\n]+",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserved layout \\\\renewcommand\\{\\\\(?:dbltopfraction|topfraction|textfraction|floatpagefraction|dblfloatpagefraction)\\}[^\\n]+",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noLaTexErrorsOverfullMissingGlyphsUndefinedRefs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "abstract150to250singleparagraph",
+      "passed": true,
+      "detail": 180
+    },
+    {
+      "check": "sixkeywords",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "orderedsections",
+      "passed": true,
+      "detail": [
+        "Introduction",
+        "Related Work",
+        "Proposed Methodology",
+        "Experimental Setup",
+        "Results and Analysis",
+        "Comparison with Base Papers and State-of-the-Art",
+        "Ablation Study and Perturbation Robustness",
+        "Discussion",
+        "Conclusion and Future Work",
+        "Declarations and Acknowledgements",
+        "Compact Reproducibility Summary"
+      ]
+    },
+    {
+      "check": "propernames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noProcessOrPlaceholderLeak",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "abstractstrongerencodersandnegativeverdict",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "discussionstrongerencodersandnegativeverdict",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "conclusionstrongerencodersandnegativeverdict",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "13tables11mainfigures",
+      "passed": true,
+      "detail": [
+        13,
+        11
+      ]
+    },
+    {
+      "check": "tables/table_01.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_02.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_03.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_04.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/paired.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/seeds.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_05.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_06.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_07.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_08.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_09.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_10.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tables/table_11.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_01.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_02.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_03.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_04.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_05.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_06.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_07.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_09.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_10.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_11.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "figures/figure_12.texnumberedcaptionedcited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "38referencesAllCitedAndDefined",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "referenceNumbersFollowFirstAppearance",
+      "passed": true,
+      "detail": [
+        "p1",
+        "p3",
+        "p2",
+        "p11",
+        "p16",
+        "p4",
+        "p5",
+        "p6",
+        "p14",
+        "p8",
+        "jpeg_bias",
+        "p7",
+        "p12",
+        "p13",
+        "p15",
+        "p9",
+        "p10",
+        "bandt",
+        "rosso",
+        "imaging",
+        "wavelet",
+        "sklearn",
+        "ot",
+        "ks",
+        "bh",
+        "bootstrap",
+        "artbench",
+        "imagehash",
+        "resnet",
+        "dinov2",
+        "imagenet",
+        "torchvision",
+        "silhouette",
+        "venna",
+        "numpy",
+        "scipy",
+        "pytorch",
+        "tsne"
+      ]
+    },
+    {
+      "check": "p1doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p1yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p1journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p1pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p2doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p2yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p2journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p2volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p2numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p2pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p3doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p3yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p3journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p3pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p4doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p4yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p4journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p4volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p4numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p4pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p5doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p5yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p5journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p5pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p6doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p6yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p6journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p6pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p7doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p7yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p7journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p7pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p8doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p8yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p8journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p8volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p8numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p8pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p9doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p9yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p9journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p9volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p9numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p9pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p10doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p10yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p10journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p10volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p10numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p10pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p11doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p11yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p11journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p11volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p11numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p11pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p12doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p12yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p12journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p12volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p12pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p13doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p13yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p13journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p13volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p13numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p13pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p14doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p14yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p14journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p14volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p14numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p14pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p15doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p15yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p15journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p16doiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p16yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p16journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p16volumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p16numberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "p16pagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnetdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnetyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnetjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnetpagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagenetdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagenetyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagenetjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagenetvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagenetnumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagenetpagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bandtdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bandtyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bandtjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bandtvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bandtnumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bandtpagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rossodoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rossoyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rossojournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rossovolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rossonumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rossopagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vennadoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vennayearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vennajournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vennapagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "silhouettedoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "silhouetteyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "silhouettejournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "silhouettevolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "silhouettepagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bhdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bhyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bhjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bhvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bhnumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bhpagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bootstrapdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bootstrapyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bootstrapjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bootstrapvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bootstrapnumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bootstrappagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ksdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ksyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ksjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ksvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ksnumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "kspagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "otdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "otyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "otjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "otvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "otnumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "otpagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "numpydoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "numpyyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "numpyjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "numpyvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "numpynumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "numpypagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scipydoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scipyyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scipyjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scipyvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scipynumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scipypagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "waveletdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "waveletyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "waveletjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "waveletvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "waveletnumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "waveletpagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2yearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2journalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2urlverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sklearnyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sklearnjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sklearnvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sklearnnumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sklearnpagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sklearnurlverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tsneyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tsnejournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tsnevolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tsnenumberverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tsnepagesverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tsneurlverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pytorchyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pytorchjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pytorchvolumeverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pytorchurlverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artbenchdoiverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artbenchyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artbenchjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagehashyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagehashjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagehashurlverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagingyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagingpublisherverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "imagingurlverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "torchvisionyearverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "torchvisionjournalverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "torchvisionurlverifiedMetadataPreserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all16reviewedPaperDOIsCrosschecked",
+      "passed": true,
+      "detail": [
+        "10.1038/s41598-025-04448-9",
+        "10.1038/s41598-025-29229-2",
+        "10.1073/pnas.2517969123",
+        "10.1109/cvpr52734.2025.01197",
+        "10.1109/cvpr52734.2025.01741",
+        "10.1109/cvpr52734.2025.01743",
+        "10.1109/cvpr52734.2025.02219",
+        "10.1109/tifs.2025.3597211",
+        "10.1109/tmm.2026.3743638",
+        "10.1109/tpami.2025.3541028",
+        "10.1109/tpami.2026.3696399",
+        "10.1109/tvcg.2025.3633884",
+        "10.1109/tvcg.2025.3633908",
+        "10.1371/journal.pone.0336328",
+        "10.3390/electronics15040891",
+        "10.48550/arxiv.2510.04225"
+      ]
+    },
+    {
+      "check": "handcraftedAUROCpointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedF1pointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedaccuracy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedprecision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedrecall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedece",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedaccuracyEqualsBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedstyleMacroAUCandF1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedheadlineoriginalunchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyAUROCpointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyF1pointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyaccuracy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyprecision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyrecall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyece",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyaccuracyEqualsBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencystyleMacroAUCandF1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyheadlineoriginalunchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedAUROCpointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedF1pointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedaccuracy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedprecision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedrecall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedece",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedaccuracyEqualsBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedstyleMacroAUCandF1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedheadlineoriginalunchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50AUROCpointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50F1pointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50accuracy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50precision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50recall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50ece",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50accuracyEqualsBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50styleMacroAUCandF1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50headlineoriginalunchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2AUROCpointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2F1pointandCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2accuracy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2precision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2recall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2ece",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2accuracyEqualsBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2styleMacroAUCandF1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2headlineoriginalunchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cached1000jointdraws",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedcachedDrawPercentiles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencycachedDrawPercentiles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedcachedDrawPercentiles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50cachedDrawPercentiles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2cachedDrawPercentiles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencypairedCIandDifference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50pairedCIandDifference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2pairedCIandDifference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "25executedFitsFiveSeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2roc_aucfiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2f1fiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyroc_aucfiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencyf1fiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedroc_aucfiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedf1fiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedroc_aucfiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedf1fiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50roc_aucfiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50f1fiveRunMeanSampleSD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "185015auditedCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HumanauditTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "LDauditTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SDauditTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "balanced45000primary30000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fullcachedGroupsDisjoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "balancedcachedGroupsDisjoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Full releasedevelopmenttableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Full releasetesttableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Full releasevalidationtableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Balanced45kdevelopmenttableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Balanced45ktesttableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Balanced45kvalidationtableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Primary30kdevelopmenttableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Primary30ktesttableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Primary30kvalidationtableCounts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCA 2Dfidelity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCA 3Dfidelity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15trustworthinessseedRange",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15continuityseedRange",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30trustworthinessseedRange",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30continuityseedRange",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "50trustworthinessseedRange",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "50continuityseedRange",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1040tests542passesZeroEligible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "art_nouveauOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "art_nouveauFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "art_nouveauHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "art_nouveauColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "art_nouveauexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baroqueOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baroqueFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baroqueHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baroqueColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baroqueexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "expressionismOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "expressionismFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "expressionismHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "expressionismColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "expressionismexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "impressionismOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "impressionismFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "impressionismHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "impressionismColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "impressionismexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "post_impressionismOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "post_impressionismFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "post_impressionismHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "post_impressionismColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "post_impressionismexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "realismOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "realismFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "realismHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "realismColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "realismexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "renaissanceOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "renaissanceFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "renaissanceHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "renaissanceColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "renaissanceexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "romanticismOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "romanticismFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "romanticismHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "romanticismColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "romanticismexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surrealismOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surrealismFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surrealismHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surrealismColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surrealismexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ukiyo-eOrdinalheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ukiyo-eFFTheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ukiyo-eHaarheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ukiyo-eColor/edgesheatmapTable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ukiyo-eexploratoryCount",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "without OrdinalallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "without OrdinalablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only OrdinalallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only OrdinalablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "without FFTallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "without FFTablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only FFTallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only FFTablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "without HaarallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "without HaarablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only HaarallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only HaarablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "without Color/edgesallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "without Color/edgesablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only Color/edgesallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only Color/edgesablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HSVallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HSVablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "LaballAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "LabablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "full 256allAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "full 256ablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "five 128 cropsallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "five 128 cropsablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ties excludedallAblationPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ties excludedablationCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "handcraftedcomparisonTableMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frequencycomparisonTableMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_gatedcomparisonTableMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resnet50comparisonTableMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dinov2comparisonTableMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "mixedCohortActualAUCandF1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg95allStressPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg95pairedStressCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg75allStressPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg75pairedStressCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg50allStressPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg50pairedStressCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resize0.5allStressPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resize0.5pairedStressCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resize0.75allStressPoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "resize0.75pairedStressCI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2f0c78f46fgalleryMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "305d3cd479galleryMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "e679eb4f82galleryMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6c9f139321galleryMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "f3fa732e66galleryMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "89f0f4d605galleryMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "f4af268f19galleryMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "a1dce1b036galleryMetrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "allNarrativeNumericLiteralsHaveProvenance",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "audit_counts.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "roc_metadata_gated.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "roc_metadata_ungated_full.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "roc_dimensions_ungated_full.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baseline_per_style_ci.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "roc_handcrafted.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pr_handcrafted.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "roc_frequency.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pr_frequency.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pr_metadata_gated.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "roc_resnet50.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pr_resnet50.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "roc_dinov2.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pr_dinov2.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "origin_silhouette_ari.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hc_plot_points.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hc_centroid_ellipses.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pca_plot_points.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tsne_plot_points.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "projection_fidelity.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "spectral_wavelet_profiles.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "style_family_drift.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "feature_distribution_values.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "display_feature_selection.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "style_feature_drift.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ablation_results.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "color_saturation_ablation.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baseline_metrics.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "perturbation_results.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "perturbation_auc_intervals.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "error_gallery_cases.csvfigureSourceSHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all11staticCompositesLegendClear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "allFiguresAtLeast300EffectiveDPI",
+      "passed": true,
+      "detail": 449.2645585315461
+    },
+    {
+      "check": "allPDFfontsEmbedded",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "check": "suppliedS1PDF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nativeWord13DataTablesPlusAuthorTable11Images",
+      "passed": true,
+      "detail": [
+        14,
+        11
+      ]
+    },
+    {
+      "check": "wordAuthorColumns",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cleancompileExit0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cleancompile12identicalTextAndPixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "portableCSVrebuildExit0",
+      "passed": true,
+      "detail": "Rebuilt 13 tables from CSV; no experiments run.\n"
+    },
+    {
+      "check": "csvcompileExit0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "csvcompile12identicalTextAndPixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "papertextInsidePages",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "wordtextInsidePages",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "supplementtextInsidePages",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

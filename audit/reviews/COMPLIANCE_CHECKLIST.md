@@ -1,3 +1,5 @@
+> Historical review/build record. Its old missing-input, pending-push and score statements describe that earlier snapshot. Current review: ../PRINT_READABILITY_AUDIT.md. Public baseline before this print pass: commit 15621c8fd07261501bed7ed9eba7902ac8b23930.
+
 > **Superseded status statements:** the final audit instructions were supplied, FINAL_AUDIT.md now exists, and GitHub is public/populated at commit 6a6df880abbe8061cd145c41adfccdfe730e045e. Earlier missing-audit/empty-repository statements below describe the previous build. The current audited revision still requires a new push; use FINAL_AUDIT.md for the current verdict.
 
 # Milestone 4 compliance checklist

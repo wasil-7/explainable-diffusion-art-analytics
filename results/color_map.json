@@ -6,7 +6,7 @@
   },
   "models": {
     "handcrafted": "#334155",
-    "frequency": "#A21CAF",
+    "frequency": "#007C91",
     "metadata_gated": "#78716C",
     "resnet50": "#854D0E",
     "dinov2": "#4D7C0F"
@@ -14,6 +14,6 @@
   "color_representations": {
     "HSV": "#854D0E",
     "Lab": "#4B5563",
-    "HSV+Lab": "#A21CAF"
+    "HSV+Lab": "#39734A"
   }
 }

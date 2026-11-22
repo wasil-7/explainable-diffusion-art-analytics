@@ -49,24 +49,24 @@ Within each AI-ArtBench style, the question is which human--diffusion measuremen
 
 ArtBrain supplies the artwork benchmark \cite{p1}; complexity--entropy analysis supplies inspectable formal coordinates \cite{p2}.
 
-Code and reproducibility artifacts are prepared for the official repository\footnote{\url{https://github.com/wasil-7/explainable-diffusion-art-analytics}}.
+Code and reproducibility artifacts are available in the official repository\footnote{\url{https://github.com/wasil-7/explainable-diffusion-art-analytics}}.
 
 The contributions are:
 \begin{itemize}
 \item An exhaustive 185,015-file audit and frozen grouped splits, separating a 45,000-artwork balanced tier from the 30,000-artwork native-resolution primary comparison.
-\item A transparent 104-predictor probe (AUROC 0.9824), trailing ResNet-50 by 0.0175 (95\% interval $[-0.0216,-0.0140]$) and DINOv2 by 0.0173, while exceeding FFT-only, a matched internal ablation comparator, by 0.2985.
+\item A 104-feature logistic probe (AUROC 0.9824): handcrafted-minus-ResNet-50 AUROC is $-0.0175$ (95\% interval $[-0.0216,-0.0140]$), versus DINOv2 $-0.0173$, and versus the internal FFT-only comparator $+0.2985$.
 \item A control-gated analysis of 1,040 style-feature contrasts: 542 exploratory passes, but zero eligible confirmations because JPEG support and verified subjects are absent.
 \item Audited projections, including PCA trustworthiness 0.6928, and paired sensitivity evidence: ordinal removal loses 0.0744 AUROC and JPEG 50 yields AUROC 0.6819.
 \item An artwork-linked dashboard and eight-case forensic gallery connecting aggregate results to actual quadrant pixels and cached measurements.
 \end{itemize}
-Section II synthesizes related work; Section III formulates the method. Section IV describes setup, and Section V interprets results. Section VI compares base papers, Section VII reports ablations, and Section VIII discusses validity and failures. Section IX concludes; Section X provides declarations, followed by references and a compact reproducibility appendix.
+Sections II--IV present related work, methodology and setup; V--VIII report results, comparisons, ablations and validity. Sections IX--X conclude and declare availability, followed by References and Appendix A.
 
 \section{Related Work}
 \subsection{Artwork Benchmarks and Complexity--Entropy Aesthetics}
 ArtBrain \cite{p1} establishes artwork/source prediction, while complexity--entropy coordinates \cite{p2}, historical latent representations \cite{p11} and self-distilled saliency \cite{p16} support formal or contextual description. Their joint-label, observational or context-prediction tasks do not establish matched binary origin effects. This study instead compares named within-style measurements on frozen grouped Human--LD identities. It treats entropy and complexity as descriptors, not aesthetic merit or chronology.
 
 \subsection{Spectral, Wavelet and Color Forensics}
-SCADET \cite{p4}, SPAI \cite{p5} and FIRE \cite{p6} establish learned frequency or reconstruction evidence; SIDWA \cite{p14} learns wavelet attention and CoDA \cite{p8} probes color. Different training, crop contexts and domains prevent direct attribution of those scores to our fixed measurements. The present FFT/Haar/color families expose conditional contributions without reproducing these networks. Grommelt et al. \cite{jpeg_bias} demonstrate JPEG/size bias on GenImage; that prior finding motivates encoding checks but does not prove that our pixel probes use the available JPEG association.
+SCADET \cite{p4}, SPAI \cite{p5} and FIRE \cite{p6} establish learned frequency or reconstruction evidence; SIDWA \cite{p14} learns wavelet attention and CoDA \cite{p8} probes color. Different training, crop contexts and domains prevent direct attribution of those scores to the fixed measurements. The present FFT/Haar/color families expose conditional contributions without reproducing these networks. Grommelt et al. \cite{jpeg_bias} demonstrate JPEG/size bias on GenImage; that prior finding motivates encoding checks but does not prove that the pixel probes use the available JPEG association.
 
 \subsection{Alignment, Generalization and Grounding}
 B-Free \cite{p3} establishes content-aligned training and VIB-Net \cite{p7} tests detector generalization. FakeBench \cite{p12}, pixel-inconsistency localization \cite{p13} and region reasoning \cite{p15} provide supervised explanations or localization beyond the semantic labels available here. Their photographic, AP, localization and explanation endpoints do not form a matched artwork-AUROC comparison. This study exposes missing subject support explicitly and links release-labeled errors to pixels; it claims neither equivalent content alignment nor unseen-generator performance.
@@ -81,7 +81,7 @@ PixelatedScatter \cite{p9} establishes count-aware display abstraction, while Mi
 An artwork record is $(I_i,y_i,s_i,g_i,m_i)$: RGB image $I_i$, origin label $y_i$ (Human $=0$, LD $=1$ for the primary task), style $s_i$, recorded source-family group $g_i$, and technical metadata $m_i$. The four disjoint $128\times128$ quadrants $\mathcal Q(I_i)=\{q_1,q_2,q_3,q_4\}$ tile each native-$256^2$ canvas once. Groups define the dependence structure. The architecture in Fig.~\ref{fig:f1} freezes IDs and development calibration before descriptive projections and probe evaluation. It explicitly separates origin ranking from eligibility for independent origin attribution.
 \input{figures/figure_01.tex}
 
-Algorithm~\ref{alg:pipeline} implements the planned twelve-step workflow. Planned steps 1--3 map to the input and lines 1--3/6; step 4 to lines 4--7; step 5 to line 8; steps 6--7 to lines 9--10/16; steps 8--9 to lines 11--15; and steps 10--12 to line 16 and the output.
+Algorithm~\ref{alg:pipeline} audits and groups files (lines 1--3), calibrates and extracts features (4--7), applies the common-support gate (8), freezes fits and evaluation (9--10), and computes exploratory contrasts and linked displays (11--16).
 
 \subsection{Mathematical Features}
 Let $Y$ denote normalized crop luminance. For permutation entropy \cite{bandt}, stable row-major ranking within each overlapping $2\times2$ neighborhood yields $4!=24$ ordinal states. Their pooled probability vector is $p=(p_1,\ldots,p_{24})$. With uniform distribution $u$ and point mass $\delta$,
@@ -104,7 +104,7 @@ For development-standardized feature $\tilde x_i$, coefficients $w$, unpenalized
 \mathcal L(w,b)&=-\frac{1}{N_d}\sum_{i=1}^{N_d}\{y_i\log\sigma_i+(1-y_i)\log(1-\sigma_i)\}\nonumber\\
 &\quad+\frac{\|w\|_2^2}{2N_d C_{\mathrm{solver}}}.
 \end{align}
-Thus tabulated $C$ values retain the executed solver scale, rather than an unadjusted averaged-loss penalty.
+Thus tabulated $C_{\mathrm{solver}}$ values retain the executed solver scale, rather than an unadjusted averaged-loss penalty.
 
 For feature CDFs $F_H,F_L$, Wasserstein distance \cite{ot} is $W_1=\int_{-\infty}^{\infty}|F_H(x)-F_L(x)|\,dx$ and the two-sample Kolmogorov--Smirnov statistic \cite{ks} is $D=\sup_x|F_H(x)-F_L(x)|$. Signed shifts are median(LD) minus median(Human). Sliced distance $SW_1=128^{-1}\sum_{r=1}^{128}W_1(\langle v_r,X_H\rangle,\langle v_r,X_L\rangle)$ averages fixed unit directions $v_r$ in development-standardized space. Source dispersion uses AI/Human interquartile-range ratios with zero denominators flagged.
 
@@ -139,7 +139,7 @@ The Benjamini--Hochberg adjustment \cite{bh} spans all 1,040 prespecified featur
 \end{algorithm}
 
 \subsection{Refinements to the Planned Methodology}
-The plan's four disjoint quadrants remain primary; five overlapping crops add a sensitivity, while the full-canvas comparison also changes dimensionality. The planned development calibration selects $\tau_S=0.01$ from a 0.05 starting cutoff; this is not a fixed-cutoff violation. Combining hue--saturation--value (HSV) and Lab changes the primary family definition, so isolated color ablations bound that choice. NumPy Lloyd clustering substitutes for a blocked library implementation; paired silhouette intervals reuse cached geometry rather than recomputing distances.
+The plan's four disjoint quadrants remain primary; five overlapping crops add a sensitivity, while the full-canvas comparison also changes dimensionality. The planned development calibration selects $\tau_S=0.01$ from a 0.05 starting cutoff; both thresholds are frozen before testing. Combining hue--saturation--value (HSV) and Lab changes the primary family definition, so isolated color ablations bound that choice. NumPy Lloyd clustering substitutes for a blocked library implementation; paired silhouette intervals reuse cached geometry rather than recomputing distances.
 
 Separate artist/style/generator holdouts and the GAN arm were not run; source groups and AI-prefix proxies do not establish those generalizations or verified prompts. Missing subjects and JPEG overlap restrict all contrasts to description; whole-group randomization lacks verified exchangeability. The planned movement-by-generator output is a Human--LD style-family heatmap, with resized Stable Diffusion (SD) only descriptive. Eight primary cases replace a generator-spanning gallery; semantic/material labels and a user study are unavailable. Dispersion ratios and inter-style centroid distances are cached but omitted from the main results to prioritize control evidence. The released \texttt{results/changes.csv} checks all twelve steps and records these limits and completed stretch analyses.
 
@@ -153,13 +153,13 @@ The balanced tier contains 1,500 artworks per style/origin, split 900/300/300. T
 \input{figures/figure_02.tex}
 
 \subsection{Baselines, Metrics and Computing Environment}
-Five logistic probes use identical 6,000 test IDs: Handcrafted (104-D), FFT-only (36-D), Metadata-only (the implementation's \texttt{metadata\_gated} probe), frozen ResNet-50 \cite{resnet} 2,048-D and frozen DINOv2 \cite{dinov2} ViT-S/14 384-D. ResNet-50 uses ImageNet \cite{imagenet} weights IMAGENET1K\_V2 from torchvision \cite{torchvision}. Encoder views are resized to 224 pixels and ImageNet normalized; four float32 embeddings are averaged after CUDA FP16 inference (32-quadrant batches, four loaders). The encoders are not fine-tuned. Metadata inputs are width, height, bytes, aspect ratio, subsampling, progressive flag and quantization-table mean. Median imputation and robust scaling use development only; deep embeddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold maximizes validation F1. Final fitting uses development only.
+Five logistic probes use identical 6,000 test IDs: Handcrafted (104-D), FFT-only (36-D), Metadata-only, frozen ResNet-50 \cite{resnet} 2,048-D and frozen DINOv2 \cite{dinov2} ViT-S/14 384-D. ResNet-50 uses ImageNet \cite{imagenet} weights IMAGENET1K\_V2 from torchvision \cite{torchvision}. Encoder views are resized to 224 pixels and ImageNet normalized; four float32 embeddings are averaged after CUDA FP16 inference (32-quadrant batches, four loaders). The encoders are not fine-tuned. Metadata inputs are width, height, bytes, aspect ratio, subsampling, progressive flag and quantization-table mean. Median imputation and robust scaling use development only; deep embeddings use StandardScaler. $C_{\mathrm{solver}}\in\{0.001,0.01,0.1,1,10,100\}$ maximizes validation AUROC, and the positive threshold maximizes validation F1. Final fitting uses development only.
 
-Fifteen-bin expected calibration error (ECE) measures calibration. Origin silhouette \cite{silhouette} is $(b-a)/\max(a,b)$ for mean same-origin distance $a$ and other-origin distance $b$; unlabeled $k=2$ adjusted Rand index (ARI) compares clusters with origin after fitting. On a fixed 3,000-artwork subset, trustworthiness $T(15)$ \cite{venna} penalizes false neighbors and continuity $C(15)$ lost neighbors. This continuity is distinct from complexity and regularization; threshold/macro metrics are defined in Table~\ref{tab:essential}.
+Fifteen-bin expected calibration error (ECE) measures calibration. Origin silhouette \cite{silhouette} is $(b-a)/\max(a,b)$ for mean same-origin distance $a$ and other-origin distance $b$; unlabeled $k=2$ adjusted Rand index (ARI) compares clusters with origin after fitting. On a fixed 3,000-artwork subset, trustworthiness $T(15)$ \cite{venna} penalizes false neighbors and continuity $\mathcal{C}(15)$ lost neighbors. This continuity is distinct from complexity and regularization; threshold/macro metrics are defined in Table~\ref{tab:essential}.
 
 The recorded environment uses Python 3.12.16, NumPy 2.5.4 \cite{numpy}, SciPy 1.18.1 \cite{scipy}, scikit-learn 1.9.1, pandas 3.1.1, PyTorch 2.6.0+cu124 \cite{pytorch}, torchvision 0.21.0+cu124, Streamlit 1.67.0 and Plotly 7.1.0. Hardware is a GTX 1650 SUPER (4 GB), 16 GB RAM and 12 logical CPUs. Appendix A records driver/cuDNN, solver/projection settings and stage timings. Synthetic tests cover feature invariants and numerical routines, not attribution validity.
 
-Relative to the preceding report, aggregate probe intervals, paired differences, five grouped repartitions, mixed-cohort F1 and JPEG quantization means are additional manuscript summaries from the same cached features, predictions and metadata; no new data were collected. Released scripts and CSVs identify their provenance.
+Aggregate probe intervals, paired differences, five grouped repartitions, mixed-cohort F1 and JPEG quantization means are computed from the same cached features, predictions and metadata. Released scripts and CSVs document their provenance; these summaries do not constitute independent data collection.
 
 \section{Results and Analysis}
 \subsection{Held-Out Probe Evaluation}
@@ -171,14 +171,14 @@ Paired intervals in Table~\ref{tab:paired} use identical origin-stratified group
 \input{figures/figure_03.tex}
 
 \subsection{Entropy--Complexity Atlas and Projection Fidelity}
-Figure~\ref{fig:f4} compares shared-axis centroids and distributions. Most LD clouds have lower entropy and higher complexity than Human clouds, with heterogeneous descriptive magnitudes. Equal artwork counts do not imply equal source-group precision.
+Figure~\ref{fig:f4} shows heterogeneous LD-minus-Human shifts, generally toward lower entropy and higher complexity. Equal artwork counts do not imply equal source-group precision.
 \input{figures/figure_04.tex}
-PCA2 explains 93.57\% of development variance but attains $T(15)=0.6928$ and $C(15)=0.7571$; PCA3 reaches 0.7800/0.8869 (Table~\ref{tab:t5}). Fifteen t-SNE \cite{tsne} runs cover seeds 42--46 and perplexities 15/30/50, with trustworthiness 0.9101--0.9185. Figure~\ref{fig:f5} fixes perplexity 30/seed 42 without selecting test separation. Seed ranges measure algorithmic sensitivity; distance inference stays in standardized features or fixed PCA.
+PCA2 explains 93.57\% of development variance but attains $T(15)=0.6928$ and $\mathcal{C}(15)=0.7571$; PCA3 reaches 0.7800/0.8869 (Table~\ref{tab:t5}). Fifteen t-SNE \cite{tsne} runs cover seeds 42--46 and perplexities 15/30/50, with trustworthiness 0.9101--0.9185. Figure~\ref{fig:f5} fixes perplexity 30/seed 42 without selecting test separation. Seed ranges measure algorithmic sensitivity; distance inference stays in standardized features or fixed PCA.
 \input{tables/table_05.tex}
 \input{figures/figure_05.tex}
 
 \subsection{Spectral, Wavelet and Within-Style Contrasts}
-Figure~\ref{fig:f6} contrasts radial power shares and raw-luminance Haar energy. Human and LD spectra are broadly similar, while wavelet bands and style-specific features differ. SD remains a resized sensitivity. Figure~\ref{fig:f7} and Table~\ref{tab:t6} summarize mean standardized $W_1$ and mean signed shifts by family. Averaging signed constituents can cancel opposing directions; family means are not independent tests. Every family contains an exploratory constituent pass; redundant asterisks are omitted, and no family-level test or confirmation is implied.
+Figure~\ref{fig:f6} shows broadly similar Human/LD radial spectra but differing Haar bands and style-specific features; SD is resized sensitivity. Figure~\ref{fig:f7} and Table~\ref{tab:t6} summarize family-average standardized $W_1$ and signed shifts. Opposing constituents can cancel; family averages are not independent tests. All families contain exploratory passes, without family-level confirmation.
 \input{figures/figure_06.tex}
 \input{figures/figure_07.tex}
 \input{tables/table_06.tex}
@@ -187,7 +187,7 @@ The 542 exploratory passes among 1,040 tests cannot be confirmed because the com
 
 \subsection{Interactive Visual Analytics}
 \input{figures/figure_09.tex}
-The Streamlit\footnote{\url{https://streamlit.io/}}/Plotly\footnote{\url{https://plotly.com/python/}} application links overview, atlas, manifold, spectra, drift and gallery views. Movement/origin filters and point selection link raw/hexagonal views to quadrants, FFT, Haar and color summaries. Axes stay fixed; density colors explicitly rescale to active counts. Figure~\ref{fig:f9} shows the linked interface; gate warnings persist. The compact dashboard retains all points but only eight pixel-inspectable cases; full drill-down requires local data/caches. No user-study gain is established.
+The Streamlit\footnote{\url{https://streamlit.io/}}/Plotly\footnote{\url{https://plotly.com/python/}} interface links six views through movement/origin filters and point selection (Fig.~\ref{fig:f9}). Raw/hexagonal displays connect to quadrants, FFT, Haar and color summaries. Axes and gate warnings persist; density colors rescale to active counts. All points remain, but only eight cases support pixel inspection without local data/caches. User benefit is untested.
 
 
 \section{Comparison with Base Papers and State-of-the-Art}
@@ -203,7 +203,7 @@ ArtBrain supplies the release and learned joint tasks, whereas the present binar
 
 SCADET and SPAI train spectral representations; FIRE learns reconstruction evidence. The present fixed FFT/Haar descriptors and family ablations expose measured contributions without reproducing those networks. B-Free controls photographic content during training, while the present subject audit cannot establish such alignment. Its value is identifying this missing support rather than claiming equivalent robustness.
 
-VIB-Net targets generalization with a learned bottleneck, CoDA probes color-domain shifts, and SIDWA learns wavelet attention. The proposed frozen/linear evaluation measures conditional prediction and transparent shifts, without unseen-generator evidence. FakeBench evaluates multimodal explanations; the artwork-linked gallery provides pixel/feature traces but no verified semantic grounding or user-study equivalence. 
+VIB-Net targets generalization with a learned bottleneck, CoDA probes color-domain shifts, and SIDWA learns wavelet attention. The proposed frozen/linear evaluation measures conditional prediction and measured shifts, without unseen-generator evidence. FakeBench evaluates multimodal explanations; the artwork-linked gallery provides pixel/feature traces but no verified semantic grounding or user-study equivalence. 
 
 \subsection{Absolute and Relative Differences}
 \input{derived_improvements.tex}
@@ -245,12 +245,12 @@ Development-defined saturation/edge/frequency proxies complement a fixed border 
 \textit{Statistical conclusion validity:} source dependence reduces effective sample size; conditional bootstraps and unsupported randomization exchangeability restrict interpretation. Resampling precision cannot substitute for matched subjects. G3 yields a negative validity audit consistent with encoding leakage; the original requirement that separation survive verified controls remains unestablished.
 
 \section{Conclusion and Future Work}
-The control-gated workflow joins named features, grouped probes, projection diagnostics and linked artwork evidence. Strong release prediction coexists with origin-aligned encoding and unverified subjects; within-style shifts remain descriptive. Frozen ResNet-50 and DINOv2 outperform the handcrafted probe, but none establishes encoding-independent attribution. Future work requires common-encoding originals, verified subject/prompt links and separate artist/style/generator holdouts. Independent annotations and human evaluation are needed to test material-specific explanations and dashboard usefulness.
+Named measurements and linked views expose descriptive differences despite strong release prediction. ResNet-50 and DINOv2 outperform the handcrafted probe; unverified subjects and absent encoding support prevent independent attribution. Future work requires common-encoding originals, verified subject/prompt links, separate artist/style/generator holdouts, material annotations and human evaluation of explanations and dashboard usefulness.
 
 \section{Declarations and Acknowledgements}
-\textit{Data and code availability:} AI-ArtBench is available from its authors\footnote{\url{https://www.kaggle.com/datasets/ravidussilva/real-ai-art}} \cite{p1}; ArtBench-10 supplies its human-art source \cite{artbench}. The prepared local release contains code/tests, pinned dependencies, frozen split IDs/cohort hash, CSVs, figure generators and build commands; the original release is public; this audited revision requires an updated commit. Raw images, model weights and large caches are excluded. The official code and artifact repository is \url{https://github.com/wasil-7/explainable-diffusion-art-analytics}. No fresh-environment experimental replication is claimed.
+\textit{Data and code availability:} AI-ArtBench is available from its authors\footnote{\url{https://www.kaggle.com/datasets/ravidussilva/real-ai-art}} \cite{p1}; ArtBench-10 supplies its human-art source \cite{artbench}. The public repository provides code, tests, pinned dependencies, frozen split IDs/cohort hash, CSVs, figure generators and build commands. Raw images, model weights and large caches are excluded. The official code and artifact repository is \url{https://github.com/wasil-7/explainable-diffusion-art-analytics}. No fresh-environment experimental replication is claimed.
 
-\textit{Competing interests and funding:} The authors declare no competing interests. This research received no external funding. \textit{AI-assisted tools:} Codex, Antigravity, Claude and SciSpace supported coding, literature exploration, drafting and formatting. Wasil Kayani and Umar Asghar verified the evidence and take responsibility for the final manuscript. \textit{Acknowledgements:} The authors thank Ms. Azka Atiq and FAST National University of Computer and Emerging Sciences (FAST-NUCES), Islamabad, for academic guidance.
+\textit{Competing interests and funding:} The authors declare no competing interests. This research received no external funding. \textit{AI-assisted tools:} Codex, Antigravity, Claude and SciSpace supported coding, literature exploration, drafting and formatting. Wasil Kayani and Umar Asghar verified the evidence and take responsibility for the final manuscript. \textit{Acknowledgements:} The authors thank Ms. Azka Atiq and FAST National University of Computer and Emerging Sciences, Islamabad.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}

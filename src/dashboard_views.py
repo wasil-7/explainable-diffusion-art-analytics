@@ -80,7 +80,7 @@ def baselines(table,show_table):
     metrics=table('baseline_metrics.csv');show_table(metrics[metrics.model.isin(models)][['model','roc_auc','f1','accuracy','ece','n']])
     roc=go.Figure()
     for i,name in enumerate(models):
-        r=table(f'roc_{name}.csv');roc.add_trace(go.Scatter(x=r.fpr,y=r.tpr,name=name,line_color=['#334155','#A21CAF','#78716C','#854D0E','#4D7C0F'][i]))
+        r=table(f'roc_{name}.csv');roc.add_trace(go.Scatter(x=r.fpr,y=r.tpr,name=name,line_color=['#334155','#007C91','#78716C','#854D0E','#4D7C0F'][i]))
     roc.update_layout(title='Held-out ROC · five frozen probes',xaxis_title='False positive rate',yaxis_title='True positive rate',height=380);chart(roc,key='baseline_roc')
     st.caption('Identical 6,000 test IDs. Frozen encoders; development/validation tuning. Metadata exposes residual JPEG leakage.');show_table(table('baseline_per_style_ci.csv'))
 

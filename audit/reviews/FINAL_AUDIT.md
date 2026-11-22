@@ -1,3 +1,5 @@
+> Historical review/build record. Its old missing-input, pending-push and score statements describe that earlier snapshot. Current review: ../PRINT_READABILITY_AUDIT.md. Public baseline before this print pass: commit 15621c8fd07261501bed7ed9eba7902ac8b23930.
+
 # FINAL AUDIT — skeptical DAV and scientific-integrity assessment
 
 **Audit date:** 22 November 2026 (Asia/Karachi). **Judgment score: 92.5/100.** This is an evidence-bounded professor-style assessment, not the instructor's grade, a Turnitin result, or a guarantee of acceptance. No generic full-mark endorsement is warranted.

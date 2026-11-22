@@ -1,0 +1,27 @@
+[
+  {
+    "before": "Figure~\\ref{fig:f4} compares shared-axis centroids and distributions. Most LD clouds have lower entropy and higher complexity than Human clouds, with heterogeneous descriptive magnitudes. Equal artwork counts do not imply equal source-group precision.",
+    "after": "Figure~\\ref{fig:f4} shows heterogeneous LD-minus-Human shifts, generally toward lower entropy and higher complexity. Equal artwork counts do not imply equal source-group precision.",
+    "reason": "Remove repetition while retaining measurements, scope and limitations; recover space for larger literature tables."
+  },
+  {
+    "before": "Figure~\\ref{fig:f6} contrasts radial power shares and raw-luminance Haar energy. Human and LD spectra are broadly similar, while wavelet bands and style-specific features differ. SD remains a resized sensitivity. Figure~\\ref{fig:f7} and Table~\\ref{tab:t6} summarize mean standardized $W_1$ and mean signed shifts by family. Averaging signed constituents can cancel opposing directions; family means are not independent tests. Every family contains an exploratory constituent pass; redundant asterisks are omitted, and no family-level test or confirmation is implied.",
+    "after": "Figure~\\ref{fig:f6} shows broadly similar Human/LD radial spectra but differing Haar bands and style-specific features; SD is resized sensitivity. Figure~\\ref{fig:f7} and Table~\\ref{tab:t6} summarize family-average standardized $W_1$ and signed shifts. Opposing constituents can cancel; family averages are not independent tests. All families contain exploratory passes, without family-level confirmation.",
+    "reason": "Remove repetition while retaining measurements, scope and limitations; recover space for larger literature tables."
+  },
+  {
+    "before": "The Streamlit\\footnote{\\url{https://streamlit.io/}}/Plotly\\footnote{\\url{https://plotly.com/python/}} application links overview, atlas, manifold, spectra, drift and gallery views. Movement/origin filters and point selection link raw/hexagonal views to quadrants, FFT, Haar and color summaries. Axes stay fixed; density colors explicitly rescale to active counts. Figure~\\ref{fig:f9} shows the linked interface; gate warnings persist. The compact dashboard retains all points but only eight pixel-inspectable cases; full drill-down requires local data/caches. No user-study gain is established.",
+    "after": "The Streamlit\\footnote{\\url{https://streamlit.io/}}/Plotly\\footnote{\\url{https://plotly.com/python/}} interface links six views through movement/origin filters and point selection (Fig.~\\ref{fig:f9}). Raw/hexagonal displays connect to quadrants, FFT, Haar and color summaries. Axes and gate warnings persist; density colors rescale to active counts. All points remain, but only eight cases support pixel inspection without local data/caches. User benefit is untested.",
+    "reason": "Remove repetition while retaining measurements, scope and limitations; recover space for larger literature tables."
+  },
+  {
+    "before": "The control-gated workflow joins named features, grouped probes, projection diagnostics and linked artwork evidence. Strong release prediction coexists with origin-aligned encoding and unverified subjects; within-style shifts remain descriptive. Frozen ResNet-50 and DINOv2 outperform the handcrafted probe, but none establishes encoding-independent attribution. Future work requires common-encoding originals, verified subject/prompt links and separate artist/style/generator holdouts. Independent annotations and human evaluation are needed to test material-specific explanations and dashboard usefulness.",
+    "after": "Named measurements and linked views expose descriptive differences despite strong release prediction. ResNet-50 and DINOv2 outperform the handcrafted probe; unverified subjects and encoding support prevent independent attribution. Future work requires common-encoding originals, verified subject/prompt links, separate artist/style/generator holdouts, material annotations and human evaluation of explanations and dashboard usefulness.",
+    "reason": "Remove repetition while retaining measurements, scope and limitations; recover space for larger literature tables."
+  },
+  {
+    "before": "this is not a fixed-cutoff violation.",
+    "after": "both thresholds are frozen before testing.",
+    "reason": "Remove repetition while retaining measurements, scope and limitations; recover space for larger literature tables."
+  }
+]

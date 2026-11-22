@@ -1,3 +1,5 @@
+> Historical review/build record. Its old missing-input, pending-push and score statements describe that earlier snapshot. Current review: ../PRINT_READABILITY_AUDIT.md. Public baseline before this print pass: commit 15621c8fd07261501bed7ed9eba7902ac8b23930.
+
 # Final implementation changelog
 
 Every manuscript replacement is recorded below. Table and figure diffs/source hashes supplement these records.

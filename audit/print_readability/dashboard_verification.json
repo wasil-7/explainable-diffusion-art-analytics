@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "views": [
+    "01 Overview",
+    "02 H\u2013C Atlas",
+    "03 Manifold & Fidelity",
+    "04 Spectral Profiles",
+    "05 Drift & Ablations",
+    "06 Forensic Gallery"
+  ],
+  "origin_traces": [
+    {
+      "name": "Human",
+      "symbol": "circle"
+    },
+    {
+      "name": "LD",
+      "symbol": "square"
+    }
+  ],
+  "axis_labels": [
+    "H",
+    "C"
+  ],
+  "footer": "Wasil Kayani \u00b7 Umer Asghar",
+  "publication_native_relayout_font_px": 22,
+  "raw_data_changed": false,
+  "server_left_running": false
+}
